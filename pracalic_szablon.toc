@@ -1,0 +1,23 @@
+\contentsline {chapter}{Wst\k ep}{9}{chapter*.1}
+\contentsline {chapter}{\ 1\relax .\kern .5em Liczby pierwsze}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1\relax .\kern .5em }Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}{11}{section.1.1}
+\contentsline {section}{\numberline {1.2\relax .\kern .5em }Sito Eratostenesa i sito Atkina}{13}{section.1.2}
+\contentsline {section}{\numberline {1.3\relax .\kern .5em }Spirala Ulama}{15}{section.1.3}
+\contentsline {section}{\numberline {1.4\relax .\kern .5em }Twierdzenie Wilsona i ma\IeC {\l }e twierdzenie Fermata}{16}{section.1.4}
+\contentsline {section}{\numberline {1.5\relax .\kern .5em }W\IeC {\l }asno\'sci liczb pierwszych}{18}{section.1.5}
+\contentsline {section}{\numberline {1.6\relax .\kern .5em }Funkcja Eulera i "porz\k adek mno\.z\k acy"}{20}{section.1.6}
+\contentsline {chapter}{\ 2\relax .\kern .5em Testy pierwszo\'sci liczb}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1\relax .\kern .5em }Testy deterministyczne}{23}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1\relax .\kern .5em }Metoda naiwna}{23}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2\relax .\kern .5em }Test pierwszo\'sci AKS}{25}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2\relax .\kern .5em }Testy probabilistyczne}{29}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1\relax .\kern .5em }Test pierwszo\'sci Fermata}{29}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2\relax .\kern .5em }Test pierwszo\'sci Lehmana}{33}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3\relax .\kern .5em }Test pierwszo\'sci Solovaya-Strassena}{34}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4\relax .\kern .5em }Test pierwszo\'sci Millera-Rabina}{36}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3\relax .\kern .5em }Chi\'nski test pierwszo\'sci}{39}{section.2.3}
+\contentsline {section}{\numberline {2.4\relax .\kern .5em }Test pierwszo\'sci APR}{39}{section.2.4}
+\contentsline {section}{\numberline {2.5\relax .\kern .5em }Test pierwszo\'sci ECPP}{39}{section.2.5}
+\contentsline {section}{\numberline {2.6\relax .\kern .5em }Test Lucasa-Lehmera}{39}{section.2.6}
+\contentsline {chapter}{\ 3\relax .\kern .5em Zastosowania w kryptografii}{41}{chapter.3}
+\contentsline {chapter}{Bibliografia}{43}{chapter*.2}
