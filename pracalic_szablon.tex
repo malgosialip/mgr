@@ -545,14 +545,13 @@ znalezione w 2011 roku \cite{lpb}.
 \end{definicja}
 
 Najwiêksz¹ znan¹ obecnie liczb¹ pierwsz¹ Sophie Germain jest 
-$$\num{18543637900515} \cdot 2^{\num{666667}}-1,$$ a jej zapis dziesiêtny wymaga 200701 cyfr. Zosta³a ona odkryta w 2012 przez Philipa Bliedunga.
+$$\num{18543637900515} \cdot 2^{\num{666667}}-1,$$ a jej zapis dziesiêtny wymaga $\num{200701}$ cyfr. Zosta³a ona odkryta w 2012 roku przez Philipa Bliedunga.
 
 \begin{definicja}
 \textit{Liczbami Mersenne'a} s¹ liczby postaci $M_{n}=2^{n}-1$, $n \geq 1$. Je¿eli liczba Mersenne'a jest pierwsza to nazywa siê \textit{liczb¹ pierwsz¹ Mersenne'a}.
 \end{definicja}
 
-Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2017 roku znanych ich 49. Co wiêcej, dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w Tabeli \ref{toptengreatestprimenumbers}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
-
+Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych ich 50. Co wiêcej, dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w Tabeli \ref{toptengreatestprimenumbers}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
 
 \begin{table}[H] 
 \begin{center}
@@ -560,28 +559,28 @@ Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 20
 \hline
 Nr & Liczba pierwsza &  Liczba cyfr & Data odkrycia & Odkrywcy \\ [0.2ex] 
 \hline \hline
-1 & $2^{\num{74 207 281}}-1$ & 22 338 618 & 2016-01-07 & Cooper, GIMPS\\
+1 & $2^{\num{77 232 917}}-1$ & 23 249 425 & 2018-01-03 & J. Pace, GIMPS\\
 \hline
-2 & $2^{\num{57 885 161}}-1$ & 17 425 170 & 2013-01-25 & Cooper, GIMPS\\
+2 & $2^{\num{74 207 281}}-1$ & 22 338 618 & 2016-01-07 & Cooper, GIMPS\\
 \hline
-3 & $2^{\num{43 112 609}}-1$ & 12 978 189 & 2008-08-23 & Edson Smith, GIMPS\\
+3 & $2^{\num{57 885 161}}-1$ & 17 425 170 & 2013-01-25 & Cooper, GIMPS\\
 \hline
-4 & $2^{\num{42 643 801}}-1$ & 12 837 064 & 2009-06-04 & Strindmo, GIMPS\\
+4 & $2^{\num{43 112 609}}-1$ & 12 978 189 & 2008-08-23 & Edson Smith, GIMPS\\
 \hline
-5 & $2^{\num{37 156 667}}-1$ & 11 185 272 & 2008-09-06 & H. Elvenich, GIMPS\\
+5 & $2^{\num{42 643 801}}-1$ & 12 837 064 & 2009-06-04 & Strindmo, GIMPS\\
 \hline
-6 & $2^{\num{32 582 657}}-1$ & 9 808 358 & 2006-09-04 & Boone, Cooper, GIMPS\\
+6 & $2^{\num{37 156 667}}-1$ & 11 185 272 & 2008-09-06 & H. Elvenich, GIMPS\\
 \hline
-7 & $2^{\num{30 402 457}}-1$ & 9 152 052 & 2005-12-15 & Boone, Cooper, GIMPS\\
+7 & $2^{\num{32 582 657}}-1$ & 9 808 358 & 2006-09-04 & Boone, Cooper, GIMPS\\
 \hline
-8 & $2^{\num{25 964 951}}-1$ & 7 816 230 & 2005-02-18 & Nowak, GIMPS\\
+8 & $2^{\num{30 402 457}}-1$ & 9 152 052 & 2005-12-15 & Boone, Cooper, GIMPS\\
 \hline
-9 & $2^{\num{24 036 583}}-1$ & 7 235 733 & 2004-05-15 & Findley, GIMPS\\
+9 & $2^{\num{25 964 951}}-1$ & 7 816 230 & 2005-02-18 & Nowak, GIMPS\\
 \hline
-10 & $2^{\num{20 996 011}}-1$ & 6 320 430 & 2003-11-17 & Michael Shafer, GIMPS\\
+10 & $2^{\num{24 036 583}}-1$ & 7 235 733 & 2004-05-15 & Findley, GIMPS\\
 \hline
 \end{tabular}
-\caption{Dziesiêæ najwiêkszych znanych liczb pierwszych na 2017 rok \cite{gimps}.}
+\caption{Dziesiêæ najwiêkszych znanych liczb pierwszych na 2018 rok \cite{gimps}.}
 \label{toptengreatestprimenumbers}
 \end{center}
 \end{table}
@@ -697,7 +696,7 @@ Warto zauwa¿yæ, ¿e jeœli liczba $n$ oka¿e siê byæ z³o¿ona, to jednoczeœnie wyzna
 Algorytm metody naiwnej w wersji udoskonalonej dzia³a nastêpuj¹co:
 \begin{enumerate}
 \item Pobierz liczbê $n$.
-\item Wyznacz zbiór $p$ wszystkich liczb pierwszych mniejszych lub równych $n$.
+\item Wyznacz zbiór $p$ wszystkich liczb pierwszych mniejszych lub równych $\sqrt{n}$.
 \item Dziel liczbê $n$ przez kolejne liczby ze zbioru $p$.
 \item Jeœli $n$ dzieli siê przez przynajmniej jedn¹ z liczb ze zbioru $p$ bez reszty, wtedy $n$ jest z³o¿ona.
 \item Jeœli wœród liczb $p$ nie ma dzielnika liczby $n$, wtedy $n$ jest z³o¿ona.
