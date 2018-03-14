@@ -248,23 +248,35 @@ Sk³adam serdecznie podziêkowania
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Liczby pierwsze}
+Poni¿szy rozdzia³ jest zbiorem wszystkich najwa¿niejszych pojêæ i twierdzeñ zwi¹zanych z liczbami pierwszymi oraz ich w³asnoœciami.
+
 \section{Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}
+Jednym z najwa¿niejszymi twierdzeñ dotycz¹cych liczb pierwszych jest Zasadnicze twierdzenie arytmetyki. Jego wprowadzenie i~udowodnienie wymaga zdefiniowania kilku podstawowych pojêæ z zakresu teorii liczb, które zostan¹ omówione w tym podrozdziale.
+ 
 \begin{definicja}
 \textit{Liczb¹ pierwsz¹} nazywa siê liczbê naturaln¹ wiêksz¹ od 1, która ma dok³adnie dwa dzielniki: jedynkê i sam¹ siebie. Zbiór wszystkich liczb pierwszych oznacza siê liter¹ $\mathbb{P}$.
 \end{definicja}
 
 Liczb¹ z³o¿on¹ jest wiêc liczba, która ma wiêcej ni¿ dwa dzielniki. Warto zauwa¿yæ, ¿e 1 nie jest liczb¹ ani pierwsz¹, ani z³o¿on¹.
 
+\begin{definicja} \cite[\mbox{s.} 3]{marzant}
+\textit{Liczba ca³kowita $b$ jest podzielna przez liczbê ca³kowit¹ $a$}, jeœli istnieje taka liczba ca³kowita $e$, ¿e zachodzi $b = ae$. Wtedy liczba $a$ jest dzielnikiem liczby $b$, z kolei o liczbie $b$ mówi siê, ¿e jest wielokrotnoœci¹ $a$.
+Jeœli liczba $b$ jest podzielna przez $a$ ($a$ dzieli $b$), to u¿ywa siê oznaczenia $a \mid b$, natomiast w przeciwnym przypadku stosuje siê oznaczenie $a \nmid b$.
+\end{definicja}
+
+\begin{definicja}
+\textit{Najmniejsza wspólna wielokrotnoœæ} dla zadanych liczb ca³kowitych to najmniejsza liczba naturalna, któr¹ dzieli siê bez reszty przez ka¿d¹ z tych liczb. Zapisuje siê to jako $NWW(a,b)=c$, np. $NWW(2, 15) = 30$.
+\end{definicja}
+
+\begin{definicja}
+\textit{Najwiêkszy wspólny dzielnik} dla zadanych dwóch lub wiêcej liczb ca³kowitych to najwiêksza liczba naturalna, która dzieli ka¿d¹ z tych liczb. Zapisuje siê to jako $NWD(a,b)=c$, np. $NWD(18, 15) = 3$.
+\end{definicja}
+
 \begin{definicja}
 \textit{Liczby wzglêdnie pierwsze} to liczby ca³kowite, których najwiêkszym wspólnym dzielnikiem jest liczba $1$. Jeœli dwie liczby $a$ i $b$ s¹ wzglêdnie pierwsze to zapisuje siê to jako $NWD(a,b)=1$ lub $(a,b)=1$.
 \end{definicja}
 
-\begin{definicja}
-\textit{Liczba ca³kowita $b$ jest podzielna przez liczbê ca³kowit¹ $a$}, jeœli istnieje taka liczba ca³kowita $e$, ¿e zachodzi $b = ae$. Wtedy liczba $a$ jest dzielnikiem liczby $b$, z kolei o liczbie $b$ mówi siê, ¿e jest wielokrotnoœci¹ $a$.
-Jeœli liczba $b$ jest podzielna przez $a$ ($a$ dzieli $b$), to u¿ywa siê oznaczenia $a \mid b$, natomiast w przeciwnym przypadku stosuje siê oznaczenie $a \nmid b$ \cite[\mbox{s.} 3]{marzant}.
-\end{definicja}
-
-\begin{lemat}(Euklides)
+\begin{lemat}(Euklides) \cite[\mbox{s.} 10]{zakrzew}
 \label{Euklideslemat}
 Jeœli liczba pierwsza $p$ dzieli iloczyn $ab$, to dzieli przynajmniej jeden z tych czynników. Inaczej, jeœli $p \in \mathbb{P}$ oraz $p \mid ab$, to $p \mid a$ lub $p \mid b$.
 \end{lemat}
@@ -273,7 +285,7 @@ Jeœli liczba pierwsza $p$ dzieli iloczyn $ab$, to dzieli przynajmniej jeden z ty
 Przyjmijmy, ¿e $p \nmid a$, czyli $NWD(a,p) = 1$, gdy¿ $p \in \mathbb{P}$. Wtedy $p \mid b$.
 \end{dowod}
 
-\begin{lemat}
+\begin{lemat} \cite[\mbox{s.} 9]{marzant}
 \label{dzieleniek}
 Je¿eli $p \in \mathbb{P}$ i $p \mid a_{1} \cdot ... \cdot a_{n}$, to istnieje $k$ ($1 \leq k \leq n$), takie ¿e $p \mid a_{k}$.
 \end{lemat}
@@ -283,7 +295,7 @@ Dowód wynika wprost z dowodu Lematu \ref{Euklideslemat}. Iloczyn $a_{1} \cdot ..
 Zasadê t¹ mo¿na uogólniæ dla dowolnego $k$ ($1 \leq k \leq n$). Wtedy $p \mid a_{k} \cdot \prod_{i \neq k}^{n} a_{i}$, a wiêc $p \mid \prod_{i \neq k}^{n} a_{i}$ lub $p \mid a_{k}$.
 \end{dowod}
 
-\begin{lemat}
+\begin{lemat} \cite[\mbox{s.} 9]{marzant}
 \label{dzieleniekpierwsza}
 Jeœli liczby $p, q_{1},...,q_{n} \in \mathbb{P}$ oraz $p \mid q_{1} \cdot ... \cdot q_{n}$, to $p = q_{k}$ dla pewnego $k$, gdzie $1 \leqslant k \leqslant n$.
 \end{lemat}
@@ -292,9 +304,9 @@ Jeœli liczby $p, q_{1},...,q_{n} \in \mathbb{P}$ oraz $p \mid q_{1} \cdot ... \c
 Z Lematu \ref{dzieleniek} wiadomo, ¿e istnieje takie $k$, ¿e $p \mid q_{k}$, ale $q_{k} \in \mathbb{P}$ oraz $p > 1$, sk¹d wynika, ¿e $p = q_{k}$.
 \end{dowod}
 
-Trzy powy¿sze lematy to lematy pomocnicze, które pos³u¿¹ do udowodnienia twierdzenia Eulera, mówi¹cego o tym, ¿e liczby pierwsze s¹ czynnikami, na które mo¿na roz³o¿yæ wszystkie z³o¿one liczby naturalne. 
+Trzy powy¿sze lematy to lematy pomocnicze, które pos³u¿¹ do udowodnienia zasadniczego twierdzenia arytmetyki, mówi¹cego o tym, ¿e liczby pierwsze s¹ czynnikami, na które mo¿na roz³o¿yæ wszystkie z³o¿one liczby naturalne. 
 
-\begin{twierdzenie}(Zasadnicze twierdzenie arytmetyki)
+\begin{twierdzenie}(Zasadnicze twierdzenie arytmetyki) \cite[\mbox{s.} 10]{marzant}
 \label{zta}
 Ka¿d¹ liczbê naturaln¹ wiêksz¹ od 1, która nie jest liczb¹ pierwsz¹, mo¿na jednoznacznie przedstawiæ w postaci iloczynu liczb pierwszych.
 \end{twierdzenie}
@@ -317,34 +329,103 @@ poniewa¿ $n_{1} > n_{2} > ... > 1$ jest malej¹cym ci¹giem liczb naturalnych, czy
 Za³ó¿my przeciwnie, ¿e rozk³ad nie jest jednoznaczny, czyli $n = p_{1} \cdot ... \cdot p_{r} = q_{1} \cdot ... \cdot q_{s}$, $(r \leqslant s)$, gdzie $p_{i}$ i $q_{j}$ dla $i=1,2,...,r$ i~ $j=1,2,...,s$ s¹ pierwsze i uporz¹dkowane niemalej¹co.
 Poniewa¿ $p_{1} \mid q_{1}...q_{s}$, zatem z Lematu \ref{dzieleniekpierwsza} wynika, ¿e $p_{1}=q_{k}$ dla pewnego $k$, gdzie $1 \leqslant k \leqslant s$, sk¹d wynika, ¿e $p_{1} \geqslant q_{1}$. Analogicznie $q_{1} \mid p_{1}...p_{r}$, wiêc  $q_{1} \geqslant p_{1}$, czyli $p_{1} = q_{1}$. Dziel¹c pocz¹tkow¹ równoœæ przez $p_{1} = q_{1}$ i powtarzaj¹c to samo rozumowanie dla kolejnych czynników obu rozk³adów, otrzymujemy
 $$1=q_{r+l} \cdot ... \cdot q_{s},$$
-jeœli $r < s$. Jest to sprzeczne dla $q_{r+l},...,q_{s} \in \mathbb{P}$, a wiêc $r = s$ oraz $p_{i} = q_{i}$ dla ka¿dego $i=1,2,...,r$, czyli rozk³ad jest jednoznaczny \cite[\mbox{s.} 10]{marzant}. 
+jeœli $r < s$. Jest to sprzeczne dla $q_{r+l},...,q_{s} \in \mathbb{P}$, a wiêc $r = s$ oraz $p_{i} = q_{i}$ dla ka¿dego $i=1,2,...,r$, czyli rozk³ad jest jednoznaczny. 
 \end{dowod}
 
 Z Zasadniczego Twierdzenia Arytmetyki \ref{zta} wynika bezpoœrednio poni¿szy wniosek.
 
-\begin{wniosek}
+\begin{wniosek} \cite[\mbox{s.} 10]{marzant}
 Ka¿da liczba naturalna $n > l$ mo¿e byæ jednoznacznie zapisana w postaci kanonicznej 
 $$n = p_{1}^{\alpha_{1}} \cdot p_{2}^{\alpha_{2}} \cdot ... \cdot p_{r}^{\alpha_{r}},$$ 
 gdzie $p_{i} \in \mathbb{P}$, $\alpha_{i} \in \mathbb{N}$ dla ka¿dego $i=1,2,...,r$ oraz $p_{1} < p_{2} < ... < p_{r}$.
 \end{wniosek}
 
-\begin{twierdzenie}(Euklides)
+Do obliczania $NWW$ i $NWD$ stosuje siê najczêœciej rozk³ad badanych liczb na iloczyn liczb pierwszych. 
+
+\begin{przyklad} Obliczyæ $NWW$ i $NWD$ liczb $123$ i $567$.\\
+Rozk³ad danych liczb na czynniki pierwsze:
+\begin{align*}
+123 &= 3 \cdot 41,\\
+567 &= 3 \cdot 3 \cdot 3 \cdot 3 \cdot 7.
+\end{align*}
+Aby obliczyæ $NWW(a,b)$ nale¿y pomno¿yæ wszystkie czynniki pierwsze liczby $a$ i~czynniki pierwsze liczby $b$, które siê nie powtarzaj¹ przy rozk³adzie $a$.
+$$NWW(123,567) = 3 \cdot 41 \cdot 3 \cdot 3 \cdot 3 \cdot 7 = 3^{4} \cdot 7 \cdot 41 = 23247.$$
+$NWD(a,b)$ to iloczyn czynników pierwszych, które powtarzaj¹ siê w rozk³adzie liczby $a$ i~$b$.
+$$NWS(123,567) = 3.$$
+\end{przyklad}
+
+\begin{wniosek} \cite[\mbox{s.} 8]{zakrzew}
+$$NWD(a,b) \cdot NWW(a,b) = ab.$$
+\end{wniosek}
+
+\begin{dowod}
+Niech 
+\begin{align*}
+a &= p_{1}^{\alpha_{1}} \cdot p_{2}^{\alpha_{2}} \cdot ... \cdot p_{n}^{\alpha_{n}},\\
+b &= p_{1}^{\beta_{1}} \cdot p_{2}^{\beta_{2}} \cdot ... \cdot p_{n}^{\beta_{n}},
+\end{align*}
+bêd¹ rozk³adami liczb $a$ i $b$ na czynniki pierwsze. Wówczas
+\begin{align*}
+NWD(a,b) &= p_{1}^{min (\alpha_{1}, \beta_{1})} \cdot p_{2}^{min (\alpha_{2}, \beta_{2})} \cdot ... \cdot p_{n}^{min (\alpha_{n}, \beta_{n})},\\
+NWW(a,b) &= p_{1}^{max (\alpha_{1}, \beta_{1})} \cdot p_{2}^{max (\alpha_{2}, \beta_{2})} \cdot ... \cdot p_{n}^{max (\alpha_{n}, \beta_{n})}.
+\end{align*}
+Po pomno¿eniu $NWD(a,b) \cdot NWW(a,b)$ otrzymano
+\begin{align*}
+&p_{1}^{min (\alpha_{1}, \beta_{1}) + max (\alpha_{1}, \beta_{1})} \cdot p_{2}^{min (\alpha_{2}, \beta_{2}) + max (\alpha_{2}, \beta_{2})} \cdot ... \cdot p_{n}^{min (\alpha_{n}, \beta_{n}) + max (\alpha_{n}, \beta_{n})} =\\
+&= p_{1}^{\alpha_{1}+\beta_{1}} \cdot p_{2}^{\alpha_{2}+\beta_{2}} \cdot ... \cdot p_{n}^{\alpha_{n}+ \beta_{n}} =\\
+&= p_{1}^{\alpha_{1}} \cdot p_{2}^{\alpha_{2}} \cdot ... \cdot p_{n}^{\alpha_{n}} \cdot p_{1}^{\beta_{1}} \cdot  p_{2}^{\beta_{2}} \cdot ... \cdot p_{n}^{\beta_{n}} = a \cdot b.
+\end{align*}
+\end{dowod}
+
+
+\section{Twierdzenie i algorytm Euklidesa}
+Euklides, ¿yj¹cy oko³o 300 roku p.n.e., to grecki matematyk pochodz¹cy z Aten, uczeñ Akademii Platoñskiej i wyk³adowca w s³ynnej Szkole Aleksandryjskiej. Zaliczany jest do grona najwiêkszych matematyków w historii, znany g³ównie jako twórca podstaw geometrii klasycznej. Jego najwiêkszym dzie³em s¹ \textit{Elementy}, które stanowi¹ jedn¹ z pierwszych prac teoretycznych z matematyki. Podrêcznik ten zawiera miêdzy innymi dwa klasyczne i bardzo wa¿ne pojêcia z zakresu teorii liczb - twierdzenie Euklidesa o liczbach pierwszych i algorytm pozwalaj¹cy znaleŸæ najwiêkszy wspólny dzielnik dwóch liczb naturalnych.  
+ 
+\begin{twierdzenie}(Euklides)  \cite[\mbox{s.} 5]{zakrzew}
 \label{euklides}
 Istnieje nieskoñczenie wiele liczb pierwszych.
 \end{twierdzenie}
 
-Powsta³o kilkanaœcie dowodów twierdzenia \ref{euklides}. Poni¿ej przedstawiono pierwszy z nich, który zosta³ sformu³owany w IV wieku p.n.e. przez Euklidesa w dziele pod tytu³em \textit{Elementy}. 
+Powsta³o kilkanaœcie dowodów twierdzenia \ref{euklides}. Poni¿ej przedstawiono pierwszy z nich, który zosta³ sformu³owany w IV wieku p.n.e. przez Euklidesa w \textit{Elementach}. 
 
 \begin{dowod}
 Za³ó¿my, ¿e istnieje skoñczony zbiór liczb pierwszych ponumerowanych kolejno $p_{1}, p_{2}, ..., p_{k}$. Rozwa¿my liczbê
 $$n=p_{1} p_{2} ...p_{k}+1.$$
-Z Twierdzenia \ref{zta} wynika, ¿e $n$ mo¿e byæ liczb¹ pierwsz¹ ró¿n¹ od wszystkich $p_{i}$ lub ma rozk³ad na czynniki pierwsze. Za³ó¿my, ¿e jednym z tych czynników jest $p$. Liczba $n$ przy dzieleniu przez ka¿de z $p_{i}$ daje resztê 1, wiêc $p$ jest ró¿ne od wszystkich $p_{i}$. Z tego wynika, ¿e albo $p$ jest pierwsze lub samo $n$ jest kolejn¹ liczb¹ pierwsz¹, wiêksz¹ od ka¿dego $p_{i}$, co jest sprzeczne z za³o¿eniem \cite[\mbox{s.} 5]{zakrzew}.
+Z Twierdzenia \ref{zta} wynika, ¿e $n$ mo¿e byæ liczb¹ pierwsz¹ ró¿n¹ od wszystkich $p_{i}$ lub ma rozk³ad na czynniki pierwsze. Za³ó¿my, ¿e jednym z tych czynników jest $p$. Liczba $n$ przy dzieleniu przez ka¿de z $p_{i}$ daje resztê 1, wiêc $p$ jest ró¿ne od wszystkich $p_{i}$. Z tego wynika, ¿e albo $p$ jest pierwsze lub samo $n$ jest kolejn¹ liczb¹ pierwsz¹, wiêksz¹ od ka¿dego $p_{i}$, co jest sprzeczne z za³o¿eniem.
 \end{dowod}
 
-\section{Sito Eratostenesa i sito Atkina}
 \begin{definicja}
+\textit{Algorytm Euklidesa} to szybki sposób wyznaczania najwiêkszego wspólnego dzielnika dwóch liczb naturalnych.
+\end{definicja}
+
+Do zrozumienia dzia³ania powy¿szego algorytmu nale¿y wprowadziæ pojêcie reszty z dzielenia.
+
+\begin{definicja} \cite[\mbox{s.} 8]{zakrzew}
+Dla dowolnej liczby ca³kowitej $n$ i dowolnej liczby naturalnej $k$ istnieje tylko jedna para liczb ca³kowitych $q$ i $r$ taka, ¿e 
+$$n=qk+r, \textnormal{ gdzie } 0 \leq r \leq k-1.$$
+Liczbê $r$ nazywa siê wtedy \textit{reszt¹ z dzielenia}.
+\end{definicja}
+
+Zasadê dzia³ania algorytmu Euklidesa najlepiej wyjaœniæ przy pomocy przyk³adu.
+
+\begin{przyklad} Za pomoc¹ algorytmu Euklidesa wyznaczyæ $NWD(1628, 374)$.\\
+Dzia³anie algorytmu przebiega nastêpuj¹co:
+\begin{align*}
+1628 &= 4 \cdot 374 + 132\\
+374 &= 2 \cdot 132 + 110\\
+132 &= 1 \cdot 110 + 22\\
+110 &= 5 \cdot 22 + 0.
+\end{align*}
+Ostatnia niezerowa reszta jest szukanym najwiêkszym wspólnym dzielnikiem badanych liczb. W przypadku powy¿szego przyk³adu $NWD(1628, 374)=22$.
+\end{przyklad}
+
+
+\section{Sito Eratostenesa i sito Atkina}
+Do znalezienia wszystkich liczb pierwszych mniejszych od jakiejœ liczby wystarczy \textit{odsiaæ} liczby z³o¿one i jedynkê. Pierwszy s³u¿¹cy do tego algorytm zosta³ przedstawiony przez Eratostenesa z Cyreny (III-II w. p.n.e.), a póŸniej ulepszony przez Arthura Atkina i D.J. Bernsteina.
+
+\begin{definicja} \cite[\mbox{s.} 48-49]{karbowski}
 \label{sito}
-Najprostszym i jednoczeœnie najmniej wydajnym algorytmem wyszukiwania kolejnych liczb pierwszych z przedzia³u $[2,n]$ jest tak zwane \textit{Sito Eratostenesa}, które zosta³o opracowane przez greckiego matematyka Eratostenesa z Cyreny (III-II w. p.n.e.). Algorytm polega na usuwaniu liczb z³o¿onych z zadanego zbioru liczb naturalnych w taki sposób, ¿e ze zbioru wybieramy najmniejsz¹ liczbê i usuwamy wszystkie jej wielokrotnoœci, nastêpnie wybieramy najmniejsz¹ z pozosta³ych i postêpujemy tak jak z pierwsz¹. Na koniec procesu w zbiorze pozostan¹ tylko liczby pierwsze. 
+Najprostszym i jednoczeœnie najmniej wydajnym algorytmem wyszukiwania kolejnych liczb pierwszych z przedzia³u $[2,n]$ jest tak zwane \textit{Sito Eratostenesa}. Algorytm polega na usuwaniu liczb z³o¿onych z zadanego zbioru liczb naturalnych w taki sposób, ¿e ze zbioru wybieramy najmniejsz¹ liczbê i usuwamy wszystkie jej wielokrotnoœci, nastêpnie wybieramy najmniejsz¹ z pozosta³ych i postêpujemy tak jak z pierwsz¹. Na koniec procesu w zbiorze pozostan¹ tylko liczby pierwsze. 
 \end{definicja}
 
 \begin{przyklad}
@@ -361,11 +442,7 @@ Po trzecim kroku w zbiorze $P$ pozosta³y jedynie liczby pierwsze.
 \end{enumerate}
 \end{przyklad}
 
-Sito Eratostenesa mo¿na teoretycznie zapisaæ w postaci funkcji, na przyk³ad w programie Matlab. Poni¿ej przedstawiono kod programu oraz tabelê z wynikami dla ró¿nych wielkoœci przedzia³ów.
-
-\begin{center}
-\lstinputlisting[frame=single]{sitoEratostenesa.m}
-\end{center}
+Sito Eratostenesa mo¿na teoretycznie zapisaæ w postaci funkcji, na przyk³ad w programie Matlab (skrypt \ref{sitoEratostenesa}). Poni¿ej przedstawiono tabelê z wynikami przedzia³ów o ró¿nej d³ugoœci.
 
 \begin{center}
 \begin{table}[H] 
@@ -393,11 +470,10 @@ Lp. & Koniec przedzia³u $\{2,n\}$ &  Czas dzia³ania programu $[s]$ & Iloœæ liczb
 \end{table}
 \end{center}
 
-Niestety w przypadku wiêkszego zakresu liczb czas oczekiwania na wynik jest bardzo d³ugi. Na przyk³ad przeszukiwanie zbioru liczb naturalnych $[2, \num{1 000 000 000}]$ mo¿e trwaæ ju¿ kilka godzin. Co wiêcej, najwiêksza znana obecnie liczba pierwsza jest o wiele wiêksza od liczb, które mo¿na znaleŸæ za pomoc¹ tego algorytmu nawet na nowoczesnych komputerach o du¿ej wydajnoœci \cite[\mbox{s.} 48-49]{karbowski}.
+Niestety w przypadku wiêkszego zakresu liczb czas oczekiwania na wynik jest bardzo d³ugi. Na przyk³ad przeszukiwanie zbioru liczb naturalnych $[2, \num{1 000 000 000}]$ mo¿e trwaæ ju¿ kilka godzin. Co wiêcej, najwiêksza znana obecnie liczba pierwsza jest o wiele wiêksza od liczb, które mo¿na znaleŸæ za pomoc¹ tego algorytmu nawet na nowoczesnych komputerach o du¿ej wydajnoœci.
 
-
-\begin{definicja}
-\textit{Sito Atkina} lub \textit{sito Atkina-Bernsteina} to algorytm autorstwa dwóch matematyków - Arthura Atkina i D.J. Bernsteina, który s³u¿y do wyszukiwania liczb pierwszych w du¿ych przedzia³ach. Metoda ta dzia³a podobnie do sita Eratostenesa, jednak dziêki wykorzystaniu pewnych zale¿noœci jest efektywniejsza i wymaga znacznie mniej pamiêci. Na przyk³ad algorytm ca³kowicie pomija wszystkie liczby podzielne przez 2, 3 lub 5, liczby z parzyst¹ reszt¹ z dzielenia przez 60, liczby, które maj¹ resztê z dzielenia przez 60 podzieln¹ przez 3 oraz liczby z reszt¹ z dzielenia przez 60 podzieln¹ przez 5 \cite{sitoAtkina}.
+\begin{definicja} \cite{sitoAtkina}
+\textit{Sito Atkina} lub \textit{sito Atkina-Bernsteina} to algorytm autorstwa dwóch matematyków - Arthura Atkina i D.J. Bernsteina, który s³u¿y do wyszukiwania liczb pierwszych w du¿ych przedzia³ach. Metoda ta dzia³a podobnie do sita Eratostenesa, jednak dziêki wykorzystaniu pewnych zale¿noœci jest efektywniejsza i~wymaga znacznie mniej pamiêci. Na przyk³ad algorytm ca³kowicie pomija wszystkie liczby podzielne przez 2, 3 lub 5, liczby z parzyst¹ reszt¹ z dzielenia przez 60, liczby, które maj¹ resztê z dzielenia przez 60 podzieln¹ przez 3 oraz liczby z reszt¹ z dzielenia przez 60 podzieln¹ przez 5.
 
 %Wszystkie liczby n z reszt¹ z dzielenia przez 60 wynosz¹c¹ 1, 13, 17, 29, 37, 41, 49 lub 53 maj¹ resztê z dzielenia przez 4 równ¹ 1. Te liczby s¹ pierwsze wtedy i tylko wtedy, gdy liczba rozwi¹zañ wielomianu 4x2 + y2 = n jest nieparzysta i niepodzielna przez kwadraty liczb ca³kowitych.
 
@@ -409,9 +485,10 @@ Niestety w przypadku wiêkszego zakresu liczb czas oczekiwania na wynik jest bard
 \end{definicja}
 
 \section{Spirala Ulama}
-\begin{definicja}
-\textit{Spirala Ulama} lub \textit{spirala liczb pierwszych} to graficzna metoda przedstawiania rozk³adu liczb pierwszych, która zosta³a przedstawiona w 1963 roku przez polskiego matematyka Stanis³awa Ulama. 
-Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku spiralnie wypisuje siê kolejne liczby naturalne. Okazuje siê, ¿e na pewnych przek¹tnych liczby pierwsze pojawiaj¹ siê o wiele czêœciej ni¿ na innych. Co wiêcej, zjawisko nie zale¿y od wyboru pierwszej liczby w spirali. Na Rysunku \ref{ulam} przedstawiono spiralê Ulama o rozmiarze $200$x$200$.
+Stanis³aw Marcin Ulam (ur. 13 kwietnia 1909 we Lwowie, zm. 13 maja 1984 w~Santa Fe) to polski matematyk i~przedstawiciel lwowskiej szko³y matematycznej. W swoim dorobku ma wiele dokonañ w zakresie matematyki i~fizyki matematycznej oraz metod numerycznych. W 1963 roku zaprezentowa³ przedstawienie rozk³adu liczb pierwszych w formie graficznej, zwanej dziœ spiral¹ Ulama.
+
+\begin{definicja} \cite{spiralaulama}
+\textit{Spirala Ulama} lub \textit{spirala liczb pierwszych} to graficzna metoda przedstawiania rozk³adu liczb pierwszych. Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku spiralnie wypisuje siê kolejne liczby naturalne. Okazuje siê, ¿e na pewnych przek¹tnych liczby pierwsze pojawiaj¹ siê o wiele czêœciej ni¿ na innych. Co wiêcej, zjawisko nie zale¿y od wyboru pierwszej liczby w spirali. Na Rysunku \ref{ulam} przedstawiono spiralê Ulama o rozmiarze $200$x$200$.
 \begin{figure}[H]
 \label{ulam}
 \begin{center}
@@ -422,10 +499,12 @@ Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku 
 \end{definicja}
 
 \section{Twierdzenie Wilsona i ma³e twierdzenie Fermata}
-\begin{definicja}
+Podrozdzia³ ten jest poœwiêcony dwóm klasycznym twierdzeniom z zakresu teorii liczb - twierdzeniu Wilsona i ma³emu twierdzeniu Fermata. Maj¹ one szerokie zastosowanie w testach pierwszoœci liczb. Do ich omówienia potrzebne bêd¹ pojêcia takie jak kongruencja, zbiór reszt modulo i odwrotnoœæ elementu, które zosta³y zdefiniowane poni¿ej.  
+
+\begin{definicja}  \cite[\mbox{s.} 13]{zakrzew}
 Niech $n$ bêdzie dowoln¹ liczb¹ naturaln¹. Liczby ca³kowite $a$ i $b$ \textit{przystaj¹ modulo} $n$, je¿eli ich ró¿nica $a-b$ jest podzielna przez $n$. Symbolicznie zapisuje siê to jako
 $$a \equiv b \  mod \  n.$$
-Zapis ten nazywany jest kongruencj¹ \cite[\mbox{s.} 13]{zakrzew}.
+Zapis ten nazywany jest kongruencj¹.
 \end{definicja}
 
 \begin{definicja}
@@ -436,17 +515,19 @@ tworzy \textit{zbiór reszt modulo m}.
 
 %notatki TLIEK
 
-\begin{definicja}
+\begin{definicja} \cite[\mbox{s.} 15]{zakrzew}
 \textit{Odwrotnoœci¹ elementu} $a$ \textit{modulo} $n$ jest taki element, oznaczany przez $a^{-1}$, ¿e
 $$aa^{-1} \equiv 1 \ mod \ n.$$
 Liczba naturalna $a$ jest odwracalna modulo $n$ wtedy i tylko wtedy, gdy $a$ i $n$ s¹ wzglêdnie pierwsze.
 \end{definicja}
 
-\begin{twierdzenie}(twierdzenie Wilsona, 1770 r.)
+\begin{twierdzenie}(twierdzenie Wilsona, 1770 r.) \cite[\mbox{s.} 18]{zakrzew}
 \label{wilson}
 Liczba naturalna $p>1$ jest liczb¹ pierwsz¹ wtedy i tylko wtedy, gdy
 $$(p-1)!+1 \equiv 0 \ mod \ p.$$
 \end{twierdzenie}
+
+Za odkrywcê powy¿szego twierdzenia uznaje siê Johna Wilsona, zosta³o jednak opublikowane przez Edwarda Waringa. Jak siê okazuje, wczeœniej mówi³ o nim ju¿ al-Hajsam (X/XI w.) i Leibniz (XVII w.). Pierwszy dowód twierdzenia Wilsona pochodzi od Lagrange'a i zosta³ przedstawiony w 1777 roku.
 
 \begin{dowod}
 Na pocz¹tek nale¿y pokazaæ, ¿e jeœli $p$ jest liczb¹ pierwsz¹, to zachodzi powy¿sza kongruencja. Dla $p=2$ implikacja jest spe³niona, wiêc ograniczono siê do liczb pierwszych nieparzystych.
@@ -472,11 +553,79 @@ $$(n-1)!+1 \not\equiv 0 \ mod \ n,$$
 co koñczy dowód.
 \end{dowod}
 
-\begin{twierdzenie}(ma³e twierdzenie Fermata, 1640 r.)
+\begin{definicja} \cite[\mbox{s.} 31]{zakrzew}
+\textit{Funkcja $\varphi$ (Eulera)} lub tocjent to funkcja, która ka¿dej liczbie naturalnej przypisuje liczbê liczb wzglêdnie pierwszych z ni¹ i nie wiêkszych od niej.
+\end{definicja}
+
+%Jeœli $n=p_{1}^{m_{1}} \cdot ... \cdot p_{k}^{m_{k}}$ jest rozk³adem liczby $n \in \mathbb{N}$ na %czynniki pierwsze (gdzie $p_{i} \neq p_{j}$ dla ró¿nych $i,j \in K=\{1,2,...,k\}$), to wtedy
+%$$\varphi(n)=\prod_{i \in K} \left(1-\frac{1}{p_{i}}\right).$$
+
+W³asnoœci funkcji Eulera:
+\begin{enumerate}
+\item Dla ka¿dej liczby naturalnej $n>1$ zachodzi $\varphi(n) \leq n-1.$
+\item Jeœli liczby naturalne $n$ i $m$ s¹ wzglêdnie pierwsze to $\varphi(nm) = \varphi(n)\varphi(m).$
+\item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p) = p-1.$
+\item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p^{k})=p^{k-1}(p-1)$.
+\item Jeœli $p$ i $q$ s¹ ró¿nymi liczbami pierwszymi to $\varphi(pq)=(p-1)(q-1).$
+\item Jeœli $p_{1}, p_{2},...,p_{k}$ s¹ wszystkimi czynnikami pierwszymi liczby $n$ bez powtórzeñ, to $$\varphi(n) = n \left(1-\frac{1}{p_{1}}\right)\left(1-\frac{1}{p_{2}}\right)...\left(1-\frac{1}{p_{k}}\right).$$
+\end{enumerate}
+
+Funkcja Eulera jest bardzo prosta do zaimplementowania w œrodowisku Matlab (skrypt \ref{funkcjaEulera}). Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji dla liczb o ró¿nej wielkoœci.
+
+\begin{table}[H] 
+\begin{center}
+\begin{tabular}{|r|c|c|c|}
+\hline
+Lp. & Liczba $n$ & Wartoœæ funkcji $\varphi(n)$ &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex] 
+\hline \hline
+1 & $23$ & $22$ & $0.023398$\\
+\hline
+2 & $100$ & $40$ & $0.029472$\\
+\hline
+3 & $567$ & $324$ & $0.047793$\\
+\hline
+4 & $1000$ & $400$ & $0.051363$\\
+\hline
+5 & $12345$ & $6576$ & $0.496064$\\
+\hline
+6 & $123456$ & $41088$ & $5.326313$\\
+\hline
+7 & $1234567$ & $1224720$ & $65.953887$\\
+\hline
+\end{tabular}
+\caption{Wartoœæ funkcji $\varphi(n)$ dla liczb o ró¿nej wielkoœci.}
+\end{center}
+\end{table}
+
+\begin{twierdzenie}(Eulera) \cite[\mbox{s.} 33]{marzant}
+Je¿eli $n$ i $a$ s¹ wzglêdnie pierwszymi liczbami naturalnymi, to zachodzi
+$$a^{\varphi(n)} \equiv 1 \ mod \ n.$$
+\end{twierdzenie}
+
+\begin{dowod}
+Niech uk³ad 
+$$r_{1}, r_{2}, ..., r_{\varphi(n)}$$
+bêdzie uk³adem reszt modulo $n$. Po pomno¿eniu ka¿dej z nich przez $a$ i podzieleniu przez $m$ powstaje nowy uk³ad reszt $r_{i}^{'}:$
+$$r_{i}a=q_{i}n+r_{i}^{'}, \ i=1,2,...,\varphi(n).$$
+Uk³ad mo¿na równie¿ przedstawiæ w postaci kongruencji
+\begin{equation}
+\label{twEulera1}
+r_{i}a=r_{i}^{'} \ (mod \ n), \ i=1,2,...,\varphi(n).
+\end{equation}
+Po wymno¿eniu przez siebie wszystkich $\varphi(n)$ kongruencji \ref{twEulera1} otrzymano
+$$a^{\varphi(n)}r_{1}r_{2}...r_{\varphi(n)} \equiv r_{1}^{'}r_{2}^{'}...r_{\varphi(n)}^{'} \ (mod \ n)$$
+Zarówno $r_{i}$ i $r_{i}^{'}$ dla $i=1,2,...,\varphi(n)$ s¹ wzglêdnie pierwsze z $n$, wiêc obie strony mo¿na podzieliæ przez ich identyczny iloczyn, co daje 
+$$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
+\end{dowod}
+
+
+\begin{twierdzenie}(ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
 \label{mtf}
 Jeœli $p$ jest licz¹ pierwsz¹, to dla ka¿dej liczby ca³kowitej $a$ niepodzielnej przez $p$ zachodzi
 $$a^{p-1} \equiv 1 \  mod \  p.$$
 \end{twierdzenie}
+
+Twierdzenie to zosta³o odkryte jednoczeœnie przez Fermata i Leibniza. ¯aden z nich nie opublikowa³ jednak dowodu.
 
 \begin{dowod}
 Jeœli liczba pierwsza $p$ nie dzieli $a$, to ci¹g reszt z dzielenia $a$ przez $p$ $1,2,3,...,p-1$ oraz ci¹g liczb 
@@ -585,47 +734,7 @@ Nr & Liczba pierwsza &  Liczba cyfr & Data odkrycia & Odkrywcy \\ [0.2ex]
 \end{center}
 \end{table}
 
-\section{Funkcja Eulera i "porz¹dek mno¿¹cy"}
-\begin{definicja}
-\textit{Funkcja $\varphi$ (Eulera)} lub tocjent to funkcja, która ka¿dej liczbie naturalnej przypisuje liczbê liczb wzglêdnie pierwszych z ni¹ i nie wiêkszych od niej.
-Jeœli $n=p_{1}^{m_{1}} \cdot ... \cdot p_{k}^{m_{k}}$ jest rozk³adem liczby $n \in \mathbb{N}$ na czynniki pierwsze (gdzie $p_{i} \neq p_{j}$ dla ró¿nych $i,j \in K=\{1,2,...,k\}$), to wtedy
-$$\varphi(n)=\prod_{i \in K} \left(1-\frac{1}{p_{i}}\right).$$
-\end{definicja}
-
-Funkcja Eulera jest bardzo prosta do zaimplementowania w œrodowisku Matlab, co zosta³o przedstawione poni¿ej.
-
-\begin{center}
-\lstinputlisting[frame=single]{euler_phi.m}
-\end{center}
-
-Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji dla liczb o ró¿nej wielkoœci.
-
-
-\begin{table}[H] 
-\begin{center}
-\begin{tabular}{|r|c|c|c|}
-\hline
-Lp. & Liczba $n$ & Wartoœæ funkcji $\varphi(n)$ &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex] 
-\hline \hline
-1 & $23$ & $22$ & $0.023398$\\
-\hline
-2 & $100$ & $40$ & $0.029472$\\
-\hline
-3 & $567$ & $324$ & $0.047793$\\
-\hline
-4 & $1000$ & $400$ & $0.051363$\\
-\hline
-5 & $12345$ & $6576$ & $0.496064$\\
-\hline
-6 & $123456$ & $41088$ & $5.326313$\\
-\hline
-7 & $1234567$ & $1224720$ & $65.953887$\\
-\hline
-\end{tabular}
-\caption{Wartoœæ funkcji $\varphi(n)$ dla liczb o ró¿nej wielkoœci.}
-\end{center}
-\end{table}
-
+\section{"Porz¹dek mno¿¹cy"}
 \begin{definicja}
 W teorii liczb, dla danej liczby ca³kowitej $a$ i dodatniej liczby ca³kowitej $n$, gdzie $NWD(a,n)=1$, \textit{porz¹dkiem mno¿¹cym (ang. multiplicative order)} modulo $n$ jest najmniejsza ca³kowita liczba dodatnia $k$, dla której zachodzi
 $$a^{k} \equiv 1 \ mod \ n.$$
@@ -1230,6 +1339,21 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 %\section{Test pierwszoœci ECPP}
 
 \chapter{Zastosowania w kryptografii}
+\chapter*{Skrypty z programu Matlab}
+
+
+\begin{center}
+\label{sitoEratostenesa}
+\lstinputlisting[frame=single]{sitoEratostenesa.m}
+\end{center}
+%\caption{Skrypt funkcji Sito Eratostenesa}
+
+\begin{center}
+\label{funkcjaEulera}
+\lstinputlisting[frame=single]{euler_phi.m}
+\end{center}
+%caption{Skrypt funkcji Eulera}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%
