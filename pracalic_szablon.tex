@@ -618,7 +618,6 @@ Zarówno $r_{i}$ i $r_{i}^{'}$ dla $i=1,2,...,\varphi(n)$ s¹ wzglêdnie pierwsze z
 $$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \end{dowod}
 
-
 \begin{twierdzenie}(ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
 \label{mtf}
 Jeœli $p$ jest licz¹ pierwsz¹, to dla ka¿dej liczby ca³kowitej $a$ niepodzielnej przez $p$ zachodzi
@@ -652,7 +651,9 @@ to $n$ jest \textit{liczb¹ pseudopierwsz¹} przy podstawie $b$.
 \end{definicja}
 
 \section{W³asnoœci liczb pierwszych}
-\begin{twierdzenie}
+Liczby pierwsze mog¹ przyjmowaæ ró¿ne postaci. Podrozdzia³ ten skupia siê na ró¿nych rodzajach liczb pierwszych, takich jak liczby pierwsze Fermata, bliŸniacze, czworacze, Sophie Germain czy Mersenne'a. W czêœci tej przedstawione zostanie równie¿ zestawienie dziesiêciu najwiêkszych znanych liczb pierwszych na rok 2018.
+
+\begin{twierdzenie} \cite[\mbox{s.} 46]{marzant}
 Istnieje nieskoñczenie wiele liczb pierwszych postaci $4k-1$.
 \end{twierdzenie}
 
@@ -662,12 +663,12 @@ Przypuœæmy przeciwnie, ¿e $\{q_{1}, q_{2},..., q_{r}\}$ jest zbiorem wszystkich 
 Poniewa¿ $N$ jest liczb¹ nieparzyst¹, wiêc wszystkie dzielniki liczby $N$ równie¿ s¹ nieparzyste. Z kolei ka¿da liczba nieparzysta ma postaæ $4k-1$ lub $4k+1$. Wiadomo tak¿e, ¿e iloczyn liczb postaci $4k+1$ jest te¿ liczb¹ postaci $4k+1$, wiêc $N$ musi mieæ dzielnik pierwszy $q$ postaci $4k-1$. Jak wiadomo, $q_{1} \nmid N$, $q_{2} \nmid N$, ..., $q_{r} \nmid N$, sk¹d wynika, ¿e $q \notin \{q_{1}, q_{2},..., q_{r}\}$, co jest sprzeczne z za³o¿eniem. 
 \end{dowod}
 
-\begin{twierdzenie}
+\begin{twierdzenie} \cite[\mbox{s.} 46]{marzant}
 Istnieje nieskoñczenie wiele liczb pierwszych postaci $4k+1$.
 \end{twierdzenie}
 \
-\begin{twierdzenie}(Dirichlet)
-Jeœli $m \in \mathbb{N}$, $a \in \mathbb{Z}$ oraz $(a,m)=1$, to w ci¹gu arytmetycznym $a+mk$, gdzie $k=1,2,...$, istnieje nieskoñczenie wiele liczb pierwszych \cite[\mbox{s.} 47]{marzant}.
+\begin{twierdzenie}(Dirichlet) \cite[\mbox{s.} 47]{marzant}
+Jeœli $m \in \mathbb{N}$, $a \in \mathbb{Z}$ oraz $(a,m)=1$, to w ci¹gu arytmetycznym $a+mk$, gdzie $k=1,2,...$, istnieje nieskoñczenie wiele liczb pierwszych.
 \end{twierdzenie}
 
 \begin{definicja}
@@ -681,13 +682,13 @@ gdzie $n \geq 1$, nazywa siê \textit{n-t¹ liczb¹ Fermata}.
 
 Fermat obliczy³, ¿e $F_{1}=5$, $F_{2}=17$, $F_{3}=2575$, $F_{4}=65537$ s¹ liczbami pierwszymi i za³o¿y³, ¿e ka¿da liczba postaci \ref{liczbaFermata} jest liczb¹ pierwsz¹. Hipotezê t¹ obali³ Euler, który udowodni³, ¿e $F_{5}$ jest podzielne przez $641$.
 
-\begin{definicja}
+\begin{definicja} \cite{lpb}
 Liczby pierwsze $p$ i $q=p+2$ nazywane s¹ \textit{liczbami pierwszymi bliŸniaczymi}.
 \end{definicja}
 
 Liczbami pierwszymi bliŸniaczymi s¹ np.: (3, 5), (11, 13), (1949, 1951), (4967, 4969). Najwiêksze znane dziœ liczby bliŸniacze, ka¿da sk³adaj¹ca siê z 200 700 cyfr, to 
 $$\num{3756801695685} \cdot 2^{\num{666669}} \pm 1,$$ 
-znalezione w 2011 roku \cite{lpb}.
+znalezione w 2011 roku.
 
 \begin{definicja}
 \textit{Liczba pierwsza Sophie Germain} to dowolna liczba pierwsza $p$, dla której liczba $2p+1$ tak¿e jest liczb¹ pierwsz¹ (np. 23, gdy¿ $2 \cdot 23 +1 = 47$).
@@ -696,7 +697,7 @@ znalezione w 2011 roku \cite{lpb}.
 Najwiêksz¹ znan¹ obecnie liczb¹ pierwsz¹ Sophie Germain jest 
 $$\num{18543637900515} \cdot 2^{\num{666667}}-1,$$ a jej zapis dziesiêtny wymaga $\num{200701}$ cyfr. Zosta³a ona odkryta w 2012 roku przez Philipa Bliedunga.
 
-\begin{definicja}
+\begin{definicja} \cite[\mbox{s.} 52]{marzant}
 \textit{Liczbami Mersenne'a} s¹ liczby postaci $M_{n}=2^{n}-1$, $n \geq 1$. Je¿eli liczba Mersenne'a jest pierwsza to nazywa siê \textit{liczb¹ pierwsz¹ Mersenne'a}.
 \end{definicja}
 
@@ -735,19 +736,13 @@ Nr & Liczba pierwsza &  Liczba cyfr & Data odkrycia & Odkrywcy \\ [0.2ex]
 \end{table}
 
 \section{"Porz¹dek mno¿¹cy"}
-\begin{definicja}
+\begin{definicja} \cite{multord}
 W teorii liczb, dla danej liczby ca³kowitej $a$ i dodatniej liczby ca³kowitej $n$, gdzie $NWD(a,n)=1$, \textit{porz¹dkiem mno¿¹cym (ang. multiplicative order)} modulo $n$ jest najmniejsza ca³kowita liczba dodatnia $k$, dla której zachodzi
 $$a^{k} \equiv 1 \ mod \ n.$$
-Porz¹dek modulo $n$ oznacza siê $ord_{n}(a)$ lub $o_{n}(a)$ \cite{multord}. 
+Porz¹dek modulo $n$ oznacza siê $ord_{n}(a)$ lub $o_{n}(a)$. 
 \end{definicja}
 
-\textit{Multiplicative order} jest równie¿ bardzo prosty do zaimplementowania w œrodowisku Matlab, a kod tej funkcji zosta³ przedstawiony poni¿ej.
-
-\begin{center}
-\lstinputlisting[frame=single]{mult_order.m}
-\end{center}
-
-Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji.
+\textit{Multiplicative order} jest równie¿ bardzo prosty do zaimplementowania w œrodowisku Matlab (skrypt \ref{multorder}). Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji.
 
 \begin{table}[H] 
 \begin{center}
@@ -784,11 +779,7 @@ Lp. & Liczba $n$ & Liczba $a$ & Wartoœæ funkcji $o_{n}(a)$ &  Czas dzia³ania fun
 
 
 \chapter{Testy pierwszoœci liczb}
-\begin{definicja}
-\textit{Test pierwszoœci} jest to algorytm, który okreœla, czy zadana liczba jest liczb¹ pierwsz¹, czy z³o¿on¹. 
-\end{definicja}
-
-Poni¿szy rozdzia³ ma na celu przedstawienie algorytmów, które testuj¹ pierwszoœæ zadanej liczby. 
+Test pierwszoœci to algorytm, który okreœla, czy zadana liczba jest liczb¹ pierwsz¹, czy z³o¿on¹. Poni¿szy rozdzia³ ma na celu przedstawienie algorytmów, które testuj¹ pierwszoœæ zadanej liczby. 
 
 \section{Testy deterministyczne}
 \textbf{Testy deterministyczne} to testy, które wydaj¹ certyfikat pierwszoœci, czyli ich wynik jest prawid³owy z prawdopodobieñstwem 1. Zwracaj¹ odpowiedŸ, ¿e podana na wejœciu liczba $n$ jest pierwsza wtedy i tylko wtedy, gdy naprawdê tak jest, czyli wynik dzia³ania testu jest jednoznaczny.
@@ -808,18 +799,12 @@ Algorytm metody naiwnej w wersji udoskonalonej dzia³a nastêpuj¹co:
 \item Wyznacz zbiór $p$ wszystkich liczb pierwszych mniejszych lub równych $\sqrt{n}$.
 \item Dziel liczbê $n$ przez kolejne liczby ze zbioru $p$.
 \item Jeœli $n$ dzieli siê przez przynajmniej jedn¹ z liczb ze zbioru $p$ bez reszty, wtedy $n$ jest z³o¿ona.
-\item Jeœli wœród liczb $p$ nie ma dzielnika liczby $n$, wtedy $n$ jest z³o¿ona.
+\item Jeœli wœród liczb $p$ nie ma dzielnika liczby $n$, wtedy $n$ jest pierwsza.
 \end{enumerate}
 
 Jest to algorytm deterministyczny, który uznaje pierwszoœæ liczby ze stuprocentow¹ pewnoœci¹. W zwi¹zku z tym, ¿e metoda jest bardzo dok³adna, wymaga a¿ $O(\sqrt{n}\lg^2{n})$ kroków, wiêc jej efektywnoœæ spada dla bardzo du¿ych liczb.
 
-Algorytm metody naiwnej w programie Matlab zosta³ przedstawiony poni¿ej.
-
-\begin{center}
-\lstinputlisting[frame=single]{MetodaNaiwna.m}
-\end{center}
-
-Tabela \ref{metodanaiwnatabela} przedstawia wyniki i czas dzia³ania algorytmu dla liczb o ró¿nej wielkoœci. 
+Algorytm metody naiwnej w programie Matlab zosta³ przedstawiony na koñcu tej pracy (skrypt \ref{metodanaiwna}. Tabela \ref{metodanaiwnatabela} przedstawia wyniki i czas dzia³ania algorytmu dla liczb o ró¿nej wielkoœci. 
 
 \begin{center}
 \begin{table}[H] 
@@ -857,6 +842,8 @@ Lp. & Testowana liczba & Czas dzia³ania programu $[s]$ & Liczba pierwsza/z³o¿ona
 \subsection{Test pierwszoœci AKS}
 \textit{Test pierwszoœci AKS} (lub inaczej test pierwszoœci Agrawal-Kayal-Saxena lub cyklotomiczny test AKS) jest deterministycznym testem pierwszoœci liczb opracowanym przez trójkê indyjskich naukowców - Manindra Agrawala, Neeraja Kayala i~ Nitina Saxena z Indyjskiego Instytutu Technologii w Kanpurze. Test zosta³ po raz pierwszy opublikowany 6 sierpnia 2002 roku w artykule zatytu³owanym \textit{PRIMES is in P}. W 2006 roku autorzy otrzymali za to odkrycie dwie nagrody - Nagrodê Gödla, któr¹ przyznaje siê za osi¹gniêcia w dziedzinie informatyki teoretycznej, oraz nagrodê Fulkersona, przyznawan¹ za wybitne prace z zakresu matematyki dyskretnej.
 
+Poni¿sze opracowanie opiera siê na artykule \textit{PRIMES is in P} \cite{aks}.
+
 Test AKS jest pierwszym opublikowanym algorytmem testuj¹cym czy dana liczba jest pierwsza, który jest jednoczeœnie szybki, jednoznaczny i~ bezwarunkowy. Oznacza to, ¿e algorytm ten zawsze zwróci poprawn¹ odpowiedŸ (w przeciwieñstwie do testów probabilistycznych), a jego dzia³anie nie bazuje na ¿adnych nieudowodnionych hipotezach.
 
 Test pierwszoœci AKS opiera siê na pewnej to¿samoœci liczb pierwszych, która jest uogólnieniem ma³ego twierdzenia Fermata \ref{mtf}.
@@ -886,7 +873,7 @@ Powy¿sza to¿samoœæ sugeruje prosty test pierwszoœci: pobieramy badane $n$, wybie
 \label{lematAKSnowe}
 (X+a)^{n}=X^{n}+a \ (mod \ X^{r}-1,n).
 \end{equation}
-Z Lematu \ref{lematAKStresc} wynika natychmiast, ¿e wszystkie liczby pierwsze $n$ spe³niaj¹ równanie \ref{lematAKSnowe} dla wszystkich wartoœci $a$ i $r$. Problem polega na tym, ¿e niektóre liczby z³o¿one $n$ mog¹ równie¿ spe³niæ równanie dla kilku wartoœci $a$ i $r$. Jednak mo¿emy pokazaæ, ¿e dla odpowiednio dobranego $r$, jeœli równanie \ref{lematAKSnowe} jest spe³nione dla kilku $a$, to $n$ musi byæ potêg¹ liczby pierwszej \cite{aks}.
+Z Lematu \ref{lematAKStresc} wynika natychmiast, ¿e wszystkie liczby pierwsze $n$ spe³niaj¹ równanie \ref{lematAKSnowe} dla wszystkich wartoœci $a$ i $r$. Problem polega na tym, ¿e niektóre liczby z³o¿one $n$ mog¹ równie¿ spe³niæ równanie dla kilku wartoœci $a$ i $r$. Jednak mo¿emy pokazaæ, ¿e dla odpowiednio dobranego $r$, jeœli równanie \ref{lematAKSnowe} jest spe³nione dla kilku $a$, to $n$ musi byæ potêg¹ liczby pierwszej.
 
 Algorytm dzia³ania metody AKS jest nastêpuj¹cy:
 \begin{enumerate}
@@ -901,13 +888,7 @@ jeœli $((X+a)^{n} \neq X^{n}+a \ (mod \ X^{r}-1,n))$, $n$ jest z³o¿ona - stop.
 \end{enumerate}
 
 
-Poni¿ej przedstawiono kod metody AKS zaimplementowany w œrodowisku Matlab.
-
-\begin{center}
-\lstinputlisting[frame=single]{MetodaAKS.m}
-\end{center}
-
-Tabela poni¿ej przedstawia wyniki i czas dzia³ania testu pierwszoœci AKS.
+Kod metody AKS zaimplementowany w œrodowisku Matlab zosta³ przedstawiony w czêœci pracy poœwiêconej skryptom (skrypt \ref{testaks}). Tabela poni¿ej przedstawia wyniki i czas dzia³ania testu pierwszoœci AKS.
 
 \begin{table}[H] 
 \begin{center}
@@ -969,7 +950,7 @@ Zgodnie z ma³ym twierdzeniem Fermata \ref{mtf} dla liczb pierwszych $p$ zachodzi
 a^{p-1} \equiv 1 \ mod \ p.
 \end{equation}
 
-\textit{Test pierwszoœci Fermata} to probabilistyczny test pierwszoœci, który opiera siê na za³o¿eniu, ¿e zachodzi wynikanie odwrotne do Twierdzenia \ref{mtf}, czyli jeœli prawdziwa jest kongruencja \ref{mtfw}, to liczba $p$ jest pierwsza z du¿ym prawdopodobieñstwem.
+\textit{Test pierwszoœci Fermata} \cite[\mbox{s.} 49]{zakrzew} to probabilistyczny test pierwszoœci, który opiera siê na za³o¿eniu, ¿e zachodzi wynikanie odwrotne do Twierdzenia \ref{mtf}, czyli jeœli prawdziwa jest kongruencja \ref{mtfw}, to liczba $p$ jest pierwsza z du¿ym prawdopodobieñstwem.
 
 Algorytm testu pierwszoœci Fermata dla zadanej liczby $p$ wygl¹da nastêpuj¹co:
 \begin{enumerate}
@@ -981,13 +962,7 @@ Algorytm testu pierwszoœci Fermata dla zadanej liczby $p$ wygl¹da nastêpuj¹co:
 
 Przy kilkukrotnym powtórzeniu losowania dla ró¿nych liczb test Fermata daje bardzo wiarygodny wynik. 
 
-Poni¿ej przedstawiona zosta³a implementacja testu pierwszoœci Fermata w programie Matlab.
-
-\begin{center}
-\lstinputlisting[frame=single]{testFermata.m}
-\end{center}
-
-Tabela \ref{tabelaFermat} przedstawia wyniki dzia³ania powy¿szego kodu dla ró¿nych liczb pierwszych i z³o¿onych oraz czas dzia³ania algorytmu.
+Implementacja testu pierwszoœci Fermata w programie Matlab przedstawiona zosta³a w skrypcie \ref{testFermata}. Tabela \ref{tabelaFermat} przedstawia wyniki dzia³ania tego kodu dla ró¿nych liczb pierwszych i z³o¿onych oraz czas dzia³ania algorytmu.
 
 \begin{table}[H] 
 \begin{center}
@@ -1037,10 +1012,10 @@ Lp. & Liczba $p$ & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \
 
 £atwo zauwa¿yæ, ¿e algorytm dzia³a niezwykle szybko i zwraca stuprocentowo pewny wynik nawet dla bardzo du¿ych liczb. Czas dzia³ania zale¿y g³ównie od wyboru liczby powtórzeñ $n$ - im liczba $n$ jest wiêksza, tym czas dzia³ania algorytmu siê wyd³u¿a. Jednak ju¿ dla niewielkich $n$ wynik jest podawany z prawdopodobieñstwem równym $1$.   
 
-Trzeba zaznaczyæ, ¿e kongruencja \ref{mtfw} mo¿e zachodziæ tak¿e w pewnych przypadkach, gdy $p$ nie jest liczb¹ pierwsz¹. Liczby te omówione zosta³y poni¿ej \cite[\mbox{s.} 49]{zakrzew}.
+Trzeba zaznaczyæ, ¿e kongruencja \ref{mtfw} mo¿e zachodziæ tak¿e w pewnych przypadkach, gdy $p$ nie jest liczb¹ pierwsz¹. Liczby te omówione zosta³y poni¿ej.
 
-\begin{definicja}
-\textit{Liczby Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata \ref{mtf} jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i tylko wtedy, gdy jest liczb¹ z³o¿on¹ i dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$ \cite{liczbaCarm}.
+\begin{definicja} \cite{liczbaCarm}
+\textit{Liczby Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata \ref{mtf} jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i tylko wtedy, gdy jest liczb¹ z³o¿on¹ i dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
 \end{definicja}
 
 Najmniejsz¹ liczb¹ Carmichaela jest $561 = 3 \cdot 11 \cdot 17$. Innymi z nich s¹ na przyk³ad $1105 = 5 \cdot 13 \cdot 17$, $1729 = 7 \cdot 13 \cdot 19$ lub $2465 = 5 \cdot 17 \cdot 29$.
@@ -1099,20 +1074,14 @@ Lp. & L. Carmichaela & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania $[s]$ \\ [0
 Jak wynika z powy¿szej tabeli, liczby Carmichaela przechodz¹ test pierwszoœci Fermata z du¿ym prawdopodobieñstwem.
 
 \subsection{Test pierwszoœci Lehmana}
-Test Lehmana jest kolejnym testem probabilistycznym pierwszoœci liczb. Algorytm testu Lehmana dla du¿ej liczby $p$ wygl¹da nastêpuj¹co:
+\textit{Test Lehmana} \cite[\mbox{s.} 60]{karbowski} jest kolejnym testem probabilistycznym pierwszoœci liczb. Algorytm testu Lehmana dla du¿ej liczby $p$ wygl¹da nastêpuj¹co:
 \begin{enumerate}
 \item Wylosuj du¿¹ liczbê $a < p$.
 \item Oblicz $b=a^{(p-1)/2} \ mod \ p$.
-\item Jeœli $b \equiv 1 \ mod \ p$ lub $b \equiv -1 \ mod \ p$ to $p$ jest liczb¹ pierwsz¹ z prawdopodobieñstwem wiêkszym lub równym $50\%$. W przeciwnym wypadku $p$ jest liczb¹ z³o¿on¹ \cite[\mbox{s.} 60]{karbowski}. 
+\item Jeœli $b \equiv 1 \ mod \ p$ lub $b \equiv -1 \ mod \ p$ to $p$ jest liczb¹ pierwsz¹ z prawdopodobieñstwem wiêkszym lub równym $50\%$. W przeciwnym wypadku $p$ jest liczb¹ z³o¿on¹. 
 \end{enumerate}
 
-Poni¿szy skrypt przedstawia algorytm Lehmana w programie Matlab.
-
-\begin{center}
-\lstinputlisting[frame=single]{testLehmana.m}
-\end{center}
-
-Wyniki dzia³ania programu przedstawione zosta³y w Tabeli \ref{tabelaLehman}.
+Skrypt \ref{testLehmana} przedstawia algorytm Lehmana w programie Matlab. Wyniki dzia³ania programu przedstawione zosta³y w Tabeli \ref{tabelaLehman}.
 
 \begin{table}[H] 
 \begin{center}
@@ -1202,13 +1171,7 @@ Je¿eli po zakoñczeniu algorytmu nie ma odpowiedzi "n jest z³o¿ona", to test nale
 
 %bibliografia - notatki z wykladu Teoria Liczb i elementy kryptografii
 
-Skrypt jednorazowego przejœcia algorytmu testu pierwszoœci Solovaya-Strassena w programie Matlab zosta³ przedstawiony poni¿ej.
-
-\begin{center}
-\lstinputlisting[frame=single]{testSolovaya.m}
-\end{center}
-
-Tabela \ref{tabelaSS} przedstawia wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
+Skrypt jednorazowego przejœcia algorytmu testu pierwszoœci Solovaya-Strassena w programie Matlab zosta³ przedstawiony na koñcu pracy (skrypt \ref{testSS}). Tabela \ref{tabelaSS} przedstawia wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
 
 \begin{table}[H] 
 \begin{center}
@@ -1282,13 +1245,7 @@ Algorytm dzia³ania testu pierwszoœci Millera-Rabina przebiega nastêpuj¹co:
 \end{enumerate}
 Po otrzymaniu odpowiedzi "$n$ jest pierwsza" powtarzamy kroki algorytmu 2-4. 
 
-Skrypt testu pierwszoœci Millera-Rabina przedstawiony zosta³ poni¿ej.
-
-\begin{center}
-\lstinputlisting[frame=single]{TestMilleraRabina.m}
-\end{center}
-
-Tabela \ref{tabelaMR} przedstawia wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
+Skrypt testu pierwszoœci Millera-Rabina przedstawiony zosta³ w dalszej czêœci pracy (skrypt \ref{testMR}). Tabela \ref{tabelaMR} przedstawia wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
 
 \begin{table}[H] 
 \begin{center}
@@ -1341,18 +1298,70 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \chapter{Zastosowania w kryptografii}
 \chapter*{Skrypty z programu Matlab}
 
-
+\section*{Sito Eratostenesa}
 \begin{center}
 \label{sitoEratostenesa}
 \lstinputlisting[frame=single]{sitoEratostenesa.m}
 \end{center}
 %\caption{Skrypt funkcji Sito Eratostenesa}
 
+\section*{Funkcja Eulera}
 \begin{center}
 \label{funkcjaEulera}
 \lstinputlisting[frame=single]{euler_phi.m}
 \end{center}
-%caption{Skrypt funkcji Eulera}
+%\caption{Skrypt funkcji Eulera}
+
+\section*{Multiplicative order}
+\begin{center}
+\label{multorder}
+\lstinputlisting[frame=single]{mult_order.m}
+\end{center}
+%\caption{Skrypt funkcji multiplicative order}
+
+\section*{Metoda naiwna}
+\begin{center}
+\label{metodanaiwna}
+\lstinputlisting[frame=single]{MetodaNaiwna.m}
+\end{center}
+%\caption{Skrypt funkcji multiplicative order}
+
+\section*{Test pierwszoœci AKS}
+\begin{center}
+\label{testaks}
+\lstinputlisting[frame=single]{MetodaAKS.m}
+\end{center}
+%\caption{Skrypt funkcji AKS}
+
+\section*{Test pierwszoœci Fermata}
+\begin{center}
+\label{testFermata}
+\lstinputlisting[frame=single]{testFermata.m}
+\end{center}
+%\caption{Skrypt testu Fermata}
+
+
+\section*{Test pierwszoœci Lehmana}
+\begin{center}
+\label{testLehmana}
+\lstinputlisting[frame=single]{testLehmana.m}
+\end{center}
+%\caption{Skrypt testu Lehmana}
+
+
+\section*{Test pierwszoœci Solovaya-Strassena}
+\begin{center}
+\label{testSS}
+\lstinputlisting[frame=single]{testSolovaya.m}
+\end{center}
+%\caption{Skrypt testu Solovaya-Strassena}
+
+\section*{Test pierwszoœci Millera-Rabina}
+\begin{center}
+\label{testMR}
+\lstinputlisting[frame=single]{TestMilleraRabina.m}
+\end{center}
+%\caption{Skrypt testu Millera-Rabina}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

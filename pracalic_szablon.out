@@ -21,4 +21,13 @@
 \BOOKMARK [2][-]{subsection.2.2.5}{Chinski test pierwszosci}{section.2.2}% 21
 \BOOKMARK [0][-]{chapter.3}{ 3. Zastosowania w kryptografii}{}% 22
 \BOOKMARK [0][-]{chapter*.2}{Skrypty z programu Matlab}{}% 23
-\BOOKMARK [0][-]{chapter*.3}{Bibliografia}{}% 24
+\BOOKMARK [1][-]{section*.3}{Sito Eratostenesa}{chapter*.2}% 24
+\BOOKMARK [1][-]{section*.4}{Funkcja Eulera}{chapter*.2}% 25
+\BOOKMARK [1][-]{section*.5}{Multiplicative order}{chapter*.2}% 26
+\BOOKMARK [1][-]{section*.6}{Metoda naiwna}{chapter*.2}% 27
+\BOOKMARK [1][-]{section*.7}{Test pierwszosci AKS}{chapter*.2}% 28
+\BOOKMARK [1][-]{section*.8}{Test pierwszosci Fermata}{chapter*.2}% 29
+\BOOKMARK [1][-]{section*.9}{Test pierwszosci Lehmana}{chapter*.2}% 30
+\BOOKMARK [1][-]{section*.10}{Test pierwszosci Solovaya-Strassena}{chapter*.2}% 31
+\BOOKMARK [1][-]{section*.11}{Test pierwszosci Millera-Rabina}{chapter*.2}% 32
+\BOOKMARK [0][-]{chapter*.12}{Bibliografia}{}% 33
