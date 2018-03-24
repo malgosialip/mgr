@@ -2,7 +2,7 @@
 \BOOKMARK [0][-]{chapter.1}{ 1. Liczby pierwsze}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.2}{Twierdzenie i algorytm Euklidesa}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{Sito Eratostenesa i sito Atkina}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Sito Eratostenesa, Atkina i Sundarama}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.4}{Spirala Ulama}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.5}{Twierdzenie Wilsona i male twierdzenie Fermata}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.6}{Wlasnosci liczb pierwszych}{chapter.1}% 8
@@ -22,12 +22,13 @@
 \BOOKMARK [0][-]{chapter.3}{ 3. Zastosowania w kryptografii}{}% 22
 \BOOKMARK [0][-]{chapter*.2}{Skrypty z programu Matlab}{}% 23
 \BOOKMARK [1][-]{section*.3}{Sito Eratostenesa}{chapter*.2}% 24
-\BOOKMARK [1][-]{section*.4}{Funkcja Eulera}{chapter*.2}% 25
-\BOOKMARK [1][-]{section*.5}{Multiplicative order}{chapter*.2}% 26
-\BOOKMARK [1][-]{section*.6}{Metoda naiwna}{chapter*.2}% 27
-\BOOKMARK [1][-]{section*.7}{Test pierwszosci AKS}{chapter*.2}% 28
-\BOOKMARK [1][-]{section*.8}{Test pierwszosci Fermata}{chapter*.2}% 29
-\BOOKMARK [1][-]{section*.9}{Test pierwszosci Lehmana}{chapter*.2}% 30
-\BOOKMARK [1][-]{section*.10}{Test pierwszosci Solovaya-Strassena}{chapter*.2}% 31
-\BOOKMARK [1][-]{section*.11}{Test pierwszosci Millera-Rabina}{chapter*.2}% 32
-\BOOKMARK [0][-]{chapter*.12}{Bibliografia}{}% 33
+\BOOKMARK [1][-]{section*.4}{Sito Sundarama}{chapter*.2}% 25
+\BOOKMARK [1][-]{section*.5}{Funkcja Eulera}{chapter*.2}% 26
+\BOOKMARK [1][-]{section*.6}{Rzad multiplikatywny}{chapter*.2}% 27
+\BOOKMARK [1][-]{section*.7}{Metoda naiwna}{chapter*.2}% 28
+\BOOKMARK [1][-]{section*.8}{Test pierwszosci AKS}{chapter*.2}% 29
+\BOOKMARK [1][-]{section*.9}{Test pierwszosci Fermata}{chapter*.2}% 30
+\BOOKMARK [1][-]{section*.10}{Test pierwszosci Lehmana}{chapter*.2}% 31
+\BOOKMARK [1][-]{section*.11}{Test pierwszosci Solovaya-Strassena}{chapter*.2}% 32
+\BOOKMARK [1][-]{section*.12}{Test pierwszosci Millera-Rabina}{chapter*.2}% 33
+\BOOKMARK [0][-]{chapter*.13}{Bibliografia}{}% 34
