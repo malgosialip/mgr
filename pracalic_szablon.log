@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  24 MAR 2018 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  25 MAR 2018 13:52
 entering extended mode
 **./pracalic_szablon.tex
 (pracalic_szablon.tex
@@ -890,179 +890,186 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 5.87357pt
 (hyperref)                replaced by space on input line 250.
 
-[11] [12] [13] [14] [15] [16]
-Overfull \hbox (30.09816pt too wide) in paragraph at lines 458--477
+[11] [12] [13] [14] [15] [16] [17] [18] [19]
+Overfull \hbox (30.09816pt too wide) in paragraph at lines 574--593
 [][]
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}
-) has been already used, duplicate ignored
+[20]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 607.
+
+
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+ [21pdfTeX warning (ext4): destination with the same identifier (name{table.1.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.484 \end{definicja}
-                     ]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 491.
-
-
-Overfull \hbox (8.74484pt too wide) in paragraph at lines 494--496
-[][]\T1/cmr/bx/n/12 Definicja 1.10. []\T1/cmr/m/n/12 [[], [] 55] \T1/cmr/m/it/1
+l.608 \end{itemize}
+                   ]
+Overfull \hbox (8.74484pt too wide) in paragraph at lines 610--612
+[][]\T1/cmr/bx/n/12 Definicja 1.13. []\T1/cmr/m/n/12 [[], [] 55] \T1/cmr/m/it/1
 2 Si-to Sun-da-ra-ma \T1/cmr/m/n/12 to pro-sty al-go-rytm au-tor-stwa XX-wieczn
 ego
  []
 
 
-Overfull \hbox (4.98796pt too wide) in paragraph at lines 503--504
+Overfull \hbox (4.98796pt too wide) in paragraph at lines 619--620
 \T1/cmr/m/n/12 Po prze-pro-wa-dze-niu al-go-ryt-mu uzy-sku-je-my li-st¦ liczb p
 ierw-szych z prze-dzia-ªu $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 
 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 +
  []
 
 
-Overfull \hbox (33.3844pt too wide) in paragraph at lines 508--530
+Overfull \hbox (33.3844pt too wide) in paragraph at lines 624--646
 [][]
  []
 
-[18] <spirala_ulama.jpg, id=324, 400.49625pt x 400.49625pt>
-File: spirala_ulama.jpg Graphic file (type jpg)
-
-<use spirala_ulama.jpg>
-Package pdftex.def Info: spirala_ulama.jpg used on input line 547.
-(pdftex.def)             Requested size: 300.37144pt x 300.37144pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{table.1.2
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.551 
-      ] [20pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.571 $$aa^{-1} \equiv 1 \ mod \ n.$$
-                                      <./spirala_ulama.jpg>] [21]
-Underfull \vbox (badness 2359) has occurred while \output is active []
-
- [22]
-[23pdfTeX warning (ext4): destination with the same identifier (name{table.1.3}
+[22pdfTeX warning (ext4): destination with the same identifier (name{table.1.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.681 J
+l.653 
+      ] <spirala_ulama.jpg, id=366, 400.49625pt x 400.49625pt>
+File: spirala_ulama.jpg Graphic file (type jpg)
+
+<use spirala_ulama.jpg>
+Package pdftex.def Info: spirala_ulama.jpg used on input line 663.
+(pdftex.def)             Requested size: 300.37144pt x 300.37144pt.
+
+Underfull \vbox (badness 6445) has occurred while \output is active []
+
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.671 \begin{twierdzenie}(
+                          Twierdzenie Wilsona, 1770 r.) \cite[\mbox{s.} 18]{...
+ <./spirala_ulama.jpg>] [24]
+Underfull \vbox (badness 2359) has occurred while \output is active []
+
+ [25]
+[26pdfTeX warning (ext4): destination with the same identifier (name{table.1.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.777 J
        eœli liczba pierwsza $p$ nie dzieli $a$, to ci¹g reszt z dzielenia $a...
-] [24] [25] [26pdfTeX warning (ext4): destination with the same identifier (nam
-e{table.1.4}) has been already used, duplicate ignored
+] [27] [28pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.1.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.822 
-      ] [27pdfTeX warning (ext4): destination with the same identifier (name{ta
-ble.1.5}) has been already used, duplicate ignored
+l.862 
+      ] [29] [30pdfTeX warning (ext4): destination with the same identifier (na
+me{table.1.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.832 \chapter{Testy pierwszoœci liczb}
-                                       ] [28
-
-]
+l.945 \chapter{Testy pierwszoœci liczb}
+                                       ]
  2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 5.87357pt
-(hyperref)                replaced by space on input line 832.
+(hyperref)                replaced by space on input line 945.
 
-[29] [30pdfTeX warning (ext4): destination with the same identifier (name{table
-.2.1}) has been already used, duplicate ignored
+[31
+
+] [32pdfTeX warning (ext4): destination with the same identifier (name{table.2.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.899 
-      ]
+l.1012 
+       ]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 915.
+(amsmath)                 on input line 1028.
 
-[31] [32pdfTeX warning (ext4): destination with the same identifier (name{table
+[33] [34pdfTeX warning (ext4): destination with the same identifier (name{table
 .2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.996 
-      ]
-Overfull \hbox (14.12956pt too wide) in paragraph at lines 1020--1059
+l.1109 
+       ]
+Overfull \hbox (14.12956pt too wide) in paragraph at lines 1133--1172
  [] 
  []
 
-[33]
-Overfull \hbox (15.91333pt too wide) in paragraph at lines 1078--1120
+[35]
+Overfull \hbox (15.91333pt too wide) in paragraph at lines 1191--1233
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34pdfTeX warning (ext4): destination with the same identifier (name{table.2.3
+ [36pdfTeX warning (ext4): destination with the same identifier (name{table.2.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1124 
+l.1237 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35pdfTeX warning (ext4): destination with the same identifier (name{table.2.4
+ [37pdfTeX warning (ext4): destination with the same identifier (name{table.2.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1179 
+l.1292 
        ]
-Overfull \hbox (5.76389pt too wide) in paragraph at lines 1183--1184
+Overfull \hbox (5.76389pt too wide) in paragraph at lines 1296--1297
 []\T1/cmr/m/n/12 Kolejnym pro-ba-bi-li-stycz-nym te-stem pierw-szo-±ci jest tes
 t Solovaya-Strassena, opra-
  []
 
-[36pdfTeX warning (ext4): destination with the same identifier (name{table.2.5}
+[38pdfTeX warning (ext4): destination with the same identifier (name{table.2.5}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1203 ...\left(\frac {a}{p_{k}}\right)^{m_{k}}.$$
+l.1316 ...\left(\frac {a}{p_{k}}\right)^{m_{k}}.$$
                                                   ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-[38pdfTeX warning (ext4): destination with the same identifier (name{table.2.6}
+ [39]
+[40pdfTeX warning (ext4): destination with the same identifier (name{table.2.6}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1293 \item L
-              osujemy $b \in \{2,...,n-2\}$.] [39pdfTeX warning (ext4): destina
+l.1406 \item L
+              osujemy $b \in \{2,...,n-2\}$.] [41pdfTeX warning (ext4): destina
 tion with the same identifier (name{table.2.7}) has been already used, duplicat
 e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1349 \chapter{Zastosowania w kryptografii}
-                                            ] [40
+l.1462 \chapter{Zastosowania w kryptografii}
+                                            ] [42
 
 ]
  3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 5.87357pt
-(hyperref)                replaced by space on input line 1349.
+(hyperref)                replaced by space on input line 1462.
 
-[41] [42
+[43] [44
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1353.
+nput line 1466.
  (sitoEratostenesa.m) (sitoSundarama.m
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
 
@@ -1071,38 +1078,38 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
-) [43] (euler_phi.m)
-(mult_order.m) [44] (MetodaNaiwna.m) [45] (MetodaAKS.m [46]) [47]
-(testFermata.m [48]) (testLehmana.m) (testSolovaya.m [49]) (TestMilleraRabina.m
-[50]) [51] [52
+) [45] (euler_phi.m)
+(mult_order.m) [46] (MetodaNaiwna.m) [47] (MetodaAKS.m [48]) [49]
+(testFermata.m [50]) (testLehmana.m) (testSolovaya.m [51]) (TestMilleraRabina.m
+[52]) [53] [54
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1398
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1512
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
+Underfull \hbox (badness 10000) in paragraph at lines 1515--1516
 [][]$\T1/cmtt/m/n/10.95 https : / / www . cse . iitk . ac . in / users / manind
 ra / algebra / primality _ v6 . pdf$[] \T1/cmr/m/n/10.95 (do-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1405.
-[53]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1405.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1518.
+[55]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1518.
  (pracalic_szablon.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1405.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1405.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1518.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1518.
 
 Package rerunfilecheck Info: File `pracalic_szablon.out' has not changed.
-(rerunfilecheck)             Checksum: FD7EEC06960835DC4371EEB25988AE9A;2441.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1405.
+(rerunfilecheck)             Checksum: 02B7528FDB22B7580FF10DDE55EB46B4;2453.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1518.
  ) 
 Here is how much of TeX's memory you used:
- 21087 strings out of 493323
- 381748 string characters out of 3139053
- 515153 words of memory out of 3000000
- 23941 multiletter control sequences out of 15000+200000
+ 21106 strings out of 493323
+ 381968 string characters out of 3139053
+ 515224 words of memory out of 3000000
+ 23945 multiletter control sequences out of 15000+200000
  553288 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,16n,43p,10369b,2209s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1136,9 +1143,9 @@ amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on pracalic_szablon.pdf (53 pages, 1899669 bytes).
+Output written on pracalic_szablon.pdf (55 pages, 1912033 bytes).
 PDF statistics:
- 1595 PDF objects out of 1728 (max. 8388607)
- 458 named destinations out of 1000 (max. 500000)
+ 1622 PDF objects out of 1728 (max. 8388607)
+ 473 named destinations out of 1000 (max. 500000)
  283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

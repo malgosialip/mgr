@@ -385,7 +385,6 @@ Po pomno¿eniu $NWD(a,b) \cdot NWW(a,b)$ otrzymano
 \end{align*}
 \end{dowod}
 
-
 \section{Twierdzenie i algorytm Euklidesa}
 Euklides, ¿yj¹cy oko³o 300 roku p.n.e., to grecki matematyk pochodz¹cy z Aten, uczeñ Akademii Platoñskiej i wyk³adowca w s³ynnej Szkole Aleksandryjskiej. Zaliczany jest do grona najwiêkszych matematyków w historii, znany g³ównie jako twórca podstaw geometrii klasycznej. Jego najwiêkszym dzie³em s¹ \textit{Elementy}, które stanowi¹ jedn¹ z pierwszych prac teoretycznych z matematyki. Podrêcznik ten zawiera miêdzy innymi dwa klasyczne i bardzo wa¿ne pojêcia z zakresu teorii liczb - twierdzenie Euklidesa o liczbach pierwszych i algorytm pozwalaj¹cy znaleŸæ najwiêkszy wspólny dzielnik dwóch liczb naturalnych.  
  
@@ -406,7 +405,7 @@ Z Twierdzenia \ref{zta} wynika, ¿e $n$ mo¿e byæ liczb¹ pierwsz¹ ró¿n¹ od wszystk
 \textit{Algorytm Euklidesa} to szybki sposób wyznaczania najwiêkszego wspólnego dzielnika dwóch liczb naturalnych.
 \end{definicja}
 
-Do zrozumienia dzia³ania powy¿szego algorytmu nale¿y wprowadziæ pojêcie reszty z dzielenia.
+Do zrozumienia dzia³ania powy¿szego algorytmu potrzebne bêdzie zdefiniowanie pojêcia reszty z dzielenia.
 
 \begin{definicja} \cite[\mbox{s.} 8]{zakrzew}
 Dla dowolnej liczby ca³kowitej $n$ i dowolnej liczby naturalnej $k$ istnieje tylko jedna para liczb ca³kowitych $q$ i $r$ taka, ¿e 
@@ -427,9 +426,126 @@ Dzia³anie algorytmu przebiega nastêpuj¹co:
 Ostatnia niezerowa reszta jest szukanym najwiêkszym wspólnym dzielnikiem badanych liczb. W przypadku powy¿szego przyk³adu $NWD(1628, 374)=22$.
 \end{przyklad}
 
+\begin{lemat}(Bézout) \cite[\mbox{s.} 9]{zakrzew}
+\label{bezout}
+Niech $NWD(a,b) = d$. Wówczas istniej¹ dwie liczby ca³kowite $k$ i $l$ takie, ¿e
+$$d = ka + lb.$$
+\end{lemat}
+
+\begin{dowod}
+Niech $a$ i $b$ bêd¹ niezerowymi liczbami ca³kowitymi, a $K$ oznacza zbiór wszystkich dodatnich liczb ca³kowitych postaci $am + bn$, gdzie $m, n \in \mathbb{Z}$. Zbiór $K$ jest niepusty, wiêc istnieje w nim element najmniejszy $d$, gdzie $d = ax + by$. Zgodnie z algorytmem dzielenia z reszt¹, istniej¹ takie liczby $q, r \in \mathbb{Z}$, dla których zachodzi $a = qd + r$, przy czym $0 \leq r < d$. Z drugiej strony
+$$r = a - qd = a - q(ax+by) = a - aqx - bqy = a(1-qx) + b(-qy).$$
+Je¿eli $0 < r < d$, to znaczy, ¿e $r \in K$, co jest sprzeczne ze stwierdzeniem, ¿e $d$ jest najmniejszym elementem w $K$. St¹d $r = 0$, a z tego wynika, ¿e $a = qd$, a to oznacza, ¿e $d | a$. Podobnie mo¿na wykazaæ, ¿e $d | b$, sk¹d wynika, ¿e $d$ jest wspólnym dzielnikiem dla $a$ i $b$. Jeœli $c$ jest innym wspólnym dzielnikiem liczb $a$ i $b$, to $c$ dzieli równie¿ $ax + by = d$ , co z definicji oznacza, ¿e $d = NWD(a,b)$.
+\end{dowod}
+
+\begin{wniosek}
+Niech $a$ i $b$ s¹ wzglêdnie pierwsze, czyli $NWD(a,b) = 1$, to istniej¹ dwie liczby ca³kowite $k$ i $l$ takie, ¿e
+$$ka + lb = 1.$$
+\end{wniosek}
+
+\section{Kongruencje i ich zastosowania}
+W poni¿szym rozdziale zawarte zosta³y najwa¿niejsze informacje i twierdzenia zwi¹zane z kongruencj¹. Pojêcia te bêd¹ wykorzystywane w dalszej czêœci pracy.
+
+\begin{definicja}  \cite[\mbox{s.} 41]{sierpinski}
+Niech $n$ bêdzie dowoln¹ liczb¹ naturaln¹. Liczby ca³kowite $a$ i $b$ \textit{przystaj¹ modulo} $n$, je¿eli ich ró¿nica $a-b$ jest podzielna przez $n$. Symbolicznie zapisuje siê to jako
+$$a \equiv b \  (mod \  n).$$
+Relacjê t¹ nazywamy kongruencj¹.
+\end{definicja}
+
+Kongruencja jest relacj¹ równowa¿noœci. Jest ona
+\renewcommand{\theenumi}{\Roman{enumi}}
+\begin{enumerate}
+\item Zwrotna, poniewa¿ ka¿da liczba przystaje sama do siebie
+$$a \equiv a \ (mod \ n).$$
+
+\begin{dowod}
+Wystarczy zauwa¿yæ, ¿e $a-a=0$ jest podzielna przez ka¿de $n \in \mathbb{N}$.
+\end{dowod}
+
+\item Symetryczna, gdy¿ kongruencja 
+$$a \equiv b \ (mod \ n) \Leftrightarrow b \equiv a \ (mod \ n).$$
+\begin{dowod}
+Je¿eli $a-b=kn$, gdzie $k \in \mathbb{Z}$, to $b-a=-kn$. St¹d wynika, ¿e $a \equiv b \ (mod \ n)$. 
+\end{dowod}
+
+\item Przechodnia, poniewa¿ zachodzi
+$$(a \equiv b \ (mod \ n) \wedge b \equiv c \ (mod \ n)) \Rightarrow a \equiv c \ (mod \ n).$$
+\begin{dowod}
+Wiadomo, ¿e $a-b \equiv 0 \ (mod \ n)$ i $b-c \equiv 0 \ (mod \ n)$. Opieraj¹c siê na to¿samoœci $$a-c = (a-b)+(b-c)$$ otrzymujemy, ¿e $a-c \equiv 0 \ (mod \ n)$, sk¹d wynika, ¿e $a \equiv c \ (mod \ n)$.
+\end{dowod}
+\end{enumerate}
+
+\begin{twierdzenie} \cite[\mbox{s.} 37]{narkiewicz}
+\label{wlasnoscikongruencji}
+Relacja kongruencji spe³nia nastêpuj¹ce w³asnoœci:
+\begin{enumerate}[label=(\roman*)]
+\item Je¿eli $a \equiv b \ (mod \ n)$ oraz $c \equiv d \ (mod \ n)$, to
+$$a+c \equiv b+d \ (mod \ n),$$
+$$a-c \equiv b-d \ (mod \ n),$$
+$$ac \equiv bd \ (mod \ n).$$
+\item Kongruencja $a \equiv b \ (mod \ n)$ zachodzi wtedy i tylko wtedy, gdy $n|(a-b)$.
+\item Je¿eli $ab \equiv ac \ (mod \ n)$ i $(a, n) = 1$, to $b \equiv c \ (mod \ n)$.
+\item Je¿eli $a \in \mathbb{N}$ i $ab \equiv ac \ (mod \ an)$, to $b \equiv c \ (mod \ n)$.
+\item Je¿eli $a \equiv b \ (mod \ n)$ to $a^{k} \equiv b^{k} \ (mod \ n)$.
+\end{enumerate}
+\end{twierdzenie}
+
+\begin{dowod}
+(i) Wiemy, ¿e $a-b = hn$ i $c-d = gn$, gdzie $g, h \in \mathbb{Z}$. Z to¿samoœci
+$$(a+c) - (b+d) = (a-b) + (c-d) = (h+g)n,$$
+wynika, ¿e 
+$$(a+c) - (b+d) \equiv 0 \  (mod \ n) \Rightarrow a+c \equiv b+d \  (mod \ n)$$
+Podobnie dla odejmowania prawdziwa jest to¿samoœæ
+$$(a-c) - (b-d) = (a-b) - (c-d) = (h-g)n,$$
+sk¹d wynika, ¿e 
+$$(a-c) - (b-d) \equiv 0 \  (mod \ n) \Rightarrow a-c \equiv b-d \  (mod \ n).$$
+Opieraj¹c siê na to¿samoœci
+$$ac - bd = (a-b)c + (c-d)b = hnc + gnb = (hc + gb)n,b$$
+otrzymujemy, ¿e 
+$$ac - bd = 0 \ (mod \ n) \Rightarrow ac = bd \ (mod \ n).$$
+
+(ii) Je¿eli $a \equiv b \ (mod \ n)$ to $a-b \equiv 0 \ (mod \ n)$, wiêc $a-b = hn$, gdzie $h \in \mathbb{Z}$. Zachodzi $n|hn$, sk¹d wynika, ¿e $n|a-b$. Dowód implikacji w drug¹ stronê przebiega analogicznie.
+
+(iii) Je¿eli $ab \equiv ac \ (mod \ n)$, to znaczy, ¿e $n|(b-c)a$. Za³o¿enie $(a, n) = 1$ oznacza, ¿e $n \nmid a$, wiêc $n | (b-c)$. St¹d wynika, ¿e $b \equiv c \ (mod \ n)$.
+
+(iv) Je¿eli $ab \equiv ac \ (mod \ an)$, to $an | a(b-c)$, z czego wynika, ¿e $n | (b-c)$, wiêc $b \equiv c \ (mod \ n)$.
+
+(v) Dowód indukcyjny. Dla $k=1$ kongruencja zachodzi. Za³ó¿my, ¿e teza jest spe³niona dla pewnego $k$. Mamy wiêc  $a \equiv b \ (mod \ n)$ oraz $a^{k} \equiv b^{k} \ (mod \ n)$. Wykorzystuj¹c w³asnoœæ (i) mno¿ymy przez siebie obie kongruencje, otrzymuj¹c
+$$aa^{k} \equiv bb^{k} \ (mod \ n) \Rightarrow a^{k+1} \equiv b^{k+1} \ (mod \ n),$$
+co koñczy dowód.
+\end{dowod}
+
+\begin{definicja}
+Dla ka¿dej liczby naturalnej $m$ zbiór 
+$$\phi(m) := \{k : 1 \leq k \leq m,(k,m) = 1 \}$$ 
+tworzy \textit{zbiór reszt modulo m}.
+\end{definicja}
+
+%notatki TLIEK
+
+\begin{definicja} \cite[\mbox{s.} 15]{zakrzew}
+\textit{Odwrotnoœci¹ elementu} $a$ \textit{modulo} $n$ jest taki element, oznaczany przez $a^{-1}$, ¿e
+$$aa^{-1} \equiv 1 \ mod \ n.$$
+\end{definicja}
+
+\begin{twierdzenie}
+Liczba naturalna $a$ jest odwracalna modulo $n$ wtedy i tylko wtedy, gdy $a$ i $n$ s¹ wzglêdnie pierwsze.
+\end{twierdzenie}
+
+\begin{dowod}
+Niech $(a,n)=1$. Wtedy na mocy lematu Bézouta \ref{bezout} dla pewnych $k$ i $l$ zachodzi $ka + ln = 1$. Korzystaj¹c z w³asnoœci (i) twierdzenia \ref{wlasnoscikongruencji} otrzymujemy
+$$ka + ln = 1 \ (mod \ n),$$
+sk¹d 
+$$ka = 1 \ (mod \ n),$$
+wiêc $k$ jest odwrotnoœci¹ elementu $a$ modulo $n$.
+
+Implikacja w drug¹ stronê: Odwracalnoœæ elementu $a$ modulo $n$ oznacza, ¿e istnieje $k$, dla którego prawdziwa jest kongruencja $ka \equiv 1 \ (mod \ n)$. Wówczas $ka - 1 \equiv 0 \ (mod \ n)$, sk¹d wynika, ¿e 
+$$ka - 1 = ln \Rightarrow ka + (-l)n = 1.$$
+Z powy¿szej to¿samoœci wynika, ¿e $a$ i $n$ s¹ liczbami wzglêdnie pierwszymi.
+\end{dowod}
 
 \section{Sito Eratostenesa, Atkina i Sundarama}
-Problem z liczbami pierwszymi polega na ich nieregularnym rozmieszczeniu poœród liczb naturalnych. Nie odkryto dot¹d ¿adnego wzoru pozwalaj¹cego na wyszukiwanie kolejnych liczb pierwszych. Powsta³o dot¹d kilka metod znajdowania liczb pierwszych w danym przedziale. S¹ to tak zwane sita, poniewa¿ aby znaleŸæ wszystkie liczby pierwsze mniejsze od liczby $n$ wystarczy ze zbioru liczb naturalnych mniejszych lub równych $n$ \textit{odsiaæ} liczby z³o¿one i jedynkê. Pierwszy s³u¿¹cy do tego algorytm zosta³ przedstawiony przez Eratostenesa z Cyreny (III-II w. p.n.e.). Sito to zosta³o póŸniej ulepszone przez Arthura Atkina i D.J. Bernsteina. Innym, mniej znanym sitem, jest sito Sundarama.
+Problem z liczbami pierwszymi polega na ich nieregularnym rozmieszczeniu poœród liczb naturalnych. Nie odkryto dot¹d ¿adnego wzoru pozwalaj¹cego na wyszukiwanie kolejnych liczb pierwszych, ale powsta³o kilka metod znajdowania takich liczb w zadanym przedziale. Metody te s¹ nazywane sitami, poniewa¿ aby znaleŸæ wszystkie liczby pierwsze mniejsze od liczby $n$ wystarczy ze zbioru liczb naturalnych mniejszych lub równych $n$ \textit{odsiaæ} liczby z³o¿one i jedynkê. Pierwszy s³u¿¹cy do tego algorytm zosta³ przedstawiony przez Eratostenesa z Cyreny (III-II w. p.n.e.). Sito to zosta³o póŸniej ulepszone przez Arthura Atkina i D.J. Bernsteina. Innym, mniej znanym sitem, jest sito Sundarama.
 
 \begin{definicja} \cite[\mbox{s.} 55]{karbowski}
 \label{sito}
@@ -550,29 +666,9 @@ Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku 
 \end{figure}
 
 \section{Twierdzenie Wilsona i ma³e twierdzenie Fermata}
-Podrozdzia³ ten jest poœwiêcony dwóm klasycznym twierdzeniom z zakresu teorii liczb - twierdzeniu Wilsona i ma³emu twierdzeniu Fermata. Maj¹ one szerokie zastosowanie w testach pierwszoœci liczb. Do ich omówienia potrzebne bêd¹ pojêcia takie jak kongruencja, zbiór reszt modulo i odwrotnoœæ elementu, które zosta³y zdefiniowane poni¿ej.  
+Podrozdzia³ ten jest poœwiêcony dwóm klasycznym twierdzeniom z zakresu teorii liczb - twierdzeniu Wilsona i ma³emu twierdzeniu Fermata. Maj¹ one szerokie zastosowanie w testach pierwszoœci liczb.
 
-\begin{definicja}  \cite[\mbox{s.} 13]{zakrzew}
-Niech $n$ bêdzie dowoln¹ liczb¹ naturaln¹. Liczby ca³kowite $a$ i $b$ \textit{przystaj¹ modulo} $n$, je¿eli ich ró¿nica $a-b$ jest podzielna przez $n$. Symbolicznie zapisuje siê to jako
-$$a \equiv b \  mod \  n.$$
-Zapis ten nazywany jest kongruencj¹.
-\end{definicja}
-
-\begin{definicja}
-Dla ka¿dej liczby naturalnej $m$ zbiór 
-$$\phi(m) := \{k : 1 \leq k \leq m,(k,m) = 1 \}$$ 
-tworzy \textit{zbiór reszt modulo m}.
-\end{definicja}
-
-%notatki TLIEK
-
-\begin{definicja} \cite[\mbox{s.} 15]{zakrzew}
-\textit{Odwrotnoœci¹ elementu} $a$ \textit{modulo} $n$ jest taki element, oznaczany przez $a^{-1}$, ¿e
-$$aa^{-1} \equiv 1 \ mod \ n.$$
-Liczba naturalna $a$ jest odwracalna modulo $n$ wtedy i tylko wtedy, gdy $a$ i $n$ s¹ wzglêdnie pierwsze.
-\end{definicja}
-
-\begin{twierdzenie}(twierdzenie Wilsona, 1770 r.) \cite[\mbox{s.} 18]{zakrzew}
+\begin{twierdzenie}(Twierdzenie Wilsona, 1770 r.) \cite[\mbox{s.} 18]{zakrzew}
 \label{wilson}
 Liczba naturalna $p>1$ jest liczb¹ pierwsz¹ wtedy i tylko wtedy, gdy
 $$(p-1)!+1 \equiv 0 \ mod \ p.$$
@@ -669,7 +765,7 @@ Zarówno $r_{i}$ i $r_{i}^{'}$ dla $i=1,2,...,\varphi(n)$ s¹ wzglêdnie pierwsze z
 $$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \end{dowod}
 
-\begin{twierdzenie}(ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
+\begin{twierdzenie}(Ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
 \label{mtf}
 Jeœli $p$ jest licz¹ pierwsz¹, to dla ka¿dej liczby ca³kowitej $a$ niepodzielnej przez $p$ zachodzi
 $$a^{p-1} \equiv 1 \  mod \  p.$$
@@ -700,6 +796,56 @@ Je¿eli $n$ jest nieparzyst¹ liczb¹ z³o¿on¹, a liczba $b$, wzglêdnie pierwsza z $
 $$b^{n-1} \equiv 1 \mod n,$$ 
 to $n$ jest \textit{liczb¹ pseudopierwsz¹} przy podstawie $b$.
 \end{definicja}
+
+Z twierdzenia Fermata \ref{mtf} wynika, ¿e dla ka¿dej liczby $a$, która jest wzglêdnie pierwsza z modu³em $n$, istnieje liczba naturalna $k$ taka, ¿e $a^{k} \equiv 1 \ (mod \ n)$. 
+
+\begin{definicja} \cite{multord}
+Rzêdem multiplikatywnym liczby ca³kowitej $a$ modulo $n$, gdzie $(a,n)=1$, nazywamy najmniejsz¹ liczbê naturaln¹ $k$, dla której zachodzi
+$$a^{k} \equiv 1 \ (mod \ n).$$
+\end{definicja}
+
+Rz¹d elementu $a$ modulo $n$ oznacza siê $ord_{n}(a)$ lub $o_{n}(a)$. 
+
+\begin{przyklad} Obliczyæ rz¹d multiplikatywny liczby 4 modulo 7.
+
+Szukamy najmniejszej liczby $k \in \mathbb{N}$, dla której prawdziwa jest kongruencja 
+$$4^{k} \equiv 1 \ (mod \ 7).$$
+Sprawdzamy kongruencjê dla kolejnych wartoœci liczby $k$:
+\begin{align*}
+k = 1 &\Rightarrow 4^{1} = 4 \equiv 4 \ (mod \ 7) \neq 1 \ (mod \ 7), \\
+k = 2 &\Rightarrow 4^{2} = 16 = 2 \cdot 7 + 2 \equiv 2 \ (mod \ 7) \neq 1 \ (mod \ 7), \\
+k = 3 &\Rightarrow 4^{3} = 64 = 9 \cdot 7 +1 \equiv 1 \ (mod \ 7). \\
+\end{align*}
+Rzêdem multiplikatywnym liczby 4 modulo 7 jest 3.
+\end{przyklad}
+
+Obliczanie rzêdu elementu $a$ modulo $n$ jest równie¿ proste do zaimplementowania w œrodowisku Matlab (skrypt \ref{multorder}). Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji.
+
+\begin{table}[H] 
+\begin{center}
+\begin{tabular}{|r|c|c|c|c|}
+\hline
+Lp. & Liczba $n$ & Liczba $a$ & Wartoœæ funkcji $o_{n}(a)$ &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex] 
+\hline \hline
+1 & $7$ & $4$ & $3$ & $0.033575$\\
+\hline
+
+2 & $4$ & $7$ & $2$ & $0.025657$\\
+\hline
+
+3 & $100$ & $387$ & $20$ & $0.031364$\\
+\hline
+
+4 & $167$ & $379$ & $166$ & $0.036658$\\
+\hline
+
+5 & $1000$ & $37$ & $100$ & $0.035297$\\
+\hline
+\end{tabular}
+\caption{Wartoœæ funkcji  $o_{n}(a)$ dla liczb o ró¿nej wielkoœci.}
+\end{center}
+\end{table}
+
 
 \section{W³asnoœci liczb pierwszych}
 Liczby pierwsze mog¹ przyjmowaæ ró¿ne postaci. Podrozdzia³ ten skupia siê na ró¿nych rodzajach liczb pierwszych, takich jak liczby pierwsze Fermata, bliŸniacze, czworacze, Sophie Germain czy Mersenne'a. W czêœci tej przedstawione zostanie równie¿ zestawienie dziesiêciu najwiêkszych znanych liczb pierwszych na rok 2018.
@@ -737,22 +883,22 @@ Fermat obliczy³, ¿e $F_{1}=5$, $F_{2}=17$, $F_{3}=2575$, $F_{4}=65537$ s¹ liczba
 Liczby pierwsze $p$ i $q=p+2$ nazywane s¹ \textit{liczbami pierwszymi bliŸniaczymi}.
 \end{definicja}
 
-Liczbami pierwszymi bliŸniaczymi s¹ np.: (3, 5), (11, 13), (1949, 1951), (4967, 4969). Najwiêksze znane dziœ liczby bliŸniacze, ka¿da sk³adaj¹ca siê z 200 700 cyfr, to 
-$$\num{3756801695685} \cdot 2^{\num{666669}} \pm 1,$$ 
-znalezione w 2011 roku.
+Liczbami pierwszymi bliŸniaczymi s¹ np.: (3, 5), (11, 13), (1949, 1951), (4967, 4969). Najwiêksze znane dziœ liczby bliŸniacze, ka¿da sk³adaj¹ca siê z 388 342 cyfr, to 
+$$\num{2996863034895} \cdot 2^{\num{1290000}} \pm 1,$$
+znalezione w 2016 roku.
 
-\begin{definicja}
+\begin{definicja} \cite{lpb}
 \textit{Liczba pierwsza Sophie Germain} to dowolna liczba pierwsza $p$, dla której liczba $2p+1$ tak¿e jest liczb¹ pierwsz¹ (np. 23, gdy¿ $2 \cdot 23 +1 = 47$).
 \end{definicja}
 
 Najwiêksz¹ znan¹ obecnie liczb¹ pierwsz¹ Sophie Germain jest 
-$$\num{18543637900515} \cdot 2^{\num{666667}}-1,$$ a jej zapis dziesiêtny wymaga $\num{200701}$ cyfr. Zosta³a ona odkryta w 2012 roku przez Philipa Bliedunga.
+$$\num{2618163402417} \cdot 2^{\num{1290000}}-1,$$ a jej zapis dziesiêtny wymaga $\num{388342}$ cyfr. Zosta³a ona odkryta w 2016 roku.
 
 \begin{definicja} \cite[\mbox{s.} 52]{marzant}
 \textit{Liczbami Mersenne'a} s¹ liczby postaci $M_{n}=2^{n}-1$, $n \geq 1$. Je¿eli liczba Mersenne'a jest pierwsza to nazywa siê \textit{liczb¹ pierwsz¹ Mersenne'a}.
 \end{definicja}
 
-Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych ich 50. Co wiêcej, dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w Tabeli \ref{toptengreatestprimenumbers}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
+Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych ich 50. Co wiêcej, dziewiêæ na dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w Tabeli \ref{toptengreatestprimenumbersM}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
 
 \begin{table}[H] 
 \begin{center}
@@ -781,44 +927,11 @@ Nr & Liczba pierwsza &  Liczba cyfr & Data odkrycia & Odkrywcy \\ [0.2ex]
 10 & $2^{\num{24 036 583}}-1$ & 7 235 733 & 2004-05-15 & Findley, GIMPS\\
 \hline
 \end{tabular}
-\caption{Dziesiêæ najwiêkszych znanych liczb pierwszych na 2018 rok \cite{gimps}.}
-\label{toptengreatestprimenumbers}
+\caption{Dziesiêæ najwiêkszych znanych liczb pierwszych Mersenne'a na 2018 rok \cite{gimps}.}
+\label{toptengreatestprimenumbersM}
 \end{center}
 \end{table}
 
-\section{"Porz¹dek mno¿¹cy"}
-\begin{definicja} \cite{multord}
-W teorii liczb, dla danej liczby ca³kowitej $a$ i dodatniej liczby ca³kowitej $n$, gdzie $NWD(a,n)=1$, \textit{porz¹dkiem mno¿¹cym (ang. multiplicative order)} modulo $n$ jest najmniejsza ca³kowita liczba dodatnia $k$, dla której zachodzi
-$$a^{k} \equiv 1 \ mod \ n.$$
-Porz¹dek modulo $n$ oznacza siê $ord_{n}(a)$ lub $o_{n}(a)$. 
-\end{definicja}
-
-\textit{Multiplicative order} jest równie¿ bardzo prosty do zaimplementowania w œrodowisku Matlab (skrypt \ref{multorder}). Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji.
-
-\begin{table}[H] 
-\begin{center}
-\begin{tabular}{|r|c|c|c|c|}
-\hline
-Lp. & Liczba $n$ & Liczba $a$ & Wartoœæ funkcji $o_{n}(a)$ &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex] 
-\hline \hline
-1 & $7$ & $4$ & $3$ & $0.033575$\\
-\hline
-
-2 & $4$ & $7$ & $2$ & $0.025657$\\
-\hline
-
-3 & $100$ & $387$ & $20$ & $0.031364$\\
-\hline
-
-4 & $167$ & $379$ & $166$ & $0.036658$\\
-\hline
-
-5 & $1000$ & $37$ & $100$ & $0.035297$\\
-\hline
-\end{tabular}
-\caption{Wartoœæ funkcji  $o_{n}(a)$ dla liczb o ró¿nej wielkoœci.}
-\end{center}
-\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%
@@ -1065,7 +1178,7 @@ Lp. & Liczba $p$ & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \
 
 Trzeba zaznaczyæ, ¿e kongruencja \ref{mtfw} mo¿e zachodziæ tak¿e w pewnych przypadkach, gdy $p$ nie jest liczb¹ pierwsz¹. Liczby te omówione zosta³y poni¿ej.
 
-\begin{definicja} \cite{liczbaCarm}
+\begin{definicja} \cite[\mbox{s.} 49]{zakrzew}
 \textit{Liczby Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata \ref{mtf} jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i tylko wtedy, gdy jest liczb¹ z³o¿on¹ i dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
 \end{definicja}
 
@@ -1394,9 +1507,9 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \bibitem{karbowski} M. Karbowski, \textit{Podstawy kryptografii}, Wydanie III, Helion, Gliwice, (2014).
 \bibitem{marzant} W. Marzantowicz, P. Zarzycki, \textit{Elementarna teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2006).
 \bibitem{narkiewicz} W. Narkiewicz, \textit{Teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2003).
+\bibitem{sierpinski} W. Sierpiñski, \textit{Wstêp do teorii liczb}, Wydawnictwa Szkolne i Pedagogiczne, (1987).
 \bibitem{zakrzew} M. Zakrzewski, \textit{Teoria liczb}, Wydanie I, Oficyna Wydawnicza GiS, Wroc³aw, (2017).
-\bibitem{lpb} \url{https://pl.wikipedia.org/wiki/Liczby_bli%C5%BAniacze}
-\bibitem{liczbaCarm} \url{https://pl.wikipedia.org/wiki/Liczby_Carmichaela}
+\bibitem{lpb} \url{http://primes.utm.edu/largest.html} (dostêp 25.03.2018)
 \bibitem{gimps} \url{https://www.mersenne.org/primes/} (dostêp 25.03.2018)
 \bibitem{spiralaulama} \url{http://mathworld.wolfram.com/PrimeSpiral.html}(dostêp 24.03.2018)
 \bibitem{aks} \url{https://www.cse.iitk.ac.in/users/manindra/algebra/primality_v6.pdf} (dostêp 25.03.2018)
