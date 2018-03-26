@@ -100,6 +100,7 @@
 \newtheorem{twierdzenie}{Twierdzenie}[chapter]
 \theoremstyle{definition}
 \newtheorem{definicja}{Definicja}[chapter]
+\newtheorem{stwierdzenie}{Stwierdzenie}[chapter]
 \newtheorem{lemat}{Lemat}[chapter]
 \newtheorem{wniosek}{Wniosek}[chapter]
 \newtheorem{przyklad}{Przyk³ad}[chapter]
@@ -449,7 +450,7 @@ W poni¿szym rozdziale zawarte zosta³y najwa¿niejsze informacje i twierdzenia zwi
 \begin{definicja}  \cite[\mbox{s.} 41]{sierpinski}
 Niech $n$ bêdzie dowoln¹ liczb¹ naturaln¹. Liczby ca³kowite $a$ i $b$ \textit{przystaj¹ modulo} $n$, je¿eli ich ró¿nica $a-b$ jest podzielna przez $n$. Symbolicznie zapisuje siê to jako
 $$a \equiv b \  (mod \  n).$$
-Relacjê t¹ nazywamy kongruencj¹.
+Relacjê t¹ nazywamy kongruencj¹ lub przystawaniem modulo.
 \end{definicja}
 
 Kongruencja jest relacj¹ równowa¿noœci. Jest ona
@@ -515,13 +516,81 @@ $$aa^{k} \equiv bb^{k} \ (mod \ n) \Rightarrow a^{k+1} \equiv b^{k+1} \ (mod \ n
 co koñczy dowód.
 \end{dowod}
 
-\begin{definicja}
-Dla ka¿dej liczby naturalnej $m$ zbiór 
-$$\phi(m) := \{k : 1 \leq k \leq m,(k,m) = 1 \}$$ 
-tworzy \textit{zbiór reszt modulo m}.
+\begin{stwierdzenie} \cite[\mbox{s.} 30]{marzant}
+Relacja kongruencji modulo $m$ jest relacj¹ równowa¿noœci w zbiorze liczb ca³kowitych $\mathbb{Z}$, a warstwy (klasy abstrakcji) tej relacji nazywamy klasami reszt modulo $m$.
+\end{stwierdzenie}
+
+Ka¿d¹ liczbê ca³kowit¹ $a$ mo¿na zapisaæ w postaci $a = qm + r$, gdzie $0 \leq r < m$, wiêc ka¿da liczba ca³kowita przystaje modulo $m$ do jednej z liczb ze zbioru $\{0, 1, ... , m-1\}$. ¯adne dwie liczby spoœród liczb $0$,$1$, ... , $m-1$ nie przystaj¹ do siebie modulo $m$, wiêc zbiór postaci $\{0, 1, ... , m-1\}$ tworzy pe³ny uk³ad reprezentantów warstw.
+
+\begin{definicja} \cite[\mbox{s.} 31-32]{marzant}
+\textit{Pe³nym uk³adem reszt modulo $m$} nazywamy pe³ny uk³ad reprezentantów klas relacji przystawania modulo $m$.
 \end{definicja}
 
-%notatki TLIEK
+\begin{definicja}
+\textit{Zredukowanym uk³adem reszt modulo $m$} nazywamy uk³ad reprezentantów tych klas relacji przystawania modulo $m$, które sk³adaj¹ siê z liczb wzglêdnie pierwszych z modu³em $m$.
+\end{definicja}
+
+\begin{definicja} \cite[\mbox{s.} 31]{zakrzew}
+\textit{Funkcj¹ $\varphi$ (Eulera)} lub tocjentem nazywamy funkcjê arytmetyczn¹, która ka¿dej liczbie naturalnej $m$ przypisuje liczbê elementów zredukowanego uk³adu reszt modulo $m$.
+\end{definicja}
+
+Mo¿na zauwa¿yæ, ¿e dla ka¿dej liczby naturalnej $m$ zbiór 
+$$\phi(m) := \{k : 1 \leq k \leq m,(k,m) = 1 \}$$ 
+tworzy zredukowany uk³ad reszt modulo m.
+
+\begin{stwierdzenie} Funkcji Eulera ma nastêpuj¹ce w³asnoœci:
+\label{wlasnoscifunkcjieulera}
+\begin{enumerate}[label=(\arabic*)]
+\item Dla ka¿dej liczby naturalnej $n>1$ zachodzi $\varphi(n) \leq n-1.$
+\item Jeœli liczby naturalne $n$ i $m$ s¹ wzglêdnie pierwsze to $\varphi(nm) = \varphi(n)\varphi(m).$
+\item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p) = p-1.$
+\item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p^{k})=p^{k-1}(p-1)$.
+\item Jeœli $p$ i $q$ s¹ ró¿nymi liczbami pierwszymi to $\varphi(pq)=(p-1)(q-1).$
+\item Jeœli $p_{1}, p_{2},...,p_{k}$ s¹ wszystkimi czynnikami pierwszymi liczby $n$ bez powtórzeñ, to 
+$$\varphi(n) = n \left(1-\frac{1}{p_{1}}\right)\left(1-\frac{1}{p_{2}}\right)...\left(1-\frac{1}{p_{k}}\right).$$
+\end{enumerate}
+\end{stwierdzenie}
+
+\begin{przyklad} Obliczyæ $\varphi(9)$, $\varphi(12)$,  $\varphi(13)$.
+
+Pe³nym uk³adem reszt modulo 9 jest zbiór $R = \{0,1,2,3,4,5,6,7,8\}$. Jeœli usuniemy z niego wszystkie liczby, które nie s¹ wzglêdnie pierwsze z 9, otrzymamy zbiór $R = \{1,2,4,5,7,8\}$. Liczba elementów zbioru $R$ jest równa 6, wiêc $\varphi(9) = 6$.
+
+Pe³nym uk³adem reszt modulo 12 jest zbiór $R = \{0,1,2,3,4,5,6,7,8,9,10,11\}$. Usuwamy z niego wszystkie liczby, które nie s¹ wzglêdnie pierwsze z 12 i otrzymujemy zbiór $R = \{1,5,7,11\}$. Liczba elementów zbioru $R$ wynosi 4, wiêc $\varphi(12) = 4$.
+
+Wartoœæ funkcji $\varphi$ dla liczby 13 mo¿na obliczyæ z w³asnoœci (3) stwierdzenia \ref{wlasnoscifunkcjieulera}:
+$$\varphi(13) = 13 - 1 = 12.$$
+\end{przyklad}
+
+Funkcja Eulera jest bardzo prosta do zaimplementowania w œrodowisku Matlab (skrypt \ref{funkcjaEulera}). Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji dla liczb o ró¿nej wielkoœci.
+
+\begin{table}[H] 
+\begin{center}
+\begin{tabular}{|r|c|c|c|}
+\hline
+Lp. & Liczba $n$ & Wartoœæ funkcji $\varphi(n)$ &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex] 
+\hline \hline
+1 & $23$ & $22$ & $0.023398$\\
+\hline
+2 & $100$ & $40$ & $0.029472$\\
+\hline
+3 & $567$ & $324$ & $0.047793$\\
+\hline
+4 & $1000$ & $400$ & $0.051363$\\
+\hline
+5 & $12345$ & $6576$ & $0.496064$\\
+\hline
+6 & $123456$ & $41088$ & $5.326313$\\
+\hline
+7 & $1234567$ & $1224720$ & $65.953887$\\
+\hline
+\end{tabular}
+\caption{Wartoœæ funkcji $\varphi(n)$ dla liczb o ró¿nej wielkoœci.}
+\end{center}
+\end{table}
+
+\begin{stwierdzenie}
+Jeœli zbiór $\{a_{1},a_{2},...,a_{\varphi(m)}\}$ tworzy zredukowany uk³ad reszt modulo $m$ i $(k,m) = 1$, to zbiór $\{ka_{1},ka_{2},...,ka_{\varphi(m)}\}$ tak¿e tworzy zredukowany uk³ad reszt modulo $m$. 
+\end{stwierdzenie}
 
 \begin{definicja} \cite[\mbox{s.} 15]{zakrzew}
 \textit{Odwrotnoœci¹ elementu} $a$ \textit{modulo} $n$ jest taki element, oznaczany przez $a^{-1}$, ¿e
@@ -700,53 +769,9 @@ $$(n-1)!+1 \not\equiv 0 \ mod \ n,$$
 co koñczy dowód.
 \end{dowod}
 
-\begin{definicja} \cite[\mbox{s.} 31]{zakrzew}
-\textit{Funkcja $\varphi$ (Eulera)} lub tocjent to funkcja, która ka¿dej liczbie naturalnej przypisuje liczbê liczb wzglêdnie pierwszych z ni¹ i nie wiêkszych od niej.
-\end{definicja}
-
-%Jeœli $n=p_{1}^{m_{1}} \cdot ... \cdot p_{k}^{m_{k}}$ jest rozk³adem liczby $n \in \mathbb{N}$ na %czynniki pierwsze (gdzie $p_{i} \neq p_{j}$ dla ró¿nych $i,j \in K=\{1,2,...,k\}$), to wtedy
-%$$\varphi(n)=\prod_{i \in K} \left(1-\frac{1}{p_{i}}\right).$$
-
-W³asnoœci funkcji Eulera:
-\begin{enumerate}
-\item Dla ka¿dej liczby naturalnej $n>1$ zachodzi $\varphi(n) \leq n-1.$
-\item Jeœli liczby naturalne $n$ i $m$ s¹ wzglêdnie pierwsze to $\varphi(nm) = \varphi(n)\varphi(m).$
-\item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p) = p-1.$
-\item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p^{k})=p^{k-1}(p-1)$.
-\item Jeœli $p$ i $q$ s¹ ró¿nymi liczbami pierwszymi to $\varphi(pq)=(p-1)(q-1).$
-\item Jeœli $p_{1}, p_{2},...,p_{k}$ s¹ wszystkimi czynnikami pierwszymi liczby $n$ bez powtórzeñ, to $$\varphi(n) = n \left(1-\frac{1}{p_{1}}\right)\left(1-\frac{1}{p_{2}}\right)...\left(1-\frac{1}{p_{k}}\right).$$
-\end{enumerate}
-
-Funkcja Eulera jest bardzo prosta do zaimplementowania w œrodowisku Matlab (skrypt \ref{funkcjaEulera}). Poni¿ej przedstawiono tabelê z wynikami i czasem dzia³ania powy¿szej funkcji dla liczb o ró¿nej wielkoœci.
-
-\begin{table}[H] 
-\begin{center}
-\begin{tabular}{|r|c|c|c|}
-\hline
-Lp. & Liczba $n$ & Wartoœæ funkcji $\varphi(n)$ &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex] 
-\hline \hline
-1 & $23$ & $22$ & $0.023398$\\
-\hline
-2 & $100$ & $40$ & $0.029472$\\
-\hline
-3 & $567$ & $324$ & $0.047793$\\
-\hline
-4 & $1000$ & $400$ & $0.051363$\\
-\hline
-5 & $12345$ & $6576$ & $0.496064$\\
-\hline
-6 & $123456$ & $41088$ & $5.326313$\\
-\hline
-7 & $1234567$ & $1224720$ & $65.953887$\\
-\hline
-\end{tabular}
-\caption{Wartoœæ funkcji $\varphi(n)$ dla liczb o ró¿nej wielkoœci.}
-\end{center}
-\end{table}
-
 \begin{twierdzenie}(Eulera) \cite[\mbox{s.} 33]{marzant}
 Je¿eli $n$ i $a$ s¹ wzglêdnie pierwszymi liczbami naturalnymi, to zachodzi
-$$a^{\varphi(n)} \equiv 1 \ mod \ n.$$
+$$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \end{twierdzenie}
 
 \begin{dowod}
@@ -768,7 +793,7 @@ $$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \begin{twierdzenie}(Ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
 \label{mtf}
 Jeœli $p$ jest licz¹ pierwsz¹, to dla ka¿dej liczby ca³kowitej $a$ niepodzielnej przez $p$ zachodzi
-$$a^{p-1} \equiv 1 \  mod \  p.$$
+$$a^{p-1} \equiv 1 \  (mod \  p).$$
 \end{twierdzenie}
 
 Twierdzenie to zosta³o odkryte jednoczeœnie przez Fermata i Leibniza. ¯aden z nich nie opublikowa³ jednak dowodu.
@@ -777,23 +802,23 @@ Twierdzenie to zosta³o odkryte jednoczeœnie przez Fermata i Leibniza. ¯aden z ni
 Jeœli liczba pierwsza $p$ nie dzieli $a$, to ci¹g reszt z dzielenia $a$ przez $p$ $1,2,3,...,p-1$ oraz ci¹g liczb 
 \begin{equation}
 \label{ciag}
-a,2a,3a,...,(p-1)a \ mod \ p
+a,2a,3a,...,(p-1)a \ (mod \ p)
 \end{equation}
 ró¿ni¹ siê jedynie kolejnoœci¹.
-£atwo zauwa¿yæ, ¿e jeœli $p$ nie dzieli $a$, to niemo¿liwe jest, aby $ka \equiv 0 \ mod \ p$ dla $k=1,2,...,p-1$. Z tego wynika, ¿e wszystkie reszty $ka \ mod \ p$ s¹ liczbami naturalnymi od $1$ do $p-1$. Poniewa¿ liczb tych jest dok³adnie $p-1$, wiêc nale¿y pokazaæ, ¿e s¹ one parami ró¿ne.
+£atwo zauwa¿yæ, ¿e jeœli $p$ nie dzieli $a$, to niemo¿liwe jest, aby $ka \equiv 0 \ (mod \ p)$ dla $k=1,2,...,p-1$. Z tego wynika, ¿e wszystkie reszty $ka \ mod \ p$ s¹ liczbami naturalnymi od $1$ do $p-1$. Poniewa¿ liczb tych jest dok³adnie $p-1$, wiêc nale¿y pokazaæ, ¿e s¹ one parami ró¿ne.
 
-Za³o¿ono, ¿e dla $i,j<p$, gdzie $i \neq j$ zachodzi $ai \equiv aj \ mod \ p$. Z treœci twierdzenia wiadomo, ¿e $a$ nie jest podzielne przez $p$, wiêc obie strony mo¿na podzieliæ przez $a$, sk¹d otrzymano $i \equiv j \ mod \ p$. Obie liczby s¹ z za³o¿enia mniejsze od $p$, wiêc $i = j$, co prowadzi do sprzecznoœci.
+Za³o¿ono, ¿e dla $i,j<p$, gdzie $i \neq j$ zachodzi $ai \equiv aj \ (mod \ p)$. Z treœci twierdzenia wiadomo, ¿e $a$ nie jest podzielne przez $p$, wiêc obie strony mo¿na podzieliæ przez $a$, sk¹d otrzymano $i \equiv j \ (mod \ p)$. Obie liczby s¹ z za³o¿enia mniejsze od $p$, wiêc $i = j$, co prowadzi do sprzecznoœci.
 
 Jak wczeœniej zauwa¿ono, ci¹g liczb \ref{ciag} modulo $p$ to ci¹g $1,2,...,p-1$, wiêc 
-$$a \cdot 2a \cdot 3a \cdot ... \cdot (p-1)a \equiv 1 \cdot 2 \cdot 3 \cdot ... \cdot (p-1) \ mod \ p,$$
+$$a \cdot 2a \cdot 3a \cdot ... \cdot (p-1)a \equiv 1 \cdot 2 \cdot 3 \cdot ... \cdot (p-1) \ (mod \ p),$$
 a po przekszta³ceniu
-$$(p-1)!a^{p-1} \equiv (p-1)! \ mod \ p.$$
+$$(p-1)!a^{p-1} \equiv (p-1)! \ (mod \ p).$$
 Z Twierdzenia \ref{wilson} wiadomo, ¿e liczba $(p-1)!$ jest wzglêdnie pierwsza z $p$, wiêc obie strony kongruencji mo¿na podzieliæ przez $(p-1)!$, co koñczy dowód.
 \end{dowod}
 
 \begin{definicja}
 Je¿eli $n$ jest nieparzyst¹ liczb¹ z³o¿on¹, a liczba $b$, wzglêdnie pierwsza z $n$,  spe³nia warunek 
-$$b^{n-1} \equiv 1 \mod n,$$ 
+$$b^{n-1} \equiv 1 \ (mod \ n),$$ 
 to $n$ jest \textit{liczb¹ pseudopierwsz¹} przy podstawie $b$.
 \end{definicja}
 
@@ -976,25 +1001,25 @@ Algorytm metody naiwnej w programie Matlab zosta³ przedstawiony na koñcu tej pra
 \hline
 Lp. & Testowana liczba & Czas dzia³ania programu $[s]$ & Liczba pierwsza/z³o¿ona \\ [0.2ex] 
 \hline \hline
-1 & 7 & 0.005050 & pierwsza\\
+1 & $7$ & 0.005050 & pierwsza\\
 \hline
-2 & 23 & 0.004529 & pierwsza\\
+2 & $23$ & 0.004529 & pierwsza\\
 \hline
-3 & 365 & 0.002450 & z³o¿ona\\
+3 & $365$ & 0.002450 & z³o¿ona\\
 \hline
-4 & 5737 & 0.002264 & pierwsza\\
+4 & $\num{5737}$ & 0.002264 & pierwsza\\
 \hline
-5 & 99487 & 0.015185 & pierwsza\\
+5 & $\num{99487}$ & 0.015185 & pierwsza\\
 \hline
-6 & 99489 & 0.014734 & z³o¿ona\\
+6 & $\num{99489}$ & 0.014734 & z³o¿ona\\
 \hline
-7 & 100001 & 0.013290 & z³o¿ona\\
+7 & $\num{100001}$ & 0.013290 & z³o¿ona\\
 \hline
-8 & 12192109 & 9.409341 & pierwsza\\
+8 & $\num{12192109}$ & 9.409341 & pierwsza\\
 \hline
-9 & 14476001 & 11.304216 & pierwsza\\
+9 & $\num{14476001}$ & 11.304216 & pierwsza\\
 \hline
-10 & 100000001 & 215.084406 & z³o¿ona\\
+10 & $\num{100000001}$ & 215.084406 & z³o¿ona\\
 \hline
 \end{tabular}
 \caption{Wyniki dzia³ania funkcji testuj¹cej pierwszoœæ liczb metod¹ naiwn¹ z sitem Eratostenesa.}
@@ -1017,17 +1042,17 @@ Test pierwszoœci AKS opiera siê na pewnej to¿samoœci liczb pierwszych, która jes
 Niech $a, n \in \mathbb{N}$ i $n \geq 2$ oraz $(a,n)=1$. Wówczas $n$ jest liczb¹ pierwsz¹ wtedy i tylko wtedy, gdy
 \begin{equation}
 \label{lematAKS}
-(X+a)^{n}=X^{n}+a \ mod \ n.
+(X+a)^{n}=X^{n}+a \ (mod \ n).
 \end{equation}
 \end{lemat}
 
 \begin{dowod}
 Równanie \ref{lematAKS} mo¿na zapisaæ w postaci
-$$(X+a)^{n}-(X^{n}+a)=0 \ mod \ n.$$
+$$(X+a)^{n}-(X^{n}+a)=0 \ (mod \ n).$$
 
 Dla $0 \leq i \leq n$ wspó³czynnik przy $X^{i}$ w wyra¿eniu $((X+a)^{n}-(X^{n}+a))$ wynosi ${n}\choose{i}$ $a^{n-i}$. 
 
-Za³ó¿my, ¿e $n$ jest liczb¹ pierwsz¹. Wtedy ${n}\choose{i}$ $=0 \ mod \ n$, a wiêc wszystkie wspó³czynniki s¹ zerowe.
+Za³ó¿my, ¿e $n$ jest liczb¹ pierwsz¹. Wtedy ${n}\choose{i}$ $=0 \ (mod \ n)$, a wiêc wszystkie wspó³czynniki s¹ zerowe.
 
 Za³ó¿my, ¿e $n$ jest liczb¹ z³o¿on¹. Rozwa¿my liczbê pierwsz¹ $q$, która jest dzielnikiem $n$ i dla pewnego $k$ niech $q^{k} \mid n$. Wtedy $q^{k}$ nie dzieli ${n}\choose{q}$ i jest wzglêdnie pierwsza z $a^{n-q}$. St¹d wspó³czynnik przy $X^{q}$ jest niezerowy (mod $n$). Zatem wyra¿enie $((X+a)^{n}-(X^{n}+a))$ nie jest to¿samoœciowo równe zero (mod $n$).
 \end{dowod}
@@ -1111,7 +1136,7 @@ Lp. & Liczba $n$ & Pierwsza/z³o¿ona &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 Zgodnie z ma³ym twierdzeniem Fermata \ref{mtf} dla liczb pierwszych $p$ zachodzi kongruencja
 \begin{equation}
 \label{mtfw}
-a^{p-1} \equiv 1 \ mod \ p.
+a^{p-1} \equiv 1 \ (mod \ p).
 \end{equation}
 
 \textit{Test pierwszoœci Fermata} \cite[\mbox{s.} 49]{zakrzew} to probabilistyczny test pierwszoœci, który opiera siê na za³o¿eniu, ¿e zachodzi wynikanie odwrotne do Twierdzenia \ref{mtf}, czyli jeœli prawdziwa jest kongruencja \ref{mtfw}, to liczba $p$ jest pierwsza z du¿ym prawdopodobieñstwem.
@@ -1120,7 +1145,7 @@ Algorytm testu pierwszoœci Fermata dla zadanej liczby $p$ wygl¹da nastêpuj¹co:
 \begin{enumerate}
 \item Wylosuj $a \in [2,p-2]$.
 \item Oblicz $d = NWD(a,p)$. Jeœli $d>1$ to $p$ jest liczb¹ z³o¿on¹.
-\item SprawdŸ zachodzenie kongruencji $a^{p-1} \equiv 1 \ mod \ p$.
+\item SprawdŸ zachodzenie kongruencji $a^{p-1} \equiv 1 \ (mod \ p)$.
 \item Jeœli zachodzi, to $p$ mo¿e byæ liczb¹ pierwsz¹, w innym przypadku $p$ jest liczb¹ z³o¿on¹.
 \end{enumerate}
 
@@ -1147,25 +1172,25 @@ Lp. & Liczba $p$ & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \
 4 & $199$ & $28$ & pierwsza $(100\%)$  & $0.090658$\\
 \hline
 
-5 & $1999$ & $68$ & pierwsza $(100\%)$ & $0.092615$\\
+5 & $\num{1999}$ & $68$ & pierwsza $(100\%)$ & $0.092615$\\
 \hline
 
-6 & $6899$ & $190$ & pierwsza $(100\%)$ & $0.095254$\\
+6 & $\num{6899}$ & $190$ & pierwsza $(100\%)$ & $0.095254$\\
 \hline
 
-7 & $94427$ & $19$ & pierwsza $(100\%)$ & $0.080347$\\
+7 & $\num{94427}$ & $19$ & pierwsza $(100\%)$ & $0.080347$\\
 \hline
 
-8 & $94428$ & $19$ & z³o¿ona $(100\%)$ & $0.070723$\\
+8 & $\num{94428}$ & $19$ & z³o¿ona $(100\%)$ & $0.070723$\\
 \hline
 
-9 & $15472147$ & $30$ & pierwsza $(100\%)$ & $0.071718$\\
+9 & $\num{15472147}$ & $30$ & pierwsza $(100\%)$ & $0.071718$\\
 \hline
 
-10 & $15472147$ & $5530$ & pierwsza $(100\%)$ & $0.733975$\\
+10 & $\num{15472147}$ & $5530$ & pierwsza $(100\%)$ & $0.733975$\\
 \hline
 
-11 & $15472148$ & $5530$ & z³o¿ona $(100\%)$ & $0.575719$\\
+11 & $\num{15472148}$ & $5530$ & z³o¿ona $(100\%)$ & $0.575719$\\
 \hline
 
 \end{tabular}
@@ -1241,8 +1266,8 @@ Jak wynika z powy¿szej tabeli, liczby Carmichaela przechodz¹ test pierwszoœci Fe
 \textit{Test Lehmana} \cite[\mbox{s.} 60]{karbowski} jest kolejnym testem probabilistycznym pierwszoœci liczb. Algorytm testu Lehmana dla du¿ej liczby $p$ wygl¹da nastêpuj¹co:
 \begin{enumerate}
 \item Wylosuj du¿¹ liczbê $a < p$.
-\item Oblicz $b=a^{(p-1)/2} \ mod \ p$.
-\item Jeœli $b \equiv 1 \ mod \ p$ lub $b \equiv -1 \ mod \ p$ to $p$ jest liczb¹ pierwsz¹ z prawdopodobieñstwem wiêkszym lub równym $50\%$. W przeciwnym wypadku $p$ jest liczb¹ z³o¿on¹. 
+\item Oblicz $b=a^{(p-1)/2} \ (mod \ p)$.
+\item Jeœli $b \equiv 1 \ (mod \ p)$ lub $b \equiv -1 \ (mod \ p)$ to $p$ jest liczb¹ pierwsz¹ z prawdopodobieñstwem wiêkszym lub równym $50\%$. W przeciwnym wypadku $p$ jest liczb¹ z³o¿on¹. 
 \end{enumerate}
 
 Skrypt \ref{testLehmana} przedstawia algorytm Lehmana w programie Matlab. Wyniki dzia³ania programu przedstawione zosta³y w Tabeli \ref{tabelaLehman}.
@@ -1263,25 +1288,25 @@ Lp. & Liczba $p$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 3 & $199$ & pierwsza $(\geq 50\%)$  & $0.031084$\\
 \hline
 
-4 & $1999$ & pierwsza $(\geq 50\%)$ & $0.026158$ \\
+4 & $\num{1999}$ & pierwsza $(\geq 50\%)$ & $0.026158$ \\
 \hline
 
-5 & $6899$ & pierwsza $(\geq 50\%)$ & $0.029798$\\
+5 & $\num{6899}$ & pierwsza $(\geq 50\%)$ & $0.029798$\\
 \hline
 
-6 & $94427$ & pierwsza $(\geq 50\%)$ & $0.023563$ \\
+6 & $\num{94427}$ & pierwsza $(\geq 50\%)$ & $0.023563$ \\
 \hline
 
-7 & $94428$ & z³o¿ona $(100\%)$ & $0.015226$\\
+7 & $\num{94428}$ & z³o¿ona $(100\%)$ & $0.015226$\\
 \hline
 
-8 & $15472145$ & z³o¿ona $(100\%)$ & $0.027043$\\
+8 & $\num{15472145}$ & z³o¿ona $(100\%)$ & $0.027043$\\
 \hline
 
-9 & $15472147$ & pierwsza $(\geq 50\%)$ & $0.026316$\\
+9 & $\num{15472147}$ & pierwsza $(\geq 50\%)$ & $0.026316$\\
 \hline
 
-10 & $15485857$ & pierwsza $(\geq 50\%)$ & $0.024070$\\
+10 & $\num{15485857}$ & pierwsza $(\geq 50\%)$ & $0.024070$\\
 \hline
 
 \end{tabular}
@@ -1300,15 +1325,15 @@ Niech $p$ bêdzie liczb¹ pierwsz¹ wiêksz¹ od 2, a $a$ liczb¹ ca³kowit¹. \textit{S
 
 $$
 \left( \frac{a}{p} \right)= \left\{ \begin{array}{ll}
-0, \textrm{ jeœli $a$ jest wielokrotnoœci¹ liczby $p$},\\
-1, \textrm{jeœli istnieje $b$ takie, ¿e $b^{2}=a \ mod \ p$},\\
--1, \textrm{jeœli nie istnieje ¿adne $b$ takie, ¿e $b^{2}=a \ mod \ p$}.
+0, \textrm{ jeœli} a \textrm{jest wielokrotnoœci¹ liczby} p,\\
+1, \textrm{jeœli istnieje } b \textrm{takie, ¿e } b^{2}=a \ (mod \ p),\\
+-1, \textrm{jeœli nie istnieje ¿adne $b$ takie, ¿e} b^{2}=a \ (mod \ p).
 \end{array} \right.
 $$
+\end{definicja}
 
 Symbol Legendre'a mo¿na obliczyæ nastêpuj¹cym wzorem
-$$\left( \frac{a}{p} \right) \equiv a^{\frac{p-1}{2}}\mod p.$$
-\end{definicja}
+$$\left( \frac{a}{p} \right) \equiv a^{\frac{p-1}{2}} \ (mod \ p).$$
 
 Symbol Legendre'a mo¿e byæ uogólniony do \textit{symbolu Jacobiego} $\left(\frac {a}{n}\right)$, gdzie $n$ jest dowoln¹ liczb¹ nieparzyst¹, która ma rozk³ad na czynniki pierwsze 
 $$n=p_{1}^{m_{1}} \cdot p_{2}^{m_{2}} \cdot ... \cdot p_{k}^{m_{k}}.$$
@@ -1319,7 +1344,7 @@ Je¿eli $n$ jest liczb¹ pierwsz¹ to symbol Jacobiego i symbol Legendre'a s¹ sobie
 \begin{definicja}
 Jeœli $n$ jest liczb¹ z³o¿on¹ nieparzyst¹, a liczba $b$, wzglêdnie pierwsza z $n$, spe³nia warunek
 \begin{equation}
-b^{\frac{n-1}{2}} \equiv \left( \frac{b}{n} \right) \mod n,
+b^{\frac{n-1}{2}} \equiv \left( \frac{b}{n} \right) \ (mod \ n),
 \end{equation}
 to $n$ jest \textit{pseudopierwsz¹ liczb¹ Eulera} przy podstawie $b$.
 \end{definicja}
@@ -1327,7 +1352,7 @@ to $n$ jest \textit{pseudopierwsz¹ liczb¹ Eulera} przy podstawie $b$.
 Test pierwszoœci liczby $n$ algorytmem Solovaya-Strassena przebiega nastêpuj¹co
 \begin{enumerate}
 \item Losujemy $b \in \{2,...,n-2\}$.
-\item Obliczamy $r = b^{\frac{n-1}{2}} \mod n$. Jeœli $r \neq \pm 1$, to $n$ jest liczb¹ z³o¿on¹.
+\item Obliczamy $r = b^{\frac{n-1}{2}} \ (mod \ n)$. Jeœli $r \neq \pm 1$, to $n$ jest liczb¹ z³o¿on¹.
 \item Obliczamy $s = \left( \frac{b}{n} \right)$. Jeœli $r \neq s$, to $n$ jest z³o¿ona.
 \end{enumerate} 
 
@@ -1353,25 +1378,25 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 3 & $199$ & pierwsza & $0.039209$\\
 \hline
 
-4 & $1999$ & pierwsza & $0.032661$ \\
+4 & $\num{1999}$ & pierwsza & $0.032661$ \\
 \hline
 
-5 & $6899$ & pierwsza & $0.036613$\\
+5 & $\num{6899}$ & pierwsza & $0.036613$\\
 \hline
 
-6 & $94427$ & pierwsza & $0.034677$ \\
+6 & $\num{94427}$ & pierwsza & $0.034677$ \\
 \hline
 
-7 & $94428$ & z³o¿ona & $0.017758$\\
+7 & $\num{94428}$ & z³o¿ona & $0.017758$\\
 \hline
 
-8 & $15472145$ & z³o¿ona & $0.027369$\\
+8 & $\num{15472145}$ & z³o¿ona & $0.027369$\\
 \hline
 
-9 & $15472147$ & pierwsza & $0.056256$\\
+9 & $\num{15472147}$ & pierwsza & $0.056256$\\
 \hline
 
-10 & $15485857$ & pierwsza & $0.033962$\\
+10 & $\num{15485857}$ & pierwsza & $0.033962$\\
 \hline
 
 \end{tabular}
@@ -1427,25 +1452,25 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 3 & $199$ & pierwsza & $0.038669$\\
 \hline
 
-4 & $1999$ & pierwsza & $0.037960$ \\
+4 & $\num{1999}$ & pierwsza & $0.037960$ \\
 \hline
 
-5 & $6899$ & pierwsza & $0.037959$\\
+5 & $\num{6899}$ & pierwsza & $0.037959$\\
 \hline
 
-6 & $94427$ & pierwsza & $0.040197$ \\
+6 & $\num{94427}$ & pierwsza & $0.040197$ \\
 \hline
 
-7 & $94428$ & z³o¿ona & $0.018025$\\
+7 & $\num{94428}$ & z³o¿ona & $0.018025$\\
 \hline
 
-8 & $15472145$ & z³o¿ona & $0.049525$\\
+8 & $\num{15472145}$ & z³o¿ona & $0.049525$\\
 \hline
 
-9 & $15472147$ & pierwsza & $0.035766$\\
+9 & $\num{15472147}$ & pierwsza & $0.035766$\\
 \hline
 
-10 & $15485857$ & pierwsza & $0.045164$\\
+10 & $\num{15485857}$ & pierwsza & $0.045164$\\
 \hline
 
 \end{tabular}

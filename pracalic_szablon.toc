@@ -3,32 +3,32 @@
 \contentsline {section}{\numberline {1.1\relax .\kern .5em }Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}{11}{section.1.1}
 \contentsline {section}{\numberline {1.2\relax .\kern .5em }Twierdzenie i algorytm Euklidesa}{15}{section.1.2}
 \contentsline {section}{\numberline {1.3\relax .\kern .5em }Kongruencje i ich zastosowania}{16}{section.1.3}
-\contentsline {section}{\numberline {1.4\relax .\kern .5em }Sito Eratostenesa, Atkina i Sundarama}{19}{section.1.4}
-\contentsline {section}{\numberline {1.5\relax .\kern .5em }Spirala Ulama}{23}{section.1.5}
-\contentsline {section}{\numberline {1.6\relax .\kern .5em }Twierdzenie Wilsona i ma\IeC {\l }e twierdzenie Fermata}{24}{section.1.6}
-\contentsline {section}{\numberline {1.7\relax .\kern .5em }W\IeC {\l }asno\'sci liczb pierwszych}{28}{section.1.7}
-\contentsline {chapter}{\ 2\relax .\kern .5em Testy pierwszo\'sci liczb}{31}{chapter.2}
-\contentsline {section}{\numberline {2.1\relax .\kern .5em }Testy deterministyczne}{31}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1\relax .\kern .5em }Metoda naiwna}{31}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2\relax .\kern .5em }Test pierwszo\'sci AKS}{32}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3\relax .\kern .5em }Test pierwszo\'sci APR}{35}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4\relax .\kern .5em }Test Lucasa-Lehmera}{35}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2\relax .\kern .5em }Testy probabilistyczne}{35}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1\relax .\kern .5em }Test pierwszo\'sci Fermata}{35}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2\relax .\kern .5em }Test pierwszo\'sci Lehmana}{37}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3\relax .\kern .5em }Test pierwszo\'sci Solovaya-Strassena}{38}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4\relax .\kern .5em }Test pierwszo\'sci Millera-Rabina}{40}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5\relax .\kern .5em }Chi\'nski test pierwszo\'sci}{41}{subsection.2.2.5}
-\contentsline {chapter}{\ 3\relax .\kern .5em Zastosowania w kryptografii}{43}{chapter.3}
-\contentsline {chapter}{Skrypty z programu Matlab}{45}{chapter*.2}
-\contentsline {section}{Sito Eratostenesa}{45}{section*.3}
-\contentsline {section}{Sito Sundarama}{45}{section*.4}
-\contentsline {section}{Funkcja Eulera}{46}{section*.5}
-\contentsline {section}{Rz\k ad multiplikatywny}{46}{section*.6}
-\contentsline {section}{Metoda naiwna}{47}{section*.7}
-\contentsline {section}{Test pierwszo\'sci AKS}{48}{section*.8}
-\contentsline {section}{Test pierwszo\'sci Fermata}{50}{section*.9}
-\contentsline {section}{Test pierwszo\'sci Lehmana}{51}{section*.10}
-\contentsline {section}{Test pierwszo\'sci Solovaya-Strassena}{51}{section*.11}
-\contentsline {section}{Test pierwszo\'sci Millera-Rabina}{52}{section*.12}
-\contentsline {chapter}{Bibliografia}{55}{chapter*.13}
+\contentsline {section}{\numberline {1.4\relax .\kern .5em }Sito Eratostenesa, Atkina i Sundarama}{21}{section.1.4}
+\contentsline {section}{\numberline {1.5\relax .\kern .5em }Spirala Ulama}{24}{section.1.5}
+\contentsline {section}{\numberline {1.6\relax .\kern .5em }Twierdzenie Wilsona i ma\IeC {\l }e twierdzenie Fermata}{25}{section.1.6}
+\contentsline {section}{\numberline {1.7\relax .\kern .5em }W\IeC {\l }asno\'sci liczb pierwszych}{29}{section.1.7}
+\contentsline {chapter}{\ 2\relax .\kern .5em Testy pierwszo\'sci liczb}{33}{chapter.2}
+\contentsline {section}{\numberline {2.1\relax .\kern .5em }Testy deterministyczne}{33}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1\relax .\kern .5em }Metoda naiwna}{33}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2\relax .\kern .5em }Test pierwszo\'sci AKS}{34}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3\relax .\kern .5em }Test pierwszo\'sci APR}{37}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4\relax .\kern .5em }Test Lucasa-Lehmera}{37}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2\relax .\kern .5em }Testy probabilistyczne}{37}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1\relax .\kern .5em }Test pierwszo\'sci Fermata}{37}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2\relax .\kern .5em }Test pierwszo\'sci Lehmana}{39}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3\relax .\kern .5em }Test pierwszo\'sci Solovaya-Strassena}{40}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4\relax .\kern .5em }Test pierwszo\'sci Millera-Rabina}{42}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5\relax .\kern .5em }Chi\'nski test pierwszo\'sci}{43}{subsection.2.2.5}
+\contentsline {chapter}{\ 3\relax .\kern .5em Zastosowania w kryptografii}{45}{chapter.3}
+\contentsline {chapter}{Skrypty z programu Matlab}{47}{chapter*.2}
+\contentsline {section}{Sito Eratostenesa}{47}{section*.3}
+\contentsline {section}{Sito Sundarama}{47}{section*.4}
+\contentsline {section}{Funkcja Eulera}{48}{section*.5}
+\contentsline {section}{Rz\k ad multiplikatywny}{48}{section*.6}
+\contentsline {section}{Metoda naiwna}{49}{section*.7}
+\contentsline {section}{Test pierwszo\'sci AKS}{50}{section*.8}
+\contentsline {section}{Test pierwszo\'sci Fermata}{52}{section*.9}
+\contentsline {section}{Test pierwszo\'sci Lehmana}{53}{section*.10}
+\contentsline {section}{Test pierwszo\'sci Solovaya-Strassena}{53}{section*.11}
+\contentsline {section}{Test pierwszo\'sci Millera-Rabina}{54}{section*.12}
+\contentsline {chapter}{Bibliografia}{57}{chapter*.13}
