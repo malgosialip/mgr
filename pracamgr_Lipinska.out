@@ -1,0 +1,36 @@
+\BOOKMARK [0][-]{chapter*.1}{Wstep}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Spis oznaczen i symboli}{}% 2
+\BOOKMARK [0][-]{chapter.1}{ 1. Liczby pierwsze}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Twierdzenie i algorytm Euklidesa}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Kongruencje i ich zastosowania}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{Sito Eratostenesa, Atkina i Sundarama}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{Spirala Ulama}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.6}{Twierdzenie Wilsona i male twierdzenie Fermata}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.7}{Wlasnosci liczb pierwszych}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{ 2. Testy pierwszosci liczb}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Testy deterministyczne}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.1.1}{Metoda naiwna}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.2}{Test pierwszosci AKS}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.3}{Test pierwszosci APR}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.4}{Test Lucasa-Lehmera}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{Testy probabilistyczne}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{Test pierwszosci Fermata}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.2}{Test pierwszosci Lehmana}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.3}{Test pierwszosci Solovaya-Strassena}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.4}{Test pierwszosci Millera-Rabina}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.5}{Chinski test pierwszosci}{section.2.2}% 22
+\BOOKMARK [0][-]{chapter.3}{ 3. Zastosowania w kryptografii}{}% 23
+\BOOKMARK [0][-]{chapter*.3}{Skrypty z programu Matlab}{}% 24
+\BOOKMARK [1][-]{section*.4}{Sito Eratostenesa}{chapter*.3}% 25
+\BOOKMARK [1][-]{section*.5}{Sito Sundarama}{chapter*.3}% 26
+\BOOKMARK [1][-]{section*.6}{Funkcja Eulera}{chapter*.3}% 27
+\BOOKMARK [1][-]{section*.7}{Rzad multiplikatywny}{chapter*.3}% 28
+\BOOKMARK [1][-]{section*.8}{Metoda naiwna}{chapter*.3}% 29
+\BOOKMARK [1][-]{section*.9}{Test pierwszosci AKS}{chapter*.3}% 30
+\BOOKMARK [1][-]{section*.10}{Test pierwszosci Fermata}{chapter*.3}% 31
+\BOOKMARK [1][-]{section*.11}{Test pierwszosci Lehmana}{chapter*.3}% 32
+\BOOKMARK [1][-]{section*.12}{Test pierwszosci Solovaya-Strassena}{chapter*.3}% 33
+\BOOKMARK [1][-]{section*.13}{Test pierwszosci Millera-Rabina}{chapter*.3}% 34
+\BOOKMARK [0][-]{chapter*.14}{Bibliografia}{}% 35
+\BOOKMARK [0][-]{chapter*.15}{Skorowidz}{}% 36

@@ -11,6 +11,8 @@
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{siunitx}
+\usepackage{makeidx} %skorowidz
+\makeindex
 
 
 %%MATLAB%%
@@ -229,6 +231,9 @@ Sk³adam serdecznie podziêkowania
 \pagestyle{fancy}
 \tableofcontents
 
+\newpage
+Spis oznaczeñ:
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%
@@ -249,23 +254,23 @@ Sk³adam serdecznie podziêkowania
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Liczby pierwsze}
-Poni¿szy rozdzia³ jest zbiorem wszystkich najwa¿niejszych pojêæ i twierdzeñ zwi¹zanych z liczbami pierwszymi oraz ich w³asnoœciami.
+Poni¿szy rozdzia³ jest zbiorem najwa¿niejszych pojêæ i twierdzeñ zwi¹zanych z liczbami pierwszymi oraz ich w³asnoœciami.
 
 \section{Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}
 Jednym z najwa¿niejszymi twierdzeñ dotycz¹cych liczb pierwszych jest zasadnicze twierdzenie arytmetyki. Jego wprowadzenie i~udowodnienie wymaga zdefiniowania kilku podstawowych pojêæ z zakresu teorii liczb, które zostan¹ omówione w tym podrozdziale.
  
-\begin{definicja}
-\textit{Liczb¹ pierwsz¹} nazywa siê liczbê naturaln¹ wiêksz¹ od 1, która ma dok³adnie dwa dzielniki: jedynkê i sam¹ siebie. 
-\end{definicja}
-
-Zbiór wszystkich liczb pierwszych oznacza siê liter¹ $\mathbb{P}$.
-Liczb¹ z³o¿on¹ jest wiêc liczba, która ma wiêcej ni¿ dwa dzielniki. Warto zauwa¿yæ, ¿e 1 nie jest liczb¹ ani pierwsz¹, ani z³o¿on¹.
-
 \begin{definicja} \cite[\mbox{s.} 3]{marzant}
 \textit{Liczba ca³kowita $b$ jest podzielna przez liczbê ca³kowit¹ $a$}, jeœli istnieje taka liczba ca³kowita $e$, ¿e zachodzi $b = ae$. Wtedy liczba $a$ jest dzielnikiem liczby $b$, z kolei o liczbie $b$ mówi siê, ¿e jest wielokrotnoœci¹ $a$.
 \end{definicja}
 
-Jeœli liczba $b$ jest podzielna przez $a$ ($a$ dzieli $b$), to u¿ywa siê oznaczenia $a \mid b$, natomiast w przeciwnym przypadku stosuje siê oznaczenie $a \nmid b$.
+Jeœli liczba $b$ jest podzielna przez $a$ ($a$ dzieli $b$), to u¿ywa siê oznaczenia $a \mid b$, natomiast w przeciwnym przypadku stosuje siê oznaczenie $a \nmid b$. 
+ 
+\begin{definicja}
+\textit{Liczb¹ pierwsz¹} \index{liczba!pierwsza} nazywa siê liczbê naturaln¹ wiêksz¹ od 1, która ma dok³adnie dwa dzielniki: jedynkê i sam¹ siebie. 
+\end{definicja}
+
+Zbiór wszystkich liczb pierwszych oznacza siê liter¹ $\mathbb{P}$.
+Liczb¹ z³o¿on¹ jest wiêc liczba, która ma wiêcej ni¿ dwa dzielniki. Warto zauwa¿yæ, ¿e 1 nie jest liczb¹ ani pierwsz¹, ani z³o¿on¹.
 
 \begin{definicja}
 \textit{Najmniejsza wspólna wielokrotnoœæ} dla zadanych liczb ca³kowitych to najmniejsza liczba naturalna, któr¹ dzieli siê bez reszty przez ka¿d¹ z tych liczb. 
@@ -501,7 +506,7 @@ $$(a-c) - (b-d) = (a-b) - (c-d) = (h-g)n,$$
 sk¹d wynika, ¿e 
 $$(a-c) - (b-d) \equiv 0 \  (mod \ n) \Rightarrow a-c \equiv b-d \  (mod \ n).$$
 Opieraj¹c siê na to¿samoœci
-$$ac - bd = (a-b)c + (c-d)b = hnc + gnb = (hc + gb)n,b$$
+$$ac - bd = (a-b)c + (c-d)b = hnc + gnb = (hc + gb)n,$$
 otrzymujemy, ¿e 
 $$ac - bd = 0 \ (mod \ n) \Rightarrow ac = bd \ (mod \ n).$$
 
@@ -594,7 +599,7 @@ Jeœli zbiór $\{a_{1},a_{2},...,a_{\varphi(m)}\}$ tworzy zredukowany uk³ad reszt 
 
 \begin{definicja} \cite[\mbox{s.} 15]{zakrzew}
 \textit{Odwrotnoœci¹ elementu} $a$ \textit{modulo} $n$ jest taki element, oznaczany przez $a^{-1}$, ¿e
-$$aa^{-1} \equiv 1 \ mod \ n.$$
+$$aa^{-1} \equiv 1 \ (mod \ n).$$
 \end{definicja}
 
 \begin{twierdzenie}
@@ -740,7 +745,7 @@ Podrozdzia³ ten jest poœwiêcony dwóm klasycznym twierdzeniom z zakresu teorii li
 \begin{twierdzenie}(Twierdzenie Wilsona, 1770 r.) \cite[\mbox{s.} 18]{zakrzew}
 \label{wilson}
 Liczba naturalna $p>1$ jest liczb¹ pierwsz¹ wtedy i tylko wtedy, gdy
-$$(p-1)!+1 \equiv 0 \ mod \ p.$$
+$$(p-1)!+1 \equiv 0 \ (mod \ p).$$
 \end{twierdzenie}
 
 Za odkrywcê powy¿szego twierdzenia uznaje siê Johna Wilsona, zosta³o jednak opublikowane przez Edwarda Waringa. Jak siê okazuje, wczeœniej mówi³ o nim ju¿ al-Hajsam (X/XI w.) i Leibniz (XVII w.). Pierwszy dowód twierdzenia Wilsona pochodzi od Lagrange'a i zosta³ przedstawiony w 1777 roku.
@@ -749,23 +754,23 @@ Za odkrywcê powy¿szego twierdzenia uznaje siê Johna Wilsona, zosta³o jednak opub
 Na pocz¹tek nale¿y pokazaæ, ¿e jeœli $p$ jest liczb¹ pierwsz¹, to zachodzi powy¿sza kongruencja. Dla $p=2$ implikacja jest spe³niona, wiêc ograniczono siê do liczb pierwszych nieparzystych.
 Poniewa¿ $p$ jest liczb¹ pierwsz¹, wiêc ka¿da z liczb $1,2,3,...,p-2,p-1$ ma swoj¹ odwrotnoœæ modulo $p$. 
 Poszukuje siê, dla jakich $a$ spoœród tych liczb zachodzi
-$$a \equiv a^{-1} \ mod \ p,$$
+$$a \equiv a^{-1} \ (mod \ p),$$
 tzn. 
-$$a^{2} \equiv 1 \ mod \ p.$$
+$$a^{2} \equiv 1 \ (mod \ p).$$
 Ostatni warunek oznacza, ¿e liczba $p$ musi dzieliæ
 $$a^{2}-1 = (a+1)(a-1).$$
 Z Lematu \ref{Euklideslemat} (Euklidesa) wynika, ¿e $p$ dzieli $a+1$ lub $a-1$, wiêc $a=p-1$ lub $a=1$. Te dwie liczby na razie pominiêto. Wówczas liczby $2,3,...,p-2$ dziel¹ siê na pary, liczba i jej odwrotnoœæ modulo $p$, sk¹d wynika, ¿e
-$$2 \cdot 3 \cdot ... \cdot (p-2) \equiv 1 \ mod \ p.$$
+$$2 \cdot 3 \cdot ... \cdot (p-2) \equiv 1 \ (mod \ p).$$
 Mno¿¹c obie strony powy¿szej kongruencji przez $p-1$ otrzymano
-$$(p-1)! \equiv p-1 \equiv -1 \ mod \ p,$$
+$$(p-1)! \equiv p-1 \equiv -1 \ (mod \ p),$$
 co koñczy dowód pierwszej implikacji.
 
 Teraz wystarczy pokazaæ implikacjê w drug¹ stronê. Nale¿y zatem udowodniæ, ¿e je¿eli $n$ jest liczb¹ z³o¿on¹ to zachodzi
-$$(n-1)!+1 \not\equiv 0 \ mod \ n.$$
+$$(n-1)!+1 \not\equiv 0 \ (mod \ n).$$
 Jeœli $n$ jest liczb¹ z³o¿on¹, to zachodzi $n=pq$. Za³o¿ono, ¿e $p<q$. Wówczas
 $$(n-1)!=1 \cdot 2 \cdot 3 \cdot ... \cdot (p-1) \cdot p \cdot ... \cdot (q-1) \cdot q \cdot ... \cdot (n-1),$$
 wiêc $(n-1)!$ jest podzielne przez $n$. St¹d $(n-1)!+1$ nie mo¿e byæ podzielne przez $n$. Wynika st¹d, ¿e
-$$(n-1)!+1 \not\equiv 0 \ mod \ n,$$
+$$(n-1)!+1 \not\equiv 0 \ (mod \ n),$$
 co koñczy dowód.
 \end{dowod}
 
@@ -805,7 +810,7 @@ Jeœli liczba pierwsza $p$ nie dzieli $a$, to ci¹g reszt z dzielenia $a$ przez $p
 a,2a,3a,...,(p-1)a \ (mod \ p)
 \end{equation}
 ró¿ni¹ siê jedynie kolejnoœci¹.
-£atwo zauwa¿yæ, ¿e jeœli $p$ nie dzieli $a$, to niemo¿liwe jest, aby $ka \equiv 0 \ (mod \ p)$ dla $k=1,2,...,p-1$. Z tego wynika, ¿e wszystkie reszty $ka \ mod \ p$ s¹ liczbami naturalnymi od $1$ do $p-1$. Poniewa¿ liczb tych jest dok³adnie $p-1$, wiêc nale¿y pokazaæ, ¿e s¹ one parami ró¿ne.
+£atwo zauwa¿yæ, ¿e jeœli $p$ nie dzieli $a$, to niemo¿liwe jest, aby $ka \equiv 0 \ (mod \ p)$ dla $k=1,2,...,p-1$. Z tego wynika, ¿e wszystkie reszty $ka \ (mod \ p)$ s¹ liczbami naturalnymi od $1$ do $p-1$. Poniewa¿ liczb tych jest dok³adnie $p-1$, wiêc nale¿y pokazaæ, ¿e s¹ one parami ró¿ne.
 
 Za³o¿ono, ¿e dla $i,j<p$, gdzie $i \neq j$ zachodzi $ai \equiv aj \ (mod \ p)$. Z treœci twierdzenia wiadomo, ¿e $a$ nie jest podzielne przez $p$, wiêc obie strony mo¿na podzieliæ przez $a$, sk¹d otrzymano $i \equiv j \ (mod \ p)$. Obie liczby s¹ z za³o¿enia mniejsze od $p$, wiêc $i = j$, co prowadzi do sprzecznoœci.
 
@@ -1429,7 +1434,7 @@ Algorytm dzia³ania testu pierwszoœci Millera-Rabina przebiega nastêpuj¹co:
 \begin{enumerate}
 \item Obliczamy $n-1=2^{s} \cdot t$, gdzie $t$ jest liczb¹ nieparzyst¹.
 \item Losujemy $b \in \{2,...,n-2\}$.
-\item Obliczamy $a = b^{t}$ mod $n$. Jeœli $a=\pm 1$, to $n$ mo¿e byæ pierwsza.
+\item Obliczamy $a = b^{t}$ (mod $n$). Jeœli $a=\pm 1$, to $n$ mo¿e byæ pierwsza.
 \item Obliczamy $a = b^{2^{r}t}$ (mod $n$) dla $0 < r < s$. Jeœli dla pewnego $r$ otrzymamy $a = -1$, to $n$ mo¿e byæ pierwsza, w przeciwnym razie $n$ jest z³o¿ona.
 \end{enumerate}
 Po otrzymaniu odpowiedzi "$n$ jest pierwsza" powtarzamy kroki algorytmu 2-4. 
@@ -1520,6 +1525,7 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \lstinputlisting[frame=single, label = testMR, caption = Skrypt testu pierwszoœci Millera-Rabina.]{TestMilleraRabina.m}
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%
 %%%%%%%%%%%%%
@@ -1540,4 +1546,9 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \bibitem{aks} \url{https://www.cse.iitk.ac.in/users/manindra/algebra/primality_v6.pdf} (dostêp 25.03.2018)
 \bibitem{multord} \url{https://en.wikipedia.org/wiki/Multiplicative_order}
 \end{thebibliography}
+
+\newpage
+%makeindex nazwa_pliku
+\printindex
+
 \end{document}

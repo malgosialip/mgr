@@ -12,10 +12,9 @@ tic;
       return   
   else
   [n,p] = sitoEratostenesa(N);
-  lp = p(p<=sqrt(N))
+  lp = p(p<=sqrt(N));
   l = length(lp);
   m = ones(l,1);
-  end
   
   for i=1:l
       if mod(N, lp(i))==0 
@@ -23,6 +22,7 @@ tic;
           break
       else
           m(i)=0;
+          i=i+1; 
       end
   end
   if sum(m)==0
