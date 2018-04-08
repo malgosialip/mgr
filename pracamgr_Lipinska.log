@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  7 APR 2018 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  8 APR 2018 21:37
 entering extended mode
 **./pracamgr_Lipinska.tex
 (pracamgr_Lipinska.tex
@@ -1008,12 +1008,7 @@ Package amsmath Warning: Foreign command \atopwithdelims;
                                                   \fi \fi 
 l.1189 
        ] [40]
-Overfull \hbox (18.1295pt too wide) in paragraph at lines 1225--1264
- [] 
- []
-
-
-Overfull \hbox (15.91333pt too wide) in paragraph at lines 1283--1325
+Overfull \hbox (18.1295pt too wide) in paragraph at lines 1245--1284
  [] 
  []
 
@@ -1022,50 +1017,65 @@ Overfull \hbox (15.91333pt too wide) in paragraph at lines 1283--1325
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1328 \end{table}
-                  ] [42pdfTeX warning (ext4): destination with the same identif
-ier (name{table.2.4}) has been already used, duplicate ignored
+l.1290 
+       ]
+Overfull \hbox (15.91333pt too wide) in paragraph at lines 1314--1356
+ [] 
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1384 
-       ] [43pdfTeX warning (ext4): destination with the same identifier (name{t
-able.2.5}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1408 ...\left(\frac {a}{p_{k}}\right)^{m_{k}}.$$
-                                                  ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
-[45pdfTeX warning (ext4): destination with the same identifier (name{table.2.6}
+ [42]
+[43pdfTeX warning (ext4): destination with the same identifier (name{table.2.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1498 \item L
-              osujemy $b \in \{2,...,n-2\}$.] [46pdfTeX warning (ext4): destina
+l.1423 \end{table}
+                  ]
+Overfull \hbox (5.76389pt too wide) in paragraph at lines 1428--1429
+[]\T1/cmr/m/n/12 Kolejnym pro-ba-bi-li-stycz-nym te-stem pierw-szo-±ci jest tes
+t Solovaya-Strassena, []opra-
+ []
+
+[44pdfTeX warning (ext4): destination with the same identifier (name{table.2.5}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1446 ...{m_{2}} \cdot ... \cdot p_{k}^{m_{k}}.$$
+                                                  ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+[46pdfTeX warning (ext4): destination with the same identifier (name{table.2.6}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1538 \item L
+              osujemy $b \in \{2,...,n-2\}$.] [47pdfTeX warning (ext4): destina
 tion with the same identifier (name{table.2.7}) has been already used, duplicat
 e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1555 \chapter{Zastosowania w kryptografii}
-                                            ]
+l.1595 \chapter{Zastosowania w kryptografii}
+                                            ] [48
+
+]
  3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 5.87357pt
-(hyperref)                replaced by space on input line 1555.
+(hyperref)                replaced by space on input line 1595.
 
-[47
-
-] [48
+[49] [50
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1559.
+nput line 1599.
  (sitoEratostenesa.m) (sitoSundarama.m
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
 
@@ -1074,39 +1084,39 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
-) [49] (euler_phi.m)
-(mult_order.m) [50] (MetodaNaiwna.m) [51] (MetodaAKS.m [52]) [53]
-(testFermata.m [54]) (testLehmana.m) (testSolovaya.m [55]) (TestMilleraRabina.m
-[56]) [57] [58
+) [51] (euler_phi.m)
+(mult_order.m) [52] (MetodaNaiwna.m) [53] (MetodaAKS.m [54]) [55]
+(testFermata.m [56]) (testLehmana.m) (testSolovaya.m [57]) (TestMilleraRabina.m
+[58]) [59] [60
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1606
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1646
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1610
+Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
 [][]$\T1/cmtt/m/n/10.95 https : / / www . cse . iitk . ac . in / users / manind
 ra / algebra / primality _ v6 . pdf$[] \T1/cmr/m/n/10.95 (do-
  []
 
-[59] (pracamgr_Lipinska.ind [60
+[61] (pracamgr_Lipinska.ind [62
 
 
-] [61])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1616.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1616.
+] [63])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1656.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1656.
  (pracamgr_Lipinska.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1616.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1616.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1656.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1656.
 
 Package rerunfilecheck Info: File `pracamgr_Lipinska.out' has not changed.
 (rerunfilecheck)             Checksum: F35EF183CB2B59F49DA6B84A9BB4B3DE;2563.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1616.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1656.
  ) 
 Here is how much of TeX's memory you used:
- 21151 strings out of 493323
- 382560 string characters out of 3139053
+ 21172 strings out of 493323
+ 382727 string characters out of 3139053
  515465 words of memory out of 3000000
  23962 multiletter control sequences out of 15000+200000
  553288 words of font info for 78 fonts, out of 3000000 for 9000
@@ -1142,9 +1152,9 @@ amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on pracamgr_Lipinska.pdf (61 pages, 1935329 bytes).
+Output written on pracamgr_Lipinska.pdf (63 pages, 1940647 bytes).
 PDF statistics:
- 1738 PDF objects out of 2073 (max. 8388607)
- 494 named destinations out of 1000 (max. 500000)
+ 1770 PDF objects out of 2073 (max. 8388607)
+ 515 named destinations out of 1000 (max. 500000)
  299 words of extra memory for PDF output out of 10000 (max. 10000000)
 

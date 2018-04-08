@@ -1218,7 +1218,27 @@ Algorytm testu pierwszoœci Fermata dla zadanej liczby $p$ wygl¹da nastêpuj¹co:
 
 Przy kilkukrotnym powtórzeniu losowania dla ró¿nych liczb test Fermata daje bardzo wiarygodny wynik. 
 
-Implementacja testu pierwszoœci Fermata w programie Matlab przedstawiona zosta³a w skrypcie \ref{testFermata}. W tabeli \ref{tabelaFermat} przedstawione s¹ wyniki dzia³ania tego kodu dla ró¿nych liczb pierwszych i z³o¿onych oraz czas dzia³ania algorytmu.
+\begin{przyklad}
+U¿ywaj¹c testu pierwszoœci Fermata sprawdzimy, czy liczba 23 jest liczb¹ pierwsz¹.
+\end{przyklad}
+\begin{enumerate}
+\item Losujemy $a \in [2,21]$. Niech $a = 4$.
+\item $d = NWD(4,23) = 1$. 
+\item Kongruencja $a^{p-1} \equiv 1 \ (mod \ p)$ jest spe³niona, poniewa¿ $4^{22} \equiv 1 \ (mod \ 23)$.
+\item Liczba 23 mo¿e byæ liczb¹ pierwsz¹.
+\end{enumerate}
+
+\begin{przyklad}
+U¿ywaj¹c testu pierwszoœci Fermata sprawdzimy, czy liczba 25 jest liczb¹ pierwsz¹.
+\end{przyklad}
+\begin{enumerate}
+\item Losujemy $a \in [2,24]$. Niech $a = 8$.
+\item $d = NWD(8,25) = 1$. 
+\item Kongruencja  $a^{p-1} \equiv 1 \ (mod \ p)$ nie zachodzi, poniewa¿ $8^{24} \equiv 21 \ (mod \ 25)$.
+\item Liczba 25 jest liczb¹ z³o¿on¹.
+\end{enumerate}
+
+Implementacja testu pierwszoœci Fermata w programie Matlab zawarta zosta³a w skrypcie \ref{testFermata}. W tabeli \ref{tabelaFermat} przedstawione s¹ wyniki dzia³ania tego kodu dla ró¿nych liczb pierwszych i z³o¿onych oraz czas dzia³ania algorytmu.
 
 \begin{table}[H] 
 \begin{center}
@@ -1271,12 +1291,23 @@ Lp. & Liczba $p$ & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \
 Trzeba zaznaczyæ, ¿e kongruencja \ref{mtfw} mo¿e zachodziæ tak¿e w pewnych przypadkach, gdy liczba $p$ nie jest liczb¹ pierwsz¹.
 
 \begin{definicja} \cite[\mbox{s.} 49]{zakrzew}
-\textit{Liczby Carmichaela} \index{liczby!Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata \ref{mtf} jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i tylko wtedy, gdy jest liczb¹ z³o¿on¹ i dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
+\textit{Liczby Carmichaela} \index{liczby!Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata \ref{mtf} jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i~tylko wtedy, gdy jest liczb¹ z³o¿on¹ i~dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
 \end{definicja}
 
 Najmniejsz¹ liczb¹ Carmichaela jest $561 = 3 \cdot 11 \cdot 17$. Innymi z nich s¹ na przyk³ad $1105 = 5 \cdot 13 \cdot 17$, $1729 = 7 \cdot 13 \cdot 19$ lub $2465 = 5 \cdot 17 \cdot 29$.
 
-Test Fermata zastosowany do liczby Carmichaela jest nieskuteczny, co pokazane jest w tabeli \ref{tabelaFermatCarm}.
+\begin{przyklad}
+U¿ywaj¹c testu pierwszoœci Fermata sprawdzimy, czy liczba 561 jest liczb¹ pierwsz¹.
+\end{przyklad}
+\begin{enumerate}
+\item Losujemy $a \in [2,559]$. Niech $a = 5$.
+\item $d = NWD(5,561) = 1$.
+\item Kongruencja $a^{p-1} \equiv 1 \ (mod \ p)$ zachodzi, gdy¿ $5^{560} \equiv 1 \ (mod \ 561)$.
+\item Liczba 561 mo¿e byæ liczb¹ pierwsz¹.
+\end{enumerate}
+Po zastosowaniu algorytmu liczba 561 zosta³a b³êdnie wskazana jako liczba prawdopodobnie pierwsza. Sta³o siê tak, poniewa¿ dla liczby Carmichaela równoœæ z ma³ego twierdzenia Fermata \ref{mtf} zachodzi dla wszystkich $a$ takich, ¿e $NWD(a, p) = 1$.
+
+Test Fermata zastosowany do liczby Carmichaela jest nieskuteczny, co przedstawione zosta³o w tabeli \ref{tabelaFermatCarm}.
 
 \begin{table}[H] 
 \begin{center}
@@ -1330,11 +1361,20 @@ Lp. & L. Carmichaela & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania $[s]$ \\ [0
 Jak wynika z powy¿szej tabeli, liczby Carmichaela przechodz¹ test pierwszoœci Fermata z du¿ym prawdopodobieñstwem.
 
 \subsection{Test pierwszoœci Lehmana}
-\textit{Test Lehmana} \cite[\mbox{s.} 60]{karbowski} \index{test pierwszoœci!Lehmana} jest kolejnym testem probabilistycznym pierwszoœci liczb. Algorytm testu Lehmana dla du¿ej liczby $p$ wygl¹da nastêpuj¹co:
+\textit{Test Lehmana} \cite[\mbox{s.} 60]{karbowski} \index{test pierwszoœci!Lehmana} jest kolejnym probabilistycznym testem  pierwszoœci liczb. Algorytm testu Lehmana dla du¿ej liczby $p$ wygl¹da nastêpuj¹co:
 \begin{enumerate}
 \item Losujemy du¿¹ liczbê $a < p$.
-\item Obliczamy $b=a^{(p-1)/2} \ (mod \ p)$.
+\item Obliczamy $b \equiv a^{(p-1)/2} \ (mod \ p)$.
 \item Jeœli $b \equiv 1 \ (mod \ p)$ lub $b \equiv -1 \ (mod \ p)$ to $p$ jest liczb¹ pierwsz¹ z prawdopodobieñstwem wiêkszym lub równym $50\%$. W przeciwnym wypadku $p$ jest liczb¹ z³o¿on¹. 
+\end{enumerate}
+
+\begin{przyklad}
+Stosuj¹c test pierwszoœci Lehmana sprawdzimy, czy 31 jest liczb¹ pierwsz¹.
+\end{przyklad}
+\begin{enumerate}
+\item Losujemy du¿¹ liczbê $a < 31$. Niech $a = 21$.
+\item Obliczamy $b = a^{(31-1)/2} = a^{15} \equiv 30 \ (mod \ 31)$.
+\item $b = 30 \equiv -1 \ (mod \ 31)$, st¹d 31 mo¿e byæ liczb¹ pierwsz¹ z prawdopodobieñstwem wiêkszym lub równym $50\%$.
 \end{enumerate}
 
 Skrypt \ref{testLehmana} przedstawia algorytm Lehmana w programie Matlab. Wyniki dzia³ania programu przedstawione zosta³y w tabeli \ref{tabelaLehman}.
@@ -1385,16 +1425,16 @@ Lp. & Liczba $p$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 Algorytm Lehmana jest bardzo szybki i zwraca prawid³owe wyniki dla liczb o ró¿nej wielkoœci.
 
 \subsection{Test pierwszoœci Solovaya-Strassena}
-Kolejnym probabilistycznym testem pierwszoœci jest test Solovaya-Strassena \index{test pierwszoœci!Solovaya-Strassena}, opracowany przez dwóch matematyków - amerykañskiego profesora Roberta M. Solovaya i profesora Volkera Strassena z Niemiec. Do wprowadzenia algorytmu testowania niezbêdna jest definicja symbolu Legendre’a.
+Kolejnym probabilistycznym testem pierwszoœci jest test Solovaya-Strassena, \index{test pierwszoœci!Solovaya-Strassena} opracowany przez dwóch matematyków - amerykañskiego profesora Roberta M. Solovaya i profesora Volkera Strassena z Niemiec. Do wprowadzenia algorytmu testowania niezbêdna jest definicja symbolu Legendre’a.
 
 \begin{definicja}
 Niech $p$ bêdzie liczb¹ pierwsz¹ wiêksz¹ od 2, a $a$ liczb¹ ca³kowit¹. \textit{Symbol Legendre'a} \index{symbol!Legendre'a} $\left( \frac{a}{p} \right)$ definiuje siê nastêpuj¹co
 
 $$
 \left( \frac{a}{p} \right)= \left\{ \begin{array}{ll}
-0, \textrm{ jeœli} a \textrm{jest wielokrotnoœci¹ liczby} p,\\
-1, \textrm{jeœli istnieje } b \textrm{takie, ¿e } b^{2}=a \ (mod \ p),\\
--1, \textrm{jeœli nie istnieje ¿adne $b$ takie, ¿e} b^{2}=a \ (mod \ p).
+\ \ 0, \ \textrm{ jeœli} \ a \ \textrm{jest wielokrotnoœci¹ liczby} p,\\
+\ \ 1, \ \textrm{jeœli istnieje } b \ \textrm{takie, ¿e } b^{2}=a \ (mod \ p),\\
+-1, \ \textrm{jeœli nie istnieje ¿adne $b$ takie, ¿e} \ b^{2}=a \ (mod \ p).
 \end{array} \right.
 $$
 \end{definicja}

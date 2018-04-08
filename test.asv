@@ -1,4 +1,0 @@
-clc, clear all
-for i=2:23
-    mult_order(i,11)
-end
