@@ -18,8 +18,8 @@
 \contentsline {subsection}{\numberline {2.2.1\relax .\kern .5em }Test pierwszo\'sci Fermata}{40}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2\relax .\kern .5em }Test pierwszo\'sci Lehmana}{43}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3\relax .\kern .5em }Test pierwszo\'sci Solovaya-Strassena}{44}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4\relax .\kern .5em }Test pierwszo\'sci Millera-Rabina}{46}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5\relax .\kern .5em }Chi\'nski test pierwszo\'sci}{47}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.4\relax .\kern .5em }Test pierwszo\'sci Millera-Rabina}{47}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5\relax .\kern .5em }Chi\'nski test pierwszo\'sci}{48}{subsection.2.2.5}
 \contentsline {chapter}{\ 3\relax .\kern .5em Zastosowania w kryptografii}{49}{chapter.3}
 \contentsline {chapter}{Skrypty z programu Matlab}{51}{chapter*.3}
 \contentsline {section}{Sito Eratostenesa}{51}{section*.4}

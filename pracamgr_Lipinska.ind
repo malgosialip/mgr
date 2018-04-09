@@ -17,7 +17,7 @@
     \subitem B\'ezout, \hyperpage{18}
     \subitem Euklidesa, \hyperpage{14}
   \item liczby
-    \subitem Carmichaela, \hyperpage{41}
+    \subitem Carmichaela, \hyperpage{42}
     \subitem Fermata, \hyperpage{32}
     \subitem Mersenne'a, \hyperpage{32}
     \subitem pierwsze, \hyperpage{13}
@@ -25,8 +25,8 @@
     \subitem pierwsze Mersenne'a, \hyperpage{32}
     \subitem pierwsze Sophie Germain, \hyperpage{32}
     \subitem pseudopierwsze, \hyperpage{30}
-    \subitem pseudopierwsze Eulera, \hyperpage{44}
-    \subitem silnie pseudopierwsze, \hyperpage{45}
+    \subitem pseudopierwsze Eulera, \hyperpage{45}
+    \subitem silnie pseudopierwsze, \hyperpage{46}
     \subitem wzgl\k ednie pierwsze, \hyperpage{14}
     \subitem z\IeC {\l }o\.zone, \hyperpage{13}
 
@@ -56,23 +56,23 @@
     \subitem Sundarama, \hyperpage{26}
   \item spirala Ulama, \hyperpage{27}
   \item symbol
-    \subitem Jacobiego, \hyperpage{43}
-    \subitem Legendre'a, \hyperpage{43}
+    \subitem Jacobiego, \hyperpage{45}
+    \subitem Legendre'a, \hyperpage{44}
 
   \indexspace
 
   \item test pierwszo\'sci
     \subitem AKS, \hyperpage{37}
     \subitem APR, \hyperpage{40}
-    \subitem chi\'nski, \hyperpage{46}
+    \subitem chi\'nski, \hyperpage{47}
     \subitem deterministyczny, \hyperpage{35}
     \subitem Fermata, \hyperpage{40}
-    \subitem Lehmana, \hyperpage{42}
+    \subitem Lehmana, \hyperpage{43}
     \subitem Lucasa-Lehmera, \hyperpage{40}
     \subitem metoda naiwna, \hyperpage{35}
-    \subitem Millera-Rabina, \hyperpage{45}
+    \subitem Millera-Rabina, \hyperpage{46}
     \subitem probabilistyczny, \hyperpage{40}
-    \subitem Solovaya-Strassena, \hyperpage{43}
+    \subitem Solovaya-Strassena, \hyperpage{44}
   \item twierdzenie
     \subitem Dirichleta, \hyperpage{32}
     \subitem Euklidesa, \hyperpage{17}

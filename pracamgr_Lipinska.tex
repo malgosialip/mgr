@@ -1425,22 +1425,35 @@ Lp. & Liczba $p$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 Algorytm Lehmana jest bardzo szybki i zwraca prawid³owe wyniki dla liczb o ró¿nej wielkoœci.
 
 \subsection{Test pierwszoœci Solovaya-Strassena}
-Kolejnym probabilistycznym testem pierwszoœci jest test Solovaya-Strassena, \index{test pierwszoœci!Solovaya-Strassena} opracowany przez dwóch matematyków - amerykañskiego profesora Roberta M. Solovaya i profesora Volkera Strassena z Niemiec. Do wprowadzenia algorytmu testowania niezbêdna jest definicja symbolu Legendre’a.
+Kolejnym probabilistycznym testem pierwszoœci jest test Solovaya-Strassena, \index{test pierwszoœci!Solovaya-Strassena} opracowany przez dwóch matematyków - amerykañskiego profesora Roberta M. Solovaya i~profesora Volkera Strassena z Niemiec. Do wprowadzenia algorytmu testowania niezbêdna jest definicja symbolu Legendre’a.
 
 \begin{definicja}
 Niech $p$ bêdzie liczb¹ pierwsz¹ wiêksz¹ od 2, a $a$ liczb¹ ca³kowit¹. \textit{Symbol Legendre'a} \index{symbol!Legendre'a} $\left( \frac{a}{p} \right)$ definiuje siê nastêpuj¹co
 
 $$
 \left( \frac{a}{p} \right)= \left\{ \begin{array}{ll}
-\ \ 0, \ \textrm{ jeœli} \ a \ \textrm{jest wielokrotnoœci¹ liczby} p,\\
+\ \ 0, \ \textrm{ jeœli} \ a \ \textrm{jest wielokrotnoœci¹ liczby} \ p,\\
 \ \ 1, \ \textrm{jeœli istnieje } b \ \textrm{takie, ¿e } b^{2}=a \ (mod \ p),\\
 -1, \ \textrm{jeœli nie istnieje ¿adne $b$ takie, ¿e} \ b^{2}=a \ (mod \ p).
 \end{array} \right.
 $$
 \end{definicja}
 
-Symbol Legendre'a mo¿na obliczyæ nastêpuj¹cym wzorem
+Symbol Legendre'a mo¿na obliczyæ nastêpuj¹cym wzorem.
+
+\begin{twierdzenie} (Kryterium Eulera w formie Legendre'a) \cite[\mbox{s.} 120]{zakrzew} \index{Kryterium Eulera w formie Legendre'a}
+Niech $p$ bêdzie nieparzyst¹ liczb¹ pierwsz¹. Wówczas
 $$\left( \frac{a}{p} \right) \equiv a^{\frac{p-1}{2}} \ (mod \ p).$$
+\end{twierdzenie}
+
+\begin{twierdzenie} \cite[\mbox{s.} 120]{zakrzew}
+Niech $p$ bêdzie nieparzyst¹ liczb¹ pierwsz¹, Wówczas dla liczb ca³kowitych $a$ i~$b$ zachodzi
+$$\left( \frac{ab}{p} \right) = \left( \frac{a}{p} \right) \left( \frac{b}{p} \right) \ (mod \ p).$$
+\end{twierdzenie}
+\begin{dowod}
+Zauwa¿my, ¿e
+$$\left( \frac{a}{p} \right) \equiv (ab)^{\frac{p-1}{2}} \equiv a^{\frac{p-1}{2}} b^{\frac{p-1}{2}} \equiv \left( \frac{a}{p} \right) \left( \frac{b}{p} \right) \ (mod \ p).$$
+\end{dowod}
 
 Symbol Legendre'a mo¿e byæ uogólniony do \textit{symbolu Jacobiego} \index{symbol!Jacobiego} $\left(\frac {a}{n}\right)$, gdzie $n$ jest dowoln¹ liczb¹ nieparzyst¹, która ma rozk³ad na czynniki pierwsze 
 $$n=p_{1}^{m_{1}} \cdot p_{2}^{m_{2}} \cdot ... \cdot p_{k}^{m_{k}}.$$
@@ -1460,14 +1473,43 @@ Test pierwszoœci liczby $n$ algorytmem Solovaya-Strassena przebiega nastêpuj¹co
 \begin{enumerate}
 \item Losujemy $b \in \{2,...,n-2\}$.
 \item Obliczamy $r = b^{\frac{n-1}{2}} \ (mod \ n)$. Jeœli $r \neq \pm 1$, to $n$ jest liczb¹ z³o¿on¹.
-\item Obliczamy $s = \left( \frac{b}{n} \right)$. Jeœli $r \neq s$, to $n$ jest z³o¿ona.
+\item Obliczamy symbol Jacobiego $s = \left( \frac{b}{n} \right)$. Jeœli $r \neq s$, to $n$ jest z³o¿ona.
 \end{enumerate} 
 
 Je¿eli po zakoñczeniu algorytmu nie ma odpowiedzi "n jest z³o¿ona", to test nale¿y powtórzyæ. Po $k$-krotnym powtórzeniu testu i stwierdzeniu, ¿e $n$ jest liczb¹ pseudopierwsz¹ Eulera przy ka¿dej z wybranych podstaw $b$, prawdopodobieñstwo, ¿e liczba $n$ jest jednak z³o¿ona wynosi $\frac{1}{2^{k}}$.
 
 %bibliografia - notatki z wykladu Teoria Liczb i elementy kryptografii
 
-Skrypt jednorazowego przejœcia algorytmu testu pierwszoœci Solovaya-Strassena w programie Matlab zosta³ przedstawiony na koñcu pracy (skrypt \ref{testSS}). Tabela \ref{tabelaSS} zawiera wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
+\begin{przyklad}
+U¿ywaj¹c testu Solovaya-Strassena sprawdzimy, czy liczba $n = 29$ jest liczb¹ pierwsz¹.
+\end{przyklad}
+Dla otrzymania wiarygodnego wyniku przeprowadzimy test trzykrotnie.
+
+Pierwsze sprawdzenie:
+\begin{enumerate}
+\item Losujemy $b \in \{2,...,27\}$. Niech $b = 7$.
+\item $r = 7^{\frac{29-1}{2}} = 7^{14} \equiv 1 \ (mod \ 29) $. $r = \pm 1$, wiêc nie mo¿emy jednoznacznie stwierdziæ, ¿e 29 jest liczb¹ z³o¿on¹.
+\item Obliczamy symbol Jacobiego $s = \left( \frac{7}{29} \right) = 1$. $r = s$, wiêc liczba 29 mo¿e byæ liczb¹ pierwsz¹.
+\end{enumerate} 
+
+Drugie sprawdzenie:
+\begin{enumerate}
+\item Losujemy $b \in \{2,...,27\}$. Niech $b = 9$.
+\item $r = 9^{\frac{29-1}{2}} = 9^{14} \equiv 1 \ (mod \ 29) $. $r = \pm 1$, wiêc nie mo¿emy jednoznacznie stwierdziæ, ¿e 29 jest liczb¹ z³o¿on¹.
+\item Obliczamy symbol Jacobiego $s = \left( \frac{9}{29} \right) = 1$. $r = s$, wiêc liczba 29 mo¿e byæ liczb¹ pierwsz¹.
+\end{enumerate} 
+
+Trzecie sprawdzenie:
+\begin{enumerate}
+\item Losujemy $b \in \{2,...,27\}$. Niech $b = 15$.
+\item $r = 15^{\frac{29-1}{2}} = 15^{14} \equiv 28 \equiv -1 \ (mod \ 29) $. $r = \pm 1$, wiêc nie mo¿emy jednoznacznie stwierdziæ, ¿e 29 jest liczb¹ z³o¿on¹.
+\item Obliczamy symbol Jacobiego $s = \left( \frac{15}{29} \right) = -1$. $r = s$, wiêc liczba 29 mo¿e byæ liczb¹ pierwsz¹.
+\end{enumerate} 
+
+Po trzykrotnym powtórzeniu testu prawdopodobieñstwo, ¿e liczba $29$ jest jednak z³o¿ona wynosi $\frac{1}{2^{3}}=\frac{1}{8}$.\\
+
+
+Skrypt jednorazowego przejœcia algorytmu testu pierwszoœci Solovaya-Strassena w programie Matlab zosta³ przedstawiony na koñcu niniejszej pracy (skrypt \ref{testSS}). Tabela \ref{tabelaSS} zawiera wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
 
 \begin{table}[H] 
 \begin{center}
@@ -1641,7 +1683,7 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \bibitem{karbowski} M. Karbowski, \textit{Podstawy kryptografii}, Wydanie III, Helion, Gliwice, (2014).
 \bibitem{marzant} W. Marzantowicz, P. Zarzycki, \textit{Elementarna teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2006).
 \bibitem{narkiewicz} W. Narkiewicz, \textit{Teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2003).
-\bibitem{sierpinski} W. Sierpiñski, \textit{Wstêp do teorii liczb}, Wydawnictwa Szkolne i Pedagogiczne, (1987).
+\bibitem{sierpinski} W. Sierpiñski, \textit{Teoria liczb}, Monografie Matematyczne, Warszawa (1950).
 \bibitem{zakrzew} M. Zakrzewski, \textit{Teoria liczb}, Wydanie I, Oficyna Wydawnicza GiS, Wroc³aw, (2017).
 \bibitem{lpb} \url{http://primes.utm.edu/largest.html} (dostêp 25.03.2018)
 \bibitem{gimps} \url{https://www.mersenne.org/primes/} (dostêp 25.03.2018)
