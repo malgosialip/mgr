@@ -1,54 +1,53 @@
-\indexentry{liczby!pierwsze|hyperpage}{13}
-\indexentry{liczby!z\IeC {\l }o\.zone|hyperpage}{13}
-\indexentry{najmniejsza wsp\'olna wielokrotno\'s\'c|hyperpage}{13}
-\indexentry{najwi\k ekszy wsp\'olny dzielnik|hyperpage}{13}
-\indexentry{liczby!wzgl\k ednie pierwsze|hyperpage}{14}
-\indexentry{lemat!Euklidesa|hyperpage}{14}
-\indexentry{twierdzenie!zasadnicze arytmetyki|hyperpage}{14}
-\indexentry{twierdzenie!Euklidesa|hyperpage}{17}
-\indexentry{algorytm Euklidesa|hyperpage}{17}
+\indexentry{liczby!pierwsze|hyperpage}{11}
+\indexentry{liczby!z\IeC {\l }o\.zone|hyperpage}{11}
+\indexentry{najmniejsza wsp\'olna wielokrotno\'s\'c|hyperpage}{11}
+\indexentry{najwi\k ekszy wsp\'olny dzielnik|hyperpage}{11}
+\indexentry{liczby!wzgl\k ednie pierwsze|hyperpage}{12}
+\indexentry{lemat!Euklidesa|hyperpage}{12}
+\indexentry{twierdzenie!zasadnicze arytmetyki|hyperpage}{12}
+\indexentry{twierdzenie!Euklidesa|hyperpage}{15}
+\indexentry{algorytm Euklidesa|hyperpage}{15}
+\indexentry{reszta z dzielenia|hyperpage}{15}
+\indexentry{lemat!B\'ezout|hyperpage}{16}
+\indexentry{kongruencja|hyperpage}{17}
+\indexentry{przystawanie modulo|hyperpage}{17}
 \indexentry{reszta z dzielenia|hyperpage}{17}
-\indexentry{lemat!B\'ezout|hyperpage}{18}
-\indexentry{kongruencja|hyperpage}{19}
-\indexentry{przystawanie modulo|hyperpage}{19}
-\indexentry{reszta z dzielenia|hyperpage}{19}
-\indexentry{kongruencja|hyperpage}{19}
-\indexentry{kongruencja|hyperpage}{19}
-\indexentry{klasy reszt|hyperpage}{21}
-\indexentry{uk\IeC {\l }ad reszt!pe\IeC {\l }ny|hyperpage}{21}
-\indexentry{uk\IeC {\l }ad reszt!zredukowany|hyperpage}{21}
-\indexentry{funkcja Eulera|hyperpage}{21}
-\indexentry{odwrotno\'s\'c elementu modulo|hyperpage}{22}
-\indexentry{sito!Eratostenesa|hyperpage}{23}
-\indexentry{sito!Atkina|hyperpage}{25}
-\indexentry{sito!Sundarama|hyperpage}{26}
-\indexentry{spirala Ulama|hyperpage}{27}
-\indexentry{twierdzenie!Wilsona|hyperpage}{28}
-\indexentry{twierdzenie!Eulera|hyperpage}{29}
-\indexentry{twierdzenie!ma\IeC {\l }e Fermata|hyperpage}{29}
-\indexentry{liczby!pseudopierwsze|hyperpage}{30}
-\indexentry{rz\k ad multiplikatywny|hyperpage}{30}
-\indexentry{twierdzenie!Dirichleta|hyperpage}{32}
-\indexentry{liczby!Fermata|hyperpage}{32}
-\indexentry{liczby!pierwsze bli\'zniacze|hyperpage}{32}
-\indexentry{liczby!pierwsze Sophie Germain|hyperpage}{32}
-\indexentry{liczby!Mersenne'a|hyperpage}{32}
-\indexentry{liczby!pierwsze Mersenne'a|hyperpage}{32}
-\indexentry{test pierwszo\'sci!deterministyczny|hyperpage}{35}
-\indexentry{test pierwszo\'sci!metoda naiwna|hyperpage}{35}
-\indexentry{test pierwszo\'sci!AKS|hyperpage}{37}
-\indexentry{twierdzenie!ma\IeC {\l }e Fermata dla wielomian\'ow|hyperpage}{38}
-\indexentry{test pierwszo\'sci!APR|hyperpage}{40}
-\indexentry{test pierwszo\'sci!Lucasa-Lehmera|hyperpage}{40}
-\indexentry{test pierwszo\'sci!probabilistyczny|hyperpage}{40}
-\indexentry{test pierwszo\'sci!Fermata|hyperpage}{40}
-\indexentry{liczby!Carmichaela|hyperpage}{42}
-\indexentry{test pierwszo\'sci!Lehmana|hyperpage}{43}
-\indexentry{test pierwszo\'sci!Solovaya-Strassena|hyperpage}{44}
-\indexentry{symbol!Legendre'a|hyperpage}{44}
-\indexentry{Kryterium Eulera w formie Legendre'a|hyperpage}{44}
-\indexentry{symbol!Jacobiego|hyperpage}{45}
-\indexentry{liczby!pseudopierwsze Eulera|hyperpage}{45}
-\indexentry{test pierwszo\'sci!Millera-Rabina|hyperpage}{47}
-\indexentry{liczby!silnie pseudopierwsze|hyperpage}{47}
-\indexentry{test pierwszo\'sci!chi\'nski|hyperpage}{48}
+\indexentry{kongruencja|hyperpage}{17}
+\indexentry{kongruencja|hyperpage}{17}
+\indexentry{klasy reszt|hyperpage}{19}
+\indexentry{uk\IeC {\l }ad reszt!pe\IeC {\l }ny|hyperpage}{19}
+\indexentry{uk\IeC {\l }ad reszt!zredukowany|hyperpage}{19}
+\indexentry{funkcja Eulera|hyperpage}{19}
+\indexentry{odwrotno\'s\'c elementu modulo|hyperpage}{20}
+\indexentry{sito!Eratostenesa|hyperpage}{21}
+\indexentry{sito!Atkina|hyperpage}{23}
+\indexentry{sito!Sundarama|hyperpage}{24}
+\indexentry{spirala Ulama|hyperpage}{25}
+\indexentry{twierdzenie!Wilsona|hyperpage}{26}
+\indexentry{twierdzenie!Eulera|hyperpage}{27}
+\indexentry{twierdzenie!ma\IeC {\l }e Fermata|hyperpage}{27}
+\indexentry{liczby!pseudopierwsze|hyperpage}{28}
+\indexentry{rz\k ad multiplikatywny|hyperpage}{28}
+\indexentry{twierdzenie!Dirichleta|hyperpage}{30}
+\indexentry{liczby!Fermata|hyperpage}{30}
+\indexentry{liczby!pierwsze bli\'zniacze|hyperpage}{30}
+\indexentry{liczby!pierwsze Sophie Germain|hyperpage}{30}
+\indexentry{liczby!Mersenne'a|hyperpage}{30}
+\indexentry{liczby!pierwsze Mersenne'a|hyperpage}{30}
+\indexentry{test pierwszo\'sci!deterministyczny|hyperpage}{33}
+\indexentry{test pierwszo\'sci!metoda naiwna|hyperpage}{33}
+\indexentry{test pierwszo\'sci!AKS|hyperpage}{35}
+\indexentry{twierdzenie!ma\IeC {\l }e Fermata dla wielomian\'ow|hyperpage}{36}
+\indexentry{test pierwszo\'sci!Lucasa-Lehmera|hyperpage}{38}
+\indexentry{liczby!Mersenne'a|hyperpage}{38}
+\indexentry{test pierwszo\'sci!probabilistyczny|hyperpage}{41}
+\indexentry{test pierwszo\'sci!Fermata|hyperpage}{42}
+\indexentry{liczby!Carmichaela|hyperpage}{43}
+\indexentry{test pierwszo\'sci!Lehmana|hyperpage}{44}
+\indexentry{test pierwszo\'sci!Solovaya-Strassena|hyperpage}{45}
+\indexentry{symbol!Legendre'a|hyperpage}{46}
+\indexentry{kryterium Eulera w formie Legendre'a|hyperpage}{46}
+\indexentry{symbol!Jacobiego|hyperpage}{46}
+\indexentry{liczby!pseudopierwsze Eulera|hyperpage}{46}
+\indexentry{test pierwszo\'sci!Millera-Rabina|hyperpage}{48}
+\indexentry{liczby!silnie pseudopierwsze|hyperpage}{49}

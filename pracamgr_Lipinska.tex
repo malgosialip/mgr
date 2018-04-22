@@ -199,27 +199,27 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% czwarta strona - pusta strona
-\newpage
-\mbox{}
+%\newpage
+%\mbox{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Podziekowania
-\newpage
-\vspace*{\stretch{1}}
+%\newpage
+%\vspace*{\stretch{1}}
 
-\hspace{7cm}
-\begin{minipage}{7cm}
-{\Large Podziêkowania}
-\vspace{5mm}
+%\hspace{7cm}
+%\begin{minipage}{7cm}
+%{\Large Podziêkowania}
+%\vspace{5mm}
 
 %% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 %% chyba zmieniæ podziêkowania ;-)
 
-Sk³adam serdecznie podziêkowania
+%Sk³adam serdecznie podziêkowania
 
-\quad moim rodzicom,
+%\quad moim rodzicom,
 
-\end{minipage}
+%\end{minipage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% pusta strona
@@ -255,6 +255,7 @@ Sk³adam serdecznie podziêkowania
 $a, b$ - liczby naturalne\\
 $\mathbb{N}$ - zbiór liczb naturalnych\\
 $\mathbb{Z}$ - zbiór liczb ca³kowitych\\
+$\mathbb{Z}_{+}$ - zbiór liczb ca³kowitych dodatnich\\
 $\mathbb{P}$ - zbiór liczb pierwszych\\
 $a \mid b$ - $a$ dzieli $b$\\
 $a \nmid b$ - $a$ nie dzieli $b$\\
@@ -1190,11 +1191,146 @@ Lp. & Liczba $n$ & Pierwsza/z³o¿ona &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 %\subsection{Algorytm Millera}
 %nie ma w internecie :(
 
-\subsection{Test pierwszoœci APR}
-\index{test pierwszoœci!APR}
+%\subsection{Test pierwszoœci APR}
+%\index{test pierwszoœci!APR}
 
 \subsection{Test Lucasa-Lehmera}
 \index{test pierwszoœci!Lucasa-Lehmera}
+\textit{Test Lucasa-Lehmera} \cite{wojciechowski} jest testem pierwszoœci dla liczb Mersenne’a\index{liczby!Mersenne'a}. Test ten zosta³ stworzony przez francuskiego matematyka Edwarda Lucasa w 1856 roku, a nastêpnie zmodyfikowany przez niego w roku 1878. Ponad 50 lat póŸniej algorytm Lucasa zosta³ udoskonalony przez Derricka Henry’ego Lehmera, sk¹d pochodzi dwucz³onowa nazwa testu.
+
+Test Lucasa-Lehmera opiera siê na poni¿szym twierdzeniu.
+
+\begin{twierdzenie}
+Je¿eli $m^{n}-1$ jest liczb¹ pierwsz¹, a $m,n \in \mathbb{Z}_{+}$ i $n > 1$, wtedy $m = 2$ i $n$ jest liczb¹ pierwsz¹.
+\end{twierdzenie}
+
+\begin{dowod}
+Poniewa¿ $m-1$ dzieli $m^{n}-1$, warunkiem na to, aby $m^{n}-1$ by³a liczb¹ pierwsz¹, jest aby $m-1$ by³o równe 1, sk¹d wynika, ¿e $m = 2$. Za³ó¿my, ¿e $n$ jest liczb¹ z³o¿on¹. Wtedy $n = r \cdot s$ dla pewnych $r,s \in \mathbb{Z}_{+}$. Rozwa¿my wielomian 
+$$x^{n}-1 = x^{r \cdot s}-1.$$ 
+Zgodnie ze wzorami skróconego mno¿enia wielomian ten mo¿e byæ zapisany w postaci
+$$x^{r \cdot s}-1 = (x^{s}-1)(x^{s(r-1)} + x^{s(r-2)} + ... + x^{s} + 1).$$ 
+Jeœli $n = r \cdot s$ jest liczb¹ z³o¿on¹, to $2^{n}-1$ jeœli równie¿ liczb¹ z³o¿on¹, poniewa¿ jest podzielne przez $2^{s}-1$. St¹d wynika, ¿e $n$ musi byæ liczb¹ pierwsz¹. 
+\end{dowod}
+
+\begin{twierdzenie}(Test Lucasa-Lehmera)
+Dodatnia liczba ca³kowita Mersenne'a postaci $M_{p} = 2^{p}-1$ jest liczb¹ pierwsz¹ wtedy i tylko wtedy, gdy dzieli $S_{p-1}$, gdzie ci¹g $(S_{k})$ definiuje siê w sposób rekurencyjny jako $S_{k} = S^{2}_{k-1}-2$ i $S_{1} = 4$.
+\end{twierdzenie}
+
+\begin{dowod}
+Niech $\omega = 2 + \sqrt{3}$ i $\mu = 2 - \sqrt{3}$. Wtedy
+$$ \mu \omega = 4 + 2 \sqrt{3} - 2 \sqrt{3} - (\sqrt{3})^{2} = 1.$$
+Poka¿emy przez indukcjê, ¿e $S_{m} = \omega^{2^{m-1}} + \mu^{2^{m-1}}$ dla wszystkich $m$, gdzie $S_{s}$ s¹ elementami ci¹gu zdefiniowanego w twierdzeniu. Dla $S_{1}$ mamy
+$$S_{1} = (2 + \sqrt{3})^{2^{0}} + (2 - \sqrt{3})^{2^{0}} = (2 + \sqrt{3})^{1} + (2 - \sqrt{3})^{1} = 2 + 2 + \sqrt{3} - \sqrt{3} = 4.$$
+Przypuœæmy teraz, ¿e $S_{t} = \omega^{2^{t-1}} + \mu^{2^{t-1}}$ dla wszystkich $t = 2,...,n-1$. Wtedy 
+\begin{align*}
+S_{n} &= S^{2}_{n-1} - 2 = (\omega^{2^{n-1}} + \mu^{2^{n-1}})^{2} - 2 \\
+&=((2 + \sqrt{3})^{2^{n-1}} + (2 - \sqrt{3})^{2^{n-1}})^{2} - 2 \\
+&=(2 + \sqrt{3})^{2^{n}} + (2 - \sqrt{3})^{2^{n}} + 2((2 + \sqrt{3})^{2^{n-1}}(2 - \sqrt{3})^{2^{n-1}})-2 \\ 
+&= \omega^{2^{n}} + \mu^{2^{n}} + 2(\omega \mu)^{2^{n-1}}-2 \\
+&= \omega^{2^{n}} + \mu^{2^{n}} + 2 \cdot 1 - 2 \\
+&= \omega^{2^{n}} + \mu^{2^{n}} = Sn. \\
+\end{align*}
+Jeœli $M_{p}$ dzieli $S_{p-1}$, to
+$$S_{p-1} = \omega^{2^{p-1-1}} + \mu^{2^{p-1-1}} \equiv 0 \ (mod \ M_{p}),$$
+wiêc
+$$\omega^{2^{p-2}} + \mu^{2^{p-2}} = RM_{p}$$
+dla pewnej liczby ca³kowitej $R$. Nastêpnie mno¿ymy obie strony powy¿szego równania przez $\omega^{2^{p-2}}$, sk¹d otrzymujemy
+$$RM_{p} \omega^{2^{p-2}} = \omega^{2^{p-2}}\omega^{2^{p-2}} + \mu^{2^{p-2}}\omega^{2^{p-2}},$$
+$$RM_{p} \omega^{2^{p-2}} - \mu^{2^{p-2}}\omega^{2^{p-2}} = \omega^{2^{p-2}}\omega^{2^{p-2}},$$
+\begin{equation}
+\label{R1}
+RM_{p} \omega^{2^{p-2}} - 1 = \omega^{2^{p-1}}.
+\end{equation}
+Na koniec podnosimy obie strony równania do kwadratu
+\begin{equation}
+\label{R2}
+\omega^{2^{p}} = (RM_{p} \omega^{2^{p-2}}-1)^{2}.
+\end{equation}
+Za³ó¿my teraz, ¿e $M_{p}$ jest liczb¹ z³o¿on¹. Wtedy musi istnieæ liczba pierwsza $q$, która jest dzielnikiem liczby $M_{p}$ takim, ¿e $q^{2} \leq M_{p}$. Liczba $M_{p}$ jest postaci $2^{p}-1$, wiêc jest liczb¹ nieparzyst¹, st¹d $q \neq 2$.
+Rozwa¿my grupê $\mathbb{Z}_{q}$ liczb ca³kowitych modulo $q$. Niech $X = \mathbb{Z}_{q}(\sqrt{3}) = {a+b \sqrt{3}, a,b \in \mathbb{Z}_{q}}$. Grupa ta jest zamkniêta ze wzglêdu na mno¿enie (jeœli $x,y \in X$, to $x \cdot y \in X$), wiêc mo¿emy pomno¿yæ dwa elementy z grupy
+\begin{align*}
+(a_{1} &+ b_{1} \sqrt{3})(a_{2} + b_{2} \sqrt{3}) \\
+&= (a_{1}a_{2} + 3b_{1}b_{2} + a_{1}b_{2} \sqrt{3} + a_{2}b_{1} \sqrt{3}) \\
+&= (a_{1}a_{2} + 3b_{1}b_{2}) + (a_{1}b_{2} + a_{2}b_{1}) \sqrt{3} 
+\end{align*}
+i zredukowaæ nowe wspó³czynniki modulo $q$ tak, aby pozosta³o wyra¿enie w formie $a + b \sqrt{3}$. Dla zbioru $X$ zachodzi to¿samoœæ $1 = 1 + 0 \cdot ?3$. Zatem $X^{?}$, czyli zbiór odwracalnych elementów zbioru $X$, równie¿ jest grup¹. 
+
+Rz¹d $X^{?}$ jest równy co najwy¿ej $q^{2} ?1$, poniewa¿ rz¹d $X$ wynosi $q^{2}$ i w zbiorze $X$ istnieje co najmniej jeden nieodwracalny element, zwany zerem. Zauwa¿my, ¿e $\omega$ jest elementem zbioru $X$. Z faktu, ¿e $q | M_{p}$, wynika kongruencja
+$$RM_{p} \omega^{2^{p-2}} \equiv 0 \ (mod \ q),$$
+wiêc w zbiorze $X$ równie¿ równa jest $0$. Wtedy równania \ref{R1} i \ref{R2} mo¿emy zapisaæ w postaci
+\begin{equation}
+\label{R4}
+\omega^{2^{p-1}} \equiv -1 \ (mod \ q),
+\end{equation}
+\begin{equation}
+\label{R3}
+\omega^{2^{p}} \equiv 1 \ (mod \ q).
+\end{equation}
+Kongruencjê \ref{R3} mo¿na przedstawiæ w postaci $\omega \cdot \omega^{2^{p-1}} \equiv 1 \ (mod \ q)$, sk¹d wynika, ¿e $\omega$ ma element odwrotny, a wiêc nale¿y do $X^{*}$.
+Poniewa¿ rz¹d elementu $\omega$ dzieli $2^{p}$, musi on byæ potêg¹ dwójki. Zatem rz¹d $\omega$ wynosi $2^{t}$ dla pewnego $t$, dla którego $\omega^{2^{t}} \equiv 1 \ (mod \ q)$. Kongruencja ta mo¿e byæ wielokrotnie podnoszona do kwadratu, tak aby $\omega^{2^{k}} \equiv 1 \ (mod \ q)$ dla wszystkich $k \geq t$. 
+
+Jednak¿e, jeœli $t < p$, to k mo¿e byæ równe $p-1$, wiêc $\omega^{2^{p-1}} \equiv 1 \ (mod \ q)$, co jest sprzecznoœci¹ z równaniem \ref{R4}. Zatem, poniewa¿ rz¹d $\omega$ jest mniejszy lub równy $2^{p}$ i~równoczeœnie wiêkszy lub równy $2^{p}$, wiêc musi byæ równy $2^{p}$. Rz¹d elementu nie mo¿e byæ wiêkszy od rzêdu grupy, wiêc $2^{p} \leq q^{2}-1$, ale $q^{2} \leq M_{p}$, wiêc  $q^{2} -1 \leq M_{p} - 1$, sk¹d $2^{p} \leq M_{p} - 1$. $M_{p}$ ma postaæ $2^{p} - 1$, wiêc $M_{p} - 1 = 2^{p} - 2$. Podsumowuj¹c, otrzymujemy $2^{p} \leq 2^{p} - 2$, co jest sprzecznoœci¹. St¹d za³o¿enie, ¿e liczba $q$ jest dzielnikiem $M_{p}$, jest b³êdne, wiêc $M_{p}$ musi byæ liczb¹ pierwsz¹. 
+\end{dowod}
+
+Warunkiem koniecznym na to, aby liczba $M_{n}$ by³a liczb¹ pierwsz¹, jest, aby $n$ by³o równie¿ liczb¹ pierwsz¹. Implikacja w drug¹ stronê nie zachodzi, pierwszoœæ $n$ nie jest wystarczaj¹ca dla pierwszoœci $M_{n}$, np. $M_{11} = 2^{11} - 1 = 23 \cdot 89$.
+
+\begin{przyklad}
+Sprawdzimy, czy trzecia liczba Mersenne'a $M_{3}$ jest liczb¹ pierwsz¹.
+\end{przyklad}
+Trzecia liczba Mersenne'a wynosi $M_{3} = 2^{3} - 1 = 8 - 1 = 7.$
+Na pocz¹tek musimy obliczyæ liczbê $S_{2}$. W tym celu musimy u¿yæ wzoru rekurencyjnego $S_{k} = S^{2}_{k-1}-2$, gdzie $S_{1} = 4$. Mamy
+\begin{align*}
+S_{1} &= 4, \\
+S_{2} &= 4^{2}-2 = 16 - 2 = 14.
+\end{align*}
+Sprawdzamy, czy $M_{3}$ dzieli $S_{2}$
+$$S_{2} \ (mod \ M_{3}) = 14 \ (mod \ 7) \equiv 0 \ (mod \ 7).$$
+Z powy¿szych obliczeñ wynika, ¿e trzecia liczba Mersenne'a $M_{3} = 7$ jest liczb¹ pierwsz¹.
+
+Implementacja testu pierwszoœci Lucasa-Lehmera w programie Matlab znajduje siê w skrypcie \ref{testLL}. W tabeli \ref{tabelaLL} przedstawione s¹ wyniki dzia³ania tego kodu dla ró¿nych liczb pierwszych i z³o¿onych oraz czas dzia³ania algorytmu.
+
+\begin{table}[H] 
+\begin{center}
+\begin{tabular}{|r|c|c|c|c|}
+\hline
+Lp. & Liczba $n$ & Liczba Mersenne'a $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex] 
+\hline \hline
+
+1 & $5$ & $2^{5}-1$ & pierwsza & $0.001195$ \\
+\hline
+
+2 & $7$ & $2^{7}-1$ & pierwsza & $0.001416$ \\
+\hline
+
+3 & $11$ & $2^{11}-1$ & z³o¿ona & $0.001071$\\
+\hline
+
+4 & $13$ & $2^{13}-1$ & pierwsza & $0.000686$\\
+\hline
+
+5 & $17$ & $2^{17}-1$  & pierwsza & $0.000768$\\
+\hline
+
+6 & $19$ & $2^{19}-1$ & pierwsza & $0.000783$\\
+\hline
+
+7 & $23$ & $2^{23}-1$ & z³o¿ona & $0.000745$\\
+\hline
+
+8 & $29$ & $2^{29}-1$ & z³o¿ona & $0.000682$\\
+\hline
+
+9 & $37$ & $2^{37}-1$ & z³o¿ona & $0.000776$\\
+\hline
+
+10 & $43$ & $2^{43}-1$ & z³o¿ona & $0.000608$\\
+\hline
+
+\end{tabular}
+\caption{Wyniki dzia³ania testu pierwszoœci Lucasa-Lehmera.}
+\label{tabelaLL}
+\end{center}
+\end{table}
 
 \section{Testy probabilistyczne}
 \textit{Testy probabilistyczne} \index{test pierwszoœci!probabilistyczny} (znane tak¿e jako testy randomizacyjne) s¹ obecnie najczêœciej stosowanymi i najbardziej efektywnymi testami pierwszoœci liczb, które w swoim dzia³aniu u¿ywaj¹ losowoœci. Wykorzystuje siê w nich losowo wygenerowane liczby z zadanego przedzia³u. Zale¿noœæ od takich elementów powoduje, ¿e algorytm mo¿e daæ b³êdny wynik testu pierwszoœci, lecz prawdopodobieñstwo takiego zdarzenia jest bardzo ma³e.
@@ -1441,7 +1577,7 @@ $$
 
 Symbol Legendre'a mo¿na obliczyæ nastêpuj¹cym wzorem.
 
-\begin{twierdzenie} (Kryterium Eulera w formie Legendre'a) \cite[\mbox{s.} 120]{zakrzew} \index{Kryterium Eulera w formie Legendre'a}
+\begin{twierdzenie} (Kryterium Eulera w formie Legendre'a) \cite[\mbox{s.} 120]{zakrzew} \index{kryterium Eulera w formie Legendre'a}
 Niech $p$ bêdzie nieparzyst¹ liczb¹ pierwsz¹. Wówczas
 $$\left( \frac{a}{p} \right) \equiv a^{\frac{p-1}{2}} \ (mod \ p).$$
 \end{twierdzenie}
@@ -1508,6 +1644,13 @@ Trzecie sprawdzenie:
 
 Po trzykrotnym powtórzeniu testu prawdopodobieñstwo, ¿e liczba $29$ jest jednak z³o¿ona wynosi $\frac{1}{2^{3}}=\frac{1}{8}$.\\
 
+\begin{przyklad}
+U¿ywaj¹c testu Solovaya-Strassena sprawdzimy, czy liczba $n = 33$ jest liczb¹ pierwsz¹.
+\end{przyklad}
+\begin{enumerate}
+\item Losujemy $b \in \{2,...,31\}$. Niech $b = 5$.
+\item Obliczamy $r = 5^{\frac{33-1}{2}} = 5^{16} \equiv 16\ (mod \ 33)$. $r \neq \pm 1$, wiêc $33$ jest liczb¹ z³o¿on¹.
+\end{enumerate} 
 
 Skrypt jednorazowego przejœcia algorytmu testu pierwszoœci Solovaya-Strassena w programie Matlab zosta³ przedstawiony na koñcu niniejszej pracy (skrypt \ref{testSS}). Tabela \ref{tabelaSS} zawiera wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
 
@@ -1574,6 +1717,7 @@ to liczbê $n$ nazywamy \textit{liczb¹ silnie pseudopierwsz¹} \index{liczby!silni
 Jeœli $n$ jest nieparzyst¹ liczb¹ z³o¿on¹, to jest silnie pseudopierwsza przy podstawie $b$ dla co najwy¿ej $25\%$ wszystkich podstaw $b$ takich, ¿e $0 < b < n$. 
 %Dok³adniej, dla n 6= 9 liczba takich podstaw nie przekracza ?(n)/4.
 \end{fakt}
+
 Algorytm dzia³ania testu pierwszoœci Millera-Rabina przebiega nastêpuj¹co:
 \begin{enumerate}
 \item Obliczamy $n-1=2^{s} \cdot t$, gdzie $t$ jest liczb¹ nieparzyst¹.
@@ -1581,7 +1725,44 @@ Algorytm dzia³ania testu pierwszoœci Millera-Rabina przebiega nastêpuj¹co:
 \item Obliczamy $a = b^{t}$ (mod $n$). Jeœli $a=\pm 1$, to $n$ mo¿e byæ pierwsza.
 \item Obliczamy $a = b^{2^{r}t}$ (mod $n$) dla $0 < r < s$. Jeœli dla pewnego $r$ otrzymamy $a = -1$, to $n$ mo¿e byæ pierwsza, w przeciwnym razie $n$ jest z³o¿ona.
 \end{enumerate}
-Po otrzymaniu odpowiedzi "$n$ jest pierwsza" powtarzamy kroki algorytmu 2-4. 
+Po otrzymaniu odpowiedzi "$n$ jest pierwsza" powtarzamy kroki algorytmu 2-4. \\
+
+\begin{przyklad}
+Stosuj¹c test pierwszoœci Millera-Rabina sprawdzimy, czy liczba $n = 53$ jest liczb¹ pierwsz¹.
+\end{przyklad}
+\begin{enumerate}
+\item Obliczamy $53-1=52=2^{2} \cdot 13$, wiêc $s = 2$, a $t = 13$.
+\item Losujemy $b \in \{2,...,51\}$. Niech $b = 5$.
+\item Obliczamy $a = 5^{13} \equiv 23$ (mod $53$). Nie mo¿emy nic stwierdziæ o liczbie $53$, poniewa¿ $a \neq \pm 1$, wiêc wykonujemy nastêpny krok.
+\item Obliczamy $a = 5^{2^{r} \cdot 13}$ (mod $53$) dla $0 < r < 2$. WeŸmy $r = 1$. Wtedy 
+$$a = 5^{2 \cdot 13} \equiv 52 \equiv -1 \ (mod \ 53).$$ Z powy¿szych obliczeñ wynika, ¿e 53 mo¿e byæ pierwsza.
+\end{enumerate}
+Poni¿ej sprawdzimy dzia³anie algorytmu Millera-Rabina przy wyborze nowego $b$.
+\begin{enumerate}
+\item $n = 53$, wiêc $s = 2$, a $t = 13$.
+\item Losujemy $b \in \{2,...,51\}$. Niech $b = 15$.
+\item Obliczamy $a = 15^{13} \equiv 1$ (mod $53$). $53$ mo¿e byæ liczb¹ pierwsz¹, poniewa¿ $a=\pm 1$.
+\end{enumerate}
+
+
+\begin{przyklad}
+Stosuj¹c test pierwszoœci Millera-Rabina sprawdzimy, czy liczba $n = 65$ jest liczb¹ pierwsz¹.
+\end{przyklad}
+\begin{enumerate}
+\item Obliczamy $65-1=64=2^{6} \cdot 1$, wiêc $s = 6$, a $t = 1$.
+\item Losujemy $b \in \{2,...,63\}$. Niech $b = 7$.
+\item Obliczamy $a = 7^{1} \equiv 7$ (mod $65$). $a \neq \pm 1$, wiêc nie mo¿emy nic stwierdziæ na temat pierwszoœci liczby 65. W zwi¹zku z tym przechodzimy do nastêpnego kroku. 
+\item Obliczamy $a = 7^{2^{r} \cdot 1}$ (mod $65$) dla $0 < r < 6$. Sprawdzamy wyniki dla $r \in \{1,2,...,5\}$:
+\begin{align*}
+r &= 1 \Rightarrow a = 7^{2^{1}} = 7^{2} \equiv 49 \ (mod \ 65),\\
+r &= 2 \Rightarrow a = 7^{2^{2}} = 7^{4} \equiv 61 \ (mod \ 65),\\
+r &= 3 \Rightarrow a = 7^{2^{3}} = 7^{8} \equiv 16 \ (mod \ 65),\\
+r &= 4 \Rightarrow a = 7^{2^{4}} = 7^{16} \equiv 61 \ (mod \ 65),\\
+r &= 5 \Rightarrow a = 7^{2^{5}} = 7^{32} \equiv 16 \ (mod \ 65).\\
+\end{align*}
+Dla ¿adnej wartoœci $r$ nie otrzymaliœmy $a = -1$, wiêc $65$ jest liczb¹ z³o¿on¹.
+\end{enumerate}
+
 
 Skrypt testu pierwszoœci Millera-Rabina przedstawiony zosta³ w dalszej czêœci pracy (skrypt \ref{testMR}). Tabela \ref{tabelaMR} zawiera wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
 
@@ -1628,11 +1809,9 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \end{center}
 \end{table}
 
-\subsection{Chiñski test pierwszoœci}
-\index{test pierwszoœci!chiñski}
+%\subsection{Chiñski test pierwszoœci}
+%\index{test pierwszoœci!chiñski}
 
-
-%\section{Test pierwszoœci ECPP}
 
 \chapter{Zastosowania w kryptografii}
 \chapter*{Skrypty z programu Matlab}
@@ -1657,6 +1836,9 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \lstinputlisting[frame=single, label = testaks, caption = Skrypt testu pierwszoœci AKS.]{MetodaAKS.m}
 
 \newpage
+\section*{Test pierwszoœci Lucasa-Lehmera}
+\lstinputlisting[frame=single, label = testLL, caption = Skrypt testu pierwszoœci Lucasa-Lehmera.]{testLucasaLehmera.m}
+
 \section*{Test pierwszoœci Fermata}
 \lstinputlisting[frame=single, label = testFermata, caption = Skrypt testu pierwszoœci Fermata.]{testFermata.m}
 
@@ -1684,6 +1866,7 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \bibitem{marzant} W. Marzantowicz, P. Zarzycki, \textit{Elementarna teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2006).
 \bibitem{narkiewicz} W. Narkiewicz, \textit{Teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2003).
 \bibitem{sierpinski} W. Sierpiñski, \textit{Teoria liczb}, Monografie Matematyczne, Warszawa (1950).
+\bibitem{wojciechowski} J. Wojciechowski, \textit{Mersenne Primes, An Introduction and Overview}, (2005).
 \bibitem{zakrzew} M. Zakrzewski, \textit{Teoria liczb}, Wydanie I, Oficyna Wydawnicza GiS, Wroc³aw, (2017).
 \bibitem{lpb} \url{http://primes.utm.edu/largest.html} (dostêp 25.03.2018)
 \bibitem{gimps} \url{https://www.mersenne.org/primes/} (dostêp 25.03.2018)
