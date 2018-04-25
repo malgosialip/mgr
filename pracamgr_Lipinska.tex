@@ -359,7 +359,7 @@ poniewa¿ $n_{1} > n_{2} > ... > 1$ jest malej¹cym ci¹giem liczb naturalnych, czy
 
 \textbf{Jednoznacznoœæ rozk³adu.}
 Za³ó¿my przeciwnie, ¿e rozk³ad nie jest jednoznaczny, czyli $n = p_{1} \cdot ... \cdot p_{r} = q_{1} \cdot ... \cdot q_{s}$, $(r \leqslant s)$, gdzie $p_{i}$ i $q_{j}$ dla $i=1,2,...,r$ i~ $j=1,2,...,s$ s¹ pierwsze i uporz¹dkowane niemalej¹co.
-Poniewa¿ $p_{1} \mid q_{1}...q_{s}$, zatem z Lematu \ref{dzieleniekpierwsza} wynika, ¿e $p_{1}=q_{k}$ dla pewnego $k$, gdzie $1 \leqslant k \leqslant s$, sk¹d wynika, ¿e $p_{1} \geqslant q_{1}$. Analogicznie $q_{1} \mid p_{1}...p_{r}$, wiêc  $q_{1} \geqslant p_{1}$, czyli $p_{1} = q_{1}$. Dziel¹c pocz¹tkow¹ równoœæ przez $p_{1} = q_{1}$ i powtarzaj¹c to samo rozumowanie dla kolejnych czynników obu rozk³adów, otrzymujemy
+Poniewa¿ $p_{1} \mid q_{1}...q_{s}$, zatem z lematu \ref{dzieleniekpierwsza} wynika, ¿e $p_{1}=q_{k}$ dla pewnego $k$, gdzie $1 \leqslant k \leqslant s$, sk¹d wynika, ¿e $p_{1} \geqslant q_{1}$. Analogicznie $q_{1} \mid p_{1}...p_{r}$, wiêc  $q_{1} \geqslant p_{1}$, czyli $p_{1} = q_{1}$. Dziel¹c pocz¹tkow¹ równoœæ przez $p_{1} = q_{1}$ i powtarzaj¹c to samo rozumowanie dla kolejnych czynników obu rozk³adów, otrzymujemy
 $$1=q_{r+l} \cdot ... \cdot q_{s},$$
 jeœli $r < s$. Jest to sprzeczne dla $q_{r+l},...,q_{s} \in \mathbb{P}$, a wiêc $r = s$ oraz $p_{i} = q_{i}$ dla ka¿dego $i=1,2,...,r$, czyli rozk³ad jest jednoznaczny. 
 \end{dowod}
@@ -423,7 +423,7 @@ Powsta³o kilkanaœcie dowodów twierdzenia \ref{euklides}. Poni¿ej przedstawiono p
 \begin{dowod}
 Za³ó¿my, ¿e istnieje skoñczony zbiór liczb pierwszych ponumerowanych kolejno $p_{1}, p_{2}, ..., p_{k}$. Rozwa¿my liczbê
 $$n=p_{1} p_{2} ...p_{k}+1.$$
-Z Twierdzenia \ref{zta} wynika, ¿e $n$ mo¿e byæ liczb¹ pierwsz¹ ró¿n¹ od wszystkich $p_{i}$ lub ma rozk³ad na czynniki pierwsze. Za³ó¿my, ¿e jednym z tych czynników jest $p$. Liczba $n$ przy dzieleniu przez ka¿de z $p_{i}$ daje resztê 1, wiêc $p$ jest ró¿ne od wszystkich $p_{i}$. Z tego wynika, ¿e albo $p$ jest pierwsze lub samo $n$ jest kolejn¹ liczb¹ pierwsz¹, wiêksz¹ od ka¿dego $p_{i}$, co jest sprzeczne z za³o¿eniem.
+Z twierdzenia \ref{zta} wynika, ¿e $n$ mo¿e byæ liczb¹ pierwsz¹ ró¿n¹ od wszystkich $p_{i}$ lub ma rozk³ad na czynniki pierwsze. Za³ó¿my, ¿e jednym z tych czynników jest $p$. Liczba $n$ przy dzieleniu przez ka¿de z $p_{i}$ daje resztê 1, wiêc $p$ jest ró¿ne od wszystkich $p_{i}$. Z tego wynika, ¿e albo $p$ jest pierwsze lub samo $n$ jest kolejn¹ liczb¹ pierwsz¹, wiêksz¹ od ka¿dego $p_{i}$, co jest sprzeczne z za³o¿eniem.
 \end{dowod}
 
 Algorytm Euklidesa \index{algorytm Euklidesa} to szybki sposób wyznaczania najwiêkszego wspólnego dzielnika dwóch liczb naturalnych.
@@ -629,7 +629,7 @@ Liczba naturalna $a$ jest odwracalna modulo $n$ wtedy i tylko wtedy, gdy $a$ i $
 \end{twierdzenie}
 
 \begin{dowod}
-Niech $(a,n)=1$. Wtedy na mocy lematu Bézouta \ref{bezout} dla pewnych $k$ i $l$ zachodzi $ka + ln = 1$. Korzystaj¹c z w³asnoœci (i) twierdzenia \ref{wlasnoscikongruencji} otrzymujemy
+Niech $(a,n)=1$. Wtedy na mocy lematu Bézouta (lemat \ref{bezout}) dla pewnych $k$ i $l$ zachodzi $ka + ln = 1$. Korzystaj¹c z w³asnoœci (i) twierdzenia \ref{wlasnoscikongruencji} otrzymujemy
 $$ka + ln = 1 \ (mod \ n),$$
 sk¹d 
 $$ka = 1 \ (mod \ n),$$
@@ -751,7 +751,7 @@ Stanis³aw Marcin Ulam (ur. 13 kwietnia 1909 we Lwowie, zm. 13 maja 1984 w~Santa 
  
 \textit{Spirala Ulama} lub \textit{spirala liczb pierwszych} \cite{spiralaulama} \index{spirala Ulama} to graficzna metoda przedstawiania rozk³adu liczb pierwszych. 
 
-Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku spiralnie wypisuje siê kolejne liczby naturalne. Okazuje siê, ¿e na pewnych przek¹tnych liczby pierwsze pojawiaj¹ siê o wiele czêœciej ni¿ na innych. Co wiêcej, zjawisko nie zale¿y od wyboru pierwszej liczby w spirali. Na Rysunku \ref{ulam} przedstawiono spiralê Ulama o rozmiarze $400$x$400$.
+Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku spiralnie wypisuje siê kolejne liczby naturalne. Okazuje siê, ¿e na pewnych przek¹tnych liczby pierwsze pojawiaj¹ siê o wiele czêœciej ni¿ na innych. Co wiêcej, zjawisko nie zale¿y od wyboru pierwszej liczby w spirali. Na rysunku \ref{ulam} przedstawiono spiralê Ulama o rozmiarze $400$x$400$.
 
 \begin{figure}[H]
 \label{ulam}
@@ -781,7 +781,7 @@ tzn.
 $$a^{2} \equiv 1 \ (mod \ p).$$
 Ostatni warunek oznacza, ¿e liczba $p$ musi dzieliæ
 $$a^{2}-1 = (a+1)(a-1).$$
-Z Lematu \ref{Euklideslemat} (Euklidesa) wynika, ¿e $p$ dzieli $a+1$ lub $a-1$, wiêc $a=p-1$ lub $a=1$. Te dwie liczby na razie pominiêto. Wówczas liczby $2,3,...,p-2$ dziel¹ siê na pary, liczba i jej odwrotnoœæ modulo $p$, sk¹d wynika, ¿e
+Z lematu \ref{Euklideslemat} (Euklidesa) wynika, ¿e $p$ dzieli $a+1$ lub $a-1$, wiêc $a=p-1$ lub $a=1$. Te dwie liczby na razie pominiêto. Wówczas liczby $2,3,...,p-2$ dziel¹ siê na pary, liczba i jej odwrotnoœæ modulo $p$, sk¹d wynika, ¿e
 $$2 \cdot 3 \cdot ... \cdot (p-2) \equiv 1 \ (mod \ p).$$
 Mno¿¹c obie strony powy¿szej kongruencji przez $p-1$ otrzymano
 $$(p-1)! \equiv p-1 \equiv -1 \ (mod \ p),$$
@@ -804,18 +804,23 @@ $$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \begin{dowod}
 Niech uk³ad 
 $$r_{1}, r_{2}, ..., r_{\varphi(n)}$$
-bêdzie uk³adem reszt modulo $n$. Po pomno¿eniu ka¿dej z nich przez $a$ i podzieleniu przez $m$ powstaje nowy uk³ad reszt $r_{i}^{'}:$
+bêdzie zredukowanym uk³adem reszt modulo $n$. Po pomno¿eniu ka¿dej z nich przez $a$ i podzieleniu przez $m$ powstaje nowy uk³ad reszt $r_{i}^{'}:$
 $$r_{i}a=q_{i}n+r_{i}^{'}, \ i=1,2,...,\varphi(n).$$
 Uk³ad mo¿na równie¿ przedstawiæ w postaci kongruencji
 \begin{equation}
 \label{twEulera1}
 r_{i}a=r_{i}^{'} \ (mod \ n), \ i=1,2,...,\varphi(n).
 \end{equation}
-Po wymno¿eniu przez siebie wszystkich $\varphi(n)$ kongruencji \ref{twEulera1} otrzymano
-$$a^{\varphi(n)}r_{1}r_{2}...r_{\varphi(n)} \equiv r_{1}^{'}r_{2}^{'}...r_{\varphi(n)}^{'} \ (mod \ n)$$
-Zarówno $r_{i}$ i $r_{i}^{'}$ dla $i=1,2,...,\varphi(n)$ s¹ wzglêdnie pierwsze z $n$, wiêc obie strony mo¿na podzieliæ przez ich identyczny iloczyn, co daje 
+Po wymno¿eniu przez siebie wszystkich $\varphi(n)$ kongruencji uk³adu \eqref{twEulera1} otrzymujemy
+\begin{equation}
+\label{twEulera2}
+a^{\varphi(n)}r_{1}r_{2}...r_{\varphi(n)} \equiv r_{1}^{'}r_{2}^{'}...r_{\varphi(n)}^{'} \ (mod \ n).
+\end{equation}
+Zarówno $r_{i}$ i $r_{i}^{'}$ dla $i=1,2,...,\varphi(n)$ s¹ wzglêdnie pierwsze z $n$, wiêc obie strony kongruencji \eqref{twEulera2} mo¿na podzieliæ przez ich identyczny iloczyn, co daje 
 $$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \end{dowod}
+
+Szczególnym przypadkiem twierdzenia Eulera jest ma³e twierdzenie Fermata.
 
 \begin{twierdzenie}(Ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
 \label{mtf} \index{twierdzenie!ma³e Fermata}
@@ -836,11 +841,11 @@ ró¿ni¹ siê jedynie kolejnoœci¹.
 
 Za³o¿ono, ¿e dla $i,j<p$, gdzie $i \neq j$ zachodzi $ai \equiv aj \ (mod \ p)$. Z treœci twierdzenia wiadomo, ¿e $a$ nie jest podzielne przez $p$, wiêc obie strony mo¿na podzieliæ przez $a$, sk¹d otrzymano $i \equiv j \ (mod \ p)$. Obie liczby s¹ z za³o¿enia mniejsze od $p$, wiêc $i = j$, co prowadzi do sprzecznoœci.
 
-Jak wczeœniej zauwa¿ono, ci¹g liczb \ref{ciag} modulo $p$ to ci¹g $1,2,...,p-1$, wiêc 
+Jak wczeœniej zauwa¿ono, ci¹g liczb \eqref{ciag} modulo $p$ to ci¹g $1,2,...,p-1$, wiêc 
 $$a \cdot 2a \cdot 3a \cdot ... \cdot (p-1)a \equiv 1 \cdot 2 \cdot 3 \cdot ... \cdot (p-1) \ (mod \ p),$$
 a po przekszta³ceniu
 $$(p-1)!a^{p-1} \equiv (p-1)! \ (mod \ p).$$
-Z Twierdzenia \ref{wilson} wiadomo, ¿e liczba $(p-1)!$ jest wzglêdnie pierwsza z $p$, wiêc obie strony kongruencji mo¿na podzieliæ przez $(p-1)!$, co koñczy dowód.
+Z twierdzenia \ref{wilson} wiadomo, ¿e liczba $(p-1)!$ jest wzglêdnie pierwsza z $p$, wiêc obie strony kongruencji mo¿na podzieliæ przez $(p-1)!$, co koñczy dowód.
 \end{dowod}
 
 \begin{definicja}
@@ -849,7 +854,7 @@ $$b^{n-1} \equiv 1 \ (mod \ n),$$
 to $n$ jest \textit{liczb¹ pseudopierwsz¹} \index{liczby!pseudopierwsze} przy podstawie $b$.
 \end{definicja}
 
-Z twierdzenia Fermata \ref{mtf} wynika, ¿e dla ka¿dej liczby $a$, która jest wzglêdnie pierwsza z modu³em $n$, istnieje liczba naturalna $k$ taka, ¿e $a^{k} \equiv 1 \ (mod \ n)$. 
+Z twierdzenia \eqref{mtf} wynika, ¿e dla ka¿dej liczby $a$, która jest wzglêdnie pierwsza z modu³em $n$, istnieje liczba naturalna $k$ taka, ¿e $a^{k} \equiv 1 \ (mod \ n)$. 
 
 \begin{definicja} \cite{multord}
 \textit{Rzêdem multiplikatywnym} \index{rz¹d multiplikatywny} liczby ca³kowitej $a$ modulo $n$, gdzie $(a,n)=1$, nazywamy najmniejsz¹ liczbê naturaln¹ $k$, dla której zachodzi
@@ -920,8 +925,8 @@ Istnieje nieskoñczenie wiele liczb pierwszych postaci $4k+1$.
 Jeœli $m \in \mathbb{N}$, $a \in \mathbb{Z}$ oraz $(a,m)=1$, to w ci¹gu arytmetycznym $a+mk$, gdzie $k=1,2,...$, istnieje nieskoñczenie wiele liczb pierwszych.
 \end{twierdzenie}
 
-\begin{definicja}
-Niech $n \in \mathbb{N}$. Liczbê w postaci
+\begin{definicja} \cite[\mbox{s.} 57]{karbowski}
+Niech $n \in \mathbb{N}$. Liczbê postaci
 \begin{equation}
 \label{liczbaFermata}
 F_{n}=2^{2^{n}}+1,
@@ -929,7 +934,7 @@ F_{n}=2^{2^{n}}+1,
 gdzie $n \geq 1$, nazywa siê \textit{n-t¹ liczb¹ Fermata} \index{liczby!Fermata}.
 \end{definicja}
 
-Fermat obliczy³, ¿e $F_{1}=5$, $F_{2}=17$, $F_{3}=2575$, $F_{4}=65537$ s¹ liczbami pierwszymi i za³o¿y³, ¿e ka¿da liczba postaci \ref{liczbaFermata} jest liczb¹ pierwsz¹. Hipotezê t¹ obali³ Euler, który udowodni³, ¿e $F_{5}$ jest podzielne przez $641$.
+Fermat obliczy³, ¿e $F_{1}=5$, $F_{2}=17$, $F_{3}=2575$, $F_{4}=65537$ s¹ liczbami pierwszymi i za³o¿y³, ¿e ka¿da liczba postaci \eqref{liczbaFermata} jest liczb¹ pierwsz¹. Hipotezê tê obali³ Euler, który udowodni³, ¿e $F_{5}$ jest podzielne przez $641$.
 
 \begin{definicja} \cite{lpb}
 Liczby pierwsze $p$ i $q=p+2$ nazywane s¹ \textit{liczbami pierwszymi bliŸniaczymi} \index{liczby!pierwsze bliŸniacze}.
@@ -937,7 +942,7 @@ Liczby pierwsze $p$ i $q=p+2$ nazywane s¹ \textit{liczbami pierwszymi bliŸniaczy
 
 Liczbami pierwszymi bliŸniaczymi s¹ np.: (3, 5), (11, 13), (1949, 1951), (4967, 4969). Najwiêksze znane dziœ liczby bliŸniacze, ka¿da sk³adaj¹ca siê z 388 342 cyfr, to 
 $$\num{2996863034895} \cdot 2^{\num{1290000}} \pm 1,$$
-znalezione w 2016 roku.
+znalezione zosta³y w 2016 roku.
 
 \begin{definicja} \cite{lpb}
 \textit{Liczba pierwsza Sophie Germain} \index{liczby!pierwsze Sophie Germain} to dowolna liczba pierwsza $p$, dla której liczba $2p+1$ tak¿e jest liczb¹ pierwsz¹ (np. 23, gdy¿ $2 \cdot 23 +1 = 47$).
@@ -947,7 +952,7 @@ Najwiêksz¹ znan¹ obecnie liczb¹ pierwsz¹ Sophie Germain jest
 $$\num{2618163402417} \cdot 2^{\num{1290000}}-1,$$ a jej zapis dziesiêtny wymaga $\num{388342}$ cyfr. Zosta³a ona odkryta w 2016 roku.
 
 \begin{definicja} \cite[\mbox{s.} 52]{marzant}
-\textit{Liczbami Mersenne'a} \index{liczby!Mersenne'a} s¹ liczby postaci $M_{n}=2^{n}-1$, $n \geq 1$. Je¿eli liczba Mersenne'a jest pierwsza to nazywa siê \textit{liczb¹ pierwsz¹ Mersenne'a} \index{liczby!pierwsze Mersenne'a}.
+\textit{Liczbami Mersenne'a} \index{liczby!Mersenne'a} nazywamy liczby postaci $M_{n}=2^{n}-1$, $n \geq 1$. Je¿eli liczba Mersenne'a jest pierwsza to nazywamy j¹ \textit{liczb¹ pierwsz¹ Mersenne'a} \index{liczby!pierwsze Mersenne'a}.
 \end{definicja}
 
 Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych ich 50. Co wiêcej, dziewiêæ na dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w tabeli \ref{toptengreatestprimenumbersM}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
@@ -1048,7 +1053,7 @@ W nastêpnym kroku sprawdzamy reszty z dzielenia liczby 25 przez liczby pierwsze 
 Liczba 25 dzieli siê bez reszty przez liczbê 5, wiêc jest liczb¹ z³o¿on¹.
 
 
-Algorytm metody naiwnej w programie Matlab zosta³ przedstawiony na koñcu tej pracy (skrypt \ref{metodanaiwna}. Tabela \ref{metodanaiwnatabela} przedstawia wyniki i czas dzia³ania algorytmu dla liczb o ró¿nej wielkoœci. 
+Algorytm metody naiwnej w programie Matlab zosta³ przedstawiony na koñcu tej pracy (skrypt \ref{metodanaiwna}). Tabela \ref{metodanaiwnatabela} przedstawia wyniki i czas dzia³ania algorytmu dla liczb o ró¿nej wielkoœci. 
 
 \begin{center}
 \begin{table}[H] 
@@ -1090,7 +1095,7 @@ Poni¿sze opracowanie opiera siê na artykule \textit{PRIMES is in P} \cite{aks}.
 
 Test AKS jest pierwszym opublikowanym algorytmem testuj¹cym czy dana liczba jest pierwsza, który jest jednoczeœnie szybki, jednoznaczny i~ bezwarunkowy. Oznacza to, ¿e algorytm ten zawsze zwróci poprawn¹ odpowiedŸ (w przeciwieñstwie do testów probabilistycznych), a jego dzia³anie nie bazuje na ¿adnych nieudowodnionych hipotezach.
 
-Test pierwszoœci AKS opiera siê na pewnej to¿samoœci liczb pierwszych, która jest uogólnieniem ma³ego twierdzenia Fermata \ref{mtf}.
+Test pierwszoœci AKS opiera siê na pewnej to¿samoœci liczb pierwszych, która jest uogólnieniem ma³ego twierdzenia Fermata (twierdzenie \ref{mtf}).
 
 \begin{lemat}(ma³e twierdzenie Fermata dla wielomianów)
 \label{lematAKStresc} \index{twierdzenie!ma³e Fermata dla wielomianów}
@@ -1102,7 +1107,7 @@ Niech $a, n \in \mathbb{N}$ i $n \geq 2$ oraz $(a,n)=1$. Wówczas $n$ jest liczb¹
 \end{lemat}
 
 \begin{dowod}
-Równanie \ref{lematAKS} mo¿na zapisaæ w postaci
+Równanie \eqref{lematAKS} mo¿na zapisaæ w postaci
 $$(X+a)^{n}-(X^{n}+a)=0 \ (mod \ n).$$
 
 Dla $0 \leq i \leq n$ wspó³czynnik przy $X^{i}$ w wyra¿eniu $((X+a)^{n}-(X^{n}+a))$ wynosi ${n}\choose{i}$ $a^{n-i}$. 
@@ -1112,12 +1117,12 @@ Za³ó¿my, ¿e $n$ jest liczb¹ pierwsz¹. Wtedy ${n}\choose{i}$ $=0 \ (mod \ n)$, a 
 Za³ó¿my, ¿e $n$ jest liczb¹ z³o¿on¹. Rozwa¿my liczbê pierwsz¹ $q$, która jest dzielnikiem $n$ i dla pewnego $k$ niech $q^{k} \mid n$. Wtedy $q^{k}$ nie dzieli ${n}\choose{q}$ i jest wzglêdnie pierwsza z $a^{n-q}$. St¹d wspó³czynnik przy $X^{q}$ jest niezerowy (mod $n$). Zatem wyra¿enie $((X+a)^{n}-(X^{n}+a))$ nie jest to¿samoœciowo równe zero (mod $n$).
 \end{dowod}
 
-Powy¿sza to¿samoœæ sugeruje prosty test pierwszoœci: pobieramy badane $n$, wybieramy $a$ i sprawdzamy, czy kongruencja \ref{lematAKS} jest spe³niona. Jednak wymaga to czasu, poniewa¿ w najgorszym przypadku nale¿y oszacowaæ $n$ wspó³czynników po lewej stronie równania. Prostym sposobem na zmniejszenie liczby tych wspó³czynników jest oszacowanie obu stron kongruencji \ref{lematAKS} modulo wielomian postaci $X^{r}-1$ dla odpowiednio wybranego ma³ego $r$. Innymi s³owy, sprawdziæ, czy spe³nione jest równanie
+Powy¿sza to¿samoœæ sugeruje prosty test pierwszoœci: pobieramy badane $n$, wybieramy $a$ i sprawdzamy, czy kongruencja \eqref{lematAKS} jest spe³niona. Jednak wymaga to czasu, poniewa¿ w najgorszym przypadku nale¿y oszacowaæ $n$ wspó³czynników po lewej stronie równania. Prostym sposobem na zmniejszenie liczby tych wspó³czynników jest oszacowanie obu stron kongruencji \eqref{lematAKS} modulo wielomian postaci $X^{r}-1$ dla odpowiednio wybranego ma³ego $r$. Innymi s³owy, sprawdziæ, czy spe³nione jest równanie
 \begin{equation}
 \label{lematAKSnowe}
 (X+a)^{n}=X^{n}+a \ (mod \ X^{r}-1,n).
 \end{equation}
-Z Lematu \ref{lematAKStresc} wynika natychmiast, ¿e wszystkie liczby pierwsze $n$ spe³niaj¹ równanie \ref{lematAKSnowe} dla wszystkich wartoœci $a$ i $r$. Problem polega na tym, ¿e niektóre liczby z³o¿one $n$ mog¹ równie¿ spe³niæ równanie dla kilku wartoœci $a$ i $r$. Jednak mo¿emy pokazaæ, ¿e dla odpowiednio dobranego $r$, jeœli równanie \ref{lematAKSnowe} jest spe³nione dla kilku $a$, to $n$ musi byæ potêg¹ liczby pierwszej.
+Z lematu \ref{lematAKStresc} wynika natychmiast, ¿e wszystkie liczby pierwsze $n$ spe³niaj¹ równanie \eqref{lematAKSnowe} dla wszystkich wartoœci $a$ i $r$. Problem polega na tym, ¿e niektóre liczby z³o¿one $n$ mog¹ równie¿ spe³niæ równanie dla kilku wartoœci $a$ i $r$. Jednak mo¿emy pokazaæ, ¿e dla odpowiednio dobranego $r$, jeœli równanie \eqref{lematAKSnowe} jest spe³nione dla kilku $a$, to $n$ musi byæ potêg¹ liczby pierwszej.
 
 Algorytm dzia³ania metody AKS jest nastêpuj¹cy:
 \begin{enumerate}
@@ -1141,7 +1146,6 @@ Za pomoc¹ algorytmu testu AKS sprawdzimy, czy liczba 11 jest pierwsza.
 \item Dla ka¿dego $a \leq 13$ i $a \neq 11$ $NWD(a,11) = 1$. Dla $a = 11$ $NWD(a,11) = 11$, wiêc $NWD(a,11) \notin (1,11)$.
 \item $11 \leq 13$, wiêc $11$ jest pierwsza.
 \end{enumerate}
-
 
 Kod metody AKS zaimplementowany w œrodowisku Matlab zosta³ przedstawiony w czêœci pracy poœwiêconej skryptom (skrypt \ref{testaks}). Tabela poni¿ej przedstawia wyniki i czas dzia³ania testu pierwszoœci AKS.
 
@@ -1253,11 +1257,11 @@ Rozwa¿my grupê $\mathbb{Z}_{q}$ liczb ca³kowitych modulo $q$. Niech $X = \mathbb
 &= (a_{1}a_{2} + 3b_{1}b_{2} + a_{1}b_{2} \sqrt{3} + a_{2}b_{1} \sqrt{3}) \\
 &= (a_{1}a_{2} + 3b_{1}b_{2}) + (a_{1}b_{2} + a_{2}b_{1}) \sqrt{3} 
 \end{align*}
-i zredukowaæ nowe wspó³czynniki modulo $q$ tak, aby pozosta³o wyra¿enie w formie $a + b \sqrt{3}$. Dla zbioru $X$ zachodzi to¿samoœæ $1 = 1 + 0 \cdot ?3$. Zatem $X^{?}$, czyli zbiór odwracalnych elementów zbioru $X$, równie¿ jest grup¹. 
+i zredukowaæ nowe wspó³czynniki modulo $q$ tak, aby pozosta³o wyra¿enie w formie $a + b \sqrt{3}$. Dla zbioru $X$ zachodzi to¿samoœæ $1 = 1 + 0 \cdot \sqrt{3}$. Zatem $X^{*}$, czyli zbiór odwracalnych elementów zbioru $X$, równie¿ jest grup¹. 
 
-Rz¹d $X^{?}$ jest równy co najwy¿ej $q^{2} ?1$, poniewa¿ rz¹d $X$ wynosi $q^{2}$ i w zbiorze $X$ istnieje co najmniej jeden nieodwracalny element, zwany zerem. Zauwa¿my, ¿e $\omega$ jest elementem zbioru $X$. Z faktu, ¿e $q | M_{p}$, wynika kongruencja
+Rz¹d $X^{*}$ jest równy co najwy¿ej $q^{2}-1$, poniewa¿ rz¹d $X$ wynosi $q^{2}$ i w zbiorze $X$ istnieje co najmniej jeden nieodwracalny element, zwany zerem. Zauwa¿my, ¿e $\omega$ jest elementem zbioru $X$. Z faktu, ¿e $q | M_{p}$, wynika kongruencja
 $$RM_{p} \omega^{2^{p-2}} \equiv 0 \ (mod \ q),$$
-wiêc w zbiorze $X$ równie¿ równa jest $0$. Wtedy równania \ref{R1} i \ref{R2} mo¿emy zapisaæ w postaci
+wiêc w zbiorze $X$ równie¿ równa jest $0$. Wtedy równania \eqref{R1} i \eqref{R2} mo¿emy zapisaæ w postaci
 \begin{equation}
 \label{R4}
 \omega^{2^{p-1}} \equiv -1 \ (mod \ q),
@@ -1266,10 +1270,10 @@ wiêc w zbiorze $X$ równie¿ równa jest $0$. Wtedy równania \ref{R1} i \ref{R2} mo
 \label{R3}
 \omega^{2^{p}} \equiv 1 \ (mod \ q).
 \end{equation}
-Kongruencjê \ref{R3} mo¿na przedstawiæ w postaci $\omega \cdot \omega^{2^{p-1}} \equiv 1 \ (mod \ q)$, sk¹d wynika, ¿e $\omega$ ma element odwrotny, a wiêc nale¿y do $X^{*}$.
+Kongruencjê \eqref{R3} mo¿na przedstawiæ w postaci $\omega \cdot \omega^{2^{p-1}} \equiv 1 \ (mod \ q)$, sk¹d wynika, ¿e $\omega$ ma element odwrotny, a wiêc nale¿y do $X^{*}$.
 Poniewa¿ rz¹d elementu $\omega$ dzieli $2^{p}$, musi on byæ potêg¹ dwójki. Zatem rz¹d $\omega$ wynosi $2^{t}$ dla pewnego $t$, dla którego $\omega^{2^{t}} \equiv 1 \ (mod \ q)$. Kongruencja ta mo¿e byæ wielokrotnie podnoszona do kwadratu, tak aby $\omega^{2^{k}} \equiv 1 \ (mod \ q)$ dla wszystkich $k \geq t$. 
 
-Jednak¿e, jeœli $t < p$, to k mo¿e byæ równe $p-1$, wiêc $\omega^{2^{p-1}} \equiv 1 \ (mod \ q)$, co jest sprzecznoœci¹ z równaniem \ref{R4}. Zatem, poniewa¿ rz¹d $\omega$ jest mniejszy lub równy $2^{p}$ i~równoczeœnie wiêkszy lub równy $2^{p}$, wiêc musi byæ równy $2^{p}$. Rz¹d elementu nie mo¿e byæ wiêkszy od rzêdu grupy, wiêc $2^{p} \leq q^{2}-1$, ale $q^{2} \leq M_{p}$, wiêc  $q^{2} -1 \leq M_{p} - 1$, sk¹d $2^{p} \leq M_{p} - 1$. $M_{p}$ ma postaæ $2^{p} - 1$, wiêc $M_{p} - 1 = 2^{p} - 2$. Podsumowuj¹c, otrzymujemy $2^{p} \leq 2^{p} - 2$, co jest sprzecznoœci¹. St¹d za³o¿enie, ¿e liczba $q$ jest dzielnikiem $M_{p}$, jest b³êdne, wiêc $M_{p}$ musi byæ liczb¹ pierwsz¹. 
+Jednak¿e, jeœli $t < p$, to k mo¿e byæ równe $p-1$, wiêc $\omega^{2^{p-1}} \equiv 1 \ (mod \ q)$, co jest sprzecznoœci¹ z równaniem \eqref{R4}. Zatem, poniewa¿ rz¹d $\omega$ jest mniejszy lub równy $2^{p}$ i~równoczeœnie wiêkszy lub równy $2^{p}$, wiêc musi byæ równy $2^{p}$. Rz¹d elementu nie mo¿e byæ wiêkszy od rzêdu grupy, wiêc $2^{p} \leq q^{2}-1$, ale $q^{2} \leq M_{p}$, wiêc  $q^{2} -1 \leq M_{p} - 1$, sk¹d $2^{p} \leq M_{p} - 1$. $M_{p}$ ma postaæ $2^{p} - 1$, wiêc $M_{p} - 1 = 2^{p} - 2$. Podsumowuj¹c, otrzymujemy $2^{p} \leq 2^{p} - 2$, co jest sprzecznoœci¹. St¹d za³o¿enie, ¿e liczba $q$ jest dzielnikiem $M_{p}$, jest b³êdne, wiêc $M_{p}$ musi byæ liczb¹ pierwsz¹. 
 \end{dowod}
 
 Warunkiem koniecznym na to, aby liczba $M_{n}$ by³a liczb¹ pierwsz¹, jest, aby $n$ by³o równie¿ liczb¹ pierwsz¹. Implikacja w drug¹ stronê nie zachodzi, pierwszoœæ $n$ nie jest wystarczaj¹ca dla pierwszoœci $M_{n}$, np. $M_{11} = 2^{11} - 1 = 23 \cdot 89$.
@@ -1336,13 +1340,13 @@ Lp. & Liczba $n$ & Liczba Mersenne'a $n$ & Wynik & Czas dzia³ania funkcji $[s]$ 
 \textit{Testy probabilistyczne} \index{test pierwszoœci!probabilistyczny} (znane tak¿e jako testy randomizacyjne) s¹ obecnie najczêœciej stosowanymi i najbardziej efektywnymi testami pierwszoœci liczb, które w swoim dzia³aniu u¿ywaj¹ losowoœci. Wykorzystuje siê w nich losowo wygenerowane liczby z zadanego przedzia³u. Zale¿noœæ od takich elementów powoduje, ¿e algorytm mo¿e daæ b³êdny wynik testu pierwszoœci, lecz prawdopodobieñstwo takiego zdarzenia jest bardzo ma³e.
 
 \subsection{Test pierwszoœci Fermata}
-Zgodnie z ma³ym twierdzeniem Fermata \ref{mtf} dla liczb pierwszych $p$ zachodzi kongruencja
+Zgodnie z ma³ym twierdzeniem Fermata (twierdzenie \ref{mtf}) dla liczb pierwszych $p$ zachodzi kongruencja
 \begin{equation}
 \label{mtfw}
 a^{p-1} \equiv 1 \ (mod \ p).
 \end{equation}
 
-\textit{Test pierwszoœci Fermata} \cite[\mbox{s.} 49]{zakrzew} \index{test pierwszoœci!Fermata} to probabilistyczny test pierwszoœci, który opiera siê na za³o¿eniu, ¿e zachodzi wynikanie odwrotne do twierdzenia \ref{mtf}, czyli jeœli prawdziwa jest kongruencja \ref{mtfw}, to liczba $p$ jest pierwsza z du¿ym prawdopodobieñstwem.
+\textit{Test pierwszoœci Fermata} \cite[\mbox{s.} 49]{zakrzew} \index{test pierwszoœci!Fermata} to probabilistyczny test pierwszoœci, który opiera siê na za³o¿eniu, ¿e zachodzi wynikanie odwrotne do twierdzenia \ref{mtf}, czyli jeœli prawdziwa jest kongruencja \eqref{mtfw}, to liczba $p$ jest pierwsza z du¿ym prawdopodobieñstwem.
 
 Algorytm testu pierwszoœci Fermata dla zadanej liczby $p$ wygl¹da nastêpuj¹co:
 \begin{enumerate}
@@ -1424,10 +1428,10 @@ Lp. & Liczba $p$ & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \
 
 £atwo zauwa¿yæ, ¿e algorytm dzia³a niezwykle szybko i zwraca stuprocentowo pewny wynik nawet dla bardzo du¿ych liczb. Czas dzia³ania zale¿y g³ównie od wyboru liczby powtórzeñ $n$ - im liczba $n$ jest wiêksza, tym czas dzia³ania algorytmu siê wyd³u¿a. Jednak ju¿ dla niewielkich $n$ wynik jest podawany z prawdopodobieñstwem równym $1$.   
 
-Trzeba zaznaczyæ, ¿e kongruencja \ref{mtfw} mo¿e zachodziæ tak¿e w pewnych przypadkach, gdy liczba $p$ nie jest liczb¹ pierwsz¹.
+Trzeba zaznaczyæ, ¿e kongruencja \eqref{mtfw} mo¿e zachodziæ tak¿e w pewnych przypadkach, gdy liczba $p$ nie jest liczb¹ pierwsz¹.
 
 \begin{definicja} \cite[\mbox{s.} 49]{zakrzew}
-\textit{Liczby Carmichaela} \index{liczby!Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata \ref{mtf} jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i~tylko wtedy, gdy jest liczb¹ z³o¿on¹ i~dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
+\textit{Liczby Carmichaela} \index{liczby!Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata (twierdzenie \ref{mtf}) jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i~tylko wtedy, gdy jest liczb¹ z³o¿on¹ i~dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
 \end{definicja}
 
 Najmniejsz¹ liczb¹ Carmichaela jest $561 = 3 \cdot 11 \cdot 17$. Innymi z nich s¹ na przyk³ad $1105 = 5 \cdot 13 \cdot 17$, $1729 = 7 \cdot 13 \cdot 19$ lub $2465 = 5 \cdot 17 \cdot 29$.
@@ -1441,7 +1445,7 @@ U¿ywaj¹c testu pierwszoœci Fermata sprawdzimy, czy liczba 561 jest liczb¹ pierws
 \item Kongruencja $a^{p-1} \equiv 1 \ (mod \ p)$ zachodzi, gdy¿ $5^{560} \equiv 1 \ (mod \ 561)$.
 \item Liczba 561 mo¿e byæ liczb¹ pierwsz¹.
 \end{enumerate}
-Po zastosowaniu algorytmu liczba 561 zosta³a b³êdnie wskazana jako liczba prawdopodobnie pierwsza. Sta³o siê tak, poniewa¿ dla liczby Carmichaela równoœæ z ma³ego twierdzenia Fermata \ref{mtf} zachodzi dla wszystkich $a$ takich, ¿e $NWD(a, p) = 1$.
+Po zastosowaniu algorytmu liczba 561 zosta³a b³êdnie wskazana jako liczba prawdopodobnie pierwsza. Sta³o siê tak, poniewa¿ dla liczby Carmichaela równoœæ z ma³ego twierdzenia Fermata (twierdzenie \ref{mtf}) zachodzi dla wszystkich $a$ takich, ¿e $NWD(a, p) = 1$.
 
 Test Fermata zastosowany do liczby Carmichaela jest nieskuteczny, co przedstawione zosta³o w tabeli \ref{tabelaFermatCarm}.
 
@@ -1563,7 +1567,7 @@ Algorytm Lehmana jest bardzo szybki i zwraca prawid³owe wyniki dla liczb o ró¿ne
 \subsection{Test pierwszoœci Solovaya-Strassena}
 Kolejnym probabilistycznym testem pierwszoœci jest test Solovaya-Strassena, \index{test pierwszoœci!Solovaya-Strassena} opracowany przez dwóch matematyków - amerykañskiego profesora Roberta M. Solovaya i~profesora Volkera Strassena z Niemiec. Do wprowadzenia algorytmu testowania niezbêdna jest definicja symbolu Legendre’a.
 
-\begin{definicja}
+\begin{definicja} \cite[\mbox{s.} 119]{zakrzew}
 Niech $p$ bêdzie liczb¹ pierwsz¹ wiêksz¹ od 2, a $a$ liczb¹ ca³kowit¹. \textit{Symbol Legendre'a} \index{symbol!Legendre'a} $\left( \frac{a}{p} \right)$ definiuje siê nastêpuj¹co
 
 $$
@@ -1575,7 +1579,8 @@ $$
 $$
 \end{definicja}
 
-Symbol Legendre'a mo¿na obliczyæ nastêpuj¹cym wzorem.
+Symbol Legendre'a mo¿na obliczyæ korzystaj¹c z nastêpuj¹cego wzoru
+$$ \left( \frac{a}{p} \right) \equiv a^{\frac{p-1}{2}} \ (mod \ p). $$
 
 \begin{twierdzenie} (Kryterium Eulera w formie Legendre'a) \cite[\mbox{s.} 120]{zakrzew} \index{kryterium Eulera w formie Legendre'a}
 Niech $p$ bêdzie nieparzyst¹ liczb¹ pierwsz¹. Wówczas
@@ -1595,14 +1600,11 @@ Symbol Legendre'a mo¿e byæ uogólniony do \textit{symbolu Jacobiego} \index{symbo
 $$n=p_{1}^{m_{1}} \cdot p_{2}^{m_{2}} \cdot ... \cdot p_{k}^{m_{k}}.$$
 Wtedy symbol Jacobiego mo¿na zapisaæ w postaci
 $$\left(\frac {a}{n}\right)=\left(\frac {a}{p_{1}}\right)^{m_{1}} \cdot \left(\frac {a}{p_{2}}\right)^{m_{2}} \cdot ... \cdot \left(\frac {a}{p_{k}}\right)^{m_{k}}.$$
-Je¿eli $n$ jest liczb¹ pierwsz¹ to symbol Jacobiego i symbol Legendre'a s¹ sobie równe.
+Je¿eli $n$ jest liczb¹ pierwsz¹, to symbol Jacobiego i symbol Legendre'a s¹ sobie równe.
 
 \begin{definicja}
-Jeœli $n$ jest liczb¹ z³o¿on¹ nieparzyst¹, a liczba $b$, wzglêdnie pierwsza z $n$, spe³nia warunek
-\begin{equation}
-b^{\frac{n-1}{2}} \equiv \left( \frac{b}{n} \right) \ (mod \ n),
-\end{equation}
-to $n$ jest \textit{pseudopierwsz¹ liczb¹ Eulera} \index{liczby!pseudopierwsze Eulera} przy podstawie $b$.
+Nieparzyst¹ liczbê z³o¿on¹ $n$ nazywamy \textit{pseudopierwsz¹ liczb¹ Eulera} \index{liczby!pseudopierwsze Eulera} przy podstawie $b$, gdzie $(n,b)=1$, jeœli spe³niony jest warunek
+$$b^{\frac{n-1}{2}} \equiv \left( \frac{b}{n} \right) \ (mod \ n).$$
 \end{definicja}
 
 Test pierwszoœci liczby $n$ algorytmem Solovaya-Strassena przebiega nastêpuj¹co
@@ -1698,7 +1700,7 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \end{table}
 
 \subsection{Test pierwszoœci Millera-Rabina}
-\textit{Test pierwszoœci Millera-Rabina} \index{test pierwszoœci!Millera-Rabina} jest kolejnym testem probabilistycznym, który z pewnym prawdopodobieñstwem okreœla, czy dana liczba jest pierwsza, czy z³o¿ona. Oryginalna wersja tego testu, stworzona przez profesora Gary'ego L. Millera, jest testem deterministycznym, lecz jego prawid³owoœæ bazuje na uogólnionej hipotezie Riemanna, która nie zosta³a dotychczas udowodniona. W 1975 roku kryptolog Michael O. Rabin przekszta³ci³ algorytm Millera do algorytmu probabilistycznego.
+\textit{Test pierwszoœci Millera-Rabina} \cite{notatki} \index{test pierwszoœci!Millera-Rabina} jest kolejnym testem probabilistycznym, który z pewnym prawdopodobieñstwem okreœla, czy dana liczba jest pierwsza, czy z³o¿ona. Oryginalna wersja tego testu, stworzona przez profesora Gary'ego L. Millera, jest testem deterministycznym, lecz jego prawid³owoœæ bazuje na uogólnionej hipotezie Riemanna, która nie zosta³a dotychczas udowodniona. W 1975 roku kryptolog Michael O. Rabin przekszta³ci³ algorytm Millera do algorytmu probabilistycznego.
 
 \begin{fakt}
 Niech $n$ bêdzie nieparzyst¹ liczb¹ pierwsz¹ i niech $n-1=2^{s} \cdot t$, gdzie $2 \nmid t$. Niech $b \in \phi(n)$. Wtedy albo $b^{t} \equiv 1$ (mod $n$), albo $b^{2^{r}t} \equiv -1$ (mod $n$) dla pewnego $r \in \{0,1,...,s-1\}$.  
@@ -1763,7 +1765,6 @@ r &= 5 \Rightarrow a = 7^{2^{5}} = 7^{32} \equiv 16 \ (mod \ 65).\\
 Dla ¿adnej wartoœci $r$ nie otrzymaliœmy $a = -1$, wiêc $65$ jest liczb¹ z³o¿on¹.
 \end{enumerate}
 
-
 Skrypt testu pierwszoœci Millera-Rabina przedstawiony zosta³ w dalszej czêœci pracy (skrypt \ref{testMR}). Tabela \ref{tabelaMR} zawiera wyniki otrzymane za pomoc¹ powy¿szego algorytmu i czas dzia³ania funkcji dla ka¿dej operacji.
 
 \begin{table}[H] 
@@ -1808,9 +1809,6 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \label{tabelaMR}
 \end{center}
 \end{table}
-
-%\subsection{Chiñski test pierwszoœci}
-%\index{test pierwszoœci!chiñski}
 
 
 \chapter{Zastosowania w kryptografii}
@@ -1873,6 +1871,7 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \bibitem{spiralaulama} \url{http://mathworld.wolfram.com/PrimeSpiral.html}(dostêp 24.03.2018)
 \bibitem{aks} \url{https://www.cse.iitk.ac.in/users/manindra/algebra/primality_v6.pdf} (dostêp 25.03.2018)
 \bibitem{multord} \url{https://en.wikipedia.org/wiki/Multiplicative_order}
+\bibitem{notatki} \textit{notatki z wyk³adu Teoria Liczb i Elementy Kryptografii}
 \end{thebibliography}
 
 \newpage
