@@ -262,7 +262,7 @@ $a \nmid b$ - $a$ nie dzieli $b$\\
 $NWW(a,b)$ - najwiêksza wspólna wielokrotnoœæ $a$ i $b$\\
 $NWWD(a,b)$ - najwiêkszy wspólny dzielnik $a$ i $b$\\
 $(a,b)=1$ - $a$ i $b$ s¹ wzglêdnie pierwsze\\
-
+$o_{n}(a)$ - rz¹d elementu $a$ modulo $n$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%
@@ -279,32 +279,32 @@ Poni¿szy rozdzia³ jest zbiorem najwa¿niejszych pojêæ i twierdzeñ zwi¹zanych z li
 Jednym z najwa¿niejszymi twierdzeñ dotycz¹cych liczb pierwszych jest zasadnicze twierdzenie arytmetyki. Jego wprowadzenie i~udowodnienie wymaga zdefiniowania kilku podstawowych pojêæ z zakresu teorii liczb, które zostan¹ omówione w tym podrozdziale.
  
 \begin{definicja} \cite[\mbox{s.} 3]{marzant}
-\textit{Liczba ca³kowita $b$ jest podzielna przez liczbê ca³kowit¹ $a$}, jeœli istnieje taka liczba ca³kowita $e$, ¿e zachodzi $b = ae$. Wtedy liczba $a$ jest dzielnikiem liczby $b$, z kolei o liczbie $b$ mówi siê, ¿e jest wielokrotnoœci¹ $a$.
+Mówimy, ¿e \textit{liczba ca³kowita $b$ jest podzielna przez liczbê ca³kowit¹ $a$}, jeœli istnieje taka liczba ca³kowita $e$, ¿e zachodzi $b = ae$. Wtedy liczba $a$ jest dzielnikiem liczby $b$, z kolei o liczbie $b$ mówi siê, ¿e jest wielokrotnoœci¹ $a$.
 \end{definicja}
 
-Jeœli liczba $b$ jest podzielna przez $a$ ($a$ dzieli $b$), to u¿ywa siê oznaczenia $a \mid b$, natomiast w przeciwnym przypadku stosuje siê oznaczenie $a \nmid b$. 
+Jeœli liczba $b$ jest podzielna przez $a$ ($a$ dzieli $b$), to u¿ywamy oznaczenia $a \mid b$, natomiast w przeciwnym przypadku stosujemy oznaczenie $a \nmid b$. 
  
 \begin{definicja}
-\textit{Liczb¹ pierwsz¹} \index{liczby!pierwsze} nazywa siê liczbê naturaln¹ wiêksz¹ od 1, która ma dok³adnie dwa dzielniki: jedynkê i sam¹ siebie. 
+\textit{Liczb¹ pierwsz¹} \index{liczby!pierwsze} nazywamy liczbê naturaln¹ wiêksz¹ od 1, która ma dok³adnie dwa dzielniki: jedynkê i sam¹ siebie. 
 \end{definicja}
 
 Zbiór wszystkich liczb pierwszych oznacza siê liter¹ $\mathbb{P}$.
 Liczb¹ z³o¿on¹ \index{liczby!z³o¿one} jest wiêc liczba, która ma wiêcej ni¿ dwa dzielniki. Warto zauwa¿yæ, ¿e 1 nie jest liczb¹ ani pierwsz¹, ani z³o¿on¹.
 
 \begin{definicja}
-\textit{Najmniejsza wspólna wielokrotnoœæ} \index{najmniejsza wspólna wielokrotnoœæ} dla zadanych liczb ca³kowitych to najmniejsza liczba naturalna, któr¹ dzieli siê bez reszty przez ka¿d¹ z tych liczb. 
+\textit{Najmniejsz¹ wspóln¹ wielokrotnoœci¹} \index{najmniejsza wspólna wielokrotnoœæ} dla zadanych liczb ca³kowitych nazywamy najmniejsz¹ liczbê naturaln¹, któr¹ dzieli siê bez reszty przez ka¿d¹ z tych liczb. 
 \end{definicja}
 
 Najmniejsz¹ wspóln¹ wielokrotnoœæ liczb $a$ i $b$ oznacza siê symbolem $NWW(a,b)$, np. $NWW(2, 15) = 30$.
 
 \begin{definicja}
-\textit{Najwiêkszy wspólny dzielnik} \index{najwiêkszy wspólny dzielnik} dla zadanych dwóch lub wiêcej liczb ca³kowitych to najwiêksza liczba naturalna, która dzieli ka¿d¹ z tych liczb.
+\textit{Najwiêkszym wspólnym dzielnikiem} \index{najwiêkszy wspólny dzielnik} dla zadanych dwóch lub wiêcej liczb ca³kowitych nazywamy najwiêksz¹ liczbê naturaln¹, która dzieli ka¿d¹ z tych liczb.
 \end{definicja}
 
 Najwiêkszy wspólny dzielnik liczb $a$ i $b$ oznaczany jest symbolem $NWD(a,b)$, np. $NWD(18, 15) = 3$.
 
 \begin{definicja}
-\textit{Liczby wzglêdnie pierwsze} \index{liczby!wzglêdnie pierwsze} to liczby ca³kowite, których najwiêkszym wspólnym dzielnikiem jest liczba $1$.
+\textit{Liczbami wzglêdnie pierwszymi} \index{liczby!wzglêdnie pierwsze} nazywamy liczby ca³kowite, których najwiêkszym wspólnym dzielnikiem jest liczba $1$.
 \end{definicja}
 
 Jeœli dwie liczby $a$ i $b$ s¹ wzglêdnie pierwsze to zapisuje siê to jako $NWD(a,b)=1$ lub $(a,b)=1$.
@@ -364,7 +364,7 @@ $$1=q_{r+l} \cdot ... \cdot q_{s},$$
 jeœli $r < s$. Jest to sprzeczne dla $q_{r+l},...,q_{s} \in \mathbb{P}$, a wiêc $r = s$ oraz $p_{i} = q_{i}$ dla ka¿dego $i=1,2,...,r$, czyli rozk³ad jest jednoznaczny. 
 \end{dowod}
 
-Z zasadniczego twierdzenia arytmetyki \ref{zta} wynika bezpoœrednio poni¿szy wniosek.
+Z zasadniczego twierdzenia arytmetyki (twierdzenie \ref{zta}) wynika bezpoœrednio poni¿szy wniosek.
 
 \begin{wniosek} \cite[\mbox{s.} 10]{marzant}
 Ka¿da liczba naturalna $n > l$ mo¿e byæ jednoznacznie zapisana w postaci kanonicznej 
@@ -473,33 +473,32 @@ W poni¿szym rozdziale zawarte zosta³y najwa¿niejsze informacje i twierdzenia zwi
 \begin{definicja}  \cite[\mbox{s.} 41]{sierpinski}
 \index{kongruencja}
 \index{przystawanie modulo}
-Niech $n$ bêdzie dowoln¹ liczb¹ naturaln¹. Liczby ca³kowite $a$ i $b$ \textit{przystaj¹ modulo} $n$, je¿eli ich ró¿nica $a-b$ jest podzielna przez $n$. Symbolicznie zapisuje siê to jako
+Niech $n$ bêdzie dowoln¹ liczb¹ naturaln¹. Mówimy, ¿e liczby ca³kowite $a$ i $b$ \textit{przystaj¹ modulo} $n$, je¿eli ich ró¿nica $a-b$ jest podzielna przez $n$. Symbolicznie zapisuje siê to jako
 $$a \equiv b \  (mod \  n).$$
-Relacjê t¹ nazywamy kongruencj¹ lub przystawaniem modulo.
+Relacjê tê nazywamy kongruencj¹ lub przystawaniem modulo.
 \end{definicja}
 
 Jeœli zachodzi kongruencja $a \equiv b \  (mod \  n)$, to $b$ jest reszt¹ z dzielenia \index{reszta z dzielenia} liczby $a$ przez $n$. Je¿eli $a \equiv 0 \  (mod \  n)$, to znaczy, ¿e $n \mid a$.
 
 \begin{twierdzenie}
 \index{kongruencja}
-Kongruencja jest relacj¹ równowa¿noœci. Jest ona
+Kongruencja jest relacj¹ równowa¿noœci, tzn. jest ona
 \begin{enumerate}
-\item Zwrotna, poniewa¿ ka¿da liczba przystaje sama do siebie
-$$a \equiv a \ (mod \ n).$$
-\item Symetryczna, tj.
-$$a \equiv b \ (mod \ n) \Leftrightarrow b \equiv a \ (mod \ n).$$
-\item Przechodnia, poniewa¿ zachodzi
-$$(a \equiv b \ (mod \ n) \wedge b \equiv c \ (mod \ n)) \Rightarrow a \equiv c \ (mod \ n).$$
+\item\label{zwrotna} Zwrotna, tj.
+$$ \underset{a \in \mathbb{Z}}{\forall} \ \underset{n \in \mathbb{N}}{\forall} \ a \equiv a \ (mod \ n).$$
+\item\label{symetryczna} Symetryczna, tj.
+$$ \underset{a, b \in \mathbb{Z}}{\forall} \ \underset{n \in \mathbb{N}}{\forall} \ a \equiv b \ (mod \ n) \Leftrightarrow b \equiv a \ (mod \ n).$$
+\item\label{przechodnia} Przechodnia, tj.
+$$\underset{a,b,c \in \mathbb{Z}}{\forall} \ \underset{n \in \mathbb{N}}{\forall} \ (a \equiv b \ (mod \ n) \wedge b \equiv c \ (mod \ n)) \Rightarrow a \equiv c \ (mod \ n).$$
 \end{enumerate}
 \end{twierdzenie}
 
 \begin{dowod} 
-\begin{enumerate}
-\item Wystarczy zauwa¿yæ, ¿e $a-a=0$ jest podzielna przez ka¿de $n \in \mathbb{N}$.
-\item Je¿eli $a-b=kn$, gdzie $k \in \mathbb{Z}$, to $b-a=-kn$. St¹d wynika, ¿e $a \equiv b \ (mod \ n)$. 
-\item Je¿eli $(a \equiv b \ (mod \ n)$ i $b \equiv c \ (mod \ n)$, to $a-b \equiv 0 \ (mod \ n)$ i~$b-c \equiv 0 \ (mod \ n)$. Opieraj¹c siê na to¿samoœci $$a-c = (a-b)+(b-c)$$ otrzymujemy, ¿e $a-c \equiv 0 \ (mod \ n)$, sk¹d wynika, ¿e $a \equiv c \ (mod \ n)$.
-\end{enumerate} 
-\textcolor{white}{...}
+\ref{zwrotna} Je¿eli zachodzi $a \equiv a \ (mod \ n)$, to oznacza, ¿e prawdziwa jest kongruencja $a-a \equiv 0 \ (mod \ n)$, co koñczy dowód, poniewa¿ liczba $0$ jest podzielna przez ka¿de $n \in \mathbb{N}$.
+
+\ref{symetryczna} Je¿eli $a \equiv b \ (mod \ n)$, to $a-b=kn$, gdzie $k \in \mathbb{Z}$, to $b-a=-kn$. St¹d wynika, ¿e $b \equiv a \ (mod \ n)$. 
+
+\ref{przechodnia} Je¿eli $a \equiv b \ (mod \ n)$ i $b \equiv c \ (mod \ n)$, to $a-b \equiv 0 \ (mod \ n)$ i~$b-c \equiv 0 \ (mod \ n)$. Opieraj¹c siê na to¿samoœci $$a-c = (a-b)+(b-c)$$ otrzymujemy, ¿e $a-c \equiv 0 \ (mod \ n)$, sk¹d wynika, ¿e $a \equiv c \ (mod \ n)$.
 \end{dowod}
 
 \begin{twierdzenie} \cite[\mbox{s.} 37]{narkiewicz}
@@ -542,6 +541,43 @@ $$aa^{k} \equiv bb^{k} \ (mod \ n) \Rightarrow a^{k+1} \equiv b^{k+1} \ (mod \ n
 co koñczy dowód.
 \end{dowod}
 
+Za pomoc¹ powy¿szych w³asnoœci kongruencji mo¿emy miêdzy innymi wykonywaæ tak zwane szybkie potêgowanie modulo, co przedstawione jest w poni¿szym przyk³adzie. 
+
+\begin{przyklad}
+\label{4do22mod23}
+Korzystaj¹c z twierdzenia \ref{wlasnoscikongruencji} obliczymy $4^{22} \ (mod \ 23)$.
+\end{przyklad}
+Wiemy, ¿e 
+\begin{equation}
+\label{k1}
+4 \equiv 4 \ (mod \ 23).
+\end{equation}
+Na mocy w³asnoœci (i) i (v) twierdzenia \ref{wlasnoscikongruencji} mo¿emy przemno¿yæ kongruencjê \eqref{k1} przez sam¹ siebie, czyli mo¿emy podnieœæ j¹ do drugiej potêgi. Otrzymujemy
+\begin{equation}
+\label{k2}
+4^{2} \equiv 16 \ (mod \ 23) \equiv -7 \ (mod \ 23).
+\end{equation}
+Nastêpnie podnosimy do potêgi kongruencjê \eqref{k2}, sk¹d otrzymujemy
+\begin{equation}
+\label{k3}
+4^{4} \equiv 49 \ (mod \ 23) \equiv 3 \ (mod \ 23).
+\end{equation}
+Powtarzamy potêgowanie dla równania \eqref{k3}, a nastêpnie dla równania \eqref{k4}
+\begin{eqnarray}
+\label{k4}
+4^{8} & \equiv & 9 \ (mod \ 23),\\
+\label{k5}
+4^{16} & \equiv & 81 \ (mod \ 23) \equiv 12 \ (mod \ 23).
+\end{eqnarray}
+Nastêpnie mno¿ymy kongruencje \eqref{k3} i \eqref{k5}. Mamy
+\begin{equation}
+\label{k6}
+4^{20} \equiv 36 \ (mod \ 23) \equiv 13 \ (mod \ 23).
+\end{equation}
+Ostatnim krokiem jest pomno¿enie kongruencji \eqref{k2} i \eqref{k6}, sk¹d otrzymujemy
+$$4^{22} \equiv -91 \ (mod \ 23) \equiv 1 \ (mod \ 23).$$
+Z powy¿szych obliczeñ wynika, ¿e $4^{22} \equiv 1 \ (mod \ 23)$.
+
 \begin{definicja} \cite[\mbox{s.} 30]{marzant}
 \textit{Klasami reszt modulo $m$} \index{klasy reszt} nazywamy warstwy (klasy abstrakcji) kongruencji w zbiorze liczb ca³kowitych $\mathbb{Z}$.
 \end{definicja}
@@ -556,11 +592,31 @@ Ka¿d¹ liczbê ca³kowit¹ $a$ mo¿na zapisaæ w postaci $a = qm + r$, gdzie $0 \leq r
 \textit{Zredukowanym uk³adem reszt modulo $m$} \index{uk³ad reszt!zredukowany} nazywamy uk³ad reprezentantów tych klas relacji przystawania modulo $m$, które sk³adaj¹ siê z liczb wzglêdnie pierwszych z modu³em $m$.
 \end{definicja}
 
-\begin{definicja} \cite[\mbox{s.} 31]{zakrzew}
-\textit{Funkcj¹ $\varphi$ (Eulera)} \index{funkcja Eulera} lub tocjentem nazywamy funkcjê arytmetyczn¹, która ka¿dej liczbie naturalnej $m$ przypisuje liczbê elementów zredukowanego uk³adu reszt modulo $m$.
+Poni¿ej wprowadzimy pojêcie funkcji arytmetycznej, które jest niezbêdne do zdefiniowania funkcji Eulera, wykorzystuj¹cej pojêcie zredukowanego uk³adu reszt modulo.
+
+\begin{definicja} \cite[\mbox{s.} 67]{iwaszkiewicz}
+\textit{Funkcj¹ arytmetyczn¹} \index{funkcja!arytmetyczna} nazywamy funkcjê dzia³aj¹c¹ ze zbioru liczb naturalnych w zbiór liczb zespolonych.
 \end{definicja}
 
-Mo¿na zauwa¿yæ, ¿e dla ka¿dej liczby naturalnej $m$ zbiór 
+Rozwa¿ane w tej pracy funkcje przyjmuj¹ wartoœci ca³kowite.
+
+\begin{definicja} \cite[\mbox{s.} 67]{iwaszkiewicz}
+Funkcjê arytmetyczn¹ $f$ nazywamy \textit{funkcj¹ addytywn¹}, \index{funkcja!addytywna} gdy dla wszystkich $m,n \in \mathbb{N}$ takich, ¿e $(m,n)=1$, zachodzi równoœæ
+$$f(mn) = f(m) + f(n).$$
+\end{definicja}
+Jeœli powy¿szy warunek zachodzi dla dowolnych $m$ i $n$ (równie¿ dla $(m,n)>1$), to funkcjê $f$ nazywamy funkcj¹ w pe³ni addytywn¹. \index{funkcja!w pe³ni addytywna}
+
+\begin{definicja} \cite[\mbox{s.} 68]{iwaszkiewicz}
+Funkcjê arytmetyczn¹ $f$ nazywamy \textit{funkcj¹ multiplikatywn¹}, \index{funkcja!multiplikatywna} je¿eli $f$ nie jest to¿samoœciowo równa $0$ i dla wszystkich $m,n \in \mathbb{N}$ takich, ¿e $(m,n)=1$, zachodzi równoœæ
+$$f(mn) = f(m)f(n).$$
+\end{definicja}
+Jeœli powy¿szy warunek zachodzi dla dowolnych $m$ i $n$ (równie¿ dla $(m,n)>1$), to funkcjê $f$ nazywamy funkcj¹ w pe³ni multiplikatywn¹. \index{funkcja!w pe³ni multiplikatywna}
+
+\begin{definicja} \cite[\mbox{s.} 31]{zakrzew}
+\textit{Funkcj¹ $\varphi$ (Eulera)} \index{funkcja!Eulera} lub tocjentem nazywamy funkcjê arytmetyczn¹, która ka¿dej liczbie naturalnej $m$ przypisuje liczbê elementów zredukowanego uk³adu reszt modulo $m$.
+\end{definicja}
+
+Mo¿emy zauwa¿yæ, ¿e dla ka¿dej liczby naturalnej $m$ zbiór 
 $$\phi(m) := \{k : 1 \leq k \leq m,(k,m) = 1 \}$$ 
 tworzy zredukowany uk³ad reszt modulo m.
 
@@ -570,7 +626,7 @@ tworzy zredukowany uk³ad reszt modulo m.
 \item Dla ka¿dej liczby naturalnej $n>1$ zachodzi $\varphi(n) \leq n-1.$
 \item Jeœli liczby naturalne $n$ i $m$ s¹ wzglêdnie pierwsze to $\varphi(nm) = \varphi(n)\varphi(m).$
 \item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p) = p-1.$
-\item Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p^{k})=p^{k-1}(p-1)$.
+\item\label{wfe} Jeœli $p$ jest liczb¹ pierwsz¹ to $\varphi(p^{k})=p^{k-1}(p-1)$.
 \item Jeœli $p$ i $q$ s¹ ró¿nymi liczbami pierwszymi to $\varphi(pq)=(p-1)(q-1).$
 \item Jeœli $p_{1}, p_{2},...,p_{k}$ s¹ wszystkimi czynnikami pierwszymi liczby $n$ bez powtórzeñ, to 
 $$\varphi(n) = n \left(1-\frac{1}{p_{1}}\right)\left(1-\frac{1}{p_{2}}\right)...\left(1-\frac{1}{p_{k}}\right).$$
@@ -620,7 +676,7 @@ Jeœli zbiór $\{a_{1},a_{2},...,a_{\varphi(m)}\}$ tworzy zredukowany uk³ad reszt 
 \end{stwierdzenie}
 
 \begin{definicja} \cite[\mbox{s.} 15]{zakrzew}
-\textit{Odwrotnoœci¹ elementu} $a$ \textit{modulo} \index{odwrotnoœæ elementu modulo} $n$ jest taki element, oznaczany przez $a^{-1}$, ¿e
+\textit{Odwrotnoœci¹ elementu} $a$ \textit{modulo} \index{odwrotnoœæ elementu modulo} $n$ nazywamy taki element, oznaczany przez $a^{-1}$, ¿e
 $$aa^{-1} \equiv 1 \ (mod \ n).$$
 \end{definicja}
 
@@ -703,7 +759,7 @@ Pierwszoœæ pozosta³ych liczb rozpatrywana jest na podstawie ich reszty z dzielen
 \begin{itemize}
 \item 1 lub 5 — liczba jest pierwsza, jeœli liczba rozwi¹zañ równania $4x^{2} + y^{2} = n$ (gdzie $n$ jest analizowan¹ przez nas liczb¹, a $x$ i $y$ to dowolne liczby naturalne) jest nieparzysta, a $n$ nie jest kwadratem innej liczby naturalnej,
 \item 7 — liczba jest pierwsza, jeœli liczba rozwi¹zañ równania $3x^{2} + y^{2} = n$ (gdzie $n$ to analizowana przez nas liczba, a $x$ i $y$ to dowolne liczby naturalne) jest nieparzysta, a $n$ nie jest kwadratem innej liczby naturalnej,
-\item 11 — liczba jest pierwsza, jeœli liczba rozwi¹zañ równania $3x^{2} – y^{2} = n$ (gdzie $n$ to analizowana przez nas liczba, a $x$ i $y$ to dowolne liczby naturalne i $x>y$) jest nieparzysta, a $n$ nie jest kwadratem innej liczby naturalnej.
+\item 11 — liczba jest pierwsza, jeœli liczba rozwi¹zañ równania $3x^{2} - y^{2} = n$ (gdzie $n$ to analizowana przez nas liczba, a $x$ i $y$ to dowolne liczby naturalne i $x>y$) jest nieparzysta, a $n$ nie jest kwadratem innej liczby naturalnej.
 \end{itemize}
 
 \textit{Sito Sundarama} \cite[\mbox{s.} 55]{karbowski} \index{sito!Sundarama} to prosty algorytm autorstwa XX-wiecznego indyjskiego matematyka Sundarama, który s³u¿y do wyszukiwania liczb pierwszych w przedziale $\{1, n\}$. 
@@ -711,7 +767,7 @@ Pierwszoœæ pozosta³ych liczb rozpatrywana jest na podstawie ich reszty z dzielen
 Algorytm przebiega w nastêpuj¹cy sposób:
 \begin{enumerate}
 \item Wybieramy przedzia³ $\{1,n\}$.
-\item Z zadanego przedzia³u usuwamy liczby obliczone wzorem $l = i + j + 2ij$, gdzie $i,j \in \mathbb{N}$, $1 \leq i \leq j$ oraz $i + j + 2ij \leq n$.
+\item Z zadanego przedzia³u usuwamy liczby obliczone za pomoc¹ wzoru $l = i + j + 2ij$, gdzie $i,j \in \mathbb{N}$, $1 \leq i \leq j$ oraz $i + j + 2ij \leq n$.
 \item Pozosta³e liczby ze zbioru mno¿ymy przez 2 i dodajemy 1.
 \end{enumerate}
 Po przeprowadzeniu algorytmu uzyskujemy listê liczb pierwszych z przedzia³u $\{3,2n+1\}$.
@@ -761,42 +817,75 @@ Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku 
 \end{center}
 \end{figure}
 
-\section{Twierdzenie Wilsona i ma³e twierdzenie Fermata}
-Podrozdzia³ ten jest poœwiêcony dwóm klasycznym twierdzeniom z zakresu teorii liczb - twierdzeniu Wilsona i ma³emu twierdzeniu Fermata. Maj¹ one szerokie zastosowanie w testach pierwszoœci liczb.
+\section{Twierdzenie Wilsona, ma³e twierdzenie Fermata, twierdzenie Eulera}
+Podrozdzia³ ten jest poœwiêcony trzem klasycznym twierdzeniom z zakresu teorii liczb - twierdzeniu Wilsona, ma³emu twierdzeniu Fermata oraz twierdzeniu Eulera. Maj¹ one szerokie zastosowanie w testach pierwszoœci liczb.
 
 \begin{twierdzenie}(Twierdzenie Wilsona, 1770 r.) \cite[\mbox{s.} 18]{zakrzew}
 \label{wilson} \index{twierdzenie!Wilsona}
 Liczba naturalna $p>1$ jest liczb¹ pierwsz¹ wtedy i tylko wtedy, gdy
-$$(p-1)!+1 \equiv 0 \ (mod \ p).$$
+\begin{equation}
+\label{twWilson}
+(p-1)!+1 \equiv 0 \ (mod \ p).
+\end{equation}
 \end{twierdzenie}
 
 Za odkrywcê powy¿szego twierdzenia uznaje siê Johna Wilsona, zosta³o jednak opublikowane przez Edwarda Waringa. Jak siê okazuje, wczeœniej mówi³ o nim ju¿ al-Hajsam (X/XI w.) i Leibniz (XVII w.). Pierwszy dowód twierdzenia Wilsona pochodzi od Lagrange'a i zosta³ przedstawiony w 1777 roku.
 
 \begin{dowod}
-Na pocz¹tek nale¿y pokazaæ, ¿e jeœli $p$ jest liczb¹ pierwsz¹, to zachodzi powy¿sza kongruencja. Dla $p=2$ implikacja jest spe³niona, wiêc ograniczono siê do liczb pierwszych nieparzystych.
-Poniewa¿ $p$ jest liczb¹ pierwsz¹, wiêc ka¿da z liczb $1,2,3,...,p-2,p-1$ ma swoj¹ odwrotnoœæ modulo $p$. 
-Poszukuje siê, dla jakich $a$ spoœród tych liczb zachodzi
+Na pocz¹tek poka¿emy, ¿e jeœli $p$ jest liczb¹ pierwsz¹, to zachodzi kongruencja \eqref{twWilson}. Dla $p=2$ implikacja jest spe³niona, wiêc ograniczamy siê do liczb pierwszych nieparzystych.
+Poniewa¿ $p$ jest liczb¹ pierwsz¹, wiêc ka¿da z liczb 
+$$1,2,3,...,p-2,p-1$$ 
+ma swoj¹ odwrotnoœæ modulo $p$. 
+Poszukujemy, dla jakich $a$ spoœród tych liczb zachodzi
 $$a \equiv a^{-1} \ (mod \ p),$$
 tzn. 
 $$a^{2} \equiv 1 \ (mod \ p).$$
 Ostatni warunek oznacza, ¿e liczba $p$ musi dzieliæ
 $$a^{2}-1 = (a+1)(a-1).$$
-Z lematu \ref{Euklideslemat} (Euklidesa) wynika, ¿e $p$ dzieli $a+1$ lub $a-1$, wiêc $a=p-1$ lub $a=1$. Te dwie liczby na razie pominiêto. Wówczas liczby $2,3,...,p-2$ dziel¹ siê na pary, liczba i jej odwrotnoœæ modulo $p$, sk¹d wynika, ¿e
+Z lematu Euklidesa (lemat \ref{Euklideslemat}) wynika, ¿e $p$ dzieli $a+1$ lub $a-1$, wiêc $a=p-1$ lub $a=1$. Te dwie liczby na razie pomijamy. Wówczas liczby $2,3,...,p-2$ dziel¹ siê na pary, liczba i jej odwrotnoœæ modulo $p$, sk¹d wynika, ¿e
 $$2 \cdot 3 \cdot ... \cdot (p-2) \equiv 1 \ (mod \ p).$$
-Mno¿¹c obie strony powy¿szej kongruencji przez $p-1$ otrzymano
+Mno¿¹c obie strony powy¿szej kongruencji przez $p-1$ otrzymujemy
 $$(p-1)! \equiv p-1 \equiv -1 \ (mod \ p),$$
 co koñczy dowód pierwszej implikacji.
 
-Teraz wystarczy pokazaæ implikacjê w drug¹ stronê. Nale¿y zatem udowodniæ, ¿e je¿eli $n$ jest liczb¹ z³o¿on¹ to zachodzi
-$$(n-1)!+1 \not\equiv 0 \ (mod \ n).$$
-Jeœli $n$ jest liczb¹ z³o¿on¹, to zachodzi $n=pq$. Za³o¿ono, ¿e $p<q$. Wówczas
+Teraz poka¿emy implikacjê w drug¹ stronê. Musimy udowodniæ, ¿e je¿eli zachodzi
+$$(n-1)!+1 \equiv 0 \ (mod \ n),$$
+to $n$ jest liczb¹ pierwsz¹.
+Przypuœæmy, ¿e $n$ jest liczb¹ z³o¿on¹. Wtedy istniej¹ dwie liczby $p$ i $q$ takie, ¿e $n=pq$. Za³ó¿my, ¿e $p<q$. Wówczas
 $$(n-1)!=1 \cdot 2 \cdot 3 \cdot ... \cdot (p-1) \cdot p \cdot ... \cdot (q-1) \cdot q \cdot ... \cdot (n-1),$$
 wiêc $(n-1)!$ jest podzielne przez $n$. St¹d $(n-1)!+1$ nie mo¿e byæ podzielne przez $n$. Wynika st¹d, ¿e
 $$(n-1)!+1 \not\equiv 0 \ (mod \ n),$$
 co koñczy dowód.
 \end{dowod}
 
+\begin{twierdzenie}(Ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
+\label{mtf} \index{twierdzenie!ma³e Fermata}
+Jeœli $p$ jest licz¹ pierwsz¹, to dla ka¿dej liczby ca³kowitej $a$ niepodzielnej przez $p$ zachodzi
+$$a^{p-1} \equiv 1 \  (mod \  p).$$
+\end{twierdzenie}
+
+\begin{dowod}
+Jeœli liczba pierwsza $p$ nie dzieli $a$, to ci¹g reszt z dzielenia $a$ przez $p$ $1,2,3,...,p-1$ oraz ci¹g liczb 
+\begin{equation}
+\label{ciag}
+a,2a,3a,...,(p-1)a \ (mod \ p)
+\end{equation}
+ró¿ni¹ siê jedynie kolejnoœci¹.
+£atwo zauwa¿yæ, ¿e jeœli $p$ nie dzieli $a$, to niemo¿liwe jest, aby $ka \equiv 0 \ (mod \ p)$ dla $k=1,2,...,p-1$. Z tego wynika, ¿e wszystkie reszty $ka \ (mod \ p)$ s¹ liczbami naturalnymi od $1$ do $p-1$. Poniewa¿ liczb tych jest dok³adnie $p-1$, wiêc musimy pokazaæ, ¿e s¹ one parami ró¿ne.
+
+Za³ó¿my, ¿e dla $i,j<p$, gdzie $i \neq j$ zachodzi $ai \equiv aj \ (mod \ p)$. Z treœci twierdzenia wiemy, ¿e $a$ nie jest podzielne przez $p$, wiêc obie strony mo¿emy podzieliæ przez $a$, sk¹d otrzymujemy $i \equiv j \ (mod \ p)$. Obie liczby s¹ z za³o¿enia mniejsze od $p$, wiêc $i = j$, co prowadzi do sprzecznoœci.
+
+Jak wczeœniej zauwa¿yliœmy, ci¹g liczb \eqref{ciag} modulo $p$ to ci¹g $1,2,...,p-1$, wiêc 
+$$a \cdot 2a \cdot 3a \cdot ... \cdot (p-1)a \equiv 1 \cdot 2 \cdot 3 \cdot ... \cdot (p-1) \ (mod \ p),$$
+a po przekszta³ceniu
+$$(p-1)!a^{p-1} \equiv (p-1)! \ (mod \ p).$$
+Z twierdzenia \ref{wilson} wiemy, ¿e liczba $(p-1)!$ jest wzglêdnie pierwsza z $p$, wiêc obie strony kongruencji mo¿emy podzieliæ przez $(p-1)!$, co koñczy dowód.
+\end{dowod}
+
+Uogólnieniem ma³ego twierdzenia Fermata (twierdzenie \ref{mtf}) jest twierdzenie Eulera.
+
 \begin{twierdzenie}(Eulera) \cite[\mbox{s.} 33]{marzant} \index{twierdzenie!Eulera}
+\label{twEulera}
 Je¿eli $n$ i $a$ s¹ wzglêdnie pierwszymi liczbami naturalnymi, to zachodzi
 $$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \end{twierdzenie}
@@ -820,41 +909,43 @@ Zarówno $r_{i}$ i $r_{i}^{'}$ dla $i=1,2,...,\varphi(n)$ s¹ wzglêdnie pierwsze z
 $$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
 \end{dowod}
 
-Szczególnym przypadkiem twierdzenia Eulera jest ma³e twierdzenie Fermata.
+Twierdzenie Eulera (twierdzenie \ref{twEulera}) mo¿na wykorzystaæ do szybkiego potêgowania modulo.
 
-\begin{twierdzenie}(Ma³e twierdzenie Fermata, 1640 r.) \cite[\mbox{s.} 19]{zakrzew}
-\label{mtf} \index{twierdzenie!ma³e Fermata}
-Jeœli $p$ jest licz¹ pierwsz¹, to dla ka¿dej liczby ca³kowitej $a$ niepodzielnej przez $p$ zachodzi
-$$a^{p-1} \equiv 1 \  (mod \  p).$$
-\end{twierdzenie}
-
-Twierdzenie to zosta³o odkryte jednoczeœnie przez Fermata i Leibniza. ¯aden z nich nie opublikowa³ jednak dowodu.
-
-\begin{dowod}
-Jeœli liczba pierwsza $p$ nie dzieli $a$, to ci¹g reszt z dzielenia $a$ przez $p$ $1,2,3,...,p-1$ oraz ci¹g liczb 
+\begin{przyklad}
+\label{8do24mod25}
+Korzystaj¹c z twierdzenia Eulera obliczymy $8^{24} \ (mod \ 25)$.
+\end{przyklad}
+Z twierdzenia Eulera (twierdzenie \ref{twEulera}) wiemy, ¿e jeœli $n$ i $a$ s¹ wzglêdnie pierwsze, to zachodzi kongruencja
+$$a^{\varphi(n)} \equiv 1 \ (mod \ n).$$
+W powy¿szym przyk³adzie $n = 25$ i $a = 8$, wiêc $(n,a) = (25,8) = 1$. Korzystaj¹c z~w³asnoœci \ref{wfe} stwierdzenia \ref{wlasnoscifunkcjieulera} obliczamy wartoœæ funkcji Eulera dla liczby 25
+$$\varphi(25) = \varphi(5^{2}) = 5(5-1) = 5 \cdot 4 = 20.$$
+Wiemy zatem, ¿e
 \begin{equation}
-\label{ciag}
-a,2a,3a,...,(p-1)a \ (mod \ p)
+\label{przykladTE1} 
+8^{20} \equiv 1 \ (mod \ 25).
 \end{equation}
-ró¿ni¹ siê jedynie kolejnoœci¹.
-£atwo zauwa¿yæ, ¿e jeœli $p$ nie dzieli $a$, to niemo¿liwe jest, aby $ka \equiv 0 \ (mod \ p)$ dla $k=1,2,...,p-1$. Z tego wynika, ¿e wszystkie reszty $ka \ (mod \ p)$ s¹ liczbami naturalnymi od $1$ do $p-1$. Poniewa¿ liczb tych jest dok³adnie $p-1$, wiêc nale¿y pokazaæ, ¿e s¹ one parami ró¿ne.
-
-Za³o¿ono, ¿e dla $i,j<p$, gdzie $i \neq j$ zachodzi $ai \equiv aj \ (mod \ p)$. Z treœci twierdzenia wiadomo, ¿e $a$ nie jest podzielne przez $p$, wiêc obie strony mo¿na podzieliæ przez $a$, sk¹d otrzymano $i \equiv j \ (mod \ p)$. Obie liczby s¹ z za³o¿enia mniejsze od $p$, wiêc $i = j$, co prowadzi do sprzecznoœci.
-
-Jak wczeœniej zauwa¿ono, ci¹g liczb \eqref{ciag} modulo $p$ to ci¹g $1,2,...,p-1$, wiêc 
-$$a \cdot 2a \cdot 3a \cdot ... \cdot (p-1)a \equiv 1 \cdot 2 \cdot 3 \cdot ... \cdot (p-1) \ (mod \ p),$$
-a po przekszta³ceniu
-$$(p-1)!a^{p-1} \equiv (p-1)! \ (mod \ p).$$
-Z twierdzenia \ref{wilson} wiadomo, ¿e liczba $(p-1)!$ jest wzglêdnie pierwsza z $p$, wiêc obie strony kongruencji mo¿na podzieliæ przez $(p-1)!$, co koñczy dowód.
-\end{dowod}
+Obliczamy 
+\begin{equation}
+\label{przykladTE2}
+8^{2} \equiv 64 \equiv 14 \equiv -11 \ (mod \ 25),
+\end{equation}
+a nastêpnie ponosimy obie strony kongruencji \eqref{przykladTE2} do kwadratu
+\begin{equation}
+\label{przykladTE3}
+8^{4} \equiv 121 \equiv 21 \ (mod \ 25).
+\end{equation}
+W ostatnim kroku mno¿ymy kongruencje \eqref{przykladTE1} i \eqref{przykladTE3}
+$$8^{24} \equiv 21 \cdot 1 \equiv 21 \ (mod \ 25).$$
+Na mocy powy¿szych obliczeñ otrzymujemy
+$$8^{24} \equiv 21 \ (mod \ 25).$$
 
 \begin{definicja}
 Je¿eli $n$ jest nieparzyst¹ liczb¹ z³o¿on¹, a liczba $b$, wzglêdnie pierwsza z $n$,  spe³nia warunek 
 $$b^{n-1} \equiv 1 \ (mod \ n),$$ 
-to $n$ jest \textit{liczb¹ pseudopierwsz¹} \index{liczby!pseudopierwsze} przy podstawie $b$.
+to $n$ nazywamy \textit{liczb¹ pseudopierwsz¹} \index{liczby!pseudopierwsze} przy podstawie $b$.
 \end{definicja}
 
-Z twierdzenia \eqref{mtf} wynika, ¿e dla ka¿dej liczby $a$, która jest wzglêdnie pierwsza z modu³em $n$, istnieje liczba naturalna $k$ taka, ¿e $a^{k} \equiv 1 \ (mod \ n)$. 
+Z twierdzenia \ref{mtf} wynika, ¿e dla ka¿dej liczby $a$, która jest wzglêdnie pierwsza z modu³em $n$, istnieje liczba naturalna $k$ taka, ¿e $a^{k} \equiv 1 \ (mod \ n)$. 
 
 \begin{definicja} \cite{multord}
 \textit{Rzêdem multiplikatywnym} \index{rz¹d multiplikatywny} liczby ca³kowitej $a$ modulo $n$, gdzie $(a,n)=1$, nazywamy najmniejsz¹ liczbê naturaln¹ $k$, dla której zachodzi
@@ -905,9 +996,10 @@ Lp. & Liczba $n$ & Liczba $a$ & Wartoœæ funkcji $o_{n}(a)$ &  Czas dzia³ania fun
 
 
 \section{W³asnoœci liczb pierwszych}
-Liczby pierwsze mog¹ przyjmowaæ ró¿ne postaci. Podrozdzia³ ten skupia siê na ró¿nych rodzajach liczb pierwszych, takich jak liczby pierwsze Fermata, bliŸniacze, czworacze, Sophie Germain czy Mersenne'a. W czêœci tej przedstawione zostanie równie¿ zestawienie dziesiêciu najwiêkszych znanych liczb pierwszych na rok 2018.
+Liczby pierwsze mog¹ przyjmowaæ ró¿ne postaci. W podrozdziale tym skupimy siê na ró¿nych rodzajach liczb pierwszych, takich jak liczby pierwsze Fermata, bliŸniacze, czworacze, Sophie Germain czy Mersenne'a. W czêœci tej znajduje siê równie¿ zestawienie dziesiêciu najwiêkszych znanych liczb pierwszych (odkrytych do 3 stycznia 2018 roku).
 
 \begin{twierdzenie} \cite[\mbox{s.} 46]{marzant}
+\label{4km1}
 Istnieje nieskoñczenie wiele liczb pierwszych postaci $4k-1$.
 \end{twierdzenie}
 
@@ -917,13 +1009,22 @@ Przypuœæmy przeciwnie, ¿e $\{q_{1}, q_{2},..., q_{r}\}$ jest zbiorem wszystkich 
 Poniewa¿ $N$ jest liczb¹ nieparzyst¹, wiêc wszystkie dzielniki liczby $N$ równie¿ s¹ nieparzyste. Z kolei ka¿da liczba nieparzysta ma postaæ $4k-1$ lub $4k+1$. Wiadomo tak¿e, ¿e iloczyn liczb postaci $4k+1$ jest te¿ liczb¹ postaci $4k+1$, wiêc $N$ musi mieæ dzielnik pierwszy $q$ postaci $4k-1$. Jak wiadomo, $q_{1} \nmid N$, $q_{2} \nmid N$, ..., $q_{r} \nmid N$, sk¹d wynika, ¿e $q \notin \{q_{1}, q_{2},..., q_{r}\}$, co jest sprzeczne z za³o¿eniem. 
 \end{dowod}
 
+Nieco trudniej jest udowodniæ tê sam¹ w³asnoœæ dla zbioru liczb postaci $4k + 1$.
+
 \begin{twierdzenie} \cite[\mbox{s.} 46]{marzant}
+\label{4kp1}
 Istnieje nieskoñczenie wiele liczb pierwszych postaci $4k+1$.
 \end{twierdzenie}
-\
+
+Dowód powy¿szego twierdzenia mo¿na znaleŸæ w \cite[\mbox{s.} 46]{marzant}.
+
+Twierdzenia \ref{4km1} i \ref{4kp1} s¹ szczególnymi przypadkami twierdzenia Dirichleta.
+
 \begin{twierdzenie}(Dirichlet) \cite[\mbox{s.} 47]{marzant} \index{twierdzenie!Dirichleta}
 Jeœli $m \in \mathbb{N}$, $a \in \mathbb{Z}$ oraz $(a,m)=1$, to w ci¹gu arytmetycznym $a+mk$, gdzie $k=1,2,...$, istnieje nieskoñczenie wiele liczb pierwszych.
 \end{twierdzenie}
+
+Dowód twierdzenia Dirichleta jest trudny i nieelementarny. Mo¿na go znaleŸæ w~\cite{narkiewicz} (rodzia³ 5).
 
 \begin{definicja} \cite[\mbox{s.} 57]{karbowski}
 Niech $n \in \mathbb{N}$. Liczbê postaci
@@ -945,17 +1046,17 @@ $$\num{2996863034895} \cdot 2^{\num{1290000}} \pm 1,$$
 znalezione zosta³y w 2016 roku.
 
 \begin{definicja} \cite{lpb}
-\textit{Liczba pierwsza Sophie Germain} \index{liczby!pierwsze Sophie Germain} to dowolna liczba pierwsza $p$, dla której liczba $2p+1$ tak¿e jest liczb¹ pierwsz¹ (np. 23, gdy¿ $2 \cdot 23 +1 = 47$).
+\textit{Liczb¹ pierwsz¹ Sophie Germain} \index{liczby!pierwsze Sophie Germain} nazywamy dowoln¹ liczbê pierwsz¹ $p$, dla której liczba $2p+1$ tak¿e jest liczb¹ pierwsz¹.
 \end{definicja}
 
-Najwiêksz¹ znan¹ obecnie liczb¹ pierwsz¹ Sophie Germain jest 
+Przyk³adem takiej liczby jest 23, gdy¿ $2 \cdot 23 +1 = 47$. Najwiêksza znana obecnie liczba pierwsza Sophie Germain to
 $$\num{2618163402417} \cdot 2^{\num{1290000}}-1,$$ a jej zapis dziesiêtny wymaga $\num{388342}$ cyfr. Zosta³a ona odkryta w 2016 roku.
 
 \begin{definicja} \cite[\mbox{s.} 52]{marzant}
 \textit{Liczbami Mersenne'a} \index{liczby!Mersenne'a} nazywamy liczby postaci $M_{n}=2^{n}-1$, $n \geq 1$. Je¿eli liczba Mersenne'a jest pierwsza to nazywamy j¹ \textit{liczb¹ pierwsz¹ Mersenne'a} \index{liczby!pierwsze Mersenne'a}.
 \end{definicja}
 
-Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych ich 50. Co wiêcej, dziewiêæ na dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w tabeli \ref{toptengreatestprimenumbersM}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
+Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych jest 50 takich liczb. Co wiêcej, dziewiêæ na dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w tabeli \ref{toptengreatestprimenumbersM}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
 
 \begin{table}[H] 
 \begin{center}
@@ -1006,7 +1107,7 @@ Test pierwszoœci to algorytm, który okreœla, czy zadana liczba jest liczb¹ pierw
 \textit{Testy deterministyczne} \index{test pierwszoœci!deterministyczny} to testy, które wydaj¹ certyfikat pierwszoœci, czyli ich wynik jest prawid³owy z prawdopodobieñstwem 1. Zwracaj¹ odpowiedŸ, ¿e podana na wejœciu liczba $n$ jest pierwsza wtedy i tylko wtedy, gdy naprawdê tak jest, czyli wynik dzia³ania testu jest jednoznaczny.
 
 \subsection{Metoda naiwna}
-Najprostsz¹ deterministyczn¹ metod¹ testowania pierwszoœci jest \textit{metoda naiwna} \index{test pierwszoœci!metoda naiwna}. Algorytm dzia³ania jest bardzo prosty: dla danej liczby $n>2$ wystarczy sprawdziæ, czy dzieli siê ona kolejno przez $2,3,...,n-1$. Je¿eli wœród tych liczb nie ma dzielnika liczby $n$, wtedy $n$ jest pierwsza. Jeœli chocia¿ przez jedn¹ z tych liczb $n$ dzieli siê bez reszty, wtedy $n$ jest z³o¿ona.
+Najprostsz¹ deterministyczn¹ metod¹ testowania pierwszoœci jest \textit{metoda naiwna}.\index{test pierwszoœci!metoda naiwna} Algorytm dzia³ania jest bardzo prosty: dla danej liczby $n>2$ wystarczy sprawdziæ, czy dzieli siê ona kolejno przez $2,3,...,n-1$. Je¿eli wœród tych liczb nie ma dzielnika liczby $n$, wtedy $n$ jest pierwsza. Jeœli chocia¿ przez jedn¹ z tych liczb $n$ dzieli siê bez reszty, wtedy $n$ jest z³o¿ona.
  
 Jak siê okazuje, nie trzeba testowaæ podzielnoœci przez wszystkie liczby od $2$ do $n-1$, wystarczy ograniczyæ siê do przedzia³u $2,3,...,\sqrt{n}$.
 
@@ -1091,7 +1192,7 @@ Lp. & Testowana liczba & Czas dzia³ania programu $[s]$ & Liczba pierwsza/z³o¿ona
 \subsection{Test pierwszoœci AKS}
 \textit{Test pierwszoœci AKS} \index{test pierwszoœci!AKS} (lub inaczej test pierwszoœci Agrawal-Kayal-Saxena lub cyklotomiczny test AKS) jest deterministycznym testem pierwszoœci liczb opracowanym przez trójkê indyjskich naukowców - Manindra Agrawala, Neeraja Kayala i~ Nitina Saxena z Indyjskiego Instytutu Technologii w Kanpurze. Test zosta³ po raz pierwszy opublikowany 6 sierpnia 2002 roku w artykule zatytu³owanym \textit{PRIMES is in P}. W 2006 roku autorzy otrzymali za to odkrycie dwie nagrody - Nagrodê Gödla, któr¹ przyznaje siê za osi¹gniêcia w dziedzinie informatyki teoretycznej, oraz nagrodê Fulkersona, przyznawan¹ za wybitne prace z zakresu matematyki dyskretnej.
 
-Poni¿sze opracowanie opiera siê na artykule \textit{PRIMES is in P} \cite{aks}.
+Poni¿szy podrodzia³ oparty jest na artykule \textit{PRIMES is in P} \cite{aks}.
 
 Test AKS jest pierwszym opublikowanym algorytmem testuj¹cym czy dana liczba jest pierwsza, który jest jednoczeœnie szybki, jednoznaczny i~ bezwarunkowy. Oznacza to, ¿e algorytm ten zawsze zwróci poprawn¹ odpowiedŸ (w przeciwieñstwie do testów probabilistycznych), a jego dzia³anie nie bazuje na ¿adnych nieudowodnionych hipotezach.
 
@@ -1102,25 +1203,25 @@ Test pierwszoœci AKS opiera siê na pewnej to¿samoœci liczb pierwszych, która jes
 Niech $a, n \in \mathbb{N}$ i $n \geq 2$ oraz $(a,n)=1$. Wówczas $n$ jest liczb¹ pierwsz¹ wtedy i~tylko wtedy, gdy
 \begin{equation}
 \label{lematAKS}
-(X+a)^{n}=X^{n}+a \ (mod \ n).
+(X+a)^{n} \equiv X^{n}+a \ (mod \ n).
 \end{equation}
 \end{lemat}
 
 \begin{dowod}
-Równanie \eqref{lematAKS} mo¿na zapisaæ w postaci
-$$(X+a)^{n}-(X^{n}+a)=0 \ (mod \ n).$$
+Równanie \eqref{lematAKS} mo¿emy zapisaæ w postaci
+$$(X+a)^{n}-(X^{n}+a) \equiv 0 \ (mod \ n).$$
 
-Dla $0 \leq i \leq n$ wspó³czynnik przy $X^{i}$ w wyra¿eniu $((X+a)^{n}-(X^{n}+a))$ wynosi ${n}\choose{i}$ $a^{n-i}$. 
+Dla $0 < i < n$ wspó³czynnik przy $X^{i}$ w wyra¿eniu $((X+a)^{n}-(X^{n}+a))$ wynosi ${n}\choose{i}$ $a^{n-i}$. 
 
-Za³ó¿my, ¿e $n$ jest liczb¹ pierwsz¹. Wtedy ${n}\choose{i}$ $=0 \ (mod \ n)$, a wiêc wszystkie wspó³czynniki s¹ zerowe.
+Za³ó¿my, ¿e $n$ jest liczb¹ pierwsz¹. Wtedy ${n}\choose{i}$ $\equiv 0 \ (mod \ n)$, a wiêc wszystkie wspó³czynniki s¹ zerowe.
 
 Za³ó¿my, ¿e $n$ jest liczb¹ z³o¿on¹. Rozwa¿my liczbê pierwsz¹ $q$, która jest dzielnikiem $n$ i dla pewnego $k$ niech $q^{k} \mid n$. Wtedy $q^{k}$ nie dzieli ${n}\choose{q}$ i jest wzglêdnie pierwsza z $a^{n-q}$. St¹d wspó³czynnik przy $X^{q}$ jest niezerowy (mod $n$). Zatem wyra¿enie $((X+a)^{n}-(X^{n}+a))$ nie jest to¿samoœciowo równe zero (mod $n$).
 \end{dowod}
 
-Powy¿sza to¿samoœæ sugeruje prosty test pierwszoœci: pobieramy badane $n$, wybieramy $a$ i sprawdzamy, czy kongruencja \eqref{lematAKS} jest spe³niona. Jednak wymaga to czasu, poniewa¿ w najgorszym przypadku nale¿y oszacowaæ $n$ wspó³czynników po lewej stronie równania. Prostym sposobem na zmniejszenie liczby tych wspó³czynników jest oszacowanie obu stron kongruencji \eqref{lematAKS} modulo wielomian postaci $X^{r}-1$ dla odpowiednio wybranego ma³ego $r$. Innymi s³owy, sprawdziæ, czy spe³nione jest równanie
+Równanie \eqref{lematAKS} sugeruje prosty test pierwszoœci: pobieramy badane $n$, wybieramy $a$ i sprawdzamy, czy kongruencja \eqref{lematAKS} jest spe³niona. Jednak wymaga to czasu, poniewa¿ w najgorszym przypadku nale¿y oszacowaæ $n$ wspó³czynników po lewej stronie równania. Prostym sposobem na zmniejszenie liczby tych wspó³czynników jest oszacowanie obu stron kongruencji \eqref{lematAKS} modulo wielomian postaci $X^{r}-1$ dla odpowiednio wybranego ma³ego $r$. Innymi s³owy, sprawdziæ, czy spe³nione jest równanie
 \begin{equation}
 \label{lematAKSnowe}
-(X+a)^{n}=X^{n}+a \ (mod \ X^{r}-1,n).
+(X+a)^{n} \equiv X^{n}+a \ (mod \ X^{r}-1,n).
 \end{equation}
 Z lematu \ref{lematAKStresc} wynika natychmiast, ¿e wszystkie liczby pierwsze $n$ spe³niaj¹ równanie \eqref{lematAKSnowe} dla wszystkich wartoœci $a$ i $r$. Problem polega na tym, ¿e niektóre liczby z³o¿one $n$ mog¹ równie¿ spe³niæ równanie dla kilku wartoœci $a$ i $r$. Jednak mo¿emy pokazaæ, ¿e dla odpowiednio dobranego $r$, jeœli równanie \eqref{lematAKSnowe} jest spe³nione dla kilku $a$, to $n$ musi byæ potêg¹ liczby pierwszej.
 
@@ -1142,7 +1243,7 @@ Za pomoc¹ algorytmu testu AKS sprawdzimy, czy liczba 11 jest pierwsza.
 \begin{enumerate}
 \item $n = 11 > 1$.
 \item $n$ nie jest kwadratem ¿adnej liczby ca³kowitej.
-\item $(log_{2} n)^{2} \approx 11,97$, wiêc $r = 13$, poniewa¿ $o_{13}(11) = 12$.
+\item $(log_{2} 11)^{2} \approx 11,97$, wiêc $r = 13$, poniewa¿ $o_{13}(11) = 12$.
 \item Dla ka¿dego $a \leq 13$ i $a \neq 11$ $NWD(a,11) = 1$. Dla $a = 11$ $NWD(a,11) = 11$, wiêc $NWD(a,11) \notin (1,11)$.
 \item $11 \leq 13$, wiêc $11$ jest pierwsza.
 \end{enumerate}
@@ -1364,7 +1465,7 @@ U¿ywaj¹c testu pierwszoœci Fermata sprawdzimy, czy liczba 23 jest liczb¹ pierwsz
 \begin{enumerate}
 \item Losujemy $a \in [2,21]$. Niech $a = 4$.
 \item $d = NWD(4,23) = 1$. 
-\item Kongruencja $a^{p-1} \equiv 1 \ (mod \ p)$ jest spe³niona, poniewa¿ $4^{22} \equiv 1 \ (mod \ 23)$.
+\item Kongruencja $a^{p-1} \equiv 1 \ (mod \ p)$ jest spe³niona, poniewa¿ $4^{22} \equiv 1 \ (mod \ 23)$ (przebieg obliczeñ znajduje siê w przyk³adzie \ref{4do22mod23}).
 \item Liczba 23 mo¿e byæ liczb¹ pierwsz¹.
 \end{enumerate}
 
@@ -1374,7 +1475,7 @@ U¿ywaj¹c testu pierwszoœci Fermata sprawdzimy, czy liczba 25 jest liczb¹ pierwsz
 \begin{enumerate}
 \item Losujemy $a \in [2,24]$. Niech $a = 8$.
 \item $d = NWD(8,25) = 1$. 
-\item Kongruencja  $a^{p-1} \equiv 1 \ (mod \ p)$ nie zachodzi, poniewa¿ $8^{24} \equiv 21 \ (mod \ 25)$.
+\item Kongruencja  $a^{p-1} \equiv 1 \ (mod \ p)$ nie zachodzi, poniewa¿ $8^{24} \equiv 21 \ (mod \ 25)$ (przebieg obliczeñ znajduje siê w przyk³adzie \ref{8do24mod25}).
 \item Liczba 25 jest liczb¹ z³o¿on¹.
 \end{enumerate}
 
@@ -1431,8 +1532,10 @@ Lp. & Liczba $p$ & Liczba powtórzeñ $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \
 Trzeba zaznaczyæ, ¿e kongruencja \eqref{mtfw} mo¿e zachodziæ tak¿e w pewnych przypadkach, gdy liczba $p$ nie jest liczb¹ pierwsz¹.
 
 \begin{definicja} \cite[\mbox{s.} 49]{zakrzew}
-\textit{Liczby Carmichaela} \index{liczby!Carmichaela} to z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata (twierdzenie \ref{mtf}) jest prawdziwa. Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i~tylko wtedy, gdy jest liczb¹ z³o¿on¹ i~dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
+\textit{Liczbami Carmichaela} \index{liczby!Carmichaela} nazywamy z³o¿one liczby naturalne, dla których teza ma³ego twierdzenia Fermata (twierdzenie \ref{mtf}) jest prawdziwa.
 \end{definicja}
+
+Liczba naturalna $n$ jest liczb¹ Carmichaela wtedy i~tylko wtedy, gdy jest liczb¹ z³o¿on¹ i~dla ka¿dej liczby naturalnej $a$ z przedzia³u $1 < a < n$, wzglêdnie pierwszej z $n$, liczba $a^{n-1}-1$ jest podzielna przez $n$.
 
 Najmniejsz¹ liczb¹ Carmichaela jest $561 = 3 \cdot 11 \cdot 17$. Innymi z nich s¹ na przyk³ad $1105 = 5 \cdot 13 \cdot 17$, $1729 = 7 \cdot 13 \cdot 19$ lub $2465 = 5 \cdot 17 \cdot 29$.
 
@@ -1513,7 +1616,7 @@ Stosuj¹c test pierwszoœci Lehmana sprawdzimy, czy 31 jest liczb¹ pierwsz¹.
 \end{przyklad}
 \begin{enumerate}
 \item Losujemy du¿¹ liczbê $a < 31$. Niech $a = 21$.
-\item Obliczamy $b = a^{(31-1)/2} = a^{15} \equiv 30 \ (mod \ 31)$.
+\item Obliczamy $b = a^{(31-1)/2} = 21^{15} \equiv 30 \ (mod \ 31)$.
 \item $b = 30 \equiv -1 \ (mod \ 31)$, st¹d 31 mo¿e byæ liczb¹ pierwsz¹ z prawdopodobieñstwem wiêkszym lub równym $50\%$.
 \end{enumerate}
 
@@ -1579,8 +1682,7 @@ $$
 $$
 \end{definicja}
 
-Symbol Legendre'a mo¿na obliczyæ korzystaj¹c z nastêpuj¹cego wzoru
-$$ \left( \frac{a}{p} \right) \equiv a^{\frac{p-1}{2}} \ (mod \ p). $$
+Symbol Legendre'a mo¿na obliczyæ korzystaj¹c z nastêpuj¹cego twierdzenia.
 
 \begin{twierdzenie} (Kryterium Eulera w formie Legendre'a) \cite[\mbox{s.} 120]{zakrzew} \index{kryterium Eulera w formie Legendre'a}
 Niech $p$ bêdzie nieparzyst¹ liczb¹ pierwsz¹. Wówczas
@@ -1603,18 +1705,18 @@ $$\left(\frac {a}{n}\right)=\left(\frac {a}{p_{1}}\right)^{m_{1}} \cdot \left(\f
 Je¿eli $n$ jest liczb¹ pierwsz¹, to symbol Jacobiego i symbol Legendre'a s¹ sobie równe.
 
 \begin{definicja}
-Nieparzyst¹ liczbê z³o¿on¹ $n$ nazywamy \textit{pseudopierwsz¹ liczb¹ Eulera} \index{liczby!pseudopierwsze Eulera} przy podstawie $b$, gdzie $(n,b)=1$, jeœli spe³niony jest warunek
+Nieparzyst¹ liczbê z³o¿on¹ $n$ nazywamy \textit{pseudopierwsz¹ liczb¹ Eulera} \index{liczby!pseudopierwsze Eulera} przy podstawie $b$, jeœli $(n,b)=1$ i spe³niony jest warunek
 $$b^{\frac{n-1}{2}} \equiv \left( \frac{b}{n} \right) \ (mod \ n).$$
 \end{definicja}
 
-Test pierwszoœci liczby $n$ algorytmem Solovaya-Strassena przebiega nastêpuj¹co
+Test pierwszoœci liczby $n$ algorytmem Solovaya-Strassena przebiega nastêpuj¹co:
 \begin{enumerate}
 \item Losujemy $b \in \{2,...,n-2\}$.
 \item Obliczamy $r = b^{\frac{n-1}{2}} \ (mod \ n)$. Jeœli $r \neq \pm 1$, to $n$ jest liczb¹ z³o¿on¹.
 \item Obliczamy symbol Jacobiego $s = \left( \frac{b}{n} \right)$. Jeœli $r \neq s$, to $n$ jest z³o¿ona.
 \end{enumerate} 
 
-Je¿eli po zakoñczeniu algorytmu nie ma odpowiedzi "n jest z³o¿ona", to test nale¿y powtórzyæ. Po $k$-krotnym powtórzeniu testu i stwierdzeniu, ¿e $n$ jest liczb¹ pseudopierwsz¹ Eulera przy ka¿dej z wybranych podstaw $b$, prawdopodobieñstwo, ¿e liczba $n$ jest jednak z³o¿ona wynosi $\frac{1}{2^{k}}$.
+Je¿eli po zakoñczeniu algorytmu nie ma odpowiedzi "$n$ jest z³o¿ona", to test nale¿y powtórzyæ. Po $k$-krotnym powtórzeniu testu i stwierdzeniu, ¿e $n$ jest liczb¹ pseudopierwsz¹ Eulera przy ka¿dej z wybranych podstaw $b$, prawdopodobieñstwo, ¿e liczba $n$ jest jednak z³o¿ona wynosi $\frac{1}{2^{k}}$.
 
 %bibliografia - notatki z wykladu Teoria Liczb i elementy kryptografii
 
@@ -1703,11 +1805,11 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \textit{Test pierwszoœci Millera-Rabina} \cite{notatki} \index{test pierwszoœci!Millera-Rabina} jest kolejnym testem probabilistycznym, który z pewnym prawdopodobieñstwem okreœla, czy dana liczba jest pierwsza, czy z³o¿ona. Oryginalna wersja tego testu, stworzona przez profesora Gary'ego L. Millera, jest testem deterministycznym, lecz jego prawid³owoœæ bazuje na uogólnionej hipotezie Riemanna, która nie zosta³a dotychczas udowodniona. W 1975 roku kryptolog Michael O. Rabin przekszta³ci³ algorytm Millera do algorytmu probabilistycznego.
 
 \begin{fakt}
-Niech $n$ bêdzie nieparzyst¹ liczb¹ pierwsz¹ i niech $n-1=2^{s} \cdot t$, gdzie $2 \nmid t$. Niech $b \in \phi(n)$. Wtedy albo $b^{t} \equiv 1$ (mod $n$), albo $b^{2^{r}t} \equiv -1$ (mod $n$) dla pewnego $r \in \{0,1,...,s-1\}$.  
+Niech $n$ bêdzie nieparzyst¹ liczb¹ pierwsz¹ i niech $n-1=2^{s} \cdot t$, gdzie $2 \nmid t$. Niech $b \in \varphi(n)$. Wtedy albo $b^{t} \equiv 1$ (mod $n$), albo $b^{2^{r}t} \equiv -1$ (mod $n$) dla pewnego $r \in \{0,1,...,s-1\}$.  
 \end{fakt}
 
 \begin{definicja}
-Niech $n$ bêdzie nieparzyst¹ liczb¹ z³o¿on¹ i niech $n-1=2^{s} \cdot t$, gdzie $2 \nmid t$. Niech $b \in \phi(n)$. Je¿eli
+Niech $n$ bêdzie nieparzyst¹ liczb¹ z³o¿on¹ i niech $n-1=2^{s} \cdot t$, gdzie $2 \nmid t$. Niech $b \in \varphi(n)$. Je¿eli
 \begin{itemize}
 \item $b^{t} \equiv 1$ (mod $n$) lub
 \item $b^{2^{r}t} \equiv -1$ (mod $n$) dla pewnego $r \in \{0,1,...,s-1\}$
@@ -1860,6 +1962,7 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{9}
 
+\bibitem{iwaszkiewicz} A. Iwaszkiewicz-Rudoszañska, \textit{Wstêp do algebry i teorii liczb}, Wydawnictwo Naukowe UAM, Poznañ, (2009).
 \bibitem{karbowski} M. Karbowski, \textit{Podstawy kryptografii}, Wydanie III, Helion, Gliwice, (2014).
 \bibitem{marzant} W. Marzantowicz, P. Zarzycki, \textit{Elementarna teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2006).
 \bibitem{narkiewicz} W. Narkiewicz, \textit{Teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2003).
