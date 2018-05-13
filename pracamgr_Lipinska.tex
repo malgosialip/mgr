@@ -1101,6 +1101,7 @@ Nr & Liczba pierwsza &  Liczba cyfr & Data odkrycia & Odkrywcy \\ [0.2ex]
 
 
 \chapter{Testy pierwszoœci liczb}
+\label{testypierwszosci}
 Test pierwszoœci to algorytm, który okreœla, czy zadana liczba jest liczb¹ pierwsz¹, czy z³o¿on¹. Poni¿szy rozdzia³ ma na celu przedstawienie algorytmów, które testuj¹ pierwszoœæ zadanej liczby. 
 
 \section{Testy deterministyczne}
@@ -1913,7 +1914,213 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \end{table}
 
 
-\chapter{Zastosowania w kryptografii}
+\chapter{Kryptografia}
+Pojêcie \textit{kryptografia} \cite[\mbox{s.} 20]{karbowski} \index{kryptografia} wywodzi siê z jêzyka greckiego (od wyrazów \textit{kryptos} — ukryty i~\textit{graphein} — pisaæ). G³ównym zadaniem kryptografii jest utajnienie znaczenia przesy³anej wiadomoœci, zwanej tekstem jawnym.
+\section{Historia kryptografii}
+Najstarsze znane nam przyk³ady szyfrowania informacji pochodz¹ ze staro¿ytnego Egiptu, z~okresu oko³o 1900 roku p.n.e. Pierwsze tego typu zapisy s³u¿y³y jednak najczêœciej do nadawania wiadomoœciom formy bardziej wznios³ej lub zagadkowej, a nie do ukrywania treœci. Nie by³a to wiêc kryptografia w~œcis³ym znaczeniu tego s³owa, zawiera³a jednak podstawowy dla tej nauki element, czyli przekszta³canie tekstu. 
+
+W ci¹gu kolejnych 3000 lat kryptografia rozwija³a siê powoli. Powstawa³a niezale¿nie w~odrêbnych kulturach, przybieraj¹c ró¿ne stopnie zaawansowania. Zapiski na temat szyfrowania znaleziono na tabliczkach z~pismem klinowym pochodz¹cych z Mezopotamii, a~ich powstanie datuje siê na rok 1500 p.n.e. 
+
+Pierwsze informacje na temat stosowania kryptografii w~celach politycznych pochodz¹ z Indii z IV wieku p.n.e. Wymieniana jest ona jako sposób zdobywania informacji przez przebywaj¹cych za~granic¹ ambasadorów.
+
+Stosowane w staro¿ytnoœci szyfry dzieli³y siê na dwa rodzaje — \index{szyfr!przestawieniowy} przestawieniowe i \index{szyfr!podstawieniowy} podstawieniowe. W pierwszej metodzie zamieniano szyk liter w zdaniach, czyli tworzono anagram. Najprostszym przyk³adem takiego szyfrowania jest pisanie wspak. Druga metoda polega³a na podstawianiu za litery tekstu jawnego innych liter, cyfr b¹dŸ symboli. Najbardziej znanym szyfrem podstawieniowym jest \index{szyfr!Cezara} szyfr Cezara. Algorytm ten polega³ na zastêpowaniu ka¿dej litery przez inn¹, po³o¿on¹ o trzy miejsca dalej w alfabecie.
+
+Szyfry przyporz¹dkowuj¹ce ka¿dej literze alfabetu jawnego dok³adnie jedn¹ literê alfabetu tajnego nazywamy \index{szyfr!monoalfabetyczny} szyframi monoalfabetycznymi. W przypadku szyfru Cezara uk³ad alfabetu tajnego by³ zawsze taki sam, wiêc nie zapewnia³ odpowiedniej ochrony. 
+
+W zwi¹zku z rozwojem kryptografii narodzi³a siê nowa dziedzina wiedzy zwana \index{kryptoanaliza} kryptoanaliz¹. Jej zadaniem by³o ³amanie zabezpieczeñ oraz deszyfrowanie wiadomoœci, gdy nie jest znany klucz lub schemat szyfrowania. Pierwsz¹ jej opis znaleziony zosta³ w traktacie \textit{O odczytywaniu zaszyfrowanych listów} autorstwa Al-Kindiego, arabskiego uczonego z IX wieku. 
+
+W dziele tym Al-Kindi zawar³ rozwa¿ania na temat statystyki fonetyki i sk³adni jêzyka arabskiego oraz opisa³ swoj¹ autorsk¹ technikê poznawania tajnego pisma. Technika ta nosi nazwê \index{kryptoanaliza!statystyczna} kryptoanalizy statystycznej i polega na wyznaczeniu rozk³adu znaków w zaszyfrowanym tekœcie i porównaæ z rozk³adem w dowolnym tekœcie jawnym z tego samego jêzyka. Dziêki wynalazkowi Al-Kindiego szyfry monoalfabetyczne przesta³y byæ bezpieczne. By³ to moment rozpoczêcia siê trwaj¹cego do dziœ wyœcigu kryptografów z kryptoanalitykami.
+
+Zastosowanie komputerów diametralnie zmieni³o dotychczasowe sposoby szyfrowania. Po pierwsze, proces kodowania przebiega³ znacznie szybciej i móg³ siê opieraæ na bardziej skomplikowanych algorytmach.
+Jedna z wa¿niejszych zmian, jaka nast¹pi³a dziêki zastosowaniu komputerów, dotyczy³a poziomu szyfrowania. Wczeœniej odbywa³o siê ono na poziomie liter. W systemie komputerowym do zapisu danych s³u¿y tzw. system binarny, wiêc szyfrowanie liter i znaków zamieniono na szyfrowanie zer i jedynek. W zwi¹zku z tym nale¿a³o ustaliæ regu³y konwersji znaków na system binarny. Tak powsta³ ASCII, czyli kod przyporz¹dkowuj¹cy liczby literom, cyfrom i znakom. Liczby w kodzie ASCII mo¿na przedstawiæ w postaci binarnej, co umo¿liwia ich zapis w komputerze. Po zapisaniu wiadomoœci w postaci dwójkowej mo¿na przejœæ do szyfrowania.
+
+Komputery okaza³y siê przydatne równie¿ w kryptoanalizie, lecz wydajne algorytmy szyfruj¹ce (szybkie i wymagaj¹ce niewielkich zasobów) nadal s¹ trudne do z³amania i wymagaj¹ nak³adów o wiele rzêdów wiêkszych.
+
+\section{Systemy kryptograficzne} 
+\textit{Systemem kryptograficznym} (lub kryptosystemem) \cite{notatki} \index{system kryptograficzny} nazywamy system, którego celem jest dokonywanie operacji kryptograficznych. Jest to dowolna pi¹tka $(P,C,K,E,D)$ sk³adaj¹ca siê ze 
+\begin{itemize}
+\item skoñczonego zbioru mo¿liwych tekstów jawnych $P$, 
+\item skoñczonego zbioru mo¿liwych tekstów zaszyfrowanych $C$, 
+\item skoñczonego zbioru kluczy $K$, 
+\item dla ka¿dego $k \in K$ istnieje regu³a szyfrowania $e_{k} \in E$ i odpowiadaj¹ca jej regu³a deszyfrowania $d_{k} \in D$, takie ¿e $d_{k}(e_{k}(x))=x$ dla ka¿dego tekstu jawnego $x$.
+\end{itemize}
+Szyfr Cezara jest przyk³adem systemu kryptograficznego z kluczem prywatnym \index{system kryptograficzny!z kluczem symetrycznym} (tajnym, symetrycznym), w którym znajomoœæ regu³y szyfrowania $e_{k}$ pozwala ³atwo wyprowadziæ regu³ê deszyfrowania $d_{k}$, wiêc ujawnienie $e_{k}$ wystawia system na niebezpieczeñstwo. 
+Szyfry symetryczne u¿ywaj¹ tego samego klucza do szyfrowania i do deszyfrowania wiadomoœci lub klucz deszyfruj¹cy da siê bezpoœrednio wyprowadziæ z klucza szyfruj¹cego.
+
+Systemem z kluczem publicznym (asymetrycznym) \index{system kryptograficzny!z kluczem asymetrycznym} nazywamy rodzaj kryptografii, w którym u¿ywa siê zestawów dwu lub wiêcej powi¹zanych ze sob¹ kluczy, umo¿liwiaj¹cych wykonywanie ró¿nych czynnoœci kryptograficznych. Jeden z kluczy mo¿e byæ udostêpniony publicznie bez utraty bezpieczeñstwa danych zabezpieczanych tym kryptosystemem.
+
+Najwa¿niejsze zastosowanie kryptografii asymetrycznej, czyli szyfrowanie, zak³ada istnienie dwóch kluczy – prywatnego i publicznego, przy czym klucza prywatnego nie da siê ³atwo odtworzyæ na podstawie publicznego. 
+Algorytmy maj¹ce zastosowanie w kryptografii asymetrycznej wykorzystuj¹ tak zwane operacje jednokierunkowe - takie, które da siê ³atwo przeprowadziæ tylko w jedn¹ stronê (np. mno¿enie jest ³atwe, a rozk³ad na czynniki trudny).
+
+Wyznaczenie regu³y deszyfrowania $d_{k}$ na podstawie znajomoœci regu³y szyfrowania $e_{k}$ jest obliczeniowo niewykonalne. W tych systemach czêsto zamiast o kluczu $k = (e,d)$ bêdziemy mówiæ o parze kluczy: kluczu szyfruj¹cym $e$ i deszyfruj¹cym $d$. Klucz szyfruj¹cy $e$ (zwany kluczem publicznym lub jawnym) mo¿e byæ podany do publicznej wiadomoœci, a klucz deszyfruj¹cy $d$ (klucz prywatny albo tajny) jest trzymany w tajemnicy.
+
+
+\section{Generowanie kluczy}
+Du¿e liczby pierwsze znajduj¹ szerokie zastosowanie w dziedzinie kryptografii. S³u¿¹ one miêdzy innymi do generowania kluczy publicznych i prywatnych, które s¹ wykorzystywane w systemach ochrony danych.
+
+Generowanie kluczy \cite[\mbox{s.} 67]{karbowski}: wydaje siê, ¿e generowanie liczb pierwszych jest zadaniem trudnym. Trzeba wybraæ odpowiednio du¿¹ liczbê, a nastêpnie dokonaæ próby jej faktoryzacji. Jeœli próba siê nie powiedzie, to nasza liczba jest liczb¹ pierwsz¹. Istniej¹ jednak algorytmy, zwane testami pierwszoœci (omówione w rozdziale \ref{testypierwszosci}), które nie opieraj¹ siê na rozk³adzie liczby. Pozwalaj¹ one stwierdziæ, czy $n$ jest liczb¹ pierwsz¹ lub z³o¿on¹, bez próby znalezienia mo¿liwych czynników pierwszych. W³aœnie na takich testach pierwszoœci opieraj¹ siê wspó³czesne algorytmy generuj¹ce liczby pierwsze. Wa¿ne jest to, ¿e w wiêkszoœci maj¹ one charakter probabilistyczny, czyli okreœlaj¹ pierwszoœæ liczby z pewnym prawdopodobieñstwem. Wobec tego dla osi¹gniêcia wiêkszej pewnoœci musimy wykonaæ test kilkukrotnie (im wiêcej prób, tym wiêksze prawdopodobieñstwo otrzymania poprawnego wyniku). 
+
+Przyk³adami systemów, w których klucz generowany jest przy pomocy du¿ych liczb pierwszych, s¹ miêdzy innymi system RSA i system Rabina.
+
+\subsection{System RSA}
+Algorytm kryptograficzny RSA \cite[\mbox{s.} 58]{kutylowski} \index{system!RSA} (zaprezentowany w 1978 roku) jest jednym z najwa¿niejszych systemów z kluczem asymetrycznym, którego nazwa pochodzi od nazwisk jego twórców: R. Rivesta, A. Shamira i L. Adlemana. Jego bezpieczeñstwo opiera siê na trudnoœci rozk³adu du¿ych liczb na czynniki. W RSA zale¿noœæ miêdzy kluczem publicznym i prywatnym jest symetryczna – uzyskanie klucza publicznego na podstawie prywatnego jest równie trudne jak uzyskanie prywatnego na podstawie publicznego. 
+
+Generowanie kluczy przebiega nastêpuj¹co:
+\begin{enumerate}
+\item Losujemy dwie du¿e liczby pierwsze $p$ i $q$.
+\item Obliczamy wartoœæ funkcji Eulera dla $p \cdot q$: $\varphi(pq) = (p-1)(q-1)$. 
+\item Wybieramy liczbê $e$ tak¹, ¿e $(e, \varphi(pq)) = 1$.
+\item Znajdujemy takie $d$, dla którego zachodzi 
+$$ed \equiv 1 \ (mod \ \varphi(pq)).$$
+\item Obliczamy $n =: p \cdot q$ i kasujemy liczby $p$ i $q$.
+\item $(e,n)$ jest wygenerowanym kluczem publicznym, a $(d,n)$ wygenerowanym kluczem prywatnym. 
+\end{enumerate}
+Szyfrowanie: za³ó¿my, ¿e chcemy zaszyfrowaæ liczbê $m$ tak¹, ¿e $m<n$. W tym celu pobieramy klucz publiczny $(e,n)$ i obliczamy
+$$c \equiv m^e \ (mod \ n).$$
+Deszyfrowanie: W celu odszyfrowania wiadomoœci $m$ pobieramy klucz prywatny $(d,n)$ i obliczamy
+$$m \equiv c^d \ (mod \ n).$$
+
+Poprzez roz³o¿enie liczby $n$ na czynniki pierwsze mo¿na odtworzyæ generowanie klucza prywatnego. Jednak dla dostatecznie du¿ego $n$ i dobrze dobranych liczb $p$ i $q$ faktoryzacja $n$ jest praktycznie niemo¿liwa.
+
+\begin{przyklad}
+Korzystaj¹c z systemu RSA zaszyfrujemy i odszyfrujemy wiadomoœæ $m = 4$.
+\end{przyklad}
+Na pocz¹tek generujemy klucz publiczny i prywatny:
+\begin{enumerate}
+\item Losujemy dwie liczby pierwsze $p = 5$ i $q = 11$.
+\item Obliczamy wartoœæ funkcji Eulera dla $p \cdot q$
+$$\varphi(5 \cdot 11) = (5-1)(11-1) = 4 \cdot 10 = 40.$$
+\item Wybieramy liczbê $e$ tak¹, ¿e $(e, 40) = 1$. Niech $e = 27$.
+\item Znajdujemy takie $d$, dla którego zachodzi $27d \equiv 1 \ (mod \ 40)$
+\begin{align*}
+27 \cdot 1 &\equiv 27 \ (mod \ 40),\\
+27 \cdot 2 &\equiv 14 \ (mod \ 40),\\
+27 \cdot 3 &\equiv 1 \ (mod \ 40).
+\end{align*}
+Na podstawie powy¿szych obliczeñ $d = 3$.
+\item Obliczamy $n =: p \cdot q = 5 \cdot 11 = 55$.
+\item $(e,n) = (27,55)$ jest wygenerowanym kluczem publicznym, a $(d,n) = (3,55)$ wygenerowanym kluczem prywatnym. 
+\end{enumerate}
+Szyfrowanie: $c \equiv m^e \ (mod \ n) \equiv 4^{27} \ (mod \ 55).$
+Do obliczenia $4^{27} \ (mod \ 55)$ wykorzystamy szybkie potêgowanie modulo
+\begin{equation}
+\label{rsa1}
+4^{1} \equiv 4 \ (mod \ 55),
+\end{equation}
+\begin{equation}
+\label{rsa2}
+4^{2} \equiv 16 \ (mod \ 55),
+\end{equation}
+\begin{equation}
+4^{4} \equiv 36 \ (mod \ 55),
+\end{equation}
+\begin{equation}
+\label{rsa3}
+4^{8} \equiv -24 \ (mod \ 55),
+\end{equation}
+\begin{equation}
+\label{rsa4}
+4^{16} \equiv 26 \ (mod \ 55).
+\end{equation}
+Mno¿ymy równania \eqref{rsa3} i \eqref{rsa4}
+\begin{equation}
+\label{rsa5}
+4^{24} \equiv -19 \ (mod \ 55).
+\end{equation}
+Mno¿ymy równania \eqref{rsa2} i \eqref{rsa5}
+\begin{equation}
+\label{rsa6}
+4^{26} \equiv 26 \ (mod \ 55).
+\end{equation}
+Mno¿ymy równania \eqref{rsa1} i \eqref{rsa6}
+\begin{equation}
+\label{rsa6}
+4^{27} \equiv 49 \ (mod \ 55).
+\end{equation}
+Nasz szyfrogram jest postaci $c = 49$.
+
+Deszyfrowanie: $m \equiv c^d \ (mod \ n) \equiv 49^3 \ (mod \ 55) \equiv -6^3 \ (mod \ 55) \equiv - 51 (mod \ 55) \equiv 4 \ (mod \ 55).$
+
+\subsection{System Rabina}
+System Rabina \index{system!Rabina} \cite{notatki} jest kolejnym algorytmem szyfruj¹cym z kluczem publicznym, którego bezpieczeñstwo opiera siê na trudnoœci rozk³adu liczby naturalnej na czynniki pierwsze.
+
+Algorytm generowania kluczy wygl¹da nastêpuj¹co:
+\begin{enumerate}
+\item Losujemy dwie du¿e ró¿ne liczby pierwsze $p$ i $q$ przystaj¹ce do $3 \ (mod \ 4)$.
+\item Obliczamy $n = pq$.
+\item Kluczem publicznym jest $n$, prywatnym $(p,q)$.
+\end{enumerate}
+
+Algorytm szyfrowania:
+\begin{enumerate}
+\item Pobieramy klucz publiczny $n$.
+\item Obliczamy $c = m^{2} \ (mod \ n)$.
+\end{enumerate}
+
+Algorytm deszyfrowania:
+\begin{enumerate}
+\item Znajdujemy cztery pierwiastki $m_{1}$, $m_{2}$, $m_{3}$ i $m_{4}$ modulo $n$ z $c$.
+\item Wys³ana wiadomoœæ to jeden z powy¿szych pierwiastków.
+\end{enumerate}
+
+Jeœli $p \equiv 3 \ (mod \ 4)$, to aby wyznaczyæ pierwiastki kwadratowe z $c$ modulo $n$ musimy: 
+\begin{enumerate}
+\item ZnaleŸæ liczby $a,b$ spe³niaj¹ce równanie $ap + bq = 1$ korzystaj¹c z algorytmu Euklidesa.
+\item Obliczyæ $r \equiv c^{\frac{p+1}{4}} \ (mod \ p)$.
+\item Obliczyæ $s \equiv c^{\frac{q+1}{4}} \ (mod \ q)$.
+\item Obliczyæ $x \equiv (aps + bqr) \ (mod \ n)$.
+\item Obliczyæ $y \equiv (aps - bqr) \ (mod \ n)$. 
+\item Czterema pierwiastkami kwadratowymi z $c$ modulo $n$ s¹ liczby $x$, $-x \ (mod \ n)$, $y$, $-y \ (mod \ n)$.
+\end{enumerate}
+
+\begin{przyklad}
+Korzystaj¹c z systemu Rabina zaszyfrujemy i odszyfrujemy wiadomoœæ $m = 9$.
+\end{przyklad}
+Generujemy klucz prywatny i publiczny:
+\begin{enumerate}
+\item Losujemy dwie ró¿ne liczby pierwsze $p$ i $q$ przystaj¹ce do $3 \ (mod \ 4)$.
+$$p = 7 \equiv 3 \ (mod \ 4),$$
+$$q = 11 \equiv 3 \ (mod \ 4).$$
+\item Obliczamy $n = pq = 7 \cdot 11 = 77$.
+\item Kluczem publicznym jest $n = 77$, prywatnym $(p,q) = (7, 11)$.
+\end{enumerate}
+
+Szyfrowanie:
+Obliczamy $c = m^{2} \ (mod \ n) \equiv 9^{2} \ (mod \ 77) \equiv 81 \ (mod \ 77) \equiv 4 \ (mod \ 77)$.
+
+Deszyfrowanie:
+\begin{enumerate}
+\item Szukamy liczb $a,b$ spe³niaj¹cych równanie $7a + 11b = 1$ korzystaj¹c z algorytmu Euklidesa
+\begin{align*}
+11 &= 7 \cdot 1 + 4,\\
+7 &= 4 \cdot 1 + 3,\\
+4 &= 3 \cdot 1 + 1,\\
+3 &= 1 \cdot 3 + 0.\\
+\end{align*}
+Powy¿sze obliczenia przeprowadzamy wstecz
+$$1 = 4 - 3 = 4 - (7 - 4) = 2 \cdot 4 - 7 = 2(11 - 7) - 7 = 2 \cdot 11 - 3 \cdot 7.$$
+St¹d $a = -3$, $b = 2$.
+\item Obliczamy $r$
+$$r \equiv c^{\frac{p+1}{4}} \ (mod \ p) \equiv 4^{\frac{7+1}{4}} \ (mod \ 7) \equiv 4^{2} \ (mod \ 7) \equiv 16 \ (mod \ 7) \equiv 2 \ (mod \ 7).$$
+\item Obliczamy $s$
+$$s \equiv c^{\frac{q+1}{4}} \ (mod \ q) \equiv 4^{\frac{11+1}{4}} \ (mod \ 11) \equiv 4^{3} \ (mod \ 11) \equiv 64 \ (mod \ 11) \equiv 9 \ (mod \ 11).$$
+\item Obliczamy $x$ 
+$$ x \equiv (aps + bqr) \ (mod \ n) \equiv (-3 \cdot 7 \cdot 9 + 2 \cdot 11 \cdot 2) \ (mod \ 77) \equiv -145 \ (mod \ 77) \equiv 9 \ (mod \ 77).$$
+\item Obliczamy $y$ 
+\begin{align*}
+y &\equiv (aps - bqr) \ (mod \ n) \equiv (-3 \cdot 7 \cdot 9 - 2 \cdot 11 \cdot 2) \ (mod \ 77) \\
+&\equiv (-3 \cdot 7 \cdot 9 - 2 \cdot 11 \cdot 2) \ (mod \ 77) \equiv -233 \ (mod \ 77) \equiv 75 \ (mod \ 77).
+\end{align*}
+\item Czterema pierwiastkami kwadratowymi z $c = 4$ modulo $n = 77$ s¹ liczby 
+\begin{align*}
+x &= 9, \\
+-x &\equiv -9 \ (mod \ 77) \equiv 68,\\
+y &= 75,\\
+-y &\equiv -75 \ (mod \ 77) \equiv 2.
+\end{align*}
+\end{enumerate}
+Nasz¹ odszyfrowan¹ wiadomoœci¹ jest $x = m = 9$.
+
 \chapter*{Skrypty z programu Matlab}
 
 \section*{Sito Eratostenesa}
@@ -1964,17 +2171,19 @@ Lp. & Liczba $n$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 
 \bibitem{iwaszkiewicz} A. Iwaszkiewicz-Rudoszañska, \textit{Wstêp do algebry i teorii liczb}, Wydawnictwo Naukowe UAM, Poznañ, (2009).
 \bibitem{karbowski} M. Karbowski, \textit{Podstawy kryptografii}, Wydanie III, Helion, Gliwice, (2014).
+\bibitem{kutylowski} M. Kuty³owski, W. Strothmann, \textit{Kryptografia. Teoria i praktyka zabezpieczania systemów komputerowych}, Wydanie II, Oficyna Wydawnicza Read Me, Warszawa, (1999).
 \bibitem{marzant} W. Marzantowicz, P. Zarzycki, \textit{Elementarna teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2006).
 \bibitem{narkiewicz} W. Narkiewicz, \textit{Teoria liczb}, Wydawnictwo Naukowe PWN, Warszawa, (2003).
 \bibitem{sierpinski} W. Sierpiñski, \textit{Teoria liczb}, Monografie Matematyczne, Warszawa (1950).
-\bibitem{wojciechowski} J. Wojciechowski, \textit{Mersenne Primes, An Introduction and Overview}, (2005).
+\bibitem{wojciechowski} J. Wojciechowski, \textit{Mersenne Primes, An Introduction and Overview}, (2005),
+\url{https://www.academia.edu/9995980/Mersenne_Primes_An_Introduction_and_Overview} (dostêp 13.05.2018).
 \bibitem{zakrzew} M. Zakrzewski, \textit{Teoria liczb}, Wydanie I, Oficyna Wydawnicza GiS, Wroc³aw, (2017).
 \bibitem{lpb} \url{http://primes.utm.edu/largest.html} (dostêp 25.03.2018)
 \bibitem{gimps} \url{https://www.mersenne.org/primes/} (dostêp 25.03.2018)
 \bibitem{spiralaulama} \url{http://mathworld.wolfram.com/PrimeSpiral.html}(dostêp 24.03.2018)
 \bibitem{aks} \url{https://www.cse.iitk.ac.in/users/manindra/algebra/primality_v6.pdf} (dostêp 25.03.2018)
 \bibitem{multord} \url{https://en.wikipedia.org/wiki/Multiplicative_order}
-\bibitem{notatki} \textit{notatki z wyk³adu Teoria Liczb i Elementy Kryptografii}
+\bibitem{notatki} \textit{notatki z wyk³adu Teoria Liczb i Elementy Kryptografii} dr A. Iwaszkiewicz-Rudoszañska.
 \end{thebibliography}
 
 \newpage

@@ -16,6 +16,9 @@
 
   \item klasy reszt, \hyperpage{19}
   \item kongruencja, \hyperpage{17}
+  \item kryptoanaliza, \hyperpage{53}
+    \subitem statystyczna, \hyperpage{54}
+  \item kryptografia, \hyperpage{53}
   \item kryterium Eulera w formie Legendre'a, \hyperpage{48}
 
   \indexspace
@@ -65,6 +68,14 @@
   \item symbol
     \subitem Jacobiego, \hyperpage{48}
     \subitem Legendre'a, \hyperpage{48}
+  \item system kryptograficzny, \hyperpage{54}
+    \subitem z kluczem asymetrycznym, \hyperpage{55}
+    \subitem z kluczem symetrycznym, \hyperpage{55}
+  \item szyfr
+    \subitem Cezara, \hyperpage{53}
+    \subitem monoalfabetyczny, \hyperpage{53}
+    \subitem podstawieniowy, \hyperpage{53}
+    \subitem przestawieniowy, \hyperpage{53}
 
   \indexspace
 
