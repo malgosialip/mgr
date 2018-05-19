@@ -6,7 +6,7 @@
 \BOOKMARK [1][-]{section.1.3}{Kongruencje i ich zastosowania}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.4}{Sito Eratostenesa, Atkina i Sundarama}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.5}{Spirala Ulama}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.6}{Twierdzenie Wilsona, male twierdzenie Fermata, twierdzenie Eulera}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.6}{Twierdzenie Wilsona, male twierdzenie Fermata i twierdzenie Eulera}{chapter.1}% 9
 \BOOKMARK [1][-]{section.1.7}{Wlasnosci liczb pierwszych}{chapter.1}% 10
 \BOOKMARK [0][-]{chapter.2}{ 2. Testy pierwszosci liczb}{}% 11
 \BOOKMARK [1][-]{section.2.1}{Testy deterministyczne}{chapter.2}% 12
@@ -24,17 +24,18 @@
 \BOOKMARK [1][-]{section.3.3}{Generowanie kluczy}{chapter.3}% 24
 \BOOKMARK [2][-]{subsection.3.3.1}{System RSA}{section.3.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.2}{System Rabina}{section.3.3}% 26
-\BOOKMARK [0][-]{chapter*.3}{Skrypty z programu Matlab}{}% 27
-\BOOKMARK [1][-]{section*.4}{Sito Eratostenesa}{chapter*.3}% 28
-\BOOKMARK [1][-]{section*.5}{Sito Sundarama}{chapter*.3}% 29
-\BOOKMARK [1][-]{section*.6}{Funkcja Eulera}{chapter*.3}% 30
-\BOOKMARK [1][-]{section*.7}{Rzad multiplikatywny}{chapter*.3}% 31
-\BOOKMARK [1][-]{section*.8}{Metoda naiwna}{chapter*.3}% 32
-\BOOKMARK [1][-]{section*.9}{Test pierwszosci AKS}{chapter*.3}% 33
-\BOOKMARK [1][-]{section*.10}{Test pierwszosci Lucasa-Lehmera}{chapter*.3}% 34
-\BOOKMARK [1][-]{section*.11}{Test pierwszosci Fermata}{chapter*.3}% 35
-\BOOKMARK [1][-]{section*.12}{Test pierwszosci Lehmana}{chapter*.3}% 36
-\BOOKMARK [1][-]{section*.13}{Test pierwszosci Solovaya-Strassena}{chapter*.3}% 37
-\BOOKMARK [1][-]{section*.14}{Test pierwszosci Millera-Rabina}{chapter*.3}% 38
-\BOOKMARK [0][-]{chapter*.15}{Bibliografia}{}% 39
-\BOOKMARK [0][-]{chapter*.16}{Skorowidz}{}% 40
+\BOOKMARK [1][-]{section.3.4}{Generatory liczb pseudolosowych}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter*.3}{Skrypty z programu Matlab}{}% 28
+\BOOKMARK [1][-]{section*.4}{Sito Eratostenesa}{chapter*.3}% 29
+\BOOKMARK [1][-]{section*.5}{Sito Sundarama}{chapter*.3}% 30
+\BOOKMARK [1][-]{section*.6}{Funkcja Eulera}{chapter*.3}% 31
+\BOOKMARK [1][-]{section*.7}{Rzad multiplikatywny}{chapter*.3}% 32
+\BOOKMARK [1][-]{section*.8}{Metoda naiwna}{chapter*.3}% 33
+\BOOKMARK [1][-]{section*.9}{Test pierwszosci AKS}{chapter*.3}% 34
+\BOOKMARK [1][-]{section*.10}{Test pierwszosci Lucasa-Lehmera}{chapter*.3}% 35
+\BOOKMARK [1][-]{section*.11}{Test pierwszosci Fermata}{chapter*.3}% 36
+\BOOKMARK [1][-]{section*.12}{Test pierwszosci Lehmana}{chapter*.3}% 37
+\BOOKMARK [1][-]{section*.13}{Test pierwszosci Solovaya-Strassena}{chapter*.3}% 38
+\BOOKMARK [1][-]{section*.14}{Test pierwszosci Millera-Rabina}{chapter*.3}% 39
+\BOOKMARK [0][-]{chapter*.15}{Bibliografia}{}% 40
+\BOOKMARK [0][-]{chapter*.16}{Skorowidz}{}% 41

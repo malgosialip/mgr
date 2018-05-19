@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {1.3\relax .\kern .5em }Kongruencje i ich zastosowania}{16}{section.1.3}
 \contentsline {section}{\numberline {1.4\relax .\kern .5em }Sito Eratostenesa, Atkina i Sundarama}{22}{section.1.4}
 \contentsline {section}{\numberline {1.5\relax .\kern .5em }Spirala Ulama}{26}{section.1.5}
-\contentsline {section}{\numberline {1.6\relax .\kern .5em }Twierdzenie Wilsona, ma\IeC {\l }e twierdzenie Fermata, twierdzenie Eulera}{27}{section.1.6}
+\contentsline {section}{\numberline {1.6\relax .\kern .5em }Twierdzenie Wilsona, ma\IeC {\l }e twierdzenie Fermata i twierdzenie Eulera}{27}{section.1.6}
 \contentsline {section}{\numberline {1.7\relax .\kern .5em }W\IeC {\l }asno\'sci liczb pierwszych}{31}{section.1.7}
 \contentsline {chapter}{\ 2\relax .\kern .5em Testy pierwszo\'sci liczb}{35}{chapter.2}
 \contentsline {section}{\numberline {2.1\relax .\kern .5em }Testy deterministyczne}{35}{section.2.1}
@@ -24,17 +24,18 @@
 \contentsline {section}{\numberline {3.3\relax .\kern .5em }Generowanie kluczy}{55}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1\relax .\kern .5em }System RSA}{56}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2\relax .\kern .5em }System Rabina}{58}{subsection.3.3.2}
-\contentsline {chapter}{Skrypty z programu Matlab}{61}{chapter*.3}
-\contentsline {section}{Sito Eratostenesa}{61}{section*.4}
-\contentsline {section}{Sito Sundarama}{61}{section*.5}
-\contentsline {section}{Funkcja Eulera}{62}{section*.6}
-\contentsline {section}{Rz\k ad multiplikatywny}{62}{section*.7}
-\contentsline {section}{Metoda naiwna}{63}{section*.8}
-\contentsline {section}{Test pierwszo\'sci AKS}{64}{section*.9}
-\contentsline {section}{Test pierwszo\'sci Lucasa-Lehmera}{66}{section*.10}
-\contentsline {section}{Test pierwszo\'sci Fermata}{66}{section*.11}
-\contentsline {section}{Test pierwszo\'sci Lehmana}{67}{section*.12}
-\contentsline {section}{Test pierwszo\'sci Solovaya-Strassena}{68}{section*.13}
-\contentsline {section}{Test pierwszo\'sci Millera-Rabina}{69}{section*.14}
-\contentsline {chapter}{Bibliografia}{71}{chapter*.15}
-\contentsline {chapter}{Skorowidz}{73}{chapter*.16}
+\contentsline {section}{\numberline {3.4\relax .\kern .5em }Generatory liczb pseudolosowych}{60}{section.3.4}
+\contentsline {chapter}{Skrypty z programu Matlab}{63}{chapter*.3}
+\contentsline {section}{Sito Eratostenesa}{63}{section*.4}
+\contentsline {section}{Sito Sundarama}{63}{section*.5}
+\contentsline {section}{Funkcja Eulera}{64}{section*.6}
+\contentsline {section}{Rz\k ad multiplikatywny}{64}{section*.7}
+\contentsline {section}{Metoda naiwna}{65}{section*.8}
+\contentsline {section}{Test pierwszo\'sci AKS}{66}{section*.9}
+\contentsline {section}{Test pierwszo\'sci Lucasa-Lehmera}{68}{section*.10}
+\contentsline {section}{Test pierwszo\'sci Fermata}{68}{section*.11}
+\contentsline {section}{Test pierwszo\'sci Lehmana}{69}{section*.12}
+\contentsline {section}{Test pierwszo\'sci Solovaya-Strassena}{70}{section*.13}
+\contentsline {section}{Test pierwszo\'sci Millera-Rabina}{71}{section*.14}
+\contentsline {chapter}{Bibliografia}{73}{chapter*.15}
+\contentsline {chapter}{Skorowidz}{75}{chapter*.16}
