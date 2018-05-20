@@ -14,6 +14,10 @@
 
   \indexspace
 
+  \item generator liczb pseudolosowych, \hyperpage{60}
+
+  \indexspace
+
   \item klasy reszt, \hyperpage{19}
   \item kongruencja, \hyperpage{17}
   \item kryptoanaliza, \hyperpage{53}
@@ -29,11 +33,13 @@
   \item liczby
     \subitem Carmichaela, \hyperpage{45}
     \subitem Fermata, \hyperpage{32}
+    \subitem losowe, \hyperpage{60}
     \subitem Mersenne'a, \hyperpage{33}, \hyperpage{40}
     \subitem pierwsze, \hyperpage{11}
     \subitem pierwsze bli\'zniacze, \hyperpage{32}
     \subitem pierwsze Mersenne'a, \hyperpage{33}
     \subitem pierwsze Sophie Germain, \hyperpage{32}
+    \subitem pseudolosowe, \hyperpage{60}
     \subitem pseudopierwsze, \hyperpage{30}
     \subitem pseudopierwsze Eulera, \hyperpage{48}
     \subitem silnie pseudopierwsze, \hyperpage{51}
@@ -43,7 +49,7 @@
   \indexspace
 
   \item najmniejsza wsp\'olna wielokrotno\'s\'c, \hyperpage{11}
-  \item najwi\k ekszy wsp\'olny dzielnik, \hyperpage{11}
+  \item najwi\k ekszy wsp\'olny dzielnik, \hyperpage{12}
 
   \indexspace
 
@@ -68,6 +74,9 @@
   \item symbol
     \subitem Jacobiego, \hyperpage{48}
     \subitem Legendre'a, \hyperpage{48}
+  \item system
+    \subitem Rabina, \hyperpage{58}
+    \subitem RSA, \hyperpage{56}
   \item system kryptograficzny, \hyperpage{54}
     \subitem z kluczem asymetrycznym, \hyperpage{55}
     \subitem z kluczem symetrycznym, \hyperpage{55}
@@ -76,6 +85,7 @@
     \subitem monoalfabetyczny, \hyperpage{53}
     \subitem podstawieniowy, \hyperpage{53}
     \subitem przestawieniowy, \hyperpage{53}
+  \item szyfr strumieniowy, \hyperpage{61}
 
   \indexspace
 
@@ -96,7 +106,7 @@
     \subitem ma\IeC {\l }e Fermata, \hyperpage{28}
     \subitem ma\IeC {\l }e Fermata dla wielomian\'ow, \hyperpage{38}
     \subitem Wilsona, \hyperpage{27}
-    \subitem zasadnicze arytmetyki, \hyperpage{12}
+    \subitem zasadnicze arytmetyki, \hyperpage{13}
 
   \indexspace
 

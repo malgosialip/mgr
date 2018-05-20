@@ -241,7 +241,7 @@
 %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Wstêp}
-
+Liczby pierwsze, elementy buduj¹ce liczby ca³kowite, by³y szczegó³owo badane od czasów staro¿ytnych. Mo¿liwoœæ przedstawiania liczb ca³kowitych za pomoc¹ iloczynu liczb pierwszych jest g³ównym powodem powstania ca³ej teorii liczb i kryje siê za interesuj¹cymi wynikami z tej dziedziny. Carl Friedrich Gauss powiedzia³, ¿e jeœli matematyka jest królow¹ nauk, to teoria liczb jest królow¹ matematyki. Na podstawie w³aœciwoœci liczb pierwszych zosta³o sformu³owanych wiele interesuj¹cych twierdzeñ, wniosków i przypuszczeñ, które znajduj¹ szerokie zastosowanie miêdzy innymi w kryptografii.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%
@@ -273,9 +273,9 @@ $o_{n}(a)$ - rz¹d elementu $a$ modulo $n$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Liczby pierwsze}
-Poni¿szy rozdzia³ jest zbiorem najwa¿niejszych pojêæ i twierdzeñ zwi¹zanych z liczbami pierwszymi oraz ich w³asnoœciami.
+W poni¿szym rozdziale zawarte zosta³y najwa¿niejsze zagadnienia z~zakresu teorii liczb. Poznamy w nim podstawowe twierdzenia o liczbach pierwszych, miêdzy innymi zasadnicze twierdzenie arytmetyki o rozk³adzie liczb naturalnych na czynniki pierwsze i~twierdzenie Euklidesa o nieskoñczonej liczbie liczb pierwszych. W rozdziale tym zajmiemy siê równie¿ kongruencjami, których znajomoœæ jest niezbêdna do zrozumienia twierdzenia Wilsona, ma³ego twierdzenia Fermata i twierdzenia Eulera. Oprócz tego przedstawimy algorytmy wyszukiwania liczb pierwszych z zadanego przedzia³u oraz pewne szczególne rodzaje takich liczb.
 
-\section{Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}
+\section{Zasadnicze twierdzenie arytmetyki}
 Jednym z najwa¿niejszymi twierdzeñ dotycz¹cych liczb pierwszych jest zasadnicze twierdzenie arytmetyki. Jego wprowadzenie i~udowodnienie wymaga zdefiniowania kilku podstawowych pojêæ z zakresu teorii liczb, które zostan¹ omówione w tym podrozdziale.
  
 \begin{definicja} \cite[\mbox{s.} 3]{marzant}
@@ -468,7 +468,7 @@ $$ka + lb = 1.$$
 \end{wniosek}
 
 \section{Kongruencje i ich zastosowania}
-W poni¿szym rozdziale zawarte zosta³y najwa¿niejsze informacje i twierdzenia zwi¹zane z kongruencj¹. Bêd¹ one wykorzystywane w dalszej czêœci pracy.
+W poni¿szym rozdziale zawarte zosta³y najwa¿niejsze informacje i twierdzenia zwi¹zane z kongruencj¹. Bêd¹ one wielokrotnie wykorzystywane w dalszej czêœci pracy.
 
 \begin{definicja}  \cite[\mbox{s.} 41]{sierpinski}
 \index{kongruencja}
@@ -812,13 +812,13 @@ Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku 
 \begin{figure}[H]
 \label{ulam}
 \begin{center}
-\includegraphics[scale=0.75]{spirala_ulama.jpg}
+\includegraphics[scale=0.9]{spirala_ulama.jpg}
 \caption{Spirala Ulama o rozmiarze $400$x$400$ \cite{spiralaulama}.}
 \end{center}
 \end{figure}
 
 \section{Twierdzenie Wilsona, ma³e twierdzenie Fermata i twierdzenie Eulera}
-Podrozdzia³ ten jest poœwiêcony trzem klasycznym twierdzeniom z zakresu teorii liczb - twierdzeniu Wilsona, ma³emu twierdzeniu Fermata oraz twierdzeniu Eulera. Maj¹ one szerokie zastosowanie w testach pierwszoœci liczb.
+Podrozdzia³ ten jest poœwiêcony trzem klasycznym twierdzeniom z zakresu teorii liczb - twierdzeniu Wilsona, ma³emu twierdzeniu Fermata oraz twierdzeniu Eulera. Maj¹ one szerokie zastosowanie w testach pierwszoœci liczb, które zostan¹ przedstawione w rozdziale drugim.
 
 \begin{twierdzenie}(Twierdzenie Wilsona, 1770 r.) \cite[\mbox{s.} 18]{zakrzew}
 \label{wilson} \index{twierdzenie!Wilsona}
@@ -2085,8 +2085,8 @@ $$q = 11 \equiv 3 \ (mod \ 4).$$
 \item Kluczem publicznym jest $n = 77$, prywatnym $(p,q) = (7, 11)$.
 \end{enumerate}
 
-Szyfrowanie:
-Obliczamy $c = m^{2} \ (mod \ n) \equiv 9^{2} \ (mod \ 77) \equiv 81 \ (mod \ 77) \equiv 4 \ (mod \ 77)$.
+Szyfrowanie: Obliczamy 
+$$c = m^{2} \ (mod \ n) \equiv 9^{2} \ (mod \ 77) \equiv 81 \ (mod \ 77) \equiv 4 \ (mod \ 77).$$
 
 Deszyfrowanie:
 \begin{enumerate}
@@ -2122,15 +2122,15 @@ y &= 75,\\
 Nasz¹ odszyfrowan¹ wiadomoœci¹ jest $x = m = 9$.
 
 \section{Generatory liczb pseudolosowych}
-Liczb¹ losow¹ \index{liczby!losowe} nazywamy liczbê $r$, która nale¿y do pewnego zbioru wartoœci $R = \{ r_{1}, ..., r_{n} \}$ wybieranych z pewnym prawdopodobieñstwem. Je¿eli jako $r$ mo¿e pojawiæ siê ka¿da z liczb zbioru $R$ z tym samym prawdopodobieñstwem, to mówimy o równomiernym rozk³adzie prawdopodobieñstwa liczb losowych z tego zbioru. Przyk³adem takiego rozk³adu s¹ wyniki rzutu kostk¹. Ka¿dy rzut daje liczbê losow¹ $r$ nale¿¹c¹ do zbioru $\{1,2,3,4,5,6\}$ z prawdopodobieñstwem $P(r) = \frac{1}{6}$.
+Liczb¹ losow¹ \index{liczby!losowe} nazywamy liczbê $r$, która nale¿y do pewnego zbioru wartoœci $R = \{ r_{1}, ..., r_{n} \}$ wybieranych z~pewnym prawdopodobieñstwem. Je¿eli jako $r$ mo¿e pojawiæ siê ka¿da z~liczb zbioru $R$ z~tym samym prawdopodobieñstwem, to mówimy o~równomiernym rozk³adzie prawdopodobieñstwa liczb losowych z~tego zbioru. Przyk³adem takiego rozk³adu s¹ wyniki rzutu kostk¹. Ka¿dy rzut daje liczbê losow¹ $r$ nale¿¹c¹ do zbioru $\{1,2,3,4,5,6\}$ z~prawdopodobieñstwem $P(r) = \frac{1}{6}$.
 
-W zwi¹zku z tym, ¿e komputer ma charakter deterministyczny, powstaje problem z otrzymywaniem liczb losowych. Gdy rzucamy koœci¹, nie wiemy, co wypadnie. Taka sama operacja na komputerze wymaga³aby dzia³ania, którego wynik nie jest przewidywalny, a ¿adna z operacji wykonywanych przez komputer nie ma takiej w³aœciwoœci.
+W zwi¹zku z tym, ¿e komputer ma charakter deterministyczny, powstaje problem z~otrzymywaniem liczb losowych. Gdy rzucamy koœci¹, nie wiemy, co wypadnie. Taka sama operacja na komputerze wymaga³aby dzia³ania, którego wynik nie jest przewidywalny, a ¿adna z~operacji wykonywanych przez komputer nie ma takiej w³aœciwoœci.
 
-Z drugiej strony liczby losowe s¹ powszechnie u¿ywane przy programowaniu komputerów. Poniewa¿ nie mo¿emy w prosty sposób otrzymaæ prawdziwych liczb losowych, musimy u¿yæ ich sztucznych odpowiedników, zwanych \index{liczby!pseudolosowe} liczbami pseudolosowymi. Liczby takie wygl¹daj¹ jak losowe, lecz tworzone s¹ algorytmicznie.
+Z drugiej strony liczby losowe s¹ powszechnie u¿ywane przy programowaniu komputerów. Poniewa¿ nie mo¿emy w~prosty sposób otrzymaæ prawdziwych liczb losowych, musimy u¿yæ ich sztucznych odpowiedników, zwanych \index{liczby!pseudolosowe} liczbami pseudolosowymi. Liczby takie wygl¹daj¹ jak losowe, lecz tworzone s¹ algorytmicznie.
 
-Generator liczb pseudolosowych, \index{generator liczb pseudolosowych} znany równie¿ jako deterministyczny generator losowych bitów, jest algorytmem do generowania sekwencji liczb, których w³aœciwoœci s¹ zbli¿one do w³aœciwoœci sekwencji liczb losowych. Sekwencja generowana przez generatory liczb pseudolosowych nie jest naprawdê losowa, poniewa¿ jest zdeterminowana przez wartoœæ pocz¹tkow¹, zwan¹ ziarnem (które mo¿e zawieraæ prawdziwe losowe wartoœci). Generatory liczb pseudolosowych s¹ wa¿ne w praktyce ze wzglêdu na szybkoœæ generowania liczb i mo¿liwoœæ ich odtworzenia.
+Generator liczb pseudolosowych, \index{generator liczb pseudolosowych} znany równie¿ jako deterministyczny generator losowych bitów, jest algorytmem do~generowania sekwencji liczb, których w³aœciwoœci s¹ zbli¿one do~w³aœciwoœci sekwencji liczb losowych. Sekwencja generowana przez generatory liczb pseudolosowych nie jest naprawdê losowa, poniewa¿ jest zdeterminowana przez wartoœæ pocz¹tkow¹, zwan¹ ziarnem (które mo¿e zawieraæ prawdziwe losowe wartoœci). Generatory liczb pseudolosowych s¹ wa¿ne w~praktyce ze wzglêdu na szybkoœæ generowania liczb i~mo¿liwoœæ ich odtworzenia.
 
-Generatory liczb pseudolosowych maj¹ kluczowe znaczenie miêdzy innymi w kryptografii. Poszukuje siê algorytmów bardziej skomplikowanych, gdy¿ bezpieczeñstwo systemów kryptograficznych opiera siê na tym, czy dane wyjœciowe nie s¹ przewidywalne na podstawie wczeœniejszych wyników. W³aœnie dlatego potrzebne s¹ z³o¿one algorytmy generuj¹ce, które nie dziedzicz¹ liniowoœci prostszych generatorów.
+Generatory liczb pseudolosowych maj¹ kluczowe znaczenie miêdzy innymi w~kryptografii. Poszukuje siê algorytmów bardziej skomplikowanych, gdy¿ bezpieczeñstwo systemów kryptograficznych opiera siê na tym, czy dane wyjœciowe nie s¹ przewidywalne na podstawie wczeœniejszych wyników. W³aœnie dlatego potrzebne s¹ z³o¿one algorytmy generuj¹ce, które nie dziedzicz¹ liniowoœci prostszych generatorów.
 
 \cite[\mbox{s.} 107]{karbowski} Przyk³adem szyfrów, które opieraj¹ siê na generatorach liczb pseudolosowych, s¹  \index{szyfr strumieniowy} szyfry strumieniowe. Dokonuj¹ one szyfrowania w oparciu o pojedyncze bity. Ka¿dy bit z osobna przekszta³cany jest przez wyznaczony algorytm i w ten sposób powstaje kryptogram. Generator wytwarza kolejne bity klucza, które nastêpnie u¿ywane s¹ do szyfrowania bitów tekstu jawnego. Nietrudno zauwa¿yæ, ¿e bezpieczeñstwo takiego algorytmu opiera siê na jakoœci generatora liczb pseudolosowych. Jest ono tym wiêksze, im bardziej losowy charakter ma wytwarzany strumieñ bitów klucza. Problem sprowadza siê wiêc do stworzenia dobrego generatora liczb losowych. Strumieñ klucza powinien byæ nieprzewidywalny i nieokresowy, gdy¿ ka¿da prawid³owoœæ zmniejsza bezpieczeñstwo szyfru. Co wiêcej, po ka¿dym uruchomieniu algorytmu powinien byæ generowany inny strumieñ klucza. 
 
@@ -2138,13 +2138,13 @@ Liczby pierwsze znajduj¹ swoje zastosowanie w generatorach opartych na teorii z³
 \begin{itemize}
 \item Generator BBS (skrót od ang. \textit{Blum-Blum-Shub}) — opieraj¹cy siê na wzorze
 $$x_{i} \equiv x_{i-1}^{2} \ (mod \ n),$$
-gdzie $n$ jest iloczynem dwóch liczb pierwszych $p$ i $q$ przystaj¹cych do $3 \ (mod \ 4)$. Ziarno generatora obliczane jest przez wstawienie do wzoru liczby wzglêdnie pierwszej z $n$. Ci¹g wyjœciowy tworz¹ najmniej znacz¹ce bity kolejnych wartoœci $x$. 
+gdzie $n$ jest iloczynem dwóch liczb pierwszych $p$ i $q$ przystaj¹cych do $3 \ (mod \ 4)$. Ziarno generatora obliczane jest przez wstawienie do wzoru liczby wzglêdnie pierwszej z $n$. Ci¹g wyjœciowy tworz¹ najmniej znacz¹ce bity kolejnych wartoœci $x$, czyli bity znajduj¹ce siê w s³owie maszynowym na miejscach najbardziej wysuniêtych w prawo.
 \item Generator RSA — wykorzystuj¹cy liczbê $n$, która jest iloczynem dwóch liczb pierwszych $p$ i $q$, a dodatkowo liczbê $e$, która jest wzglêdnie pierwsza z iloczynem $(p-1)(q-1)$. Do obliczania kolejnych wyrazów pseudolosowych stosowany jest wzór 
 $$x_{i} \equiv x_{i-1}^{e} \ (mod \ n),$$
 gdzie pierwsza wartoœæ $x$, czyli $x_{0}$ wybierana jest losowo, lecz musi byæ mniejsza ni¿ $n$. Podobnie jak w generatorze Bluma-Bluma-Shuba, pseudolosowy ci¹g wyjœciowy utworzony jest przez najmniej znacz¹ce bity kolejnych wyrazów losowych. 
 \item Generator Bluma-Micaliego — wykorzystuj¹cy problem logarytmu dyskretnego, który polega na tym, ¿e potêgowanie jest stosunkowo proste w porównaniu z operacj¹ logarytmowania. Do obliczania kolejnych wyrazów pseudolosowych s³u¿y wzór 
 $$x_{i} \equiv g^{x_{i-1}} \ (mod \ p),$$
-gdzie $g$ i $p$ to liczby pierwsze. Bit wyjœciowy zale¿y od wygenerowanej wartoœci $x$. Jeœli wartoœæ ta jest mniejsza od liczby $\frac{p-1}{2}$, bit przyjmuje wartoœæ $1$, w przeciwnym wypadku przyjmuje on wartoœæ $0$. 
+gdzie $g$ i $p$ to liczby pierwsze. Bit wyjœciowy zale¿y od wygenerowanej wartoœci $x$. Jeœli wartoœæ ta jest mniejsza od liczby $\frac{p-1}{2}$, bit przyjmuje wartoœæ $1$, w~przeciwnym wypadku przyjmuje on wartoœæ $0$. 
 \end{itemize}
 
 
@@ -2185,8 +2185,6 @@ gdzie $g$ i $p$ to liczby pierwsze. Bit wyjœciowy zale¿y od wygenerowanej wartoœ
 \section*{Test pierwszoœci Millera-Rabina}
 \lstinputlisting[frame=single, label = testMR, caption = Skrypt testu pierwszoœci Millera-Rabina.]{TestMilleraRabina.m}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%
 %%%%%%%%%%%%%
@@ -2210,7 +2208,7 @@ gdzie $g$ i $p$ to liczby pierwsze. Bit wyjœciowy zale¿y od wygenerowanej wartoœ
 \bibitem{spiralaulama} \url{http://mathworld.wolfram.com/PrimeSpiral.html}(dostêp 24.03.2018)
 \bibitem{aks} \url{https://www.cse.iitk.ac.in/users/manindra/algebra/primality_v6.pdf} (dostêp 25.03.2018)
 \bibitem{multord} \url{https://en.wikipedia.org/wiki/Multiplicative_order}
-\bibitem{notatki} \textit{notatki z wyk³adu Teoria Liczb i Elementy Kryptografii} dr A. Iwaszkiewicz-Rudoszañska.
+\bibitem{notatki} \textit{notatki z wyk³adu Teoria Liczb i Elementy Kryptografii}, dr A. Iwaszkiewicz-Rudoszañska.
 \end{thebibliography}
 
 \newpage

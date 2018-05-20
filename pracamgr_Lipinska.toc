@@ -1,7 +1,7 @@
 \contentsline {chapter}{Wst\k ep}{7}{chapter*.1}
 \contentsline {chapter}{Spis oznacze\'n i symboli}{9}{chapter*.2}
 \contentsline {chapter}{\ 1\relax .\kern .5em Liczby pierwsze}{11}{chapter.1}
-\contentsline {section}{\numberline {1.1\relax .\kern .5em }Zasadnicze twierdzenie arytmetyki i twierdzenie Euklidesa}{11}{section.1.1}
+\contentsline {section}{\numberline {1.1\relax .\kern .5em }Zasadnicze twierdzenie arytmetyki}{11}{section.1.1}
 \contentsline {section}{\numberline {1.2\relax .\kern .5em }Twierdzenie i algorytm Euklidesa}{15}{section.1.2}
 \contentsline {section}{\numberline {1.3\relax .\kern .5em }Kongruencje i ich zastosowania}{16}{section.1.3}
 \contentsline {section}{\numberline {1.4\relax .\kern .5em }Sito Eratostenesa, Atkina i Sundarama}{22}{section.1.4}
