@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  20 MAY 2018 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  27 MAY 2018 16:42
 entering extended mode
 **./pracamgr_Lipinska.tex
 (pracamgr_Lipinska.tex
@@ -556,11 +556,6 @@ Package color Info: Driver file: pdftex.def on input line 147.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
-\@indexfile=\write3
-\openout3 = `pracamgr_Lipinska.idx'.
-
-
-Writing index file pracamgr_Lipinska.idx
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count272
 \lst@gtempboxa=\box51
@@ -585,10 +580,11 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
+\@indexfile=\write3
+\openout3 = `pracamgr_Lipinska.idx'.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
+
+Writing index file pracamgr_Lipinska.idx
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
@@ -740,13 +736,12 @@ Package: amsthm 2015/03/04 v2.20.2
 )
 \c@twierdzenie=\count298
 \c@definicja=\count299
-\c@stwierdzenie=\count300
-\c@lemat=\count301
-\c@wniosek=\count302
-\c@przyklad=\count303
-\c@uwaga=\count304
-\c@fakt=\count305
-\c@propozycje=\count306
+\c@lemat=\count300
+\c@wniosek=\count301
+\c@przyklad=\count302
+\c@uwaga=\count303
+\c@fakt=\count304
+\c@propozycje=\count305
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\nopageno\nopageno.sty"
 Package: nopageno 1989/01/01 no page numbers (DPC)
@@ -762,32 +757,32 @@ LaTeX Warning: Label `rsa6' multiply defined.
 )
 \openout1 = `pracamgr_Lipinska.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
+\scratchcounter=\count306
 \scratchdimen=\dimen177
 \scratchbox=\box56
-\nofMPsegments=\count308
-\nofMParguments=\count309
+\nofMPsegments=\count307
+\nofMParguments=\count308
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count310
+\MPscratchCnt=\count309
 \MPscratchDim=\dimen178
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
 \everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -803,7 +798,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 178.
+Package hyperref Info: Link coloring OFF on input line 155.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -811,11 +806,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count313
+\c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 178.
-LaTeX Info: Redefining \pageref on input line 178.
-LaTeX Info: Redefining \nameref on input line 178.
+LaTeX Info: Redefining \ref on input line 155.
+LaTeX Info: Redefining \pageref on input line 155.
+LaTeX Info: Redefining \nameref on input line 155.
 
 (pracamgr_Lipinska.out) (pracamgr_Lipinska.out)
 \@outlinefile=\write4
@@ -829,7 +824,7 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 )
-\c@lstlisting=\count314
+\c@lstlisting=\count313
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -865,22 +860,22 @@ File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c__siunitx_mathsf_int=\count315
-LaTeX Font Info:    Try loading font information for U+msa on input line 178.
+\c__siunitx_mathsf_int=\count314
+LaTeX Font Info:    Try loading font information for U+msa on input line 155.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 178.
+LaTeX Font Info:    Try loading font information for U+msb on input line 155.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count316
+\c__siunitx_mathtt_int=\count315
 
 <logoPP.jpg, id=167, 422.5386pt x 422.5386pt>
 File: logoPP.jpg Graphic file (type jpg)
  <use logoPP.jpg>
-Package pdftex.def Info: logoPP.jpg used on input line 183.
+Package pdftex.def Info: logoPP.jpg used on input line 160.
 (pdftex.def)             Requested size: 108.40033pt x 108.405pt.
  [1
 
@@ -893,16 +888,16 @@ Package pdftex.def Info: logoPP.jpg used on input line 183.
 
  [6] [7
 
-] [8
+] [8] [9
 
-] [9] [10
+] [10
 
 ]
  1.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 5.87357pt
-(hyperref)                replaced by space on input line 275.
+(hyperref)                replaced by space on input line 261.
 
 [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21pdfTeX warning (ext4): des
 tination with the same identifier (name{table.1.1}) has been already used, dupl
@@ -910,9 +905,9 @@ icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.680 $$aa^{-1} \equiv 1 \ (mod \ n).$$
+l.666 $$aa^{-1} \equiv 1 \ (mod \ n).$$
                                        ] [22]
-Overfull \hbox (30.09816pt too wide) in paragraph at lines 731--750
+Overfull \hbox (30.09816pt too wide) in paragraph at lines 717--736
 [][]
  []
 
@@ -921,16 +916,16 @@ Overfull \hbox (30.09816pt too wide) in paragraph at lines 731--750
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.763 \end{itemize}
+l.749 \end{itemize}
                    ]
-Overfull \hbox (4.98796pt too wide) in paragraph at lines 773--774
+Overfull \hbox (4.98796pt too wide) in paragraph at lines 759--760
 \T1/cmr/m/n/12 Po prze-pro-wa-dze-niu al-go-ryt-mu uzy-sku-je-my li-st¦ liczb p
 ierw-szych z prze-dzia-ªu $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 
 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 +
  []
 
 
-Overfull \hbox (33.3844pt too wide) in paragraph at lines 778--800
+Overfull \hbox (33.3844pt too wide) in paragraph at lines 764--786
 [][]
  []
 
@@ -942,32 +937,32 @@ Underfull \vbox (badness 1097) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.807 
+l.793 
       ] <spirala_ulama.jpg, id=461, 400.49625pt x 400.49625pt>
 File: spirala_ulama.jpg Graphic file (type jpg)
 
 <use spirala_ulama.jpg>
-Package pdftex.def Info: spirala_ulama.jpg used on input line 815.
+Package pdftex.def Info: spirala_ulama.jpg used on input line 801.
 (pdftex.def)             Requested size: 360.4433pt x 360.4433pt.
  [26pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.822 
+l.808 
        <./spirala_ulama.jpg>] [27] [28] [29] [30] [31pdfTeX warning (ext4): des
 tination with the same identifier (name{table.1.4}) has been already used, dupl
 icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1011 
-       ] [32] [33pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.1.5}) has been already used, duplicate ignored
+l.997 
+      ] [32] [33pdfTeX warning (ext4): destination with the same identifier (na
+me{table.1.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1103 \chapter{Testy pierwszoœci liczb}
+l.1089 \chapter{Testy pierwszoœci liczb}
                                         ] [34
 
 ]
@@ -975,35 +970,35 @@ l.1103 \chapter{Testy pierwszoœci liczb}
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 5.87357pt
-(hyperref)                replaced by space on input line 1103.
+(hyperref)                replaced by space on input line 1089.
 
 [35] [36] [37pdfTeX warning (ext4): destination with the same identifier (name{
 table.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1200 T
+l.1186 T
         est pierwszoœci AKS opiera siê na pewnej to¿samoœci liczb pierwszych...
 ]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 1215.
+(amsmath)                 on input line 1201.
 
 [38] [39pdfTeX warning (ext4): destination with the same identifier (name{table
 .2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1296 
+l.1282 
        ] [40] [41] [42] [43pdfTeX warning (ext4): destination with the same ide
 ntifier (name{table.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1444 \subsection{Test pierwszoœci Fermata}
+l.1430 \subsection{Test pierwszoœci Fermata}
                                             ] [44]
-Overfull \hbox (18.1295pt too wide) in paragraph at lines 1487--1526
+Overfull \hbox (18.1295pt too wide) in paragraph at lines 1473--1512
  [] 
  []
 
@@ -1012,9 +1007,9 @@ Overfull \hbox (18.1295pt too wide) in paragraph at lines 1487--1526
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1545 \end{przyklad}
+l.1531 \end{przyklad}
                      ]
-Overfull \hbox (15.91333pt too wide) in paragraph at lines 1558--1600
+Overfull \hbox (15.91333pt too wide) in paragraph at lines 1544--1586
  [] 
  []
 
@@ -1023,9 +1018,9 @@ Overfull \hbox (15.91333pt too wide) in paragraph at lines 1558--1600
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1611 \item O
+l.1597 \item O
               bliczamy $b \equiv a^{(p-1)/2} \ (mod \ p)$.]
-Overfull \hbox (5.76389pt too wide) in paragraph at lines 1672--1673
+Overfull \hbox (5.76389pt too wide) in paragraph at lines 1658--1659
 []\T1/cmr/m/n/12 Kolejnym pro-ba-bi-li-stycz-nym te-stem pierw-szo-±ci jest tes
 t Solovaya-Strassena, []opra-
  []
@@ -1035,9 +1030,9 @@ t Solovaya-Strassena, []opra-
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1674 \begin{definicja} \cite
+l.1660 \begin{definicja} \cite
                               [\mbox{s.} 119]{zakrzew}] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 1750--1751
+Underfull \hbox (badness 10000) in paragraph at lines 1736--1737
 
  []
 
@@ -1046,9 +1041,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1750--1751
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1815 \item $
+l.1801 \item $
               b^{t} \equiv 1$ (mod $n$) lub]
-Underfull \hbox (badness 10000) in paragraph at lines 1833--1834
+Underfull \hbox (badness 10000) in paragraph at lines 1818--1819
 
  []
 
@@ -1057,18 +1052,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1833--1834
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1917 \chapter{Kryptografia}
+l.1902 \chapter{Kryptografia}
                              ]
  3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 5.87357pt
-(hyperref)                replaced by space on input line 1917.
+(hyperref)                replaced by space on input line 1902.
 
 [53
 
 ] [54] [55] [56] [57]
-Overfull \hbox (9.33516pt too wide) in paragraph at lines 2042--2043
+Overfull \hbox (9.33516pt too wide) in paragraph at lines 2027--2028
 []\T1/cmr/m/n/12 Deszyfrowanie: $\OML/cmm/m/it/12 m \OMS/cmsy/m/n/12  \OML/cmm
 /m/it/12 c[] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 mod n\OT1/cmr/m/n/12 ) \OMS/cmsy
 /m/n/12  \OT1/cmr/m/n/12 49[] (\OML/cmm/m/it/12 mod \OT1/cmr/m/n/12 55) \OMS/c
@@ -1078,7 +1073,7 @@ MS/cmsy/m/n/12 
  []
 
 [58]
-Overfull \hbox (19.64024pt too wide) detected at line 2108
+Overfull \hbox (19.64024pt too wide) detected at line 2093
 \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 aps \OT
 1/cmr/m/n/12 + \OML/cmm/m/it/12 bqr\OT1/cmr/m/n/12 ) (\OML/cmm/m/it/12 mod n\OT
 1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12  \OT1/cmr/m
@@ -1090,64 +1085,64 @@ n/12 9 (\OML/cmm/m/it/12 mod \OT1/cmr/m/n/12 77)\OML/cmm/m/it/12 :
  []
 
 [59] [60]
-Overfull \hbox (3.1729pt too wide) in paragraph at lines 2133--2134
+Overfull \hbox (3.1729pt too wide) in paragraph at lines 2118--2119
 []\T1/cmr/m/n/12 Generatory liczb pseu-do-lo-so-wych ma-j¡ klu-czo-we zna-cze-n
 ie mi¦-dzy in-ny-mi w kryp-
  []
 
 [61] [62]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 2154.
- (sitoEratostenesa.m) (sitoSundarama.m
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
-) [63
-
-] (euler_phi.m)
-(mult_order.m) [64] (MetodaNaiwna.m) [65] (MetodaAKS.m [66]) [67]
-(testLucasaLehmera.m) (testFermata.m [68]) (testLehmana.m [69]) (testSolovaya.m
-[70]) (TestMilleraRabina.m [71]) [72]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 2204
+nput line 2139.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 2139
 .
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2203--2205
+(sitoEratostenesa.m
+Overfull \hbox (2.88797pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [63
+
+] (sitoSundarama.m) [64] (euler_phi.m) (mult_order.m) [65] (MetodaNaiwna.m) [66
+] (MetodaAKS.m [67]) [68] (testLucasaLehmera.m) [69] (testFermata.m
+Overfull \hbox (2.88797pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [70] (testLehmana.m) (testSolovayaStrassena.m [71]) [72] (testMilleraRabina.m
+[73]) [74]
+Underfull \hbox (badness 10000) in paragraph at lines 2194--2196
 \T1/cmtt/m/n/10.95 / / www . academia . edu / 9995980 / Mersenne _ Primes _ An 
 _ Introduction _ and _ Overview$[]
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 2209--2210
+Underfull \hbox (badness 7168) in paragraph at lines 2200--2201
 [][]$\T1/cmtt/m/n/10.95 https : / / www . cse . iitk . ac . in / users / manind
 ra / algebra / primality _ v6 . pdf$[] \T1/cmr/m/n/10.95 (do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2211--2212
+Underfull \hbox (badness 10000) in paragraph at lines 2202--2203
 []\T1/cmr/m/it/10.95 notatki z wy-kªa-du Teo-ria Liczb i Ele-men-ty Kryp-to-gra
 -fii\T1/cmr/m/n/10.95 , dr A.
  []
 
-[73
+[75
 
-] (pracamgr_Lipinska.ind [74
+] (pracamgr_Lipinska.ind [76
 
 
-] [75] [76
+] [77] [78
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2217.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2217.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2208.
  (pracamgr_Lipinska.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2217.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2217.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2208.
 
 Package rerunfilecheck Info: File `pracamgr_Lipinska.out' has not changed.
 (rerunfilecheck)             Checksum: 5169960D78BF842269AA3F6DFF260F15;2888.
@@ -1155,20 +1150,20 @@ Package rerunfilecheck Info: File `pracamgr_Lipinska.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2217.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2208.
  ) 
 Here is how much of TeX's memory you used:
- 21350 strings out of 493323
- 384613 string characters out of 3139053
- 523723 words of memory out of 3000000
- 24008 multiletter control sequences out of 15000+200000
- 553288 words of font info for 78 fonts, out of 3000000 for 9000
+ 20626 strings out of 493323
+ 376517 string characters out of 3139053
+ 445000 words of memory out of 3000000
+ 23244 multiletter control sequences out of 15000+200000
+ 553601 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,16n,43p,10388b,2209s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,16n,43p,10388b,2188s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\MaÅ‚gosia\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
 600\ectt1095.pk> <C:\Users\MaÅ‚gosia\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
 knappen\ec\dpi600\ecti1095.pk> <C:\Users\MaÅ‚gosia\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\MaÅ‚gosia\AppData\Local\
+ts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\MaÅ‚gosia\AppData\Local\
 MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\MaÅ‚gosia\
 AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Us
 ers\MaÅ‚gosia\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
@@ -1193,9 +1188,9 @@ ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pracamgr_Lipinska.pdf (76 pages, 2035178 bytes).
+Output written on pracamgr_Lipinska.pdf (78 pages, 2062729 bytes).
 PDF statistics:
- 2078 PDF objects out of 2487 (max. 8388607)
- 644 named destinations out of 1000 (max. 500000)
+ 2196 PDF objects out of 2487 (max. 8388607)
+ 690 named destinations out of 1000 (max. 500000)
  339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

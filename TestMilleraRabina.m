@@ -1,8 +1,16 @@
-function TestMilleraRabina(n)
+function testMilleraRabina(n)
+  if (n < 1 || n ~= round(n))
+     error('n musi byæ naturalna i wiêksza lub równa 1.')
+  end
     X=['Liczba ', num2str(n), ' jest liczb¹ z³o¿on¹.'];
     Y=['Liczba ', num2str(n), ' mo¿e byæ pierwsza.'];
-    if (n==2 || n==3)
+    Z=['Liczba ', num2str(n),... 
+      ' nie jest ani pierwsza, ani z³o¿ona.'];
+    if (n == 2 || n == 3)
         disp(Y)
+        return
+    elseif (n == 1)
+        disp(Z)
         return
     end
     if mod(n,2) == 0
