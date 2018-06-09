@@ -38,4 +38,6 @@
 \contentsline {section}{Test pierwszo\'sci Solovaya-Strassena}{71}{section*.13}
 \contentsline {section}{Test pierwszo\'sci Millera-Rabina}{73}{section*.14}
 \contentsline {chapter}{Bibliografia}{75}{chapter*.15}
-\contentsline {chapter}{Skorowidz}{77}{chapter*.16}
+\contentsline {chapter}{Streszczenie}{76}{paragraph*.16}
+\contentsline {chapter}{Abstract}{76}{paragraph*.17}
+\contentsline {chapter}{Skorowidz}{77}{chapter*.18}

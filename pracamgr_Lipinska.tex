@@ -225,7 +225,7 @@ Celem niniejszej pracy jest zebranie w jednym miejscu najwa¿niejszych faktów i~i
 W pierwszym rozdziale zawarty jest zbiór najwa¿niejszych i~kluczowych dla niniejszej pracy zagadnieñ z~zakresu teorii liczb. Na pocz¹tek zajmiemy siê podstawowymi twierdzeniami z tej dziedziny, miêdzy innymi zdefiniujemy zasadnicze twierdzenie arytmetyki o rozk³adzie liczb naturalnych na czynniki pierwsze i~twierdzenie Euklidesa o nieskoñczonej liczbie liczb pierwszych. W podrozdziale na temat kongruencji omówimy w³asnoœci przystawania modulo, które wykorzystamy póŸniej w dowodach twierdzenia Wilsona, ma³ego twierdzenia Fermata i twierdzenia Eulera. Zajmiemy siê tak¿e algorytmami wyszukuj¹cymi liczby pierwsze z zadanego przedzia³u, czyli sitami Eratostenesa, Atkina i Sundarama. Na koniec tego rozdzia³u przedstawimy pewne szczególne rodzaje liczb pierwszych, miedzy innymi liczby pierwsze Mersenne'a i Fermata.
 
 Drugi rozdzia³ w ca³oœci poœwiêcony jest testom pierwszoœci liczb, zarówno deterministycznym, jak i~probabilistycznym. W tych pierwszych algorytmy wydaj¹ tak zwany certyfikat pierwszoœci, czyli ich wynik jest prawid³owy z prawdopodobieñstwem 1. Testy deterministyczne, które omówimy w tym rozdziale, to metoda naiwna, wykorzystuj¹ca dzia³anie sita, test pierwszoœci AKS, który swoje dzia³anie opiera na ma³ym twierdzeniu Fermata dla wielomianów, oraz test Lucasa-Lehmera - test pierwszoœci dla liczb Mersenne'a. Testy probabilistyczne, czyli testy u¿ywaj¹ce w swoim dzia³aniu losowoœci, znajduj¹ siê w drugiej czêœci tego rozdzia³u. Omówimy test pierwszoœci Fermata, czyli test opieraj¹cy siê na za³o¿eniu, ¿e zachodzi wynikanie odwrotne do ma³ego twierdzenia Fermata. Przy okazji omawiania tego algorytmu wprowadzimy pojêcie liczb Carmichaela, czyli liczb z³o¿onych, które mog¹ dawaæ b³êdny wynik dzia³ania testu Fermata. Nastêpnie krótko zajmiemy siê testem pierwszoœci Lehmana i~przejdziemy do testu Solovaya-Strassena, gdzie poznamy tak zwany symbol Legendre'a. Ostatnim omówionym w niniejszej pracy testem bêdzie test pierwszoœci Millera-Rabina, który wyznacza liczby silnie pseudopierwsze.
-Rozdzia³ ten wzbogacimy równie¿ o konkretne przyk³ady i przedstawimy dzia³anie skryptów z programu Matlab, napisanych na podstawie algorytmów dzia³ania wy¿ej wymienionych testów. Bêdziemy porównywaæ szybkoœæ testu i~jakoœæ wyniku dla zadanych liczb o ró¿nej wielkoœci, a otrzymane wnioski przedstawimy w tabelach.
+Rozdzia³ ten wzbogacimy równie¿ o konkretne przyk³ady i~przedstawimy dzia³anie skryptów z programu Matlab, napisanych na podstawie algorytmów dzia³ania wy¿ej wymienionych testów. Bêdziemy porównywaæ szybkoœæ testu i~jakoœæ obliczeñ dla zadanych liczb o ró¿nej wielkoœci, a otrzymane wyniki przedstawimy w tabelach. Skrypty zosta³y wykonane i~uruchomione w~programie Matlab w~laboratorium Instytutu Matematyki Politechniki Poznañskiej.
 
 W trzecim rozdziale poznamy praktyczne zastosowania liczb pierwszych i~testów pierwszoœci liczb w~kryptografii. Na pocz¹tku nakreœlimy krótko historiê tej dziedziny oraz wyjaœnimy, w jaki sposób omawiane przez nas liczby znalaz³y swoje zastosowanie w³aœnie w~szyfrowaniu. Nastêpnie przejdziemy do przedstawienia systemów kryptograficznych RSA i Rabina, w~których klucze publiczne i prywatne generowane s¹ w³aœnie w oparciu o du¿e liczby pierwsze. Jak siê oka¿e, do znalezienia takich liczb niezbêdne bêd¹ testy pierwszoœci. Na koniec wprowadzimy pojêcie generatorów liczb pseudolosowych, które s¹ stosowane w kryptografii i których bezpieczne dzia³anie determinowane jest przez u¿ycie liczb pierwszych. 
 
@@ -480,11 +480,11 @@ $$\underset{a,b,c \in \mathbb{Z}}{\forall} \ \underset{n \in \mathbb{N}}{\forall
 \end{twierdzenie}
 
 \begin{dowod} 
-\ref{zwrotna} Je¿eli zachodzi $a \equiv a \ (mod \ n)$, to oznacza, ¿e prawdziwa jest kongruencja $a-a \equiv 0 \ (mod \ n)$, co koñczy dowód, poniewa¿ liczba $0$ jest podzielna przez ka¿de $n \in \mathbb{N}$.
+\ref{zwrotna}. Je¿eli zachodzi $a \equiv a \ (mod \ n)$, to oznacza, ¿e prawdziwa jest kongruencja $a-a \equiv 0 \ (mod \ n)$, co koñczy dowód, poniewa¿ liczba $0$ jest podzielna przez ka¿de $n \in \mathbb{N}$.
 
-\ref{symetryczna} Je¿eli $a \equiv b \ (mod \ n)$, to $a-b=kn$, gdzie $k \in \mathbb{Z}$, to $b-a=-kn$. St¹d wynika, ¿e $b \equiv a \ (mod \ n)$. 
+\ref{symetryczna}. Je¿eli $a \equiv b \ (mod \ n)$, to $a-b=kn$, gdzie $k \in \mathbb{Z}$, to $b-a=-kn$. St¹d wynika, ¿e $b \equiv a \ (mod \ n)$. 
 
-\ref{przechodnia} Je¿eli $a \equiv b \ (mod \ n)$ i $b \equiv c \ (mod \ n)$, to $a-b \equiv 0 \ (mod \ n)$ i~$b-c \equiv 0 \ (mod \ n)$. Opieraj¹c siê na to¿samoœci $$a-c = (a-b)+(b-c)$$ otrzymujemy, ¿e $a-c \equiv 0 \ (mod \ n)$, sk¹d wynika, ¿e $a \equiv c \ (mod \ n)$.
+\ref{przechodnia}. Je¿eli $a \equiv b \ (mod \ n)$ i $b \equiv c \ (mod \ n)$, to $a-b \equiv 0 \ (mod \ n)$ i~$b-c \equiv 0 \ (mod \ n)$. Opieraj¹c siê na to¿samoœci $$a-c = (a-b)+(b-c)$$ otrzymujemy, ¿e $a-c \equiv 0 \ (mod \ n)$, sk¹d wynika, ¿e $a \equiv c \ (mod \ n)$.
 \end{dowod}
 
 \begin{twierdzenie} \cite[\mbox{s.} 37]{narkiewicz}
@@ -2201,6 +2201,15 @@ gdzie $g$ i $p$ to liczby pierwsze. Bit wyjœciowy zale¿y od wygenerowanej wartoœ
 \bibitem{multord} \url{https://en.wikipedia.org/wiki/Multiplicative_order}
 \bibitem{notatki} \textit{notatki z wyk³adu Teoria Liczb i Elementy Kryptografii}, dr A. Iwaszkiewicz-Rudoszañska.
 \end{thebibliography}
+
+\newpage
+\paragraph*{Streszczenie}\mbox{} \\
+\addcontentsline{toc}{chapter}{Streszczenie}
+\ \ \ \ Tematem niniejszej pracy s¹ testy pierwszoœci liczb i ich zastosowania w kryptografii. W pierwszym rozdziale zawarty jest zbiór najwa¿niejszych zagadnieñ z~zakresu teorii liczb, m.in. zasadnicze twierdzenie arytmetyki, twierdzenie Euklidesa, kongruencje, twierdzenie Wilsona, ma³e twierdzenie Fermata oraz twierdzenie Eulera. Wspomniane zosta³y tak¿e algorytmy wyszukuj¹ce liczby pierwsze z przedzia³u, czyli sito Eratostenesa, Atkina i Sundarama. W rozdziale tym znajduj¹ siê równie¿ pewne szczególne rodzaje liczb pierwszych, miedzy innymi liczby pierwsze Mersenne'a i Fermata. Drugi rozdzia³ poœwiêcony jest deterministycznym i probabilistycznym testom pierwszoœci liczb. Testy deterministyczne omówione w tym rozdziale to metoda naiwna, test pierwszoœci AKS oraz test Lucasa-Lehmera. Testy probabilistyczne, które znajduj¹ siê w niniejszej pracy, to test pierwszoœci Fermata, test pierwszoœci Lehmana, test Solovaya-Strassena oraz test Millera-Rabina. W trzecim rozdziale znajduj¹ siê praktyczne zastosowania liczb pierwszych i~testów pierwszoœci liczb w~kryptografii, m.in. w systemach kryptograficznych RSA i Rabina, w~których klucze publiczne i prywatne generowane s¹ przez du¿e liczby pierwsze.
+
+\paragraph*{Abstract}\mbox{} \\
+\addcontentsline{toc}{chapter}{Abstract}
+\ \ \ \ The theme of this thesis are primality tests and their applications in cryptography. The first chapter consists of the most important terms and theorems in number theory, for instance the fundamental theorem of arithmetic, Euclid's theorem, congruences, Wilson's theorem, Fermat's little theorem and Euler's theorem. This chapter also includes algorithms that search for prime numbers from the interval, i.e. the sieve of Eratosthenes, Atkin and Sundaram, and definitions of some of the special prime numbers, including the Mersenne prime numbers and Fermat prime numbers. The second chapter consist of  the deterministic and probabilistic primality tests. The deterministic tests included in this chapter are the naive method, the AKS primality test and the Lucas-Lehmer primality test. The probabilistic tests contained in this chapter are the Fermat primality test, the Lehman test, the Solovay-Strassen primality test and the Miller-Rabin test. The third chapter contains practical applications of prime numbers and primality tests in cryptography, for example in RSA and Rabin cryptographic systems, in which public and private keys are generated by large prime numbers.
 
 \newpage
 \printindex

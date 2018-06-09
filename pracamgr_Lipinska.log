@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  27 MAY 2018 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  9 JUN 2018 14:33
 entering extended mode
 **./pracamgr_Lipinska.tex
 (pracamgr_Lipinska.tex
@@ -872,7 +872,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count315
 
-<logoPP.jpg, id=167, 422.5386pt x 422.5386pt>
+<logoPP.jpg, id=175, 422.5386pt x 422.5386pt>
 File: logoPP.jpg Graphic file (type jpg)
  <use logoPP.jpg>
 Package pdftex.def Info: logoPP.jpg used on input line 160.
@@ -938,7 +938,7 @@ Underfull \vbox (badness 1097) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.793 
-      ] <spirala_ulama.jpg, id=461, 400.49625pt x 400.49625pt>
+      ] <spirala_ulama.jpg, id=471, 400.49625pt x 400.49625pt>
 File: spirala_ulama.jpg Graphic file (type jpg)
 
 <use spirala_ulama.jpg>
@@ -1132,31 +1132,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 2202--2203
 
 [75
 
-] (pracamgr_Lipinska.ind [76
+] [76] (pracamgr_Lipinska.ind [77
 
 
-] [77] [78
+] [78
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2208.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2208.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2217.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2217.
  (pracamgr_Lipinska.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2217.
 
 Package rerunfilecheck Info: File `pracamgr_Lipinska.out' has not changed.
-(rerunfilecheck)             Checksum: 5169960D78BF842269AA3F6DFF260F15;2888.
+(rerunfilecheck)             Checksum: 080C2F3E1A96A867C925887DEBD2F7CB;2990.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2208.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2217.
  ) 
 Here is how much of TeX's memory you used:
- 20626 strings out of 493323
- 376517 string characters out of 3139053
- 445000 words of memory out of 3000000
- 23244 multiletter control sequences out of 15000+200000
+ 20630 strings out of 493323
+ 376573 string characters out of 3139053
+ 445005 words of memory out of 3000000
+ 23246 multiletter control sequences out of 15000+200000
  553601 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,16n,43p,10388b,2188s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1188,9 +1188,9 @@ ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pracamgr_Lipinska.pdf (78 pages, 2062729 bytes).
+Output written on pracamgr_Lipinska.pdf (78 pages, 2066055 bytes).
 PDF statistics:
- 2196 PDF objects out of 2487 (max. 8388607)
- 690 named destinations out of 1000 (max. 500000)
- 339 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2207 PDF objects out of 2487 (max. 8388607)
+ 692 named destinations out of 1000 (max. 500000)
+ 355 words of extra memory for PDF output out of 10000 (max. 10000000)
 
