@@ -218,9 +218,9 @@
 %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Wstêp}
-Liczby pierwsze, elementy buduj¹ce liczby ca³kowite, by³y szczegó³owo badane ju¿ od czasów staro¿ytnych. Mo¿liwoœæ przedstawiania liczb ca³kowitych za pomoc¹ iloczynu liczb pierwszych jest g³ównym powodem powstania ca³ej teorii liczb i kryje siê za interesuj¹cymi wynikami z tej dziedziny. Carl Friedrich Gauss powiedzia³, ¿e jeœli matematyka jest królow¹ nauk, to teoria liczb jest królow¹ matematyki. To w³aœnie na podstawie w³aœciwoœci liczb pierwszych zosta³o sformu³owanych wiele interesuj¹cych twierdzeñ, wniosków i~przypuszczeñ, które rozwijane s¹ do dziœ.
+Liczby pierwsze, elementy buduj¹ce liczby ca³kowite, by³y szczegó³owo badane ju¿ od czasów staro¿ytnych. Mo¿liwoœæ przedstawiania liczb ca³kowitych za pomoc¹ iloczynu liczb pierwszych jest g³ównym powodem powstania ca³ej teorii liczb i kryje siê za interesuj¹cymi wynikami z tej dziedziny. Carl Friedrich Gauss powiedzia³, ¿e jeœli matematyka jest królow¹ nauk, to teoria liczb jest królow¹ matematyki. To w³aœnie na podstawie w³asnoœci liczb pierwszych zosta³o sformu³owanych wiele interesuj¹cych twierdzeñ, wniosków i~przypuszczeñ, które rozwijane s¹ do dziœ.
 
-Celem niniejszej pracy jest zebranie w jednym miejscu najwa¿niejszych faktów i~informacji dotycz¹cych liczb pierwszych i~ich zastosowañ w kryptografii, która w ostatnich latach rozwija siê bardzo szybko. Praca zosta³a podzielona na trzy g³ówne rozdzia³y, zaczynaj¹c od rzeczy bardziej teoretycznych, a koñcz¹c na praktycznych zastosowaniach.  
+Celem niniejszej pracy jest zebranie w jednym miejscu najwa¿niejszych faktów i~informacji dotycz¹cych liczb pierwszych i~ich zastosowañ w kryptografii, która w~ostatnich latach rozwija siê bardzo szybko. Praca zosta³a podzielona na trzy g³ówne rozdzia³y, zaczynaj¹c od rzeczy bardziej teoretycznych, a~koñcz¹c na praktycznych zastosowaniach.  
 
 W pierwszym rozdziale zawarty jest zbiór najwa¿niejszych i~kluczowych dla niniejszej pracy zagadnieñ z~zakresu teorii liczb. Na pocz¹tek zajmiemy siê podstawowymi twierdzeniami z tej dziedziny, miêdzy innymi zdefiniujemy zasadnicze twierdzenie arytmetyki o rozk³adzie liczb naturalnych na czynniki pierwsze i~twierdzenie Euklidesa o nieskoñczonej liczbie liczb pierwszych. W podrozdziale na temat kongruencji omówimy w³asnoœci przystawania modulo, które wykorzystamy póŸniej w dowodach twierdzenia Wilsona, ma³ego twierdzenia Fermata i twierdzenia Eulera. Zajmiemy siê tak¿e algorytmami wyszukuj¹cymi liczby pierwsze z zadanego przedzia³u, czyli sitami Eratostenesa, Atkina i Sundarama. Na koniec tego rozdzia³u przedstawimy pewne szczególne rodzaje liczb pierwszych, miedzy innymi liczby pierwsze Mersenne'a i Fermata.
 
@@ -575,7 +575,7 @@ Ka¿d¹ liczbê ca³kowit¹ $a$ mo¿na zapisaæ w postaci $a = qm + r$, gdzie $0 \leq r
 \end{definicja}
 
 \begin{definicja} \cite[\mbox{s.} 31]{marzant}
-\textit{Zredukowanym uk³adem reszt modulo $m$} \index{uk³ad reszt!zredukowany} nazywamy uk³ad reprezentantów tych klas relacji przystawania modulo $m$, które sk³adaj¹ siê z liczb wzglêdnie pierwszych z modu³em $m$.
+\textit{Zredukowanym uk³adem reszt modulo $m$} \index{uk³ad reszt!zredukowany} nazywamy uk³ad reprezentantów tych klas relacji przystawania modulo $m$, które sk³adaj¹ siê z liczb wzglêdnie pierwszych z~modu³em $m$.
 \end{definicja}
 
 Poni¿ej wprowadzimy pojêcie funkcji arytmetycznej, które jest niezbêdne do zdefiniowania funkcji Eulera, wykorzystuj¹cej pojêcie zredukowanego uk³adu reszt modulo.
@@ -711,12 +711,13 @@ $$P=\{2,3,5,7,11,13,17,19,23,29,31,37\}.$$
 Krok trzeci jest ostatni, poniewa¿ w czwartym kroku najmniejsz¹ liczb¹, której wielokrotnoœci musielibyœmy usun¹æ, jest liczba $7$, ale $n = 40$, a $\sqrt{40} \approx 6,32$. Liczba $7$ jest wiêc wiêksza ni¿ $6.32$, mo¿emy zatem zatrzymaæ algorytm. Po trzecim kroku w zbiorze $P$ pozosta³y jedynie liczby pierwsze.
 \end{przyklad}
 
-Sito Eratostenesa mo¿na teoretycznie zapisaæ w postaci funkcji, na przyk³ad w programie Matlab (skrypt \ref{sitoEratostenesa}). Poni¿ej przedstawiona zosta³a tabela z wynikami dzia³ania algorytmu dla przedzia³ów o ró¿nej d³ugoœci.
+Sito Eratostenesa mo¿na teoretycznie zapisaæ w~postaci funkcji, na przyk³ad w~programie Matlab (skrypt \ref{sitoEratostenesa}). Poni¿ej przedstawiona zosta³a tabela z wynikami dzia³ania algorytmu dla przedzia³ów o ró¿nej d³ugoœci.
 
-\begin{table}[H] 
+\begin{table}[H]
+\begin{center}
 \begin{tabular}{|r|c|c|c|c|}
 \hline
-Lp. & Koniec przedzia³u $\{2,n\}$ &  Czas dzia³ania programu $[s]$ & Liczba liczb pierwszych \\ [0.2ex] 
+Lp. & Koniec przedzia³u $\{2,n\}$ &  Czas dzia³ania $[s]$ & Liczba liczb pierwszych \\ [0.2ex] 
 \hline \hline
 1 & $\num{100}$ & 0.002345 & 25\\
 \hline
@@ -734,9 +735,10 @@ Lp. & Koniec przedzia³u $\{2,n\}$ &  Czas dzia³ania programu $[s]$ & Liczba licz
 \hline
 \end{tabular}
 \caption{Wyniki dzia³ania funkcji szukaj¹cej liczb pierwszych sitem Eratostenesa.}
+\end{center}
 \end{table}
 
-Niestety w przypadku wiêkszego zakresu liczb czas oczekiwania na wynik jest bardzo d³ugi. Na przyk³ad przeszukiwanie zbioru liczb naturalnych $\{2, \num{1 000 000 000}\}$ mo¿e trwaæ ju¿ kilka godzin. Co wiêcej, najwiêksza znana obecnie liczba pierwsza jest o wiele wiêksza od liczb, które mo¿na znaleŸæ za pomoc¹ tego algorytmu nawet na nowoczesnych komputerach o du¿ej wydajnoœci.
+Niestety w przypadku wiêkszego zakresu liczb czas oczekiwania na wynik jest bardzo d³ugi. Na przyk³ad przeszukiwanie zbioru liczb naturalnych $\{2, \num{1 000 000 000}\}$ mo¿e trwaæ ju¿ kilka godzin. Co wiêcej, najwiêksza znana obecnie liczba pierwsza jest o~wiele wiêksza od liczb, które mo¿na znaleŸæ za pomoc¹ tego algorytmu nawet na nowoczesnych komputerach o~du¿ej wydajnoœci.
 
 \textit{Sito Atkina} \index{sito!Atkina} lub \textit{sito Atkina-Bernsteina} \cite[\mbox{s.} 55]{karbowski} to algorytm autorstwa dwóch matematyków - Arthura Atkina i D.J. Bernsteina, który s³u¿y do wyszukiwania liczb pierwszych w du¿ych przedzia³ach. 
 
@@ -761,9 +763,10 @@ Po przeprowadzeniu algorytmu uzyskujemy listê liczb pierwszych z przedzia³u $\{3
 Sito Sundarama mo¿na zapisaæ w postaci funkcji, na przyk³ad w programie Matlab (skrypt \ref{sitoSundarama}). Poni¿sza tabela zawiera wyniki dzia³ania sita Sundarama dla przedzia³ów o ró¿nej d³ugoœci.
 
 \begin{table}[H]
+\begin{center}
 \begin{tabular}{|r|c|c|c|c|}
 \hline
-Lp. & Koniec przedzia³u $\{1,n\}$ & Czas dzia³ania programu $[s]$ & Liczba liczb pierwszych \\
+Lp. & Koniec przedzia³u $\{1,n\}$ & Czas dzia³ania $[s]$ & Liczba liczb pierwszych \\
     & & & w przedziale $\{2,2n+1\}$ \\  [0.2ex] 
 \hline \hline
 1 & $\num{50}$ & 0.000764 & 26\\
@@ -784,16 +787,17 @@ Lp. & Koniec przedzia³u $\{1,n\}$ & Czas dzia³ania programu $[s]$ & Liczba liczb
 \hline
 \end{tabular}
 \caption{Wyniki dzia³ania funkcji szukaj¹cej liczb pierwszych sitem Sundarama.}
+\end{center}
 \end{table}
 
 Jak ³atwo zauwa¿yæ, algorytm Sundarama jest o wiele szybszy ni¿ sito Eratostenesa.
 
 \section{Spirala Ulama}
-Stanis³aw Marcin Ulam (ur. 13 kwietnia 1909 we Lwowie, zm. 13 maja 1984 w~Santa Fe) to polski matematyk i~przedstawiciel lwowskiej szko³y matematycznej. W swoim dorobku ma wiele dokonañ w zakresie matematyki i~fizyki matematycznej oraz metod numerycznych. W 1963 roku zaprezentowa³ przedstawienie rozk³adu liczb pierwszych w formie graficznej, zwanej dziœ spiral¹ Ulama.
+Stanis³aw Marcin Ulam (ur. 13 kwietnia 1909 we Lwowie, zm. 13 maja 1984 w~Santa Fe) to polski matematyk i~przedstawiciel lwowskiej szko³y matematycznej. W~swoim dorobku ma wiele dokonañ w zakresie matematyki i~fizyki matematycznej oraz metod numerycznych. W~1963 roku zaprezentowa³ przedstawienie rozk³adu liczb pierwszych w~formie graficznej, zwanej dziœ spiral¹ Ulama.
  
 \textit{Spirala Ulama} lub \textit{spirala liczb pierwszych} \cite{spiralaulama} \index{spirala Ulama} to graficzna metoda przedstawiania rozk³adu liczb pierwszych. 
 
-Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w œrodku spiralnie wypisuje siê kolejne liczby naturalne. Okazuje siê, ¿e na pewnych przek¹tnych liczby pierwsze pojawiaj¹ siê o wiele czêœciej ni¿ na innych. Co wiêcej, zjawisko nie zale¿y od wyboru pierwszej liczby w spirali. Na rysunku \ref{ulam} przedstawiono spiralê Ulama o rozmiarze $400$x$400$.
+Sposób zapisu polega na tym, ¿e na kwadratowej tablicy zaczynaj¹c od 1 w~œrodku spiralnie wypisuje siê kolejne liczby naturalne. Okazuje siê, ¿e na pewnych przek¹tnych liczby pierwsze pojawiaj¹ siê o wiele czêœciej ni¿ na innych. Co wiêcej, zjawisko nie zale¿y od wyboru pierwszej liczby w spirali. Na rysunku \ref{ulam} przedstawiono spiralê Ulama o rozmiarze $400$x$400$.
 
 \begin{figure}[H]
 \label{ulam}
@@ -931,7 +935,7 @@ $$b^{n-1} \equiv 1 \ (mod \ n),$$
 to $n$ nazywamy \textit{liczb¹ pseudopierwsz¹} \index{liczby!pseudopierwsze} przy podstawie $b$.
 \end{definicja}
 
-Z twierdzenia \ref{mtf} wynika, ¿e dla ka¿dej liczby $a$, która jest wzglêdnie pierwsza z modu³em $n$, istnieje liczba naturalna $k$ taka, ¿e $a^{k} \equiv 1 \ (mod \ n)$. 
+Z twierdzenia \ref{mtf} wynika, ¿e dla ka¿dej liczby $a$, która jest wzglêdnie pierwsza z~modu³em $n$, istnieje liczba naturalna $k$ taka, ¿e $a^{k} \equiv 1 \ (mod \ n)$. 
 
 \begin{definicja} \cite{multord}
 \textit{Rzêdem multiplikatywnym} \index{rz¹d multiplikatywny} liczby ca³kowitej $a$ modulo $n$, gdzie $(a,n)=1$, nazywamy najmniejsz¹ liczbê naturaln¹ $k$, dla której zachodzi
@@ -1039,10 +1043,12 @@ Przyk³adem takiej liczby jest 23, gdy¿ $2 \cdot 23 +1 = 47$. Najwiêksza znana ob
 $$\num{2618163402417} \cdot 2^{\num{1290000}}-1,$$ a jej zapis dziesiêtny wymaga $\num{388342}$ cyfr. Zosta³a ona odkryta w 2016 roku.
 
 \begin{definicja} \cite[\mbox{s.} 52]{marzant}
-\textit{Liczbami Mersenne'a} \index{liczby!Mersenne'a} nazywamy liczby postaci $M_{n}=2^{n}-1$, $n \geq 1$. Je¿eli liczba Mersenne'a jest pierwsza to nazywamy j¹ \textit{liczb¹ pierwsz¹ Mersenne'a} \index{liczby!pierwsze Mersenne'a}.
+\textit{Liczbami Mersenne'a} \index{liczby!Mersenne'a} nazywamy liczby postaci 
+$$M_{n}=2^{n}-1, \ \ n \geq 1.$$ 
+Je¿eli liczba Mersenne'a jest pierwsza to nazywamy j¹ \textit{liczb¹ pierwsz¹ Mersenne'a} \index{liczby!pierwsze Mersenne'a}.
 \end{definicja}
 
-Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych jest 50 takich liczb. Co wiêcej, dziewiêæ na dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w tabeli \ref{toptengreatestprimenumbersM}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w którym mog¹ wzi¹æ udzia³ ochotnicy z ca³ego œwiata.
+Nie wiadomo, czy istnieje nieskoñczenie wiele liczb pierwszych Mersenne'a. Do 2018 roku znanych jest 50 takich liczb. Co wiêcej, dziewiêæ na dziesiêæ najwiêkszych odkrytych do tej pory liczb pierwszych to w³aœnie liczby Mersenne'a. Zosta³y one przedstawione w tabeli \ref{toptengreatestprimenumbersM}. Ich poszukiwaniem zajmuje siê projekt GIMPS (ang. Great Internet Mersenne Prime Search), w~którym mog¹ wzi¹æ udzia³ ochotnicy z~ca³ego œwiata.
 
 \begin{table}[H] 
 \begin{center}
@@ -1288,7 +1294,7 @@ Lp. & Liczba $n$ & Pierwsza/z³o¿ona &  Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 
 \subsection{Test Lucasa-Lehmera}
 \index{test pierwszoœci!Lucasa-Lehmera}
-\textit{Test Lucasa-Lehmera} \cite{wojciechowski} jest testem pierwszoœci dla liczb Mersenne’a\index{liczby!Mersenne'a}. Test ten zosta³ stworzony przez francuskiego matematyka Edwarda Lucasa w 1856 roku, a nastêpnie zmodyfikowany przez niego w roku 1878. Ponad 50 lat póŸniej algorytm Lucasa zosta³ udoskonalony przez Derricka Henry’ego Lehmera, sk¹d pochodzi dwucz³onowa nazwa testu.
+\textit{Test Lucasa-Lehmera} \cite{wojciechowski} jest testem pierwszoœci dla liczb Mersenne’a\index{liczby!Mersenne'a}. Test ten zosta³ stworzony przez francuskiego matematyka Edwarda Lucasa w 1856 roku, a~nastêpnie zmodyfikowany przez niego w roku 1878. Ponad 50 lat póŸniej algorytm Lucasa zosta³ udoskonalony przez Derricka Henry’ego Lehmera, sk¹d pochodzi dwucz³onowa nazwa testu.
 
 Test Lucasa-Lehmera opiera siê na poni¿szym twierdzeniu.
 
@@ -1339,7 +1345,7 @@ Na koniec podnosimy obie strony równania do kwadratu
 \omega^{2^{p}} = (RM_{p} \omega^{2^{p-2}}-1)^{2}.
 \end{equation}
 Za³ó¿my teraz, ¿e $M_{p}$ jest liczb¹ z³o¿on¹. Wtedy musi istnieæ liczba pierwsza $q$, która jest dzielnikiem liczby $M_{p}$ takim, ¿e $q^{2} \leq M_{p}$. Liczba $M_{p}$ jest postaci $2^{p}-1$, wiêc jest liczb¹ nieparzyst¹, st¹d $q \neq 2$.
-Rozwa¿my grupê $\mathbb{Z}_{q}$ liczb ca³kowitych modulo $q$. Niech $X = \mathbb{Z}_{q}(\sqrt{3}) = {a+b \sqrt{3}, a,b \in \mathbb{Z}_{q}}$. Grupa ta jest zamkniêta ze wzglêdu na mno¿enie (jeœli $x,y \in X$, to $x \cdot y \in X$), wiêc mo¿emy pomno¿yæ dwa elementy z grupy
+Rozwa¿my grupê $\mathbb{Z}_{q}$ liczb ca³kowitych modulo $q$. Niech $X = \mathbb{Z}_{q}(\sqrt{3}) = {a+b \sqrt{3}, a,b \in \mathbb{Z}_{q}}$. Grupa ta jest zamkniêta ze wzglêdu na mno¿enie (jeœli $x,y \in X$, to $x \cdot y \in X$), wiêc mo¿emy pomno¿yæ dwa elementy z~grupy
 \begin{align*}
 (a_{1} &+ b_{1} \sqrt{3})(a_{2} + b_{2} \sqrt{3}) \\
 &= (a_{1}a_{2} + 3b_{1}b_{2} + a_{1}b_{2} \sqrt{3} + a_{2}b_{1} \sqrt{3}) \\
@@ -1425,7 +1431,7 @@ Lp. & Liczba $n$ & Liczba Mersenne'a $n$ & Wynik & Czas dzia³ania funkcji $[s]$ 
 \end{table}
 
 \section{Testy probabilistyczne}
-\textit{Testy probabilistyczne} \index{test pierwszoœci!probabilistyczny} (znane tak¿e jako testy randomizacyjne) s¹ obecnie najczêœciej stosowanymi i najbardziej efektywnymi testami pierwszoœci liczb, które w swoim dzia³aniu u¿ywaj¹ losowoœci. Wykorzystuje siê w nich losowo wygenerowane liczby z zadanego przedzia³u. Zale¿noœæ od takich elementów powoduje, ¿e algorytm mo¿e daæ b³êdny wynik testu pierwszoœci, lecz prawdopodobieñstwo takiego zdarzenia jest bardzo ma³e.
+\textit{Testy probabilistyczne} \index{test pierwszoœci!probabilistyczny} (znane tak¿e jako testy randomizacyjne) s¹ obecnie najczêœciej stosowanymi i najbardziej efektywnymi testami pierwszoœci liczb, które w~swoim dzia³aniu u¿ywaj¹ losowoœci. Wykorzystuje siê w nich losowo wygenerowane liczby z zadanego przedzia³u. Zale¿noœæ od takich elementów powoduje, ¿e algorytm mo¿e daæ b³êdny wynik testu pierwszoœci, lecz prawdopodobieñstwo takiego zdarzenia jest bardzo ma³e.
 
 \subsection{Test pierwszoœci Fermata}
 Zgodnie z ma³ym twierdzeniem Fermata (twierdzenie \ref{mtf}) dla liczb pierwszych $p$ zachodzi kongruencja
@@ -1466,7 +1472,7 @@ U¿ywaj¹c testu pierwszoœci Fermata sprawdzimy, czy liczba 25 jest liczb¹ pierwsz
 \item Liczba 25 jest liczb¹ z³o¿on¹.
 \end{enumerate}
 
-Implementacja testu pierwszoœci Fermata w programie Matlab zawarta zosta³a w skrypcie \ref{testFermata}. W tabeli \ref{tabelaFermat} przedstawione s¹ wyniki dzia³ania tego kodu dla ró¿nych liczb pierwszych i z³o¿onych oraz czas dzia³ania algorytmu.
+Implementacja testu pierwszoœci Fermata w programie Matlab zawarta zosta³a w~skrypcie \ref{testFermata}. W tabeli \ref{tabelaFermat} przedstawione s¹ wyniki dzia³ania tego kodu dla ró¿nych liczb pierwszych i z³o¿onych oraz czas dzia³ania algorytmu.
 
 \begin{table}[H] 
 \begin{center}
@@ -1652,7 +1658,7 @@ Lp. & Liczba $p$ & Wynik & Czas dzia³ania funkcji $[s]$ \\ [0.2ex]
 \end{center}
 \end{table}
 
-Algorytm Lehmana jest bardzo szybki i zwraca prawid³owe wyniki dla liczb o ró¿nej wielkoœci.
+Algorytm Lehmana jest bardzo szybki i zwraca prawid³owe wyniki dla liczb o~ró¿nej wielkoœci.
 
 \subsection{Test pierwszoœci Solovaya-Strassena}
 Kolejnym probabilistycznym testem pierwszoœci jest test Solovaya-Strassena, \index{test pierwszoœci!Solovaya-Strassena} opracowany przez dwóch matematyków - amerykañskiego profesora Roberta M. Solovaya i~profesora Volkera Strassena z Niemiec. Do wprowadzenia algorytmu testowania niezbêdna jest definicja symbolu Legendre’a.
@@ -1965,7 +1971,7 @@ $$c \equiv m^e \ (mod \ n).$$
 Deszyfrowanie: W celu odszyfrowania wiadomoœci $m$ pobieramy klucz prywatny $(d,n)$ i obliczamy
 $$m \equiv c^d \ (mod \ n).$$
 
-Poprzez roz³o¿enie liczby $n$ na czynniki pierwsze mo¿na odtworzyæ generowanie klucza prywatnego. Jednak dla dostatecznie du¿ego $n$ i dobrze dobranych liczb $p$ i $q$ faktoryzacja $n$ jest praktycznie niemo¿liwa.
+Poprzez roz³o¿enie liczby $n$ na czynniki pierwsze mo¿na odtworzyæ generowanie klucza prywatnego. Jednak dla dostatecznie du¿ego $n$ i dobrze dobranych liczb $p$ i~$q$ faktoryzacja $n$ jest praktycznie niemo¿liwa.
 
 \begin{przyklad}
 Korzystaj¹c z systemu RSA zaszyfrujemy i odszyfrujemy wiadomoœæ $m = 4$.
